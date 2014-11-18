@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no" />
+	<title>Xmas Markets</title>
+	<!-- link rel="stylesheet" href="scripts/cross_browser.css" -->
+	<link rel="stylesheet" href="scripts/drawer.css">
+	<link rel="stylesheet" href="scripts/headers.css">
+	<link rel="stylesheet" href="scripts/index.css">
+	<link rel="stylesheet" href="scripts/lists.css">
+	<link rel="stylesheet" href="scripts/progress_activity.css">
+	<link rel="stylesheet" href="scripts/toolbars.css">
+	<link rel="stylesheet" href="scripts/transitions.css">
+	<link rel="stylesheet" href="scripts/util.css">
+</head>
+<body>
+
+<!--·································································-->
+
+<section id="index" data-position="current">
+	<section data-type="sidebar">
+		<header>
+			<menu type="toolbar">
+				<a href="#">Done</a>
+			</menu>
+			<h1>Überschrift</h1>
+		</header>
+		<nav>
+			<h2>Ideensammlung</h2>
+			<ul>
+				<li><a href="#">öffnungszeiten</a></li>
+				<li><a href="#">eintrittspreise (sofern eintritt verlangt wird)</a></li>
+				<li><a href="#">statistiken, an welchen tagen/zu welchen zeiten es einigermaßen leer ist</a></li>
+				<li><a href="#">durchschnittlicher glühweinpreis</a></li>
+				<li><a href="#">wo man Langos essen kann</a></li>
+			</ul>
+		</nav>
+	</section>
+	<section id="drawer" role="region">
+		<header class="fixed">
+			<a href="#"><span class="icon icon-menu">hide sidebar</span></a>
+			<a href="#drawer"><span class="icon icon-menu">show sidebar</span></a>
+			<h1>Schöner App Name <em>kommt noch</em></h1>
+		</header>
+		<article class="scrollable header">
+			<div data-type="list">
+				<ul>
+					<li><a id="btn-allmarkets" href="#"><p>Alle Weihnachtsmärkte</p></a></li>
+				</ul>
+			</div>
+		</article>
+	</section>
+</section>
+
+<!--·································································-->
+
+<section role="region" id="allmarkets" data-position="right">
+	<header class="fixed">
+		<a id="btn-allmarkets-back" href="#"><span class="icon icon-back">back</span></a>
+		<h1>Alle Weihnachtsmärkte</h1>
+	</header>
+	<article class="content scrollable header">
+		<div class="center"><progress></progress></div>
+	</article>
+</section>
+
+<!--·································································-->
+
+<script type="text/javascript" defer src="data/data.js"></script>
+<script type="text/javascript" defer src="scripts/index.js"></script>
+
+</body>
+</html>
