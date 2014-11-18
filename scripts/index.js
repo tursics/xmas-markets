@@ -86,10 +86,21 @@ function composeMarketItem( number)
 	var days = getNextOpeningDays( data[ number]);
 	var openingtime = '';
 
+	var workingDate = new Date();
+	workingDate.setDate( workingDate.getDate() - workingDate.getDay());
+	var nowTime = workingDate.getTime();
+
+	workingDate = new Date();
+	workingDate.setDate( workingDate.getDate() + days);
+	var weekday = workingDate.getDay();
+
 	if( 0 == days) {
 		openingtime = 'Heute ' + getOpeningTime( data[ number], days) + ' Uhr';
 	} else if( 1 == days) {
 		openingtime = 'Morgen ' + getOpeningTime( data[ number], days) + ' Uhr';
+	} else if( true) {
+		var weekdays = new Array( "Sonntag", "Montag", "Dienstag", "Mittwoch", "Donnerstag","Freitag","Samstag");
+		openingtime = weekdays[weekday] + ' ' + getOpeningTime( data[ number], days) + ' Uhr';
 	} else {
 		openingtime = 'In ' + days + ' Tagen';
 	}
