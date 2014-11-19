@@ -74,7 +74,14 @@ function getOpeningTime( obj, diffdays)
 
 function sortDataByDate( a, b)
 {
-	return getNextOpeningDays( a) > getNextOpeningDays( b);
+	var daysA = getNextOpeningDays( a);
+	var daysB = getNextOpeningDays( b);
+
+	if( daysA == daysB) {
+		return getOpeningTime( a, daysA) > getOpeningTime( b, daysB);
+	}
+
+	return daysA > daysB;
 }
 
 function composeMarketItem( number)
@@ -87,20 +94,34 @@ function composeMarketItem( number)
 	var openingtime = '';
 
 	var workingDate = new Date();
-	workingDate.setDate( workingDate.getDate() - workingDate.getDay());
+	workingDate.setHours( 0, 0, 0, 0);
 	var nowTime = workingDate.getTime();
+	workingDate.setDate( workingDate.getDate() - (workingDate.getDay() + 6) % 7);
+	var mondayTime = workingDate.getTime();
 
 	workingDate = new Date();
 	workingDate.setDate( workingDate.getDate() + days);
+	var workTime = workingDate.getTime();
 	var weekday = workingDate.getDay();
+	var diffNow = parseInt((workTime - nowTime) / 1000 / 60 / 60 / 24);
+	var diffDays = parseInt((workTime - mondayTime) / 1000 / 60 / 60 / 24);
+	var diffWeeks = parseInt(diffDays / 7);
+	var weekdays = new Array( "Sonntag", "Montag", "Dienstag", "Mittwoch", "Donnerstag","Freitag","Samstag");
 
 	if( 0 == days) {
 		openingtime = 'Heute ' + getOpeningTime( data[ number], days) + ' Uhr';
 	} else if( 1 == days) {
 		openingtime = 'Morgen ' + getOpeningTime( data[ number], days) + ' Uhr';
-	} else if( true) {
-		var weekdays = new Array( "Sonntag", "Montag", "Dienstag", "Mittwoch", "Donnerstag","Freitag","Samstag");
+	} else if( 0 == diffWeeks) {
 		openingtime = weekdays[weekday] + ' ' + getOpeningTime( data[ number], days) + ' Uhr';
+	} else if( 1 == diffWeeks) {
+		if( diffNow < 6) {
+			openingtime = weekdays[weekday] + ' ' + getOpeningTime( data[ number], days) + ' Uhr';
+		} else {
+			openingtime = 'Nächste Woche ' + weekdays[weekday];
+		}
+	} else if( true) {
+		openingtime = weekdays[weekday] + ' in ' + diffWeeks + ' Wochen';
 	} else {
 		openingtime = 'In ' + days + ' Tagen';
 	}
