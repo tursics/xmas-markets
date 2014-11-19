@@ -1,10 +1,13 @@
 var config = this.config || {};
 config.timeout = 400;
 config.readyListAllMarkets = false;
+config.currentMarketId = 0;
 config.startDate = new Date();
 config.startDate.setFullYear( 2014, 10, 17); // month - 1
 config.endDate = new Date();
 config.endDate.setFullYear( 2015, 0, 6); // month - 1
+
+// ·································································
 
 function composeSectionList( content)
 {
@@ -84,13 +87,9 @@ function sortDataByDate( a, b)
 	return daysA > daysB;
 }
 
-function composeMarketItem( number)
+function getNextMarketOpeningTime( obj)
 {
-    if( typeof data[ number] === 'undefined') {
-    	return '';
-    }
-
-	var days = getNextOpeningDays( data[ number]);
+	var days = getNextOpeningDays( obj);
 	var openingtime = '';
 
 	var workingDate = new Date();
@@ -109,14 +108,14 @@ function composeMarketItem( number)
 	var weekdays = new Array( "Sonntag", "Montag", "Dienstag", "Mittwoch", "Donnerstag","Freitag","Samstag");
 
 	if( 0 == days) {
-		openingtime = 'Heute ' + getOpeningTime( data[ number], days) + ' Uhr';
+		openingtime = 'Heute ' + getOpeningTime( obj, days) + ' Uhr';
 	} else if( 1 == days) {
-		openingtime = 'Morgen ' + getOpeningTime( data[ number], days) + ' Uhr';
+		openingtime = 'Morgen ' + getOpeningTime( obj, days) + ' Uhr';
 	} else if( 0 == diffWeeks) {
-		openingtime = weekdays[weekday] + ' ' + getOpeningTime( data[ number], days) + ' Uhr';
+		openingtime = weekdays[weekday] + ' ' + getOpeningTime( obj, days) + ' Uhr';
 	} else if( 1 == diffWeeks) {
 		if( diffNow < 6) {
-			openingtime = weekdays[weekday] + ' ' + getOpeningTime( data[ number], days) + ' Uhr';
+			openingtime = weekdays[weekday] + ' ' + getOpeningTime( obj, days) + ' Uhr';
 		} else {
 			openingtime = 'Nächste Woche ' + weekdays[weekday];
 		}
@@ -126,8 +125,19 @@ function composeMarketItem( number)
 		openingtime = 'In ' + days + ' Tagen';
 	}
 
+	return openingtime;
+}
+
+function composeMarketItem( number)
+{
+    if( typeof data[ number] === 'undefined') {
+    	return '';
+    }
+
 	var market = data[ number];
-	return '<li><p>' + market.name + '</p><p>' + openingtime + '</p></li>';
+	var openingtime = getNextMarketOpeningTime( market);
+
+	return '<li><a href="javascript:callOneMarket(' + market.id + ');"><p>' + market.name + '</p><p>' + openingtime + '</p></a></li>';
 }
 
 function fillListAllMarkets()
@@ -158,3 +168,59 @@ document.querySelector('#btn-allmarkets-back').addEventListener('click', functio
 	document.querySelector('#allmarkets').className = 'right';
 	document.querySelector('[data-position="current"]').className = 'current';
 });
+
+// ·································································
+
+function getObjFromID( id)
+{
+ 	for( var i = 0; i < data.length; ++i) {
+		if( data[i].id == id) {
+			return data[i];
+		}
+	}
+
+	return null;
+}
+
+function fillListOneMarket()
+{
+	var txt = '';
+	var obj = getObjFromID( config.currentMarketId);
+
+	txt += '<section data-type="list"><header>' + obj.name + '</header></section>';
+	txt += '<p>' + getNextMarketOpeningTime( obj) + '</p>';
+	txt += '<p>' + obj.street + '<br>' + obj.zip_city + ' (' + obj.district + ')</p>';
+	txt += '<p><a href="mailto:' + obj.email + '">' + obj.email + '</a></p>';
+	txt += '<p><a href="http://' + obj.web + '">' + obj.web + '</a></p>';
+
+	if( 0 == obj.fee) {
+		txt += '<p>Kein Eintritt</p>';
+	} else {
+		txt += '<p>Achtung: Eventuell ist Eintritt zu bezahlen</p>';
+	}
+
+	txt += '<p>' + obj.kind + '</p>';
+	txt += '<p>' + obj.remarks + '</p>';
+
+	document.querySelector('#onemarket > article').innerHTML = txt;
+}
+
+function callOneMarket( marketId)
+{
+	document.querySelector('#onemarket').className = 'current';
+	document.querySelector('[data-position="current"]').className = 'left';
+
+	var txt = '<div class="center"><progress></progress></div>';
+	document.querySelector('#onemarket > article').innerHTML = txt;
+
+	config.currentMarketId = marketId;
+
+	setTimeout( fillListOneMarket, config.timeout);
+}
+
+document.querySelector('#btn-onemarket-back').addEventListener('click', function() {
+	document.querySelector('#onemarket').className = 'right';
+	document.querySelector('[data-position="current"]').className = 'current';
+});
+
+// ·································································
