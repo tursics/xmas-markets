@@ -160,3 +160,36 @@
     .landscape section[role="region"]#drawer > header:first-child {
       /* Whatever needs to be changed on landscape */
     }
+
+ul.calendar {
+}
+
+ul.calendar li {
+	background:#fde4d0;
+	border:1px solid #f97c17;
+	color:#000000;
+	float:left;
+	height:2em;
+	line-height:1em;
+	padding:0.4em 0.2em 0.2em 0.2em;
+	text-align:center;
+	width:2em;
+}
+
+ul.calendar li.gray {
+	background:#ffffff;
+	color:#d0d0d0;
+}
+
+ul.calendar li.empty {
+	border:1px solid transparent;
+}
+
+ul.calendar li div {
+	color:#f97c17;
+	font-size:0.8em;
+}
+
+ul.calendar li.gray div {
+	color:#fde4d0;
+}

@@ -105,17 +105,17 @@ function getNextMarketOpeningTime( obj)
 	var diffNow = parseInt((workTime - nowTime) / 1000 / 60 / 60 / 24);
 	var diffDays = parseInt((workTime - mondayTime) / 1000 / 60 / 60 / 24);
 	var diffWeeks = parseInt(diffDays / 7);
-	var weekdays = new Array( "Sonntag", "Montag", "Dienstag", "Mittwoch", "Donnerstag","Freitag","Samstag");
+	var weekdays = new Array( "Sonntag", "Montag", "Dienstag", "Mittwoch", "Donnerstag", "Freitag", "Samstag");
 
 	if( 0 == days) {
-		openingtime = 'Heute ' + getOpeningTime( obj, days) + ' Uhr';
+		openingtime = 'Heute von ' + getOpeningTime( obj, days) + ' Uhr';
 	} else if( 1 == days) {
-		openingtime = 'Morgen ' + getOpeningTime( obj, days) + ' Uhr';
+		openingtime = 'Morgen von ' + getOpeningTime( obj, days) + ' Uhr';
 	} else if( 0 == diffWeeks) {
-		openingtime = weekdays[weekday] + ' ' + getOpeningTime( obj, days) + ' Uhr';
+		openingtime = weekdays[weekday] + ' von ' + getOpeningTime( obj, days) + ' Uhr';
 	} else if( 1 == diffWeeks) {
 		if( diffNow < 6) {
-			openingtime = weekdays[weekday] + ' ' + getOpeningTime( obj, days) + ' Uhr';
+			openingtime = weekdays[weekday] + ' von ' + getOpeningTime( obj, days) + ' Uhr';
 		} else {
 			openingtime = 'Nächste Woche ' + weekdays[weekday];
 		}
@@ -137,7 +137,12 @@ function composeMarketItem( number)
 	var market = data[ number];
 	var openingtime = getNextMarketOpeningTime( market);
 
-	return '<li><a href="javascript:callOneMarket(' + market.id + ');"><p>' + market.name + '</p><p>' + openingtime + '</p></a></li>';
+if( 'mail' == market.todo) { return ''; }
+
+	var txt = '<p>' + market.name + '</p><p>' + openingtime + '</p>';
+	var img = '<aside class="pack-begin"><img src="art/' + market.id + '/128.jpg"></aside>';
+
+	return '<li>' + img + '<a href="javascript:callOneMarket(' + market.id + ');">' + txt + '</a></li>';
 }
 
 function fillListAllMarkets()
@@ -182,7 +187,86 @@ function getObjFromID( id)
 	return null;
 }
 
+function composeMarketCalendar( obj)
+{
+	var txt = '';
+
+	txt += '<p><ul class="calendar">';
+
+	var months = new Array( "Jan", "Feb", "Mär", "Apr", "Mai", "Jun", "Jul", "Aug", "Sep", "Okt", "Nov", "Dez");
+	var workingDate = new Date();
+	workingDate.setDate( config.startDate.getDate());
+
+	var weekday = (workingDate.getDay() + 6) % 7;
+	for( var i = 0; i < weekday; ++i) {
+		txt += '<li class="empty"></li>';
+	}
+
+	while( workingDate <= config.endDate) {
+		var style = '';
+		if( 1 == workingDate.getDay()) {
+			style = ' style="clear:both;"';
+		}
+
+		var classStr = '';
+		var daystr = dateToStr( workingDate);
+	   	if(( typeof obj[ daystr] === 'undefined') || ('' == obj[ daystr].trim())) {
+   			classStr = ' class="gray"';
+    	}
+
+		txt += '<li' + classStr + style + '>' + workingDate.getDate() + '<div>' + months[workingDate.getMonth()] + '</div></li>';
+
+		workingDate.setDate( workingDate.getDate() + 1);
+	}
+
+	while( workingDate.getDay() != 1) {
+		txt += '<li class="gray">' + workingDate.getDate() + '<div>' + months[workingDate.getMonth()] + '</div></li>';
+
+		workingDate.setDate( workingDate.getDate() + 1);
+	}
+
+	txt += '</ul></p>';
+	txt += '<div style="clear:both;"></div>';
+
+	return txt;
+}
+
 function fillListOneMarket()
+{
+	var txt = '';
+	var obj = getObjFromID( config.currentMarketId);
+
+	txt += '<div style="margin:-1.5rem -1.5rem -1rem -1.5rem;"><img src="art/' + obj.id + '/1200.jpg" style="width:100%;"></div>';
+
+	txt += '<div style="margin:0 -1.5rem 1rem -1.5rem;padding:1.5rem 1.5rem 0 1.5rem;text-align:center;border-bottom:1px solid #f97c17;background:#fde4d0;">';
+	txt += '<p style="color:#f97c17;">' + obj.name + '</p>';
+	txt += '<p><i class="icon-clock"></i>' + getNextMarketOpeningTime( obj) + ' geöffnet</p>';
+	if( '' != obj.fee) {
+		txt += '<p>' + obj.fee + '</p>';
+	}
+	txt += '</div>';
+
+	txt += '<p>' + obj.remarks + '</p>';
+
+	txt += '<div style="margin:1rem -1.5rem 1rem -1.5rem;padding:0 1.5rem 0 1.5rem;text-align:center;border-top:1px solid #f97c17;border-bottom:1px solid #f97c17;background:#fde4d0;">';
+	txt += '<p><ul>';
+	txt += '<li style="float:left;padding:0 2rem 0 0;"><button><i class="icon-map"></i></button></li>';
+	txt += '<li style="float:left;padding:0 2rem 0 0;"><button><i class="icon-star"></i></button></li>';
+	txt += '<li style="float:left;padding:0 2rem 0 0;"><button>Sharen</button></li>';
+	txt += '<li style="float:left;padding:0 2rem 0 0;"><button>BVG</button></li>';
+	txt += '<li style="clear:both;"></li>';
+	txt += '</ul></p>';
+	txt += '<p>' + obj.street + ', ' + obj.zip_city + ' ' + obj.district + '</p>';
+	txt += '</div>';
+
+	txt += '<p>Öffnungszeiten</p>';
+	txt += composeMarketCalendar( obj);
+	txt += '<p>' + obj.hours + '</p>';
+
+	document.querySelector('#onemarket > article').innerHTML = txt;
+}
+
+function fillListOneMarketDebug()
 {
 	var txt = '';
 	var obj = getObjFromID( config.currentMarketId);
@@ -192,11 +276,12 @@ function fillListOneMarket()
 	txt += '<p>' + obj.street + '<br>' + obj.zip_city + ' (' + obj.district + ')</p>';
 	txt += '<p><a href="mailto:' + obj.email + '">' + obj.email + '</a></p>';
 	txt += '<p><a href="http://' + obj.web + '">' + obj.web + '</a></p>';
+	txt += '<p>ID: ' + obj.id + '</p>';
 
-	if( 0 == obj.fee) {
+	if( '' == obj.fee) {
 		txt += '<p>Kein Eintritt</p>';
 	} else {
-		txt += '<p>Achtung: Eventuell ist Eintritt zu bezahlen</p>';
+		txt += '<p>' + obj.fee + '</p>';
 	}
 
 	txt += '<p>' + obj.kind + '</p>';
@@ -215,7 +300,12 @@ function callOneMarket( marketId)
 
 	config.currentMarketId = marketId;
 
-	setTimeout( fillListOneMarket, config.timeout);
+	var obj = getObjFromID( marketId);
+	if( 'ready' == obj.todo) {
+		setTimeout( fillListOneMarket, config.timeout);
+	} else {
+		setTimeout( fillListOneMarketDebug, config.timeout);
+	}
 }
 
 document.querySelector('#btn-onemarket-back').addEventListener('click', function() {
