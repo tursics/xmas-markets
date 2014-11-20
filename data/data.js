@@ -7,6 +7,7 @@ var data = [
     "name":"Weihnachtsmarkt rund um die Grunewaldkirche",
     "street":"Bismarckallee 28 B",
     "zip_city":"14193 Berlin",
+    "hours":"11:00-19:00",
     "20141117":"",
     "20141118":"",
     "20141119":"",
@@ -66,9 +67,12 @@ var data = [
     "fax":"89 73 33 55",
     "email":"h.wecke@grunewaldgemeinde.de",
     "web":"www.grunewaldgemeinde.de",
-    "fee":0,
+    "fee":"",
     "kind":"gemeinnützig",
-    "remarks":""
+    "remarks":"",
+    "todo":"",
+    "bbq":"",
+    "winepunch":""
   },
   {
     "id":12,
@@ -76,6 +80,7 @@ var data = [
     "name":"Dänischer Weihnachtsmarkt",
     "street":"Brienner Str. 12",
     "zip_city":"10713 Berlin",
+    "hours":"Sa 12:00-18:00<br>So 12:00-17:00",
     "20141117":"",
     "20141118":"",
     "20141119":"",
@@ -135,9 +140,12 @@ var data = [
     "fax":"",
     "email":"",
     "web":"www.christianskirken.de",
-    "fee":0,
+    "fee":"",
     "kind":"gemeinnützig",
-    "remarks":""
+    "remarks":"",
+    "todo":"",
+    "bbq":"",
+    "winepunch":""
   },
   {
     "id":18,
@@ -145,6 +153,7 @@ var data = [
     "name":"32. Weihnachtsmarkt in der Lindenkirche",
     "street":"Homburger Str. 48",
     "zip_city":"14197 Berlin",
+    "hours":"12:00-18:00",
     "20141117":"",
     "20141118":"",
     "20141119":"",
@@ -204,9 +213,12 @@ var data = [
     "fax":"82 79 22 41",
     "email":"buero@lindenkirche.de",
     "web":"www.lindenkirche.de",
-    "fee":0,
+    "fee":"",
     "kind":"gemeinnützig",
-    "remarks":""
+    "remarks":"",
+    "todo":"",
+    "bbq":"",
+    "winepunch":""
   },
   {
     "id":16,
@@ -214,6 +226,7 @@ var data = [
     "name":"Nikolausmarkt der Beschäftigungs- und Bildungsträger",
     "street":"im Rathaus Charlottenburg, Otto-Suhr-Allee 100",
     "zip_city":"10585 Berlin",
+    "hours":"11:00-14:30",
     "20141117":"",
     "20141118":"",
     "20141119":"",
@@ -273,9 +286,12 @@ var data = [
     "fax":"",
     "email":"cw801003@charlottenburg-wilmersdorf.de",
     "web":"",
-    "fee":0,
+    "fee":"",
     "kind":"gemeinnützig",
-    "remarks":""
+    "remarks":"",
+    "todo":"",
+    "bbq":"",
+    "winepunch":""
   },
   {
     "id":10,
@@ -283,6 +299,7 @@ var data = [
     "name":"Schwedischer Weihnachtsbasar",
     "street":"Landhausstr. 26",
     "zip_city":"10717 Berlin",
+    "hours":"Sa 10:00-19:00<br>So 12:00-18:00",
     "20141117":"",
     "20141118":"",
     "20141119":"",
@@ -342,9 +359,12 @@ var data = [
     "fax":"86 49 59 99",
     "email":"berlin@svenskakyrkan.se",
     "web":"www.svenskakyrkan.se",
-    "fee":0,
+    "fee":"",
     "kind":"gemeinnützig",
-    "remarks":"Die Lichterkönigin Lucia kommt an beiden Tagen um 16:00 Uhr"
+    "remarks":"Die Lichterkönigin Lucia kommt an beiden Tagen um 16:00 Uhr",
+    "todo":"",
+    "bbq":"",
+    "winepunch":""
   },
   {
     "id":6,
@@ -352,6 +372,7 @@ var data = [
     "name":"Weihnachten in Westend (teilgewerblich)",
     "street":"Preußenallee",
     "zip_city":"14052 Berlin",
+    "hours":"11:00-20:00",
     "20141117":"",
     "20141118":"",
     "20141119":"",
@@ -411,9 +432,12 @@ var data = [
     "fax":"",
     "email":"kontakt@family-and-friends-eV.de",
     "web":"www.family-and-friends-eV.de",
-    "fee":0,
+    "fee":"",
     "kind":"teilgewerblich",
-    "remarks":"das Rüsseltier ist an beiden Tagen unterwegs, Greifvogelschau und Weihnachtskrippe"
+    "remarks":"das Rüsseltier ist an beiden Tagen unterwegs, Greifvogelschau und Weihnachtskrippe",
+    "todo":"",
+    "bbq":"",
+    "winepunch":""
   },
   {
     "id":20,
@@ -421,6 +445,7 @@ var data = [
     "name":"Christmas Fair / A very British Christmas",
     "street":"Preußenallee 17-19",
     "zip_city":"14052 Berlin",
+    "hours":"15:00-18:00",
     "20141117":"",
     "20141118":"",
     "20141119":"",
@@ -480,9 +505,12 @@ var data = [
     "fax":"",
     "email":"office@stgeorges.de",
     "web":"www.stgeorges.de",
-    "fee":0,
+    "fee":"",
     "kind":"gemeinnützig",
-    "remarks":""
+    "remarks":"",
+    "todo":"",
+    "bbq":"",
+    "winepunch":""
   },
   {
     "id":22,
@@ -490,6 +518,7 @@ var data = [
     "name":"Kunsthandwerklicher Weihnachtsmarkt vor dem Bröhanmuseum",
     "street":"Schloßstr. 1-1 A",
     "zip_city":"14059 Berlin",
+    "hours":"12:00-18:00",
     "20141117":"",
     "20141118":"",
     "20141119":"",
@@ -549,9 +578,12 @@ var data = [
     "fax":"30 82 44 98",
     "email":"info@klausenerplatz.de",
     "web":"www.klausenerplatz.de",
-    "fee":0,
+    "fee":"",
     "kind":"gemeinnützig",
-    "remarks":""
+    "remarks":"",
+    "todo":"",
+    "bbq":"",
+    "winepunch":""
   },
   {
     "id":2,
@@ -559,6 +591,7 @@ var data = [
     "name":"Weihnachtsmarkt vor dem Schloss Charlottenburg",
     "street":"Spandauer Damm zwischen Luisenplatz und Klausenerplatz",
     "zip_city":"14059 Berlin",
+    "hours":"Mo-Do 14:00-22:00<br>Fr-So 12:00-22:00<br>25./26.12. 12:00-20:00",
     "20141117":"",
     "20141118":"",
     "20141119":"",
@@ -618,9 +651,12 @@ var data = [
     "fax":"261 20 22",
     "email":"info@werbeteam-berlin.de",
     "web":"www.werbeteam-berlin.de",
-    "fee":0,
+    "fee":"",
     "kind":"gewerblich",
-    "remarks":""
+    "remarks":"",
+    "todo":"",
+    "bbq":"",
+    "winepunch":""
   },
   {
     "id":8,
@@ -628,6 +664,7 @@ var data = [
     "name":"Weihnachtsmarkt Berlin-Grunewald des Johannischen Sozialwerks e. V.",
     "street":"St.-Michaels-Heim, Bismarckallee 23",
     "zip_city":"14193 Berlin",
+    "hours":"Fr 16:00-20:00<br>Sa 14:00-20:00<br>So 12:00-18:00",
     "20141117":"",
     "20141118":"",
     "20141119":"",
@@ -687,9 +724,12 @@ var data = [
     "fax":"89 68 81 85",
     "email":"",
     "web":"www.johannisches-sozialwerk.de",
-    "fee":0,
+    "fee":"",
     "kind":"gemeinnützig",
-    "remarks":""
+    "remarks":"",
+    "todo":"",
+    "bbq":"",
+    "winepunch":""
   },
   {
     "id":4,
@@ -697,6 +737,7 @@ var data = [
     "name":"Weihnachtsmarkt in der Fußgängerzone Wilmersdorfer Straße",
     "street":"Wilmersdorfer Straße",
     "zip_city":"10627 Berlin",
+    "hours":"Mo-Sa 11:00-21:00<br>So 12:00-20:00<br>24.12. 10:00-14:00",
     "20141117":"",
     "20141118":"",
     "20141119":"",
@@ -748,7 +789,7 @@ var data = [
     "20150104":"",
     "20150105":"",
     "20150106":"",
-    "organizer":"A. Lauenburger",
+    "organizer":"Lauenburger, A.",
     "org_address":"",
     "org_contact":"",
     "phone":"0163/495 77 62",
@@ -756,9 +797,12 @@ var data = [
     "fax":"",
     "email":"lauenburger-pony@gmx.de",
     "web":"www.wilmersdorfer-arcaden.de",
-    "fee":0,
+    "fee":"",
     "kind":"gewerblich",
-    "remarks":""
+    "remarks":"",
+    "todo":"",
+    "bbq":"",
+    "winepunch":""
   },
   {
     "id":172,
@@ -766,6 +810,7 @@ var data = [
     "name":"Weihnachten für Sammler - oldthing Adventsbörse im Kaufhaus",
     "street":"Galeria Kaufhof Ostbahnhof, 4. Etage, Koppenstr. 8",
     "zip_city":"10243 Berlin",
+    "hours":"Sa 11:00-20:00<br>So 13:00-18:00",
     "20141117":"",
     "20141118":"",
     "20141119":"",
@@ -825,9 +870,12 @@ var data = [
     "fax":"",
     "email":"info@oldthing.de",
     "web":"www.oldthing.de",
-    "fee":2,
+    "fee":"Eintritt 2 €, Kinder und ab 17:00 frei",
     "kind":"gewerblich",
-    "remarks":"Eintritt 2 €, Kinder und ab 17:00 frei"
+    "remarks":"",
+    "todo":"",
+    "bbq":"",
+    "winepunch":""
   },
   {
     "id":30,
@@ -835,6 +883,7 @@ var data = [
     "name":"KiezWeihnacht an der Samariterkirche",
     "street":"Samariterplatz/Samariterstr. 14",
     "zip_city":"10247 Berlin",
+    "hours":"13:00-20:00",
     "20141117":"",
     "20141118":"",
     "20141119":"",
@@ -894,9 +943,12 @@ var data = [
     "fax":"",
     "email":"info@die-friedrichshainer.de",
     "web":"www.kiezweihnacht.de",
-    "fee":0,
+    "fee":"",
     "kind":"gewerblich",
-    "remarks":""
+    "remarks":"",
+    "todo":"",
+    "bbq":"",
+    "winepunch":""
   },
   {
     "id":24,
@@ -904,6 +956,7 @@ var data = [
     "name":"Traditioneller Weihnachtsbasar im Finnland-Zentrum",
     "street":"Schleiermacherstr. 24a",
     "zip_city":"10961 Berlin",
+    "hours":"12:00-18:00",
     "20141117":"",
     "20141118":"",
     "20141119":"",
@@ -963,9 +1016,12 @@ var data = [
     "fax":"",
     "email":"info@finnlandzentrum.de",
     "web":"www.finnlandzentrum.de",
-    "fee":0,
+    "fee":"",
     "kind":"gemeinnützig",
-    "remarks":""
+    "remarks":"Flammlachs, Lachssuppe, weihnachtliche Leckereien, Cafe & Tombola, finnische Süßigkeiten und Lebensmittel, Handarbeiten, Geschenkartikel, Glühwein etc. Der Weihnachtsmann besucht uns an beiden Tagen um 14:00 und 16:00 Uhr. Herzlich willkommen, die weihnachtliche Stimmung im Finnland-Zentrum zu genießen!",
+    "todo":"mail",
+    "bbq":"",
+    "winepunch":""
   },
   {
     "id":26,
@@ -973,6 +1029,7 @@ var data = [
     "name":"Adventsbasar Heilig-Kreuz-Kirche",
     "street":"Zossener Str. 65",
     "zip_city":"10961 Berlin",
+    "hours":"15:00-18:00",
     "20141117":"",
     "20141118":"",
     "20141119":"",
@@ -1032,9 +1089,12 @@ var data = [
     "fax":"",
     "email":"m.schmieder@heiligkreuzpassion.de",
     "web":"www.heiligkreuzpassion.de",
-    "fee":0,
+    "fee":"",
     "kind":"gemeinnützig",
-    "remarks":""
+    "remarks":"",
+    "todo":"",
+    "bbq":"",
+    "winepunch":""
   },
   {
     "id":34,
@@ -1042,6 +1102,7 @@ var data = [
     "name":"Mittelalterlicher Weihnachtsmarkt Karlshorst",
     "street":"Ehrenfelsstr. 7",
     "zip_city":"10318 Berlin",
+    "hours":"Sa 13:00-22:00<br>So 13:00-18:00",
     "20141117":"",
     "20141118":"",
     "20141119":"",
@@ -1101,9 +1162,12 @@ var data = [
     "fax":"89 62 35 47",
     "email":"ikarus@sozdia.de",
     "web":"www.ikarus-firmaris.de",
-    "fee":0,
+    "fee":"",
     "kind":"gemeinnützig",
-    "remarks":""
+    "remarks":"",
+    "todo":"",
+    "bbq":"",
+    "winepunch":""
   },
   {
     "id":32,
@@ -1111,6 +1175,7 @@ var data = [
     "name":"21. Lichtenberger Lichtermarkt rund ums Rathaus Lichtenberg",
     "street":"Möllendorffstr. 6",
     "zip_city":"10367 Berlin",
+    "hours":"13:00-19:00",
     "20141117":"",
     "20141118":"",
     "20141119":"",
@@ -1170,9 +1235,12 @@ var data = [
     "fax":"",
     "email":"jacqueline.raepricht@lichtenberg.berlin.de",
     "web":"",
-    "fee":0,
+    "fee":"",
     "kind":"gemeinnützig",
-    "remarks":""
+    "remarks":"",
+    "todo":"",
+    "bbq":"",
+    "winepunch":""
   },
   {
     "id":44,
@@ -1180,6 +1248,7 @@ var data = [
     "name":"Interkultureller Weihnachtsmarkt",
     "street":"Eiche-Center, Wittenberger Str. 67",
     "zip_city":"12689 Berlin",
+    "hours":"14:00-18:00",
     "20141117":"",
     "20141118":"",
     "20141119":"",
@@ -1239,9 +1308,12 @@ var data = [
     "fax":"43 20 88 74",
     "email":"vision-ev@gmx.de",
     "web":"",
-    "fee":0,
+    "fee":"",
     "kind":"gemeinnützig",
-    "remarks":""
+    "remarks":"",
+    "todo":"",
+    "bbq":"",
+    "winepunch":""
   },
   {
     "id":42,
@@ -1249,6 +1321,7 @@ var data = [
     "name":"Weihnachtsmarkt \"Helle Mitte\"",
     "street":"Helle Mitte vor dem Rathaus",
     "zip_city":"12627 Berlin",
+    "hours":"11:00-21:00",
     "20141117":"",
     "20141118":"",
     "20141119":"",
@@ -1300,7 +1373,7 @@ var data = [
     "20150104":"",
     "20150105":"",
     "20150106":"",
-    "organizer":"Thilo-Harry Wollenschlaeger",
+    "organizer":"Wollenschlaeger, Thilo-Harry",
     "org_address":"",
     "org_contact":"",
     "phone":"0163/400 05 00",
@@ -1308,9 +1381,12 @@ var data = [
     "fax":"03322/423 41 39",
     "email":"info@wollenschlaeger-berlin.de",
     "web":"www.wollenschlaeger-berlin.de",
-    "fee":0,
+    "fee":"",
     "kind":"gewerblich",
-    "remarks":""
+    "remarks":"",
+    "todo":"",
+    "bbq":"",
+    "winepunch":""
   },
   {
     "id":40,
@@ -1318,6 +1394,7 @@ var data = [
     "name":"Weihnachtsmarkt im Spree Center Berlin-Hellersdorf",
     "street":"Hellersdorfer Str. 77-83",
     "zip_city":"12619 Berlin",
+    "hours":"Mo-Fr 09:00-19:30<br>Sa 09:00-18:00<br>07.12./21.12. 13:00-18:00<br>24.12. 09:00-14:00",
     "20141117":"",
     "20141118":"",
     "20141119":"",
@@ -1377,9 +1454,12 @@ var data = [
     "fax":"56 88 08 88",
     "email":"post@spree-center.de",
     "web":"www.spree-center.de",
-    "fee":0,
+    "fee":"",
     "kind":"gewerblich",
-    "remarks":""
+    "remarks":"",
+    "todo":"mail",
+    "bbq":"",
+    "winepunch":""
   },
   {
     "id":38,
@@ -1387,6 +1467,7 @@ var data = [
     "name":"Weihnachtsmarkt im EASTGATE Berlin",
     "street":"Marzahner Promenade 1 A",
     "zip_city":"12679 Berlin",
+    "hours":"Mo-Do 10:00-20:00<br>Fr-Sa 10:00-21:00<br>07./21.12. 13:00-18:00<br>24.12. 10:00-14:00",
     "20141117":"",
     "20141118":"",
     "20141119":"",
@@ -1446,9 +1527,12 @@ var data = [
     "fax":"911 45 91 11",
     "email":"info@eastgate-berlin.de",
     "web":"www.eastgate-berlin.de",
-    "fee":0,
+    "fee":"",
     "kind":"gewerblich",
-    "remarks":""
+    "remarks":"Es duftet im EASTGATE nach Weihnachten – nach gebrannten Mandeln, Tannengrün, Schokoladenäpfeln, Pfefferkuchen, \"Armeen\" von Nussknackern marschieren auf, Berge aus rotbäckigen Äpfeln, Orangen und Mandarinen locken mit ihren verführerischen Düften. Die Weihnachtsbäcker zaubern mit lieblichsten Aromen: Nelken, Anis oder Kardamom lassen Weihnachten schon ganz nah sein. Freuen Sie sich auf eine einzigartige Erlebniswelt, die Ihre Herzen weit aufschließt. Und auf der großen Weihnachtsbühne wechseln sich Sänger, Musiker und Geschichtenerzähler täglich ab, um die Besucher des EASTGATE mit einem begeisternden Weihnachtsprogramm zu erfreuen.",
+    "todo":"mail",
+    "bbq":"",
+    "winepunch":""
   },
   {
     "id":36,
@@ -1456,6 +1540,7 @@ var data = [
     "name":"Weihnachtsmarkt im Marktplatz Center Hellersdorf",
     "street":"Stendaler Str. 24",
     "zip_city":"12627 Berlin",
+    "hours":"Mo-Sa 10:00-20:00<br>07./21.12. 13:00-18:00<br>24.12. 09:00-14:00",
     "20141117":"",
     "20141118":"",
     "20141119":"",
@@ -1514,10 +1599,13 @@ var data = [
     "phone2":"",
     "fax":"992 88 42 50",
     "email":"",
-    "web":"",
-    "fee":0,
+    "web":"www.marktplatzcenter.com",
+    "fee":"",
     "kind":"gewerblich",
-    "remarks":""
+    "remarks":"Und wer „erst eins, dann zwei, dann drei, dann vier“ nicht mehr abwarten kann, kommt ins Marktplatz Center Hellersdorf und stimmt sich gemeinsam mit uns auf die Weihnachtszeit ein. Das Parken an den Verkaufsoffenen Sonntagen ist kostenlos. Außerdem gibt es unseren beliebten Einpackservice, der jedes Geschenk in besonderem Glanz erstrahlen lässt. Damit sie ganz unbeschwert einkaufen können, haben wir wie jedes Jahr unseren kostenfreien Garderobenservice für Sie. ",
+    "todo":"mail",
+    "bbq":"",
+    "winepunch":""
   },
   {
     "id":54,
@@ -1525,6 +1613,7 @@ var data = [
     "name":"Fabelhafte Weihnachten im Sony Center am Potsdamer Platz",
     "street":"Bellevuestr. 5",
     "zip_city":"10785 Berlin",
+    "hours":"Do, Fr, Sa 14:00-22:00",
     "20141117":"",
     "20141118":"",
     "20141119":"",
@@ -1584,9 +1673,12 @@ var data = [
     "fax":"25 75 16 40",
     "email":"event.berlin@forum-event.de",
     "web":"www.sonycenter.de",
-    "fee":0,
+    "fee":"",
     "kind":"gewerblich",
-    "remarks":"Wunderschöne Lichtkunst, fabelhafte Wesen und tägliche Live-Shows mit einer zauberhaften Fee verwandeln das Sony Center in einen magischen Ort"
+    "remarks":"Abseits des alltäglichen Weihnachtstrubels gibt es zum Jahresende im Sony Center am Potsdamer Platz in diesem Jahr Neues zu erleben. Ein bezauberndes Fabelwesen-Ensemble wird nicht nur Kinderaugen zum Leuchten bringen.   Die Zwillingselfen Klara und Kasia, die kleinste Elfe Laura sowie ihr Beschützer Arion fügen sich mit ihrem funkelnden Antlitz perfekt in das in Licht getauchte Forum ein. Ein weiteres Highlight wird die tägliche Tanz-Show der geheimnisvollen Elfe Stella sein. Zu jeder vollen Stunde wird sie das Publikum mit ihrer Anmut  verzaubern und das Sony Center glanzvoll erstrahlen lassen.",
+    "todo":"mail",
+    "bbq":"",
+    "winepunch":""
   },
   {
     "id":50,
@@ -1594,6 +1686,7 @@ var data = [
     "name":"Wintertraum am ALEXA",
     "street":"Dircksenstraße zwischen Voltairestraße und Schicklerstraße",
     "zip_city":"10179 Berlin",
+    "hours":"Mo-Fr 13:00-22:00<br>Sa-So 12:00-22:00",
     "20141117":"",
     "20141118":"",
     "20141119":"",
@@ -1653,9 +1746,12 @@ var data = [
     "fax":"04408/80 63 74",
     "email":"blume-service@t-online.de",
     "web":"www.blume-service.de",
-    "fee":0,
+    "fee":"",
     "kind":"gewerblich",
-    "remarks":""
+    "remarks":"",
+    "todo":"-",
+    "bbq":"",
+    "winepunch":""
   },
   {
     "id":52,
@@ -1663,6 +1759,7 @@ var data = [
     "name":"WeihnachtsZauber Gendarmenmarkt",
     "street":"Gendarmenmarkt",
     "zip_city":"10117 Berlin",
+    "hours":"11:00-22:00<br>24.12. 11:00-18:00<br>25./26.12. 11:00-22:00<br>31.12. 11:00-18:00",
     "20141117":"",
     "20141118":"",
     "20141119":"",
@@ -1722,9 +1819,12 @@ var data = [
     "fax":"20 91 26 33",
     "email":"info@weihnachtsmarkt-berlin.de",
     "web":"www.weihnachtszauber-berlin.de",
-    "fee":12,
+    "fee":"Eintritt 1 €, Mo-Fr 11:00-14:00 Eintritt frei (außer am 24.12., 25.12., 26.12., 31.12.), Silvesterfeier 19:00-01:00, Eintritt 12 €",
     "kind":"gewerblich",
-    "remarks":"Eintritt 1 €,  Mo-Fr  11:00-14:00 Eintritt frei (außer am 24.12., 25.12., 26.12., 31.12.), Silvesterfeier 19:00-01:00, Eintritt 12 €"
+    "remarks":"",
+    "todo":"-",
+    "bbq":"",
+    "winepunch":""
   },
   {
     "id":48,
@@ -1732,6 +1832,7 @@ var data = [
     "name":"7. Berliner Weihnachtszeit vor dem Roten Rathaus",
     "street":"Rathausstr. 15",
     "zip_city":"10178 Berlin",
+    "hours":"Mo-Fr 12:00-22:00<br>Sa-So 11:00-22:00<br>25./26.12. 11:00-21:00",
     "20141117":"",
     "20141118":"",
     "20141119":"",
@@ -1791,9 +1892,12 @@ var data = [
     "fax":"",
     "email":"info@laubinger.de",
     "web":"www.berlinerweihnachtszeit.de",
-    "fee":0,
+    "fee":"",
     "kind":"gewerblich",
-    "remarks":""
+    "remarks":"",
+    "todo":"",
+    "bbq":"",
+    "winepunch":""
   },
   {
     "id":46,
@@ -1801,6 +1905,7 @@ var data = [
     "name":"Nostalgischer Weihnachtsmarkt am Schlossplatz",
     "street":"Schlossplatz 1",
     "zip_city":"10178 Berlin",
+    "hours":"Mo-Do 12:00-21:30<br>Fr-Sa 11:00-22:30<br>So 11:00-21:30<br>25./26.12. 11:30-21:00",
     "20141117":"",
     "20141118":"",
     "20141119":"",
@@ -1860,9 +1965,12 @@ var data = [
     "fax":"",
     "email":"info@berliner-weihnacht.de",
     "web":"www.joseph-nieke.de",
-    "fee":0,
+    "fee":"",
     "kind":"gewerblich",
-    "remarks":""
+    "remarks":"",
+    "todo":"-",
+    "bbq":"",
+    "winepunch":""
   },
   {
     "id":64,
@@ -1870,6 +1978,7 @@ var data = [
     "name":"19. Berliner Umwelt- und Weihnachtsmarkt 2014",
     "street":"Sophienstraße in Mitte",
     "zip_city":"10178 Berlin",
+    "hours":"Sa 12:00-20:00<br>So 11:00-19:00",
     "20141117":"",
     "20141118":"",
     "20141119":"",
@@ -1929,9 +2038,12 @@ var data = [
     "fax":"32 51 98 53",
     "email":"post@weihnachtsmarkt-sophienstrasse.de",
     "web":"www.weihnachtsmarkt-sophienstrasse.de",
-    "fee":0,
+    "fee":"",
     "kind":"gewerblich",
-    "remarks":""
+    "remarks":"",
+    "todo":"",
+    "bbq":"",
+    "winepunch":""
   },
   {
     "id":56,
@@ -1939,6 +2051,7 @@ var data = [
     "name":"Adventsbasar",
     "street":"vor und in der Heilandskirche Moabit, Thusnelda-Allee 1",
     "zip_city":"10555 Berlin",
+    "hours":"10:00-15:00",
     "20141117":"",
     "20141118":"",
     "20141119":"",
@@ -1998,9 +2111,12 @@ var data = [
     "fax":"30 30 69 88 - 2",
     "email":"thusnelda1@kgmoabit-west.de",
     "web":"www.kgmoabit-west.de",
-    "fee":0,
+    "fee":"",
     "kind":"gemeinnützig",
-    "remarks":""
+    "remarks":"",
+    "todo":"",
+    "bbq":"",
+    "winepunch":""
   },
   {
     "id":66,
@@ -2008,6 +2124,7 @@ var data = [
     "name":"Weihnachtsmarkt am Hauptbahnhof",
     "street":"Washingtonplatz",
     "zip_city":"10557 Berlin",
+    "hours":"14:00-22:00",
     "20141117":"",
     "20141118":"",
     "20141119":"",
@@ -2067,9 +2184,12 @@ var data = [
     "fax":"28 48 78 31",
     "email":"info@acksteinerevents.de",
     "web":"www.acksteinerevents.de",
-    "fee":0,
+    "fee":"",
     "kind":"gewerblich",
-    "remarks":"Chöre mit nationaler und internationaler Weihnachtsmusik: täglich 18:00 und 19:00 Uhr, an den Advents-Sonntagen auch 16:00 und 17:00 Uhr"
+    "remarks":"Chöre mit nationaler und internationaler Weihnachtsmusik: täglich 18:00 und 19:00 Uhr, an den Advents-Sonntagen auch 16:00 und 17:00 Uhr",
+    "todo":"",
+    "bbq":"",
+    "winepunch":""
   },
   {
     "id":70,
@@ -2077,6 +2197,7 @@ var data = [
     "name":"Nordische Märchenweihnacht - Weihnachtsmarkt auf dem Gutshof des Schlosses Britz",
     "street":"Alt-Britz 73",
     "zip_city":"12359 Berlin",
+    "hours":"Fr 14:00-21:00<br>Sa 11:00-21:00<br>So 11:00-21:00",
     "20141117":"",
     "20141118":"",
     "20141119":"",
@@ -2136,9 +2257,12 @@ var data = [
     "fax":"609 79 23 39",
     "email":"info@schlossbritz.de",
     "web":"www.schlossbritz.de",
-    "fee":3,
+    "fee":"Eintritt 3 €, ermäßigt 2 €, Kinder unter 6 Jahren und Anwohner frei",
     "kind":"gewerblich",
-    "remarks":"Eintritt 3 €, ermäßigt 2 €, Kinder unter 6 Jahren und Anwohner frei, www.cocolorus-diaboli.de"
+    "remarks":"www.cocolorus-diaboli.de",
+    "todo":"",
+    "bbq":"",
+    "winepunch":""
   },
   {
     "id":74,
@@ -2146,6 +2270,7 @@ var data = [
     "name":"Adventsmarkt an der Britzer Dorfkirche ",
     "street":"Backbergstr. 38 ",
     "zip_city":"12359 Berlin",
+    "hours":"11:00-18:00",
     "20141117":"",
     "20141118":"",
     "20141119":"",
@@ -2205,9 +2330,12 @@ var data = [
     "fax":"63 41 39 00",
     "email":"dorfkirchebritz@t-online.de",
     "web":"www.dorfkirchebritz.de",
-    "fee":0,
+    "fee":"",
     "kind":"gemeinnützig",
-    "remarks":""
+    "remarks":"",
+    "todo":"",
+    "bbq":"",
+    "winepunch":""
   },
   {
     "id":78,
@@ -2215,6 +2343,7 @@ var data = [
     "name":"Weihnachten im Körnerpark",
     "street":"Körnerpark",
     "zip_city":"12051 Berlin",
+    "hours":"14:00-18:00",
     "20141117":"",
     "20141118":"",
     "20141119":"",
@@ -2274,9 +2403,12 @@ var data = [
     "fax":"629 88 79 10",
     "email":"team@qm-koernerpark.de",
     "web":"www.qm-koernerpark.de",
-    "fee":0,
+    "fee":"",
     "kind":"gemeinnützig",
-    "remarks":""
+    "remarks":"",
+    "todo":"",
+    "bbq":"",
+    "winepunch":""
   },
   {
     "id":72,
@@ -2284,6 +2416,7 @@ var data = [
     "name":"Adventsbasar in Neu-Buckow",
     "street":"Marienfelder Chaussee 66-72",
     "zip_city":"12349 Berlin",
+    "hours":"13:00-18:00",
     "20141117":"",
     "20141118":"",
     "20141119":"",
@@ -2343,9 +2476,12 @@ var data = [
     "fax":"",
     "email":"buero@neu-buckow.de",
     "web":"",
-    "fee":0,
+    "fee":"",
     "kind":"gemeinnützig",
-    "remarks":""
+    "remarks":"",
+    "todo":"",
+    "bbq":"",
+    "winepunch":""
   },
   {
     "id":76,
@@ -2353,6 +2489,7 @@ var data = [
     "name":"Alt-Rixdorfer Weihnachtsmarkt",
     "street":"Richardplatz",
     "zip_city":"12055 Berlin",
+    "hours":"Fr 17:00-21:00<br>Sa 14:00-21:00<br>So 14:00-20:00",
     "20141117":"",
     "20141118":"",
     "20141119":"",
@@ -2412,9 +2549,12 @@ var data = [
     "fax":"902 39 34 70",
     "email":"",
     "web":"www.berlin.de/ba-neukoelln/org/arw/arw.index.html",
-    "fee":0,
+    "fee":"",
     "kind":"gemeinnützig",
-    "remarks":""
+    "remarks":"",
+    "todo":"",
+    "bbq":"",
+    "winepunch":""
   },
   {
     "id":90,
@@ -2422,6 +2562,7 @@ var data = [
     "name":"Nikolausmarkt auf dem Kinderbauernhof Pinkepanke",
     "street":"Am Bürgerpark 15-18, S-Bhf. Wollankstraße ",
     "zip_city":"13156 Berlin",
+    "hours":"14:00-18:00",
     "20141117":"",
     "20141118":"",
     "20141119":"",
@@ -2475,15 +2616,18 @@ var data = [
     "20150106":"",
     "organizer":"",
     "org_address":"",
-    "org_contact":"Frau Rose",
+    "org_contact":"Rose",
     "phone":"0177/464 16 75",
     "phone2":"",
     "fax":"",
     "email":"",
     "web":"",
-    "fee":0,
+    "fee":"",
     "kind":"gemeinnützig",
-    "remarks":""
+    "remarks":"",
+    "todo":"",
+    "bbq":"",
+    "winepunch":""
   },
   {
     "id":80,
@@ -2491,6 +2635,7 @@ var data = [
     "name":"Weihnachtsmarkt Schönhauser Allee Arcaden",
     "street":"Schönhauser Allee 78-80",
     "zip_city":"10439 Berlin",
+    "hours":"Mo-Sa 10:00-21:00<br>07./21.12. 13:00-18:00<br>24.12. 10:00-14:00",
     "20141117":"",
     "20141118":"",
     "20141119":"",
@@ -2548,11 +2693,14 @@ var data = [
     "phone":"44 71 17 11",
     "phone2":"",
     "fax":"",
-    "email":"",
+    "email":"mfi.berlin@mfi.eu",
     "web":"www.schoenhauser-allee-arcaden.de",
-    "fee":0,
+    "fee":"",
     "kind":"gewerblich",
-    "remarks":""
+    "remarks":"",
+    "todo":"mail",
+    "bbq":"",
+    "winepunch":""
   },
   {
     "id":88,
@@ -2560,6 +2708,7 @@ var data = [
     "name":"Adventsökomarkt und Ökomarkt der GRÜNEN LIGA am Kollwitzplatz",
     "street":"Wörther Straße / Kollwitz- bis Knaackstraße",
     "zip_city":"10405 Berlin",
+    "hours":"12:00-19:00",
     "20141117":"",
     "20141118":"",
     "20141119":"",
@@ -2619,9 +2768,12 @@ var data = [
     "fax":"44 33 91 33",
     "email":"oekomarkt.kollwitzplatz@grueneliga.de",
     "web":"www.grueneliga-berlin.de",
-    "fee":0,
+    "fee":"",
     "kind":"gewerblich",
-    "remarks":""
+    "remarks":"",
+    "todo":"",
+    "bbq":"",
+    "winepunch":""
   },
   {
     "id":94,
@@ -2629,6 +2781,7 @@ var data = [
     "name":"Weihnachtsmarkt in den Hallen Am Borsigturm",
     "street":"Am Borsigturm 2, Einkaufscenter",
     "zip_city":"13507 Berlin ",
+    "hours":"Mo-Sa 10:00-20:00<br>07./21.12. 13:00-18:00<br>24.12. 10:00-14:00",
     "20141117":"",
     "20141118":"",
     "20141119":"",
@@ -2688,16 +2841,20 @@ var data = [
     "fax":"",
     "email":"info@hallenamborsigturm.de",
     "web":"www.hallenamborsigturm.de",
-    "fee":0,
+    "fee":"",
     "kind":"gewerblich",
-    "remarks":""
+    "remarks":"",
+    "todo":"mail",
+    "bbq":"",
+    "winepunch":""
   },
   {
     "id":92,
     "district":"Reinickendorf",
-    "name":"Weihnachtsmarkt im EKZ \"Der Clou\" - Weihnachtsaktion im Einkaufszentrum \"Der Clou\"",
+    "name":"Weihnachtsaktion und Himmelsbäckerei",
     "street":"am Kurt-Schumacher-Platz",
     "zip_city":"13405 Berlin",
+    "hours":"Mo-Sa 10:00-20:00<br>07./21.12. 13:00-18:00<br>24.12. 10:00-14:00                    ",
     "20141117":"10:00-20:00",
     "20141118":"10:00-20:00",
     "20141119":"10:00-20:00",
@@ -2757,9 +2914,12 @@ var data = [
     "fax":"495 27 63",
     "email":"info@derclouberlin.de",
     "web":"www.derclouberlin.de",
-    "fee":0,
+    "fee":"",
     "kind":"gewerblich",
-    "remarks":"\"Himmelsbäckerei\" für Kinder 01.12. - 19.12. jeweils 10:00, 11:00, 16:00 und 17:00 nach vorheriger Anmeldung im Büro des Center-Managements"
+    "remarks":"<p>Alle Jahre wieder, weihnachtet es auch im Einkaufszentrum „Der Clou“ am Kurt-Schumacher-Platz in Berlin-Reinickendorf</p><p>Wir stimmen unsere Kunden und Besucher mit unserer festlichen Weihnachtsdekoration auf das Weihnachtsfest ein. Die Beleuchtung der Weihnachtsdekoration und der Straßenbäume auf dem Kurt-Schumacher-Platz wird nach dem Totensonntag, am 24.11.2014, in Betrieb genommen.</p><p>In unserer Himmelsbäckerei können Kinder unter der Anleitung einer erfahrenen, „engelsgleichen“ Himmelsbäckermeisterin Plätzchen backen. „Nach getaner Arbeit“ erhält jedes Kind eine Tüte mit den selbst gebackenen Plätzchen. Die Teilnahme an der Himmelsbäckerei ist kostenlos. Einige Termine, besonders für 16:00 Uhr bzw. 17:00 Uhr, sind noch frei. Anmeldungen werden im Büro des Center-Managements (Telefon 030/495 70 58) entgegen genommen. Vom 01.12. – 19.12.2014 wird montags – freitags, jeweils um 10:00 Uhr, 11:00 Uhr, 16:00 und 17:00 Uhr, gebacken.</p>",
+    "todo":"ready",
+    "bbq":"-",
+    "winepunch":"-"
   },
   {
     "id":96,
@@ -2767,6 +2927,7 @@ var data = [
     "name":"Adventsmarkt der Evangelischen Kirchengemeinde Alt-Wittenau",
     "street":"Dorfaue",
     "zip_city":"13437 Berlin",
+    "hours":"14:00-17:30",
     "20141117":"",
     "20141118":"",
     "20141119":"",
@@ -2826,9 +2987,12 @@ var data = [
     "fax":"43 72 12 66",
     "email":"",
     "web":"",
-    "fee":0,
+    "fee":"",
     "kind":"gemeinnützig",
-    "remarks":""
+    "remarks":"",
+    "todo":"",
+    "bbq":"",
+    "winepunch":""
   },
   {
     "id":98,
@@ -2836,6 +3000,7 @@ var data = [
     "name":"Weihnachtsmarkt vor der Johanneskirche Frohnau",
     "street":"Zeltinger Platz 18",
     "zip_city":"13465 Berlin",
+    "hours":"14:00-18:00",
     "20141117":"",
     "20141118":"",
     "20141119":"",
@@ -2895,9 +3060,12 @@ var data = [
     "fax":"401 20 79",
     "email":"post@ekg-frohnau.de",
     "web":"www.ekg-frohnau.de",
-    "fee":0,
+    "fee":"",
     "kind":"gemeinnützig",
-    "remarks":""
+    "remarks":"",
+    "todo":"",
+    "bbq":"",
+    "winepunch":""
   },
   {
     "id":106,
@@ -2905,6 +3073,7 @@ var data = [
     "name":"Sozialer Weihnachtsmarkt von Goldnetz",
     "street":"Földerichplatz",
     "zip_city":"13595 Berlin",
+    "hours":"14:00-20:00",
     "20141117":"",
     "20141118":"",
     "20141119":"",
@@ -2964,9 +3133,12 @@ var data = [
     "fax":"28 88 37 35",
     "email":"spenden@goldnetz-berlin.de",
     "web":"www.goldnetz-berlin.de",
-    "fee":0,
+    "fee":"",
     "kind":"gemeinnützig",
-    "remarks":""
+    "remarks":"",
+    "todo":"",
+    "bbq":"",
+    "winepunch":""
   },
   {
     "id":108,
@@ -2974,6 +3146,7 @@ var data = [
     "name":"27. Kladower Christkindlmarkt",
     "street":"Imchenplatz",
     "zip_city":"14089 Berlin",
+    "hours":"12:00-19:00",
     "20141117":"",
     "20141118":"",
     "20141119":"",
@@ -3033,9 +3206,12 @@ var data = [
     "fax":"",
     "email":"",
     "web":"www.kladower-christkindlmarkt.de",
-    "fee":0,
+    "fee":"",
     "kind":"gemeinnützig",
-    "remarks":""
+    "remarks":"",
+    "todo":"",
+    "bbq":"",
+    "winepunch":""
   },
   {
     "id":104,
@@ -3043,6 +3219,7 @@ var data = [
     "name":"Weihnachtsmarkt im Evangelischen Johannesstift",
     "street":"Schönwalder Allee 26",
     "zip_city":"13587 Berlin",
+    "hours":"10:30-18:00",
     "20141117":"",
     "20141118":"",
     "20141119":"",
@@ -3102,9 +3279,12 @@ var data = [
     "fax":"33 60 95 06",
     "email":"info@Evangelisches-Johannesstift.de",
     "web":"www.evangelisches-johannesstift.de",
-    "fee":0,
+    "fee":"",
     "kind":"gemeinnützig",
-    "remarks":""
+    "remarks":"",
+    "todo":"",
+    "bbq":"",
+    "winepunch":""
   },
   {
     "id":100,
@@ -3112,6 +3292,7 @@ var data = [
     "name":"41. Traditioneller Spandauer Weihnachtsmarkt",
     "street":"Spandauer Altstadt",
     "zip_city":"13597 Berlin",
+    "hours":"ab 11:00",
     "20141117":"",
     "20141118":"",
     "20141119":"",
@@ -3171,9 +3352,12 @@ var data = [
     "fax":"35 30 23 32",
     "email":"info@partner-fuer-spandau.de",
     "web":"www.spandauer-weihnachtsmarkt.de",
-    "fee":0,
+    "fee":"",
     "kind":"gewerblich",
-    "remarks":""
+    "remarks":"Der Spandauer Weihnachtsmarkt verwandelt im Advent die Spandauer Altstadt in Berlins stimmungsvollste Einkaufslandschaft! Berlins größter Weihnachtsmarkt startet in sein fünftes Jahrzehnt: Die Plätze, Straßen und Gassen der Spandauer Altstadt präsentieren sich als stimmungsvolle und vielfarbige Einkaufslandschaft im Advent. Das täglich wechselnde Bühnenprogramm, der Mittelaltermarkt und die prächtige Weihnachtstanne prägen den Markt.",
+    "todo":"-",
+    "bbq":"",
+    "winepunch":""
   },
   {
     "id":102,
@@ -3181,6 +3365,7 @@ var data = [
     "name":"44. Spandauer Weihnachtstraum",
     "street":"vor dem Rathaus Spandau",
     "zip_city":"13597 Berlin",
+    "hours":"Mo-Do 11:00-21:00<br>Fr, Sa 11:00-22:00<br>So 10:00-21:00",
     "20141117":"",
     "20141118":"",
     "20141119":"",
@@ -3232,7 +3417,7 @@ var data = [
     "20150104":"",
     "20150105":"",
     "20150106":"",
-    "organizer":"Thilo-Harry Wollenschlaeger",
+    "organizer":"Wollenschlaeger, Thilo-Harry",
     "org_address":"",
     "org_contact":"",
     "phone":"0163/400 05 00",
@@ -3240,9 +3425,12 @@ var data = [
     "fax":"03322/423 41 39",
     "email":"info@wollenschlaeger-berlin.de",
     "web":"www.wollenschlaeger-berlin.de",
-    "fee":0,
+    "fee":"",
     "kind":"gewerblich",
-    "remarks":""
+    "remarks":"",
+    "todo":"",
+    "bbq":"",
+    "winepunch":""
   },
   {
     "id":120,
@@ -3250,6 +3438,7 @@ var data = [
     "name":"Weihnachtsmarkt auf dem Ferdinandmarkt",
     "street":"Ferdinandstr. 34-35",
     "zip_city":"12209 Berlin",
+    "hours":"11:00-19:00",
     "20141117":"",
     "20141118":"",
     "20141119":"",
@@ -3309,9 +3498,12 @@ var data = [
     "fax":"824 20 47",
     "email":"info@gv-degenhardt.de",
     "web":"www.gv-degenhardt.de",
-    "fee":0,
+    "fee":"",
     "kind":"gewerblich",
-    "remarks":""
+    "remarks":"",
+    "todo":"",
+    "bbq":"",
+    "winepunch":""
   },
   {
     "id":130,
@@ -3319,6 +3511,7 @@ var data = [
     "name":"Adventsbasar im Gemeindehaus St. Michael",
     "street":"Hohenzollernstr. 28",
     "zip_city":"14109 Berlin",
+    "hours":"Sa 15:00-19:30<br>So 09:00-15:00",
     "20141117":"",
     "20141118":"",
     "20141119":"",
@@ -3378,9 +3571,12 @@ var data = [
     "fax":"",
     "email":"pfarrbuero@hl-12-apostel.de",
     "web":"www.hl-12-apostel.de",
-    "fee":0,
+    "fee":"",
     "kind":"gemeinnützig",
-    "remarks":""
+    "remarks":"",
+    "todo":"mail",
+    "bbq":"",
+    "winepunch":""
   },
   {
     "id":134,
@@ -3388,6 +3584,7 @@ var data = [
     "name":"Weihnachtsmarkt der Wilhelmplatz-Initiative und der Ev. Kirchengemeinde Wannsee",
     "street":"Kirche am Stölpchensee, Auf dem Wilhelmplatz",
     "zip_city":"14109 Berlin",
+    "hours":"13:00-18:00",
     "20141117":"",
     "20141118":"",
     "20141119":"",
@@ -3447,9 +3644,12 @@ var data = [
     "fax":"",
     "email":"KGWannsee@freenet.de",
     "web":"www.wannseebote.ekbo.de",
-    "fee":0,
+    "fee":"",
     "kind":"gemeinnützig",
-    "remarks":""
+    "remarks":"",
+    "todo":"",
+    "bbq":"",
+    "winepunch":""
   },
   {
     "id":132,
@@ -3457,6 +3657,7 @@ var data = [
     "name":"Großer Adventsbasar im Gemeindehaus",
     "street":"Kirchweg 6",
     "zip_city":"14129 Berlin",
+    "hours":"11:00-18:00",
     "20141117":"",
     "20141118":"",
     "20141119":"",
@@ -3516,9 +3717,12 @@ var data = [
     "fax":"",
     "email":"webmaster@gemeinde-nikolassee.de",
     "web":"www.gemeinde-nikolassee.de",
-    "fee":0,
+    "fee":"",
     "kind":"gemeinnützig",
-    "remarks":""
+    "remarks":"",
+    "todo":"",
+    "bbq":"",
+    "winepunch":""
   },
   {
     "id":118,
@@ -3526,6 +3730,7 @@ var data = [
     "name":"Adventsmarkt auf der Domäne Dahlem",
     "street":"Königin-Luise-Str. 49",
     "zip_city":"14195 Berlin",
+    "hours":"11:00-19:00",
     "20141117":"",
     "20141118":"",
     "20141119":"",
@@ -3585,9 +3790,12 @@ var data = [
     "fax":"66 63 00 20",
     "email":"kontakt@domaene-dahlem.de",
     "web":"www.domaene-dahlem.de",
-    "fee":2,
+    "fee":"Eintritt 2 €, ermäßigt 1 € (Auszubildende, Studierende, Freiwilligendienst-Leistende, berlinpass-Inhaber, Schwerbehinderte ab 80 %), freier Eintritt für Kinder und Jugendliche bis 16 Jahre",
     "kind":"gewerblich",
-    "remarks":"Eintritt 2 €, ermäßigt 1 € (Auszubildende, Studierende, Freiwilligendienst-Leistende, berlinpass-Inhaber, Schwerbehinderte ab 80 %), freier Eintritt für Kinder und Jugendliche bis 16 Jahre"
+    "remarks":"",
+    "todo":"",
+    "bbq":"",
+    "winepunch":""
   },
   {
     "id":128,
@@ -3595,6 +3803,7 @@ var data = [
     "name":"Advent-Künstlerstation am Bahnhof Mexikoplatz",
     "street":"Platz vor dem Bahnhof Mexikoplatz",
     "zip_city":"14163 Berlin",
+    "hours":"11:00-19:00",
     "20141117":"",
     "20141118":"",
     "20141119":"",
@@ -3646,7 +3855,7 @@ var data = [
     "20150104":"",
     "20150105":"",
     "20150106":"",
-    "organizer":"Ramona Martin",
+    "organizer":"Martin, Ramona",
     "org_address":"",
     "org_contact":"",
     "phone":"802 87 79",
@@ -3654,9 +3863,12 @@ var data = [
     "fax":"",
     "email":"",
     "web":"",
-    "fee":0,
+    "fee":"",
     "kind":"gewerblich",
-    "remarks":""
+    "remarks":"",
+    "todo":"",
+    "bbq":"",
+    "winepunch":""
   },
   {
     "id":136,
@@ -3664,6 +3876,7 @@ var data = [
     "name":"Das Weihnachtshaus in der Villa Donnersmarck",
     "street":"Schädestr. 9-13",
     "zip_city":"14165 Berlin",
+    "hours":"15:00-19:00",
     "20141117":"",
     "20141118":"",
     "20141119":"",
@@ -3723,9 +3936,12 @@ var data = [
     "fax":"84 71 87 23",
     "email":"villadonnersmarck@fdst.de",
     "web":"www.villadonnersmarck.de",
-    "fee":0,
+    "fee":"",
     "kind":"gemeinnützig",
-    "remarks":""
+    "remarks":"",
+    "todo":"",
+    "bbq":"",
+    "winepunch":""
   },
   {
     "id":110,
@@ -3733,6 +3949,7 @@ var data = [
     "name":"Steglitzer Weihnachtsmarkt vor dem Forum Steglitz",
     "street":"Schloßstr. 1",
     "zip_city":"12163 Berlin",
+    "hours":"10:30-21:00",
     "20141117":"",
     "20141118":"",
     "20141119":"",
@@ -3792,9 +4009,12 @@ var data = [
     "fax":"815 20 85",
     "email":"lb@blume-events.de",
     "web":"www.blume-events.de",
-    "fee":0,
+    "fee":"",
     "kind":"gewerblich",
-    "remarks":""
+    "remarks":"",
+    "todo":"mail",
+    "bbq":"",
+    "winepunch":""
   },
   {
     "id":154,
@@ -3802,6 +4022,7 @@ var data = [
     "name":"38. Lichtenrader Lichtermarkt",
     "street":"Alt-Lichtenrade, rund um den Dorfteich (Giebel-Pfuhl)",
     "zip_city":"12305 Berlin",
+    "hours":"13:00-19:00",
     "20141117":"",
     "20141118":"",
     "20141119":"",
@@ -3861,9 +4082,12 @@ var data = [
     "fax":"902 77 22 20",
     "email":"",
     "web":"",
-    "fee":0,
+    "fee":"",
     "kind":"gemeinnützig",
-    "remarks":""
+    "remarks":"",
+    "todo":"",
+    "bbq":"",
+    "winepunch":""
   },
   {
     "id":152,
@@ -3871,6 +4095,7 @@ var data = [
     "name":"20. Weihnachtsmarkt auf Lehmanns Bauernhof",
     "street":"Alt-Marienfelde 35-37",
     "zip_city":"12277 Berlin",
+    "hours":"Fr 14:00-20:00<br>Sa-So 12:00-20:00",
     "20141117":"",
     "20141118":"",
     "20141119":"",
@@ -3930,9 +4155,12 @@ var data = [
     "fax":"72 01 41 49",
     "email":"Lehmanns-Bauernmarkt@gmx.de",
     "web":"www.lehmanns-bauernmarkt.de",
-    "fee":0,
+    "fee":"",
     "kind":"gewerblich",
-    "remarks":""
+    "remarks":"",
+    "todo":"",
+    "bbq":"",
+    "winepunch":""
   },
   {
     "id":156,
@@ -3940,6 +4168,7 @@ var data = [
     "name":"30. Marienfelder Weihnachtsmarkt des TSV Marienfelde 1890 e. V.",
     "street":"Alte Feuerwache, Alt-Marienfelde 36",
     "zip_city":"12277 Berlin",
+    "hours":"12:00-19:00",
     "20141117":"",
     "20141118":"",
     "20141119":"",
@@ -3999,9 +4228,12 @@ var data = [
     "fax":"74 30 59 65",
     "email":"sport@tsv-marienfelde.de",
     "web":"www.tsv-marienfelde.de",
-    "fee":0,
+    "fee":"",
     "kind":"gemeinnützig",
-    "remarks":"mit Beteiligung der Marienfelder Kyffhäuser"
+    "remarks":"mit Beteiligung der Marienfelder Kyffhäuser",
+    "todo":"",
+    "bbq":"",
+    "winepunch":""
   },
   {
     "id":158,
@@ -4009,6 +4241,7 @@ var data = [
     "name":"8. Friedenauer Engelmarkt",
     "street":"Breslauer Platz am Rathaus Friedenau",
     "zip_city":"12159 Berlin",
+    "hours":"13:00-18:00",
     "20141117":"",
     "20141118":"",
     "20141119":"",
@@ -4068,9 +4301,12 @@ var data = [
     "fax":"",
     "email":"Magrit.knapp@friedenau-netzwerk.de",
     "web":"www.friedenau-netzwerk.de",
-    "fee":0,
+    "fee":"",
     "kind":"gemeinnützig",
-    "remarks":""
+    "remarks":"",
+    "todo":"",
+    "bbq":"",
+    "winepunch":""
   },
   {
     "id":140,
@@ -4078,6 +4314,7 @@ var data = [
     "name":"Adventsmarkt in der Lokhalle",
     "street":"Lokhalle im Natur-Park Schöneberger Südgelände, S-Bahnhof Priesterweg",
     "zip_city":"12157 Berlin",
+    "hours":"12:00-18:00",
     "20141117":"",
     "20141118":"",
     "20141119":"",
@@ -4137,9 +4374,12 @@ var data = [
     "fax":"70 09 06 70",
     "email":"info@suedgelaende.de",
     "web":"www.gruen-berlin.de",
-    "fee":0,
+    "fee":"",
     "kind":"gewerblich",
-    "remarks":""
+    "remarks":"",
+    "todo":"",
+    "bbq":"",
+    "winepunch":""
   },
   {
     "id":148,
@@ -4147,6 +4387,7 @@ var data = [
     "name":"25. Weihnachtsmarkt auf dem Winterfeldtplatz",
     "street":"Winterfeldtplatz ",
     "zip_city":"10785 Berlin",
+    "hours":"11:00-19:00",
     "20141117":"",
     "20141118":"",
     "20141119":"",
@@ -4198,7 +4439,7 @@ var data = [
     "20150104":"",
     "20150105":"",
     "20150106":"",
-    "organizer":"Frau Trostdorff",
+    "organizer":"Trostdorff",
     "org_address":"",
     "org_contact":"",
     "phone":"215 65 39",
@@ -4206,9 +4447,12 @@ var data = [
     "fax":"215 65 39",
     "email":"trostdorff@web.de",
     "web":"www.weihnachtsmarkt-winterfeldtplatz.de",
-    "fee":0,
+    "fee":"",
     "kind":"gewerblich",
-    "remarks":""
+    "remarks":"",
+    "todo":"",
+    "bbq":"",
+    "winepunch":""
   },
   {
     "id":170,
@@ -4216,6 +4460,7 @@ var data = [
     "name":"Weihnachtsmarkt von der Bühne Grünau e.V.",
     "street":"An der Grünauer Friedenskirche, Don-Ugoletti-Platz",
     "zip_city":"12527 Berlin",
+    "hours":"14:00-19:00",
     "20141117":"",
     "20141118":"",
     "20141119":"",
@@ -4275,9 +4520,12 @@ var data = [
     "fax":"",
     "email":"",
     "web":"",
-    "fee":0,
+    "fee":"",
     "kind":"gemeinnützig",
-    "remarks":""
+    "remarks":"",
+    "todo":"",
+    "bbq":"",
+    "winepunch":""
   },
   {
     "id":166,
@@ -4285,6 +4533,7 @@ var data = [
     "name":"Müggelheimer Weihnachtsmarkt",
     "street":"Dorfanger Müggelheim (westl. Teil)",
     "zip_city":"12559 Berlin",
+    "hours":"10:00-20:00",
     "20141117":"",
     "20141118":"",
     "20141119":"",
@@ -4344,9 +4593,12 @@ var data = [
     "fax":"",
     "email":"Mueggelheimer-heimatverein@gmx.de",
     "web":"www.mueggelheimer-heimatverein.de",
-    "fee":0,
+    "fee":"",
     "kind":"gemeinnützig",
-    "remarks":""
+    "remarks":"",
+    "todo":"",
+    "bbq":"",
+    "winepunch":""
   },
   {
     "id":164,
@@ -4354,6 +4606,7 @@ var data = [
     "name":"Lichtermarkt an der Christuskirche",
     "street":"Firlstr. 16",
     "zip_city":"12459 Berlin",
+    "hours":"14:00-18:00",
     "20141117":"",
     "20141118":"",
     "20141119":"",
@@ -4413,9 +4666,12 @@ var data = [
     "fax":"",
     "email":"gemeinde@ev-kirche-oberschoeneweide.de",
     "web":"www.ev-kirche-oberschoeneweide.de",
-    "fee":0,
+    "fee":"",
     "kind":"gemeinnützig",
-    "remarks":"14:00 Eröffnung mit Bläserensemble Köpenick, 15:00 Basteln im Musikzimmer der Kirche, 15:30 Märchenstunde in der Taufkapelle, 18:00 Adventskonzert mit dem Köpenicker Chor \"Sing! Sing!\""
+    "remarks":"14:00 Eröffnung mit Bläserensemble Köpenick, 15:00 Basteln im Musikzimmer der Kirche, 15:30 Märchenstunde in der Taufkapelle, 18:00 Adventskonzert mit dem Köpenicker Chor \"Sing! Sing!\"",
+    "todo":"",
+    "bbq":"",
+    "winepunch":""
   },
   {
     "id":162,
@@ -4423,6 +4679,7 @@ var data = [
     "name":"Weihnachtsmarkt Friedrichshagen Bölschestraße",
     "street":"Marktplatz Bölschestraße",
     "zip_city":"12587 Berlin",
+    "hours":"Sa 09:00-22:00<br>So 11:00-20:00",
     "20141117":"",
     "20141118":"",
     "20141119":"",
@@ -4474,7 +4731,7 @@ var data = [
     "20150104":"",
     "20150105":"",
     "20150106":"",
-    "organizer":"Wolfgang Hirche",
+    "organizer":"Hirche, Wolfgang",
     "org_address":"15370 Vogelsdorf",
     "org_contact":"",
     "phone":"033439/779 79",
@@ -4482,9 +4739,12 @@ var data = [
     "fax":"033439/779 80",
     "email":"Markt-Hirche@web.de",
     "web":"",
-    "fee":0,
+    "fee":"",
     "kind":"gewerblich",
-    "remarks":""
+    "remarks":"",
+    "todo":"",
+    "bbq":"",
+    "winepunch":""
   },
   {
     "id":168,
@@ -4492,6 +4752,7 @@ var data = [
     "name":"5. Altglienicker Advents-Markt",
     "street":"Rund um die Pfarrkirche, Semmelweisstr. 2",
     "zip_city":"12524 Berlin",
+    "hours":"14:00-19:00",
     "20141117":"",
     "20141118":"",
     "20141119":"",
@@ -4551,9 +4812,12 @@ var data = [
     "fax":"",
     "email":"buergerverein@altglienicke.de",
     "web":"www.altglienicke.de",
-    "fee":0,
+    "fee":"",
     "kind":"gemeinnützig",
-    "remarks":""
+    "remarks":"",
+    "todo":"",
+    "bbq":"",
+    "winepunch":""
   },
   {
     "id":160,
@@ -4561,6 +4825,7 @@ var data = [
     "name":"Weihnachtsmarkt in den Späth'schen Baumschulen, Lichterglanz im Tannenwald - präsentiert von radioBERLIN 88,8",
     "street":"Späthstr. 80/81",
     "zip_city":"12437 Berlin",
+    "hours":"Fr 15:00-20:00<br>Sa-So 11:00-20:00",
     "20141117":"",
     "20141118":"",
     "20141119":"",
@@ -4620,8 +4885,84 @@ var data = [
     "fax":"",
     "email":"info@spaethsche-baumschulen.de",
     "web":"www.spaethsche-baumschulen.de",
-    "fee":3,
+    "fee":"Eintritt 3 €, Kinder bis 16 Jahre frei",
     "kind":"gewerblich",
-    "remarks":"Eintritt 3 €, Kinder bis 16 Jahre frei, Die Späth'schen Baumschulen spenden pro verkaufter Eintrittskarte 1 € an das Kinderschutz-Zentrum Berlin. Lichterglanz im Tannenwald - präsentiert von radio BERLIN 88,8"
+    "remarks":"",
+    "todo":"",
+    "bbq":"",
+    "winepunch":""
+  },
+  {
+    "id":1000,
+    "district":"Pankow",
+    "name":"Lucia Weihnachtsmarkt in der Kulturbrauerei",
+    "street":"Knaackstraße 97",
+    "zip_city":"10435 Berlin",
+    "hours":"Mo-Fr 15:00-22:00<br>Sa-So 13:00-22:00",
+    "20141117":"",
+    "20141118":"",
+    "20141119":"",
+    "20141120":"",
+    "20141121":"",
+    "20141122":"",
+    "20141123":"",
+    "20141124":"15:00-22:00",
+    "20141125":"15:00-22:00",
+    "20141126":"15:00-22:00",
+    "20141127":"15:00-22:00",
+    "20141128":"15:00-22:00",
+    "20141129":"13:00-22:00",
+    "20141130":"13:00-22:00",
+    "20141201":"15:00-22:00",
+    "20141202":"15:00-22:00",
+    "20141203":"15:00-22:00",
+    "20141204":"15:00-22:00",
+    "20141205":"15:00-22:00",
+    "20141206":"13:00-22:00",
+    "20141207":"13:00-22:00",
+    "20141208":"15:00-22:00",
+    "20141209":"15:00-22:00",
+    "20141210":"15:00-22:00",
+    "20141211":"15:00-22:00",
+    "20141212":"15:00-22:00",
+    "20141213":"13:00-22:00",
+    "20141214":"13:00-22:00",
+    "20141215":"15:00-22:00",
+    "20141216":"15:00-22:00",
+    "20141217":"15:00-22:00",
+    "20141218":"15:00-22:00",
+    "20141219":"15:00-22:00",
+    "20141220":"13:00-22:00",
+    "20141221":"13:00-22:00",
+    "20141222":"15:00-22:00",
+    "20141223":"",
+    "20141224":"",
+    "20141225":"",
+    "20141226":"",
+    "20141227":"",
+    "20141228":"",
+    "20141229":"",
+    "20141230":"",
+    "20141231":"",
+    "20150101":"",
+    "20150102":"",
+    "20150103":"",
+    "20150104":"",
+    "20150105":"",
+    "20150106":"",
+    "organizer":"Fête Company, Simone Hofmann",
+    "org_address":"Wallstr. 15a, 10179 Berlin",
+    "org_contact":"",
+    "phone":"0177-3014657",
+    "phone2":"",
+    "fax":"",
+    "email":"jul@lucia-weihnachtsmarkt.de",
+    "web":"http://lucia-weihnachtsmarkt.de",
+    "fee":"",
+    "kind":"",
+    "remarks":"",
+    "todo":"",
+    "bbq":"",
+    "winepunch":""
   }
 ];
