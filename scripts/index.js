@@ -137,7 +137,8 @@ function composeMarketItem( number)
 	var market = data[ number];
 	var openingtime = getNextMarketOpeningTime( market);
 
-if( 'mail' == market.todo) { return ''; }
+//if( 'mail' == market.todo) { return ''; }
+if( '' == market.todo) { return ''; }
 
 	var txt = '<p>' + market.name + '</p><p>' + openingtime + '</p>';
 	var img = '<aside class="pack-begin"><img src="art/' + market.id + '/128.jpg"></aside>';
@@ -263,6 +264,10 @@ function fillListOneMarket()
 	txt += composeMarketCalendar( obj);
 	txt += '<p>' + obj.hours + '</p>';
 
+	txt += '<div style="margin:1rem -1.5rem 0 -1.5rem;padding:0 1.5rem 0 1.5rem;text-align:center;border-top:1px solid #f97c17;border-bottom:1px solid #f97c17;background:#fde4d0;">';
+	txt += '<p>Bildnachweis: ' + obj.copyright + '</p>';
+	txt += '</div>';
+
 	document.querySelector('#onemarket > article').innerHTML = txt;
 }
 
@@ -301,11 +306,11 @@ function callOneMarket( marketId)
 	config.currentMarketId = marketId;
 
 	var obj = getObjFromID( marketId);
-	if( 'ready' == obj.todo) {
+//	if( 'ready' == obj.todo) {
 		setTimeout( fillListOneMarket, config.timeout);
-	} else {
-		setTimeout( fillListOneMarketDebug, config.timeout);
-	}
+//	} else {
+//		setTimeout( fillListOneMarketDebug, config.timeout);
+//	}
 }
 
 document.querySelector('#btn-onemarket-back').addEventListener('click', function() {

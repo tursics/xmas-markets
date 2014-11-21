@@ -71,8 +71,7 @@ var data = [
     "kind":"gemeinnützig",
     "remarks":"",
     "todo":"",
-    "bbq":"",
-    "winepunch":""
+    "copyright":""
   },
   {
     "id":12,
@@ -144,8 +143,7 @@ var data = [
     "kind":"gemeinnützig",
     "remarks":"",
     "todo":"",
-    "bbq":"",
-    "winepunch":""
+    "copyright":""
   },
   {
     "id":18,
@@ -217,8 +215,7 @@ var data = [
     "kind":"gemeinnützig",
     "remarks":"",
     "todo":"",
-    "bbq":"",
-    "winepunch":""
+    "copyright":""
   },
   {
     "id":16,
@@ -290,8 +287,7 @@ var data = [
     "kind":"gemeinnützig",
     "remarks":"",
     "todo":"",
-    "bbq":"",
-    "winepunch":""
+    "copyright":""
   },
   {
     "id":10,
@@ -363,8 +359,7 @@ var data = [
     "kind":"gemeinnützig",
     "remarks":"Die Lichterkönigin Lucia kommt an beiden Tagen um 16:00 Uhr",
     "todo":"",
-    "bbq":"",
-    "winepunch":""
+    "copyright":""
   },
   {
     "id":6,
@@ -436,8 +431,7 @@ var data = [
     "kind":"teilgewerblich",
     "remarks":"das Rüsseltier ist an beiden Tagen unterwegs, Greifvogelschau und Weihnachtskrippe",
     "todo":"",
-    "bbq":"",
-    "winepunch":""
+    "copyright":""
   },
   {
     "id":20,
@@ -509,8 +503,7 @@ var data = [
     "kind":"gemeinnützig",
     "remarks":"",
     "todo":"",
-    "bbq":"",
-    "winepunch":""
+    "copyright":""
   },
   {
     "id":22,
@@ -582,8 +575,7 @@ var data = [
     "kind":"gemeinnützig",
     "remarks":"",
     "todo":"",
-    "bbq":"",
-    "winepunch":""
+    "copyright":""
   },
   {
     "id":2,
@@ -651,12 +643,11 @@ var data = [
     "fax":"261 20 22",
     "email":"info@werbeteam-berlin.de",
     "web":"www.werbeteam-berlin.de",
-    "fee":"",
+    "fee":"Eintrittspreise (nur am Samstag ab 16.30 Uhr): Erwachsene 3.- €, Ermäßigung (Schüler, Auszubildende, Studenten, Wehrdienst- und Zivildienstleistende und Senioren, Kinder ab 10 Jahren) 1.- €, Gäste mit Mobilitätseinschränkung inkl. einer Begleitung und Kinder unter 10 Jahren zahlen keinen Eintritt",
     "kind":"gewerblich",
-    "remarks":"",
-    "todo":"",
-    "bbq":"",
-    "winepunch":""
+    "remarks":"<p>Die alljährliche Weihnachtszeit wird ganz besonders von unseren Kindern mit großer Vorfreude herbeigesehnt. Deshalb haben wir für unsere kleinsten Besucher ein zusätzliches Areal direkt vor der Kleinen Orangerie geschaffen, auf dem wir mit besonderen Angeboten aufwarten: Es gibt mehrere nostalgische und historische Kinderkarussells, ein Riesenrad, einen Kettenflieger, eine Mini-Achterbahn, ein Pferde-Karussell und die schon genannte Luftschaukel. Auch wieder mit dabei ist die kleine Märchen-Eisenbahn und ganz neu unser Oldtimerkarussell, das durch den weihnachtlichen beleuchteten Winterwald fährt.</p><p>Unsere Gastronomen bieten köstliche Spezialitäten aus unterschiedlichsten Regionen und Ländern wie z.B. Ungarn, Polen, Russland, den Niederlanden, Italien, Schweden, Frankreich, Österreich, Bayern, Brandenburg, Berlin und Thüringen darunter Traditionelles und zahlreiche, unbekannte Rezepturen. Ob für ‚auf die Hand’ zum Rundgang oder am gedeckten Tisch in den beheizten Restaurant-Pagoden des schönsten Winter-Open-Air Restaurant Berlins  mit Blick auf das Schloss Charlottenburg – von süß bis herzhaft gibt es ein umfangreiches Speisenangebot zu verkosten: Österreichische Spezialitäten, das große Entenzelt oder Deftiges aus der Brandenburger Küche.</p>",
+    "todo":"ready",
+    "copyright":"werbeteam berlin"
   },
   {
     "id":8,
@@ -728,8 +719,7 @@ var data = [
     "kind":"gemeinnützig",
     "remarks":"",
     "todo":"",
-    "bbq":"",
-    "winepunch":""
+    "copyright":""
   },
   {
     "id":4,
@@ -801,8 +791,7 @@ var data = [
     "kind":"gewerblich",
     "remarks":"",
     "todo":"",
-    "bbq":"",
-    "winepunch":""
+    "copyright":""
   },
   {
     "id":172,
@@ -874,8 +863,7 @@ var data = [
     "kind":"gewerblich",
     "remarks":"",
     "todo":"",
-    "bbq":"",
-    "winepunch":""
+    "copyright":""
   },
   {
     "id":30,
@@ -947,8 +935,7 @@ var data = [
     "kind":"gewerblich",
     "remarks":"",
     "todo":"",
-    "bbq":"",
-    "winepunch":""
+    "copyright":""
   },
   {
     "id":24,
@@ -1020,8 +1007,7 @@ var data = [
     "kind":"gemeinnützig",
     "remarks":"Flammlachs, Lachssuppe, weihnachtliche Leckereien, Cafe & Tombola, finnische Süßigkeiten und Lebensmittel, Handarbeiten, Geschenkartikel, Glühwein etc. Der Weihnachtsmann besucht uns an beiden Tagen um 14:00 und 16:00 Uhr. Herzlich willkommen, die weihnachtliche Stimmung im Finnland-Zentrum zu genießen!",
     "todo":"mail",
-    "bbq":"",
-    "winepunch":""
+    "copyright":""
   },
   {
     "id":26,
@@ -1093,8 +1079,7 @@ var data = [
     "kind":"gemeinnützig",
     "remarks":"",
     "todo":"",
-    "bbq":"",
-    "winepunch":""
+    "copyright":""
   },
   {
     "id":34,
@@ -1166,8 +1151,7 @@ var data = [
     "kind":"gemeinnützig",
     "remarks":"",
     "todo":"",
-    "bbq":"",
-    "winepunch":""
+    "copyright":""
   },
   {
     "id":32,
@@ -1239,8 +1223,7 @@ var data = [
     "kind":"gemeinnützig",
     "remarks":"",
     "todo":"",
-    "bbq":"",
-    "winepunch":""
+    "copyright":""
   },
   {
     "id":44,
@@ -1312,8 +1295,7 @@ var data = [
     "kind":"gemeinnützig",
     "remarks":"",
     "todo":"",
-    "bbq":"",
-    "winepunch":""
+    "copyright":""
   },
   {
     "id":42,
@@ -1385,8 +1367,7 @@ var data = [
     "kind":"gewerblich",
     "remarks":"",
     "todo":"",
-    "bbq":"",
-    "winepunch":""
+    "copyright":""
   },
   {
     "id":40,
@@ -1458,8 +1439,7 @@ var data = [
     "kind":"gewerblich",
     "remarks":"",
     "todo":"mail",
-    "bbq":"",
-    "winepunch":""
+    "copyright":""
   },
   {
     "id":38,
@@ -1531,8 +1511,7 @@ var data = [
     "kind":"gewerblich",
     "remarks":"Es duftet im EASTGATE nach Weihnachten – nach gebrannten Mandeln, Tannengrün, Schokoladenäpfeln, Pfefferkuchen, \"Armeen\" von Nussknackern marschieren auf, Berge aus rotbäckigen Äpfeln, Orangen und Mandarinen locken mit ihren verführerischen Düften. Die Weihnachtsbäcker zaubern mit lieblichsten Aromen: Nelken, Anis oder Kardamom lassen Weihnachten schon ganz nah sein. Freuen Sie sich auf eine einzigartige Erlebniswelt, die Ihre Herzen weit aufschließt. Und auf der großen Weihnachtsbühne wechseln sich Sänger, Musiker und Geschichtenerzähler täglich ab, um die Besucher des EASTGATE mit einem begeisternden Weihnachtsprogramm zu erfreuen.",
     "todo":"mail",
-    "bbq":"",
-    "winepunch":""
+    "copyright":""
   },
   {
     "id":36,
@@ -1604,8 +1583,7 @@ var data = [
     "kind":"gewerblich",
     "remarks":"Und wer „erst eins, dann zwei, dann drei, dann vier“ nicht mehr abwarten kann, kommt ins Marktplatz Center Hellersdorf und stimmt sich gemeinsam mit uns auf die Weihnachtszeit ein. Das Parken an den Verkaufsoffenen Sonntagen ist kostenlos. Außerdem gibt es unseren beliebten Einpackservice, der jedes Geschenk in besonderem Glanz erstrahlen lässt. Damit sie ganz unbeschwert einkaufen können, haben wir wie jedes Jahr unseren kostenfreien Garderobenservice für Sie. ",
     "todo":"mail",
-    "bbq":"",
-    "winepunch":""
+    "copyright":""
   },
   {
     "id":54,
@@ -1677,8 +1655,7 @@ var data = [
     "kind":"gewerblich",
     "remarks":"Abseits des alltäglichen Weihnachtstrubels gibt es zum Jahresende im Sony Center am Potsdamer Platz in diesem Jahr Neues zu erleben. Ein bezauberndes Fabelwesen-Ensemble wird nicht nur Kinderaugen zum Leuchten bringen.   Die Zwillingselfen Klara und Kasia, die kleinste Elfe Laura sowie ihr Beschützer Arion fügen sich mit ihrem funkelnden Antlitz perfekt in das in Licht getauchte Forum ein. Ein weiteres Highlight wird die tägliche Tanz-Show der geheimnisvollen Elfe Stella sein. Zu jeder vollen Stunde wird sie das Publikum mit ihrer Anmut  verzaubern und das Sony Center glanzvoll erstrahlen lassen.",
     "todo":"mail",
-    "bbq":"",
-    "winepunch":""
+    "copyright":""
   },
   {
     "id":50,
@@ -1749,9 +1726,8 @@ var data = [
     "fee":"",
     "kind":"gewerblich",
     "remarks":"",
-    "todo":"-",
-    "bbq":"",
-    "winepunch":""
+    "todo":"mail",
+    "copyright":""
   },
   {
     "id":52,
@@ -1822,9 +1798,8 @@ var data = [
     "fee":"Eintritt 1 €, Mo-Fr 11:00-14:00 Eintritt frei (außer am 24.12., 25.12., 26.12., 31.12.), Silvesterfeier 19:00-01:00, Eintritt 12 €",
     "kind":"gewerblich",
     "remarks":"",
-    "todo":"-",
-    "bbq":"",
-    "winepunch":""
+    "todo":"mail",
+    "copyright":""
   },
   {
     "id":48,
@@ -1895,9 +1870,8 @@ var data = [
     "fee":"",
     "kind":"gewerblich",
     "remarks":"",
-    "todo":"",
-    "bbq":"",
-    "winepunch":""
+    "todo":"mail",
+    "copyright":""
   },
   {
     "id":46,
@@ -1967,10 +1941,9 @@ var data = [
     "web":"www.joseph-nieke.de",
     "fee":"",
     "kind":"gewerblich",
-    "remarks":"",
-    "todo":"-",
-    "bbq":"",
-    "winepunch":""
+    "remarks":"<p>Berlins stimmungsvollster Weihnachtsmarkt – dieses Jahr auf dem Schlossplatz!</p><p>Nach 22 Jahren rund um das Opernpalais am weltbekannten Boulevard Unter den Linden findet der „Nostalgische Weihnachtsmarkt“ in diesem Jahr auf dem Schlossplatz in unmittelbarer Nähe zum künftigen Humboldt-Forum vor dem ehemaligen DDR-Staatsratsgebäude statt.</p><p>Kunsthandwerker aus aller Welt präsentieren in Berlins historischer Mitte wieder hochwertige Geschenkideen und typisch-weihnachtliche Accessoires wie Krippenfiguren, Holzspielzeug, Christbaumschmuck, Schokoladen-Werkzeug, Weihnachtssterne, Räuchermännchen, Spieluhren, Pyramiden, Lammfellschuhe und Kerzen.</p><p>Heiße Maroni, gebrannte Mandeln, Winzer-Glühwein, Feuerzangenbowle, Lebkuchen und viele weitere typische Spezialitäten sorgen bei einem entspannten Marktrundgang für Gaumenfreuden.</p><p>Nostalgische Fahrgeschäfte, eine „lebendige“ Weihnachtskrippe und Märchenlesungen runden das schöne weihnachtliche Ambiente ab.</p>",
+    "todo":"ready",
+    "copyright":"Gritt Ockert"
   },
   {
     "id":64,
@@ -2042,8 +2015,7 @@ var data = [
     "kind":"gewerblich",
     "remarks":"",
     "todo":"",
-    "bbq":"",
-    "winepunch":""
+    "copyright":""
   },
   {
     "id":56,
@@ -2115,8 +2087,7 @@ var data = [
     "kind":"gemeinnützig",
     "remarks":"",
     "todo":"",
-    "bbq":"",
-    "winepunch":""
+    "copyright":""
   },
   {
     "id":66,
@@ -2187,9 +2158,8 @@ var data = [
     "fee":"",
     "kind":"gewerblich",
     "remarks":"Chöre mit nationaler und internationaler Weihnachtsmusik: täglich 18:00 und 19:00 Uhr, an den Advents-Sonntagen auch 16:00 und 17:00 Uhr",
-    "todo":"",
-    "bbq":"",
-    "winepunch":""
+    "todo":"mail",
+    "copyright":""
   },
   {
     "id":70,
@@ -2261,8 +2231,7 @@ var data = [
     "kind":"gewerblich",
     "remarks":"www.cocolorus-diaboli.de",
     "todo":"",
-    "bbq":"",
-    "winepunch":""
+    "copyright":""
   },
   {
     "id":74,
@@ -2334,8 +2303,7 @@ var data = [
     "kind":"gemeinnützig",
     "remarks":"",
     "todo":"",
-    "bbq":"",
-    "winepunch":""
+    "copyright":""
   },
   {
     "id":78,
@@ -2407,8 +2375,7 @@ var data = [
     "kind":"gemeinnützig",
     "remarks":"",
     "todo":"",
-    "bbq":"",
-    "winepunch":""
+    "copyright":""
   },
   {
     "id":72,
@@ -2480,8 +2447,7 @@ var data = [
     "kind":"gemeinnützig",
     "remarks":"",
     "todo":"",
-    "bbq":"",
-    "winepunch":""
+    "copyright":""
   },
   {
     "id":76,
@@ -2553,8 +2519,7 @@ var data = [
     "kind":"gemeinnützig",
     "remarks":"",
     "todo":"",
-    "bbq":"",
-    "winepunch":""
+    "copyright":""
   },
   {
     "id":90,
@@ -2626,8 +2591,7 @@ var data = [
     "kind":"gemeinnützig",
     "remarks":"",
     "todo":"",
-    "bbq":"",
-    "winepunch":""
+    "copyright":""
   },
   {
     "id":80,
@@ -2699,8 +2663,7 @@ var data = [
     "kind":"gewerblich",
     "remarks":"",
     "todo":"mail",
-    "bbq":"",
-    "winepunch":""
+    "copyright":""
   },
   {
     "id":88,
@@ -2772,8 +2735,7 @@ var data = [
     "kind":"gewerblich",
     "remarks":"",
     "todo":"",
-    "bbq":"",
-    "winepunch":""
+    "copyright":""
   },
   {
     "id":94,
@@ -2843,10 +2805,9 @@ var data = [
     "web":"www.hallenamborsigturm.de",
     "fee":"",
     "kind":"gewerblich",
-    "remarks":"",
-    "todo":"mail",
-    "bbq":"",
-    "winepunch":""
+    "remarks":"<p>Der Weihnachtsmarkt in den Hallen am Borsigturm findet zum Großteil im Einkaufscenter statt. Vor dem Center befindet sich ein Außenmarkt und ein Verkaufsplatz für Rotfichten, Nordmanntannen und Co vom Tannenmann.</p>",
+    "todo":"ready",
+    "copyright":"PublicDomainPictures"
   },
   {
     "id":92,
@@ -2918,8 +2879,7 @@ var data = [
     "kind":"gewerblich",
     "remarks":"<p>Alle Jahre wieder, weihnachtet es auch im Einkaufszentrum „Der Clou“ am Kurt-Schumacher-Platz in Berlin-Reinickendorf</p><p>Wir stimmen unsere Kunden und Besucher mit unserer festlichen Weihnachtsdekoration auf das Weihnachtsfest ein. Die Beleuchtung der Weihnachtsdekoration und der Straßenbäume auf dem Kurt-Schumacher-Platz wird nach dem Totensonntag, am 24.11.2014, in Betrieb genommen.</p><p>In unserer Himmelsbäckerei können Kinder unter der Anleitung einer erfahrenen, „engelsgleichen“ Himmelsbäckermeisterin Plätzchen backen. „Nach getaner Arbeit“ erhält jedes Kind eine Tüte mit den selbst gebackenen Plätzchen. Die Teilnahme an der Himmelsbäckerei ist kostenlos. Einige Termine, besonders für 16:00 Uhr bzw. 17:00 Uhr, sind noch frei. Anmeldungen werden im Büro des Center-Managements (Telefon 030/495 70 58) entgegen genommen. Vom 01.12. – 19.12.2014 wird montags – freitags, jeweils um 10:00 Uhr, 11:00 Uhr, 16:00 und 17:00 Uhr, gebacken.</p>",
     "todo":"ready",
-    "bbq":"-",
-    "winepunch":"-"
+    "copyright":"Einkaufszentrum \"Der Clou\""
   },
   {
     "id":96,
@@ -2991,8 +2951,7 @@ var data = [
     "kind":"gemeinnützig",
     "remarks":"",
     "todo":"",
-    "bbq":"",
-    "winepunch":""
+    "copyright":""
   },
   {
     "id":98,
@@ -3064,8 +3023,7 @@ var data = [
     "kind":"gemeinnützig",
     "remarks":"",
     "todo":"",
-    "bbq":"",
-    "winepunch":""
+    "copyright":""
   },
   {
     "id":106,
@@ -3137,8 +3095,7 @@ var data = [
     "kind":"gemeinnützig",
     "remarks":"",
     "todo":"",
-    "bbq":"",
-    "winepunch":""
+    "copyright":""
   },
   {
     "id":108,
@@ -3210,8 +3167,7 @@ var data = [
     "kind":"gemeinnützig",
     "remarks":"",
     "todo":"",
-    "bbq":"",
-    "winepunch":""
+    "copyright":""
   },
   {
     "id":104,
@@ -3283,8 +3239,7 @@ var data = [
     "kind":"gemeinnützig",
     "remarks":"",
     "todo":"",
-    "bbq":"",
-    "winepunch":""
+    "copyright":""
   },
   {
     "id":100,
@@ -3355,9 +3310,8 @@ var data = [
     "fee":"",
     "kind":"gewerblich",
     "remarks":"Der Spandauer Weihnachtsmarkt verwandelt im Advent die Spandauer Altstadt in Berlins stimmungsvollste Einkaufslandschaft! Berlins größter Weihnachtsmarkt startet in sein fünftes Jahrzehnt: Die Plätze, Straßen und Gassen der Spandauer Altstadt präsentieren sich als stimmungsvolle und vielfarbige Einkaufslandschaft im Advent. Das täglich wechselnde Bühnenprogramm, der Mittelaltermarkt und die prächtige Weihnachtstanne prägen den Markt.",
-    "todo":"-",
-    "bbq":"",
-    "winepunch":""
+    "todo":"mail",
+    "copyright":""
   },
   {
     "id":102,
@@ -3429,8 +3383,7 @@ var data = [
     "kind":"gewerblich",
     "remarks":"",
     "todo":"",
-    "bbq":"",
-    "winepunch":""
+    "copyright":""
   },
   {
     "id":120,
@@ -3502,8 +3455,7 @@ var data = [
     "kind":"gewerblich",
     "remarks":"",
     "todo":"",
-    "bbq":"",
-    "winepunch":""
+    "copyright":""
   },
   {
     "id":130,
@@ -3575,8 +3527,7 @@ var data = [
     "kind":"gemeinnützig",
     "remarks":"",
     "todo":"mail",
-    "bbq":"",
-    "winepunch":""
+    "copyright":""
   },
   {
     "id":134,
@@ -3648,8 +3599,7 @@ var data = [
     "kind":"gemeinnützig",
     "remarks":"",
     "todo":"",
-    "bbq":"",
-    "winepunch":""
+    "copyright":""
   },
   {
     "id":132,
@@ -3721,8 +3671,7 @@ var data = [
     "kind":"gemeinnützig",
     "remarks":"",
     "todo":"",
-    "bbq":"",
-    "winepunch":""
+    "copyright":""
   },
   {
     "id":118,
@@ -3794,8 +3743,7 @@ var data = [
     "kind":"gewerblich",
     "remarks":"",
     "todo":"",
-    "bbq":"",
-    "winepunch":""
+    "copyright":""
   },
   {
     "id":128,
@@ -3867,8 +3815,7 @@ var data = [
     "kind":"gewerblich",
     "remarks":"",
     "todo":"",
-    "bbq":"",
-    "winepunch":""
+    "copyright":""
   },
   {
     "id":136,
@@ -3940,8 +3887,7 @@ var data = [
     "kind":"gemeinnützig",
     "remarks":"",
     "todo":"",
-    "bbq":"",
-    "winepunch":""
+    "copyright":""
   },
   {
     "id":110,
@@ -4013,8 +3959,7 @@ var data = [
     "kind":"gewerblich",
     "remarks":"",
     "todo":"mail",
-    "bbq":"",
-    "winepunch":""
+    "copyright":""
   },
   {
     "id":154,
@@ -4086,8 +4031,7 @@ var data = [
     "kind":"gemeinnützig",
     "remarks":"",
     "todo":"",
-    "bbq":"",
-    "winepunch":""
+    "copyright":""
   },
   {
     "id":152,
@@ -4159,8 +4103,7 @@ var data = [
     "kind":"gewerblich",
     "remarks":"",
     "todo":"",
-    "bbq":"",
-    "winepunch":""
+    "copyright":""
   },
   {
     "id":156,
@@ -4232,8 +4175,7 @@ var data = [
     "kind":"gemeinnützig",
     "remarks":"mit Beteiligung der Marienfelder Kyffhäuser",
     "todo":"",
-    "bbq":"",
-    "winepunch":""
+    "copyright":""
   },
   {
     "id":158,
@@ -4305,8 +4247,7 @@ var data = [
     "kind":"gemeinnützig",
     "remarks":"",
     "todo":"",
-    "bbq":"",
-    "winepunch":""
+    "copyright":""
   },
   {
     "id":140,
@@ -4378,8 +4319,7 @@ var data = [
     "kind":"gewerblich",
     "remarks":"",
     "todo":"",
-    "bbq":"",
-    "winepunch":""
+    "copyright":""
   },
   {
     "id":148,
@@ -4451,8 +4391,7 @@ var data = [
     "kind":"gewerblich",
     "remarks":"",
     "todo":"",
-    "bbq":"",
-    "winepunch":""
+    "copyright":""
   },
   {
     "id":170,
@@ -4524,8 +4463,7 @@ var data = [
     "kind":"gemeinnützig",
     "remarks":"",
     "todo":"",
-    "bbq":"",
-    "winepunch":""
+    "copyright":""
   },
   {
     "id":166,
@@ -4597,8 +4535,7 @@ var data = [
     "kind":"gemeinnützig",
     "remarks":"",
     "todo":"",
-    "bbq":"",
-    "winepunch":""
+    "copyright":""
   },
   {
     "id":164,
@@ -4670,8 +4607,7 @@ var data = [
     "kind":"gemeinnützig",
     "remarks":"14:00 Eröffnung mit Bläserensemble Köpenick, 15:00 Basteln im Musikzimmer der Kirche, 15:30 Märchenstunde in der Taufkapelle, 18:00 Adventskonzert mit dem Köpenicker Chor \"Sing! Sing!\"",
     "todo":"",
-    "bbq":"",
-    "winepunch":""
+    "copyright":""
   },
   {
     "id":162,
@@ -4743,8 +4679,7 @@ var data = [
     "kind":"gewerblich",
     "remarks":"",
     "todo":"",
-    "bbq":"",
-    "winepunch":""
+    "copyright":""
   },
   {
     "id":168,
@@ -4816,8 +4751,7 @@ var data = [
     "kind":"gemeinnützig",
     "remarks":"",
     "todo":"",
-    "bbq":"",
-    "winepunch":""
+    "copyright":""
   },
   {
     "id":160,
@@ -4889,8 +4823,7 @@ var data = [
     "kind":"gewerblich",
     "remarks":"",
     "todo":"",
-    "bbq":"",
-    "winepunch":""
+    "copyright":""
   },
   {
     "id":1000,
@@ -4960,9 +4893,8 @@ var data = [
     "web":"http://lucia-weihnachtsmarkt.de",
     "fee":"",
     "kind":"",
-    "remarks":"",
-    "todo":"",
-    "bbq":"",
-    "winepunch":""
+    "remarks":"<p>Gewidmet ist der Lucia Weihnachtsmarkt in der Kulturbrauerei den nordischen Ländern. Lucia, die Lichtbringerin, wird in Schweden jährlich am 13. Dezember gefeiert.</p><p>Die historische Gebäudekomposition der alten Brauerei aus verziertem und ornamentiertem Backsteinklinker des 19. Jahrhunderts bildet eine romantische Kulisse, in der die sechzig im rotweißen skandinavischen Stil gehaltenen Marktstände besonders stimmungsvoll wirken. Auch akustisch fühlt sich der Besucher dem hohen Norden nah – Musik der nordisch-skandinavischen Länder rieselt leise herab. Wärme spenden flackernde Schwedenfeuer und das beliebte Kunstobjekt „Open-Air-Mantel-Heizung“. An dieser skurrilen Installation können sich frierende Besucher angewärmte Pelzmäntel überziehen, für deren Wärmezufuhr ein Holzofen sorgt.</p><p>An den Nachmittagen verweilen viele Familien mit Kindern, die Bungee-Trampolin springen, an der kleinen Ritterburg in lang vergangene Zeiten eintauchen oder auf einem nostalgischen Kettenkarussell ihre Runden drehen. Hauptattraktion für die Kleinen ist der Weihnachtsmann, der täglich von 17 bis 18 Uhr über die Höfe schlendert, Wünsche entgegennimmt, zuhört und gratis Naschereien verteilt. Abends wird der Markt zum Treffpunkt der Erwachsenen. Auf diesem gemütlich-behaglichen Weihnachtsmarkt kann man in Ruhe flanieren, nach Kunsthandwerk stöbern und deutsche sowie nordisch-skandinavische Köstlichkeiten probieren. Übrigens, viele Besucher schwören, auf dem Lucia Weihnachtsmarkt in der Kulturbrauerei gebe es den besten Glögg Berlins.</p>",
+    "todo":"ready",
+    "copyright":"Lucia Weihnachtsmarkt in der Kulturbrauerei, Berlin-Prenzlauer Berg (Fotograf: Kai Bienert)"
   }
 ];
