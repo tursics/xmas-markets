@@ -1725,9 +1725,9 @@ var data = [
     "web":"www.blume-service.de",
     "fee":"",
     "kind":"gewerblich",
-    "remarks":"",
-    "todo":"mail",
-    "copyright":""
+    "remarks":"<p>Auch in diesem Jahr wird die Tradition des „Großen Berliner Weihnachtsmarktes“ hochleben. Der Anspruch, der spektakulärste Weihnachtsmarkt Deutschlands zu sein, wird auch 2014 durch neue imposante Fahrgeschäfte untermauert.</p><p>Der neue 90 Meter Freifall – Turm „Mega King Tower“ wird neben dem traditionellen Wahrzeichen des Weihnachtsmarktes, dem Riesenrad „Steiger“, die leuchtende Berliner Skyline in der Weihnachtszeit um ein weiteres Highlight ergänzen. Der höchste transportable Freifall – Turm der Welt kommt damit zum ersten Mal in die Hauptstadt und komplettiert das Duo der Superlative am ALEXA.</p><p>Ein besonderes Highlight in diesem Jahr ist das thematisierte Laufgeschäft „Chaos Airport“. Die Besucher dieser Attraktion haben hier die Möglichkeit zu erfahren was auch an einem fertig gebauten Flughafen alles schief gehen kann. Die Mitte Berlins ist für dieses Fahrgeschäft also ein ganz besonderer Platz.</p><p>Für das leibliche Wohl sorgen Speisen und Getränke, Gegrilltes und Herzhaftes in einer gemütlichen Atmosphäre für die ganze Familie z.B. in „Zenzis Stubn“ am offenen Kamin oder in „Rosis Weinstube“.</p>",
+    "todo":"ready",
+    "copyright":"Charles Blume Vergnügungsbetrieb GmbH"
   },
   {
     "id":52,
@@ -1869,9 +1869,9 @@ var data = [
     "web":"www.berlinerweihnachtszeit.de",
     "fee":"",
     "kind":"gewerblich",
-    "remarks":"",
-    "todo":"mail",
-    "copyright":""
+    "remarks":"<p>In den Gassen rund um den großen beleuchteten Weihnachtsbaum am Fuße des Roten Rathauses bieten Handwerker und Händler ihre Waren an. Es überraschen Berliner Originale wie der Eckensteher Nante, ein Drehorgelspieler und vieles mehr. Eine Kindereisenbahn fährt durch den romantischen Märchenwald und erfreut Klein und Groß. Die große Pyramide ist eine Originalanfertigung aus dem Erzgebirge und steht seit über 20 Jahren zur Weihnachtszeit in Berlin.</p><p>Die Eiswelt am Neptunbrunnen: Auf 600 qm lädt diese einzigartige runde Eisbahn Jung und Alt zum Schlittschuhlaufen ein. Aufwärmen kann man sich anschließend in einer der großen, beheizten Glühweinstuben rund um die Eisbahn.</p><p>Das weithin sichtbare Wahrzeichen der Berliner Weihnachtszeit ist das 50 m hohe Riesenrad, das höchste Berlins mit geschlossenen Panoramagondeln sowie 2 VIP - Gondeln. Von hier reicht der Blick bis zum Brandenburger Tor, Potsdamer Platz und sogar bis zum Funkturm.</p>",
+    "todo":"ready",
+    "copyright":"Veranstaltungsagentur Laubinger"
   },
   {
     "id":46,
@@ -2092,8 +2092,8 @@ var data = [
   {
     "id":66,
     "district":"Mitte",
-    "name":"Weihnachtsmarkt am Hauptbahnhof",
-    "street":"Washingtonplatz",
+    "name":"Weihnachtsmarkt zwischen Hauptbahnhof und Kanzleramt",
+    "street":"Washingtonplatz vor dem Hauptbahnhof",
     "zip_city":"10557 Berlin",
     "hours":"14:00-22:00",
     "20141117":"",
@@ -2157,9 +2157,9 @@ var data = [
     "web":"www.acksteinerevents.de",
     "fee":"",
     "kind":"gewerblich",
-    "remarks":"Chöre mit nationaler und internationaler Weihnachtsmusik: täglich 18:00 und 19:00 Uhr, an den Advents-Sonntagen auch 16:00 und 17:00 Uhr",
-    "todo":"mail",
-    "copyright":""
+    "remarks":"<p>Design und Genuss am Hauptbahnhof</p><p>Auf dem Washingtonplatz zwischen Hauptbahnhof und Kanzleramt wird es in diesem Jahr zum ersten Mal richtig weihnachtlich. Und das mit besonderen Angeboten. Die „üblichen Mitbringsel“ eines Weihnachtsmarktes werden ergänzt durch Designerangebote, internationale Spezialitäten und durch besondere Weihnachtsgeschenke.</p><p>Es sind Geschenke zum Fest für Freunde und Familie aus Designerläden, Handwerksbetrieben und von Bio-Anbietern. Dazu Glühwein, kandierte Früchte und Crêpes.</p><p>Zur weihnachtlichen Stimmung tragen auch 25 Chöre mit nationaler und internationaler Weihnachtsmusik bei – eine Zusammenarbeit mit dem Chorverband Berlin. Die Auftrittszeiten sind um 18:00 und 19:00 Uhr sowie an den Advents-Sonntagen zusätzlich auch 16:00 und 17:00 Uhr.</p>",
+    "todo":"ready",
+    "copyright":"Deutsche Bahn AG"
   },
   {
     "id":70,
@@ -2661,8 +2661,8 @@ var data = [
     "web":"www.schoenhauser-allee-arcaden.de",
     "fee":"",
     "kind":"gewerblich",
-    "remarks":"",
-    "todo":"mail",
+    "remarks":"Vielen Dank für Ihr freundliches Angebot. Unser Weihnachtsmarkt besteht nur aus 2 Hütten. Wir möchten daher in Ihrer App für Weihnachtsmärkte nicht erscheinen.",
+    "todo":"hide",
     "copyright":""
   },
   {
@@ -3247,7 +3247,7 @@ var data = [
     "name":"41. Traditioneller Spandauer Weihnachtsmarkt",
     "street":"Spandauer Altstadt",
     "zip_city":"13597 Berlin",
-    "hours":"ab 11:00",
+    "hours":"So-Do 11:00-20:00<br>Fr 11:00-21:00<br>Sa 11:00-22:00",
     "20141117":"",
     "20141118":"",
     "20141119":"",
@@ -3309,9 +3309,9 @@ var data = [
     "web":"www.spandauer-weihnachtsmarkt.de",
     "fee":"",
     "kind":"gewerblich",
-    "remarks":"Der Spandauer Weihnachtsmarkt verwandelt im Advent die Spandauer Altstadt in Berlins stimmungsvollste Einkaufslandschaft! Berlins größter Weihnachtsmarkt startet in sein fünftes Jahrzehnt: Die Plätze, Straßen und Gassen der Spandauer Altstadt präsentieren sich als stimmungsvolle und vielfarbige Einkaufslandschaft im Advent. Das täglich wechselnde Bühnenprogramm, der Mittelaltermarkt und die prächtige Weihnachtstanne prägen den Markt.",
-    "todo":"mail",
-    "copyright":""
+    "remarks":"<p>Die Welt ist in Berlin-Spandau zu Gast</p><p>Neben mehreren Kaufhäusern und über 150 Einzelhandelsgeschäften sind es natürlich die Weihnachtshäuser und –stände mit Waren aus aller Welt, die die Vielfarbigkeit des Spandauer Weihnachtsmarktes ausmachen.</p><p>Das kunsthandwerkliche Sortiment liest sich fast wie ein vorweihnachtlicher Wunschzettel: ob Silberschmuck aus Nordafrika und dem nahen Osten,  ukrainische Weihnachtsbaumkugeln oder Schnitzwerk aus Südeuropa – vieles, was im besten Sinne des Wortes in kreativen Händen entsteht, kann man hier anschauen und selbstverständlich auch kaufen. Aus prächtiger Alpacawolle gefertigte Kindertextilien gehören genauso zum Marktbild wie Schmuck einer kroatischen Designschule oder die fein ziselierten Glasgravuren eines türkischen Handwerksmeisters, Schnitzereien aus mediterranem Olivenholz oder baltische Malereien auf über 300 Jahre altem Holz. Hier bekommt man die Weihnachtsbaumkugel mit individueller Glasbemalung oder nach dem Matrjoschka-Prinzip aus Holz: als besonders interessantes Versteck für Miniaturpräsente!</p><p>Afrikanisches Essen sollte man genau so intensiv verkosten wie die von einem russischen Szene-Gastronomen kredenzten Speisen. Skandinavischer Flammlachs und vor Ort geröstete italienische Maroni konkurrieren mit den Süßigkeiten einer polnischen Bonbonmanufaktur oder den berühmten ungarischen Langos-Variationen.</p>",
+    "todo":"ready",
+    "copyright":"Partner für Spandau"
   },
   {
     "id":102,

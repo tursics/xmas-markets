@@ -137,8 +137,9 @@ function composeMarketItem( number)
 	var market = data[ number];
 	var openingtime = getNextMarketOpeningTime( market);
 
-//if( 'mail' == market.todo) { return ''; }
-if( '' == market.todo) { return ''; }
+	if( 'hide' == market.todo) { return ''; }
+//	if( 'mail' == market.todo) { return ''; }
+//	if( '' == market.todo) { return ''; }
 
 	var txt = '<p>' + market.name + '</p><p>' + openingtime + '</p>';
 	var img = '<aside class="pack-begin"><img src="art/' + market.id + '/128.jpg"></aside>';
