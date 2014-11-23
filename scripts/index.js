@@ -83,10 +83,25 @@ function sortDataByDate( a, b)
 	b.data_next_open = daysB;
 
 	if( daysA == daysB) {
-		return getOpeningTime( a, daysA) > getOpeningTime( b, daysB);
+		var timeA = getOpeningTime( a, daysA);
+		var timeB = getOpeningTime( b, daysB);
+		var intA = parseInt( timeA.substr( 6, 2));
+		var intB = parseInt( timeB.substr( 6, 2));
+
+		if( intA == intB) {
+			intA = parseInt( timeA.substr( 9, 2));
+			intB = parseInt( timeB.substr( 9, 2));
+		}
+
+		if( intA == intB) {
+			intA = parseInt( timeA.substr( 0, 2));
+			intB = parseInt( timeB.substr( 0, 2));
+		}
+
+		return intA - intB;
 	}
 
-	return daysA > daysB;
+	return daysA - daysB;
 }
 
 function getNextMarketOpeningTime( obj)
