@@ -162,6 +162,8 @@
     }
 
 ul.calendar {
+	margin:0 auto 0 auto;
+	max-width:27rem;
 }
 
 ul.calendar li {
@@ -169,11 +171,11 @@ ul.calendar li {
 	border:1px solid #f97c17;
 	color:#000000;
 	float:left;
-	height:2em;
-	line-height:1em;
-	padding:0.4em 0.2em 0.2em 0.2em;
+	height:4rem;
+	line-height:2rem;
+	padding:0.5rem 0.3rem 0.25rem 0.3rem;
 	text-align:center;
-	width:2em;
+	width:3rem;
 }
 
 ul.calendar li.gray {
