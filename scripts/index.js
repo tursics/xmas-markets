@@ -8,6 +8,108 @@ config.endDate.setFullYear( 2015, 0, 6); // month - 1
 
 // ·································································
 
+var utils = this.utils || {};
+
+utils.status = (function() {
+	var DISPLAYED_TIME = 2000;
+	var section, content;
+	var timeoutID;
+
+	function clearHideTimeout() {
+		if( timeoutID === null) {
+			return;
+		}
+
+		window.clearTimeout( timeoutID);
+		timeoutID = null;
+	}
+
+	function show( message, duration) {
+		clearHideTimeout();
+		content.innerHTML = '';
+
+		if( typeof message === 'string') {
+			content.textContent = message;
+		} else {
+			try {
+				content.appendChild( message);
+			} catch( ex) {
+				console.error( 'DOMException: ' + ex.message);
+			}
+		}
+
+		section.classList.remove( 'hidden');
+		section.classList.add( 'onviewport');
+		timeoutID = window.setTimeout( hide, duration || DISPLAYED_TIME);
+	}
+
+	function animationEnd( evt) {
+		var eventName = 'status-showed';
+
+		if( evt.animationName === 'hide') {
+			clearHideTimeout();
+			section.classList.add( 'hidden');
+			eventName = 'status-hidden';
+		}
+
+		window.dispatchEvent( new CustomEvent( eventName));
+	}
+
+	function hide() {
+		section.classList.remove( 'onviewport');
+	}
+
+	function destroy() {
+		section.removeEventListener( 'animationend', animationEnd);
+		document.body.removeChild( section);
+		clearHideTimeout();
+		section = content = null;
+	}
+
+	function build() {
+		section = document.createElement( 'section');
+
+		section.setAttribute( 'role', 'status');
+		section.classList.add( 'hidden');
+
+		content = document.createElement( 'p');
+
+		section.appendChild( content);
+		document.body.appendChild( section);
+
+		section.addEventListener( 'animationend', animationEnd);
+	}
+
+	function initialize() {
+		if( section) {
+			return;
+		}
+
+		build();
+	}
+
+	if( document.readyState === 'complete') {
+		initialize();
+	} else {
+		document.addEventListener( 'DOMContentLoaded', function loaded() {
+			document.removeEventListener( 'DOMContentLoaded', loaded);
+			initialize();
+		});
+	}
+
+	return {
+		init: initialize,
+		show: show,
+		hide: hide,
+		destroy: destroy,
+		setDuration: function setDuration( time) {
+			DISPLAYED_TIME = time || DISPLAYED_TIME;
+		}
+	};
+})();
+
+// ·································································
+
 function composeSectionList( content)
 {
 	return '<section data-type="list">' + content + '</section>';
@@ -88,12 +190,16 @@ function sortDataByDate( a, b)
 		var intA = parseInt( timeA.substr( 6, 2));
 		var intB = parseInt( timeB.substr( 6, 2));
 
-		if( intA == intB) {
+		if( intA != intB) {
+			return intB - intA;
+		} else {
 			intA = parseInt( timeA.substr( 9, 2));
 			intB = parseInt( timeB.substr( 9, 2));
 		}
 
-		if( intA == intB) {
+		if( intA != intB) {
+			return intB - intA;
+		} else {
 			intA = parseInt( timeA.substr( 0, 2));
 			intB = parseInt( timeB.substr( 0, 2));
 		}
@@ -152,6 +258,7 @@ function composeMarketItem( obj)
 
 	if( 'hide' == obj.todo) { return ''; }
 //	if( 'mail' == obj.todo) { return ''; }
+//	if( 'ready' == obj.todo) { return ''; }
 //	if( '' == obj.todo) { return ''; }
 
 	var txt = '<p>' + obj.name + '</p><p>' + openingtime + '</p>';
@@ -265,7 +372,7 @@ function callChangeFavorite( marketId)
 	document.querySelector('#buttonFav').innerHTML = '<i class="icon-heart-filled"></i>';
 
 	var obj = getObjFromID( marketId);
-	//status ? 
+	utils.status.show( obj.name + ' ist jetzt dein Lieblingsmarkt.');
 }
 
 function fillListOneMarket()
@@ -277,7 +384,12 @@ function fillListOneMarket()
 
 	txt += '<div style="margin:0 -1.5rem 1rem -1.5rem;padding:1.5rem 1.5rem 0 1.5rem;text-align:center;border-bottom:1px solid #f97c17;background:#fde4d0;">';
 	txt += '<p style="color:#f97c17;">' + obj.name + '</p>';
-	txt += '<p><i class="icon-clock"></i> ' + getNextMarketOpeningTime( obj) + ' geöffnet</p>';
+
+	var opening = getNextMarketOpeningTime( obj);
+	if( opening != 'Geschlossen') {
+		opening += ' geöffnet';
+	}
+	txt += '<p><i class="icon-clock"></i> ' + opening + '</p>';
 	if( '' != obj.fee) {
 		txt += '<p>' + obj.fee + '</p>';
 	}
