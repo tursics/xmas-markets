@@ -213,8 +213,8 @@ var data = [
     "web":"www.lindenkirche.de",
     "fee":"",
     "kind":"gemeinnützig",
-    "remarks":"",
-    "todo":"",
+    "remarks":"<p>Viele Verkaufsstände, Trödel, Bücher, Tiffany, Tag der offenen Tür der Kita, Cafeteria, Historische Modellbahn, Brot aus dem Holzbackofen, \"Die Hauptstadtseife\", Tombola, Waffeln, Glühwein, Essen uvm.</p>",
+    "todo":"mail",
     "copyright":""
   },
   {
@@ -501,8 +501,8 @@ var data = [
     "web":"www.stgeorges.de",
     "fee":"",
     "kind":"gemeinnützig",
-    "remarks":"",
-    "todo":"",
+    "remarks":"<p>The Anglican Parish of Berlin invites for this year’s varied Christmas Market. On the ground of the spacious church garden English and German stands offer specialties: Gifts, handicrafts, toys and games, a tombola, a raffle with wonderful prizes, homemade cakes and traditional mince pies along with other British specialties.</p><p>Lots of Christmas music with various choirs, bagpipes and a Christmas carol sing-along guarantee a special atmosphere. There is a room for children, with activities and readers to entertain them with Christmas tales. English books are on sale at great low prices in the chapel. Lots of refreshments will be on sale to keep energy and spirits high.</p>",
+    "todo":"mail",
     "copyright":""
   },
   {
@@ -933,8 +933,8 @@ var data = [
     "web":"www.kiezweihnacht.de",
     "fee":"",
     "kind":"gewerblich",
-    "remarks":"",
-    "todo":"",
+    "remarks":"<p>Die 9. KiezWeihnacht – ein beschaulicher Weihnachtsmarkt in Berlin-Friedrichshain – findet am zweiten und dritten Adventswochenende statt. Stimmungsvoll präsentieren sich auch im Jahr 2014 wieder über 60 Händler an der Samariterkirche, die vorwiegend aus dem Kiez stammen. Das Angebot ist so vielfältig wie der Kiez selbst. Kunsthandwerk und Schmuckdesign werden ebenso wie Kinderspielzeug oder Adventsdekoration erhältlich sein. Für das leibliche Wohl ist gesorgt, es gibt Bastelangebote für Kinder und -natürlich- einen Weihnachtsmann. Die Veranstalter, Händler und Kunsthandwerker in Friedrichshain wollen mit der Organisation dieses Weihnachtsmarktes ein beschauliches und nachbarschaftliches Ambiente schaffen. Nachbarn und Besucher sind eingeladen, Geschäfte der Umgebung kennenzulernen und ins Gespräch zukommen. Es werden Geschenkideen aller Art angeboten in einem Umfeld jenseits der allgegenwärtigen Vorweihnachtshektik. Die Erfahrungen der vergangenen Jahre zeigen, dass dieses Angebot von den Anwohnern gerne angenommen wird.</p><p>Für das kulturelle Ambiente sorgt die traditionsreiche evangelische Kirchengemeinde Galiläa-Samariter. So werden nachmittags und am frühen Abend Konzerte, Lesungen und ein Kinderprogramm in der Samariterkirche stattfinden. Da die Konzerte und Vorstellungen erfahrungsgemäß gut besucht sind, empfehlen wir, rechtzeitig zu erscheinen. Sobald die genauen Termine feststehen, werden diese der Presse bekanntgegeben.</p>",
+    "todo":"mail",
     "copyright":""
   },
   {
@@ -1149,8 +1149,8 @@ var data = [
     "web":"www.ikarus-firmaris.de",
     "fee":"",
     "kind":"gemeinnützig",
-    "remarks":"",
-    "todo":"",
+    "remarks":"<p>Der Mittelalterliche Weihnachtsmarkt in Karlshorst lädt Sie wie jedes Jahr ein zu mittelalterlichem Handwerk, Gewürzduft, handgetriebenem Karussel für Kinder und vielem mehr. Dazu präsentieren zahlreiche Karlshorster Einrichtungen und Kunstschaffende ihre Arbeit.</p><p>Am Samstag, 6. Dezember von 13 bis 22 Uhr und Sonntag, 7. Dezember von 13 bis 19 Uhr auf dem Johannes-Fest-Platz in 10318 Karlshorst.</p><p>NEU in diesem Jahr: ein Innen-Weihnachtsmarkt im Kulturhaus mit Ständen von Kleidung und Kindersachen, mit Klangholzschitzen, einer Nähstube, einer Backstube uhnd natürlich vielen, weiteren Bastelangebote für Kinder. Öffnungszeit des Kulturhauses jeweils 13 bis 19 Uhr.</p>",
+    "todo":"mail",
     "copyright":""
   },
   {
@@ -2589,8 +2589,8 @@ var data = [
     "web":"",
     "fee":"",
     "kind":"gemeinnützig",
-    "remarks":"",
-    "todo":"",
+    "remarks":"<p>Der Nikolausmarkt ist eine Benefizverantstaltung für den Kinderbauernhof. Bringt bitte etwas Geld mit!</p><p>Basteln - Spielen - Leckereien - Geschenke zum Fest</p>",
+    "todo":"mail",
     "copyright":""
   },
   {
@@ -3093,8 +3093,8 @@ var data = [
     "web":"www.goldnetz-berlin.de",
     "fee":"",
     "kind":"gemeinnützig",
-    "remarks":"",
-    "todo":"",
+    "remarks":"<p>Der Soziale Weihnachtsmarkt ist eine bewährte Tradition des Veranstalters Goldnetz gGmbH, einmal im Jahr kurz vor Weihnachten einen etwas größeren Markt zu veranstalten. Einen Markt, auf dem sich auch die, die sonst aus finanziellen Gründen einen Bogen um die kommerziellen Weihnachtsmärkte machen müssen, ein wenig Weihnachtsstimmung leisten können. Und im Märkte machen kennt Goldnetz sich aus: berlinweit veranstaltet der gemeinnützige Träger die Sozialmärkte mit preisgünstigen Artikeln für Menschen mit weniger als 900 Euro Nettoeinkommen.</p>",
+    "todo":"mail",
     "copyright":""
   },
   {
@@ -3165,8 +3165,8 @@ var data = [
     "web":"www.kladower-christkindlmarkt.de",
     "fee":"",
     "kind":"gemeinnützig",
-    "remarks":"",
-    "todo":"",
+    "remarks":"<p>Auf dem Kladower Christkindlmarkt gibt es ein abwechslungsreiches Bühnenprogramm für und mit Groß und Klein. Den größten Anteil aber nimmt weihnachtliche Musik von Kindern für Kinder im Programm ein. Der Kladower Christkindlmarkt findet große Unterstützung durch das ortsansässige Gewerbe und viele Bürger. Diese spenden attraktive Gewinne für unsere Tombola.</p><p>Der Weihnachtsmann mit seinen Engeln darf natürlich auch nicht fehlen. Mit einem großen Sack voller kleiner Geschenke ziehen sie zur Freude der Kinder an beiden Tagen über den Markt. Für das leibliche Wohl ist natürlich auch durch die Arbeit vieler ehrenamtlicher Helfer gesorgt, in Form von Glühwein, nichtalkoholischen Getränken, Bier, Lumumba, Kaffee, Kuchen, Waffeln, Bratwurst, Steak, Pilzpfanne und Erbsensuppe. Dies natürlich zu angemessenen Preisen, damit bei einem Besuch mit der Familie jeder satt vom Platz geht.</p><p>Sie suchen nach einem Weihnachtsgeschenk? Dann gehen Sie doch die bekannte Runde. Dort finden Sie an einem der zahlreichen kunstgewerblichen Stände bestimmt etwas Schönes.</p>",
+    "todo":"mail",
     "copyright":""
   },
   {
