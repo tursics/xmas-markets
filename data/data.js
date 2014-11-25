@@ -364,7 +364,7 @@ var data = [
   {
     "id":6,
     "district":"Charlottenburg-Wilmersdorf",
-    "name":"Weihnachten in Westend (teilgewerblich)",
+    "name":"Weihnachten in Westend",
     "street":"Preußenallee",
     "zip_city":"14052 Berlin",
     "hours":"11:00-20:00",
@@ -429,8 +429,8 @@ var data = [
     "web":"www.family-and-friends-eV.de",
     "fee":"",
     "kind":"teilgewerblich",
-    "remarks":"das Rüsseltier ist an beiden Tagen unterwegs, Greifvogelschau und Weihnachtskrippe",
-    "todo":"",
+    "remarks":"<p>Der Weihnachtsmarkt in der Preußenallee in Charlottenburg-Westend öffnet am 20. und 21. Dezember. Das Rüsseltier ist an beiden Tagen unterwegs, Greifvogelschau und Weihnachtskrippe.</p>",
+    "todo":"mail",
     "copyright":""
   },
   {
@@ -573,8 +573,8 @@ var data = [
     "web":"www.klausenerplatz.de",
     "fee":"",
     "kind":"gemeinnützig",
-    "remarks":"",
-    "todo":"",
+    "remarks":"<p>Am Sonntag, den 14. Dezember 2014 vor dem Bröhanmuseum zwischen 12.00 – 18.00 Uhr, findet wie schon seit über zehn Jahren auch in diesem Jahr wieder der kunsthandwerkliche Weihnachtsmarkt statt.</p>",
+    "todo":"mail",
     "copyright":""
   },
   {
@@ -861,8 +861,8 @@ var data = [
     "web":"www.oldthing.de",
     "fee":"Eintritt 2 €, Kinder und ab 17:00 frei",
     "kind":"gewerblich",
-    "remarks":"",
-    "todo":"",
+    "remarks":"<p>Weihnachten für Sammler - die Adventsbörse im Galeria Kaufhof Ostbahnhof, 4. Etage, Koppenstr. 8</p>",
+    "todo":"mail",
     "copyright":""
   },
   {
@@ -1293,8 +1293,8 @@ var data = [
     "web":"",
     "fee":"",
     "kind":"gemeinnützig",
-    "remarks":"",
-    "todo":"",
+    "remarks":"<p>Der interkulturelle Weihnachtsmarkt für den Stadtteil Marzahn Nordwest mit vielen Vereinen und Projekten aus dem Quartier findet auch dieses Jahr in den Passagen des Einkaufscenters „Zu den Eichen“ statt.</p>",
+    "todo":"mail",
     "copyright":""
   },
   {
@@ -2229,8 +2229,8 @@ var data = [
     "web":"www.schlossbritz.de",
     "fee":"Eintritt 3 €, ermäßigt 2 €, Kinder unter 6 Jahren und Anwohner frei",
     "kind":"gewerblich",
-    "remarks":"www.cocolorus-diaboli.de",
-    "todo":"",
+    "remarks":"<p>Erleben Sie am 3. und 4. Adventwochenende den Gutshof von Schloss Britz in seinem ganz besonderen Weihnachtsambiente: Das Wandertheater Cocolorus Budenzauber präsentiert eine Nordische Märchenweihnacht, die einzigartig in Berlin sein dürfte. Frau Holle und die Schneekönigin bieten mit ihren lustigen Trollen der ganzen Familie ein buntes, fantasievolles Programm, mit dem sie Groß und Klein auf ein besinnliches Weihnachtsfest einstimmen wollen.</p><p>Der historische Markt auf dem Gutshof auf Schloss Britz bietet den Besucherinnen und Besuchern Stände mit altem Kunsthandwerk. Leckere Apfelkrapfen, frische Langos, Wildkessel, skandinavische Glühweinspezialitäten und viele weitere kulinarische Spezialitäten erwarten Sie in gemütlich weihnachtlicher Atmosphäre. Mit den Märchenspielen „Alarm im Kaspertheater“, „Der Fischer und seine Frau“ sowie „Der Rattenfänger“ wird auch den kleinsten Besuchern ein abwechslungsreiches Programm geboten. Neben den Feuerspielen „Araga Mysteria“, der Gauklergruppe „Max und Moritz im Quadrat“, dem lustigen akrobatischen Stück „Winterreigen“ und alter weihnachtlicher Musik der Gruppe „Cocolorus Diaboli“ wird den Besuchern an den Adventwochenenden mit den „Spirit Archers“ und Fahrten mit Schlittenhunden ein umfangreiches Programm geboten. Als Neuheit präsentiert die Wandergruppe Cocolorus Budenzauber eine Zwergenschmiede mit einer Zwergeneisenbahn, die neben dem historischen Karussel und den robusten Wikingerschiffen gern ausprobiert werden können.</p>",
+    "todo":"mail",
     "copyright":""
   },
   {
@@ -2373,8 +2373,8 @@ var data = [
     "web":"www.qm-koernerpark.de",
     "fee":"",
     "kind":"gemeinnützig",
-    "remarks":"",
-    "todo":"",
+    "remarks":"<p>Am 3. Advents-Samstag, den 13. Dezember 2014, findet wieder der beliebte Weihnachtsbazar von 15 bis 18 Uhr auf der Terrasse vor der Galerie im Körnerpark statt. Es wird Marktstände und ein kleines Bühnenprogramm geben. Die Ständeanzahl auf diesem Bazar ist beschränkt. Das Angebot soll weihnachtlich ausgerichtet sein: Schmuck, Kekse, Gegrilltes, Gebasteltes, Kunst, Kerzen, Sterne…</p><p>Das Fest wird in Zusammenarbeit mit dem Quartiersmanagement Körnerpark veranstaltet und mit Fördermitteln aus dem Programm Soziale Stadt finanziert.</p>",
+    "todo":"mail",
     "copyright":""
   },
   {
@@ -3885,8 +3885,8 @@ var data = [
     "web":"www.villadonnersmarck.de",
     "fee":"",
     "kind":"gemeinnützig",
-    "remarks":"",
-    "todo":"",
+    "remarks":"<p>Alle Jahre wieder: Am 3. Advent öffnen wir für Sie die Villa wieder als „Das Weihnachtshaus“. Gemütlich brennende Feuerkörbe, der Duft von Punsch und gebrannten Mandeln, am offenen Feuer Stockbrot rösten – und an den Ständen gibt es schöne Sachen zu entdecken, die man anderswo selten findet: Vieles in den bunten Auslagen stammt aus Berliner Werkstätten für Menschen mit Behinderung und aus unseren Bastelgruppen. Kunsthandwerk, Schmuck und liebevoll hergestellte Kleinode zeigen dabei eindrucksvoll, wie viel Können und Kreativität dahinter stecken. Eine tolle Gelegenheit, um ganz besondere Geschenke zu entdecken.</p><p>Wer es ganz individuell möchte, erstellt mit uns einfach seine eigenen Weihnachtskarten. (Nicht nur) Kinder können ihr eigenes Lebkuchenhaus mit viel Zuckerguss und Leckereien verzieren oder an den Spielständen ihre Augen zum Leuchten bringen. Dazu gibt es Musik vom gläsernen Flügel und ein besinnliches Kulturprogramm. Attraktive Gewinne locken beim Rätselparcours, kurz, jede Menge gemütliche Weihnachtsstimmung, denn der Weihnachtsmann kommt auch vorbei. Feiern Sie mit uns einen fröhlichen Adventssonntag für die ganze Familie in barrierefreiem Ambiente – wir freuen uns auf Sie! Der Eintritt ist frei.</p>",
+    "todo":"mail",
     "copyright":""
   },
   {
@@ -4173,8 +4173,8 @@ var data = [
     "web":"www.tsv-marienfelde.de",
     "fee":"",
     "kind":"gemeinnützig",
-    "remarks":"mit Beteiligung der Marienfelder Kyffhäuser",
-    "todo":"",
+    "remarks":"<p>Am 7. Dezember ist es wieder so weit: Der 30. Weihnachtsmarkt des TSV Marienfeld mit Beteiligung der Marienfelder Kyffhäuser Kamaradschaft in Alt-Marienfelde</p><p>Es gibt Vorführungen, Tombola für die Kinder, Malen und Basteln, eine Spielstraße, Bastelarbeiten, Essen und Trinken.</p>",
+    "todo":"mail",
     "copyright":""
   },
   {
@@ -4245,8 +4245,8 @@ var data = [
     "web":"www.friedenau-netzwerk.de",
     "fee":"",
     "kind":"gemeinnützig",
-    "remarks":"",
-    "todo":"",
+    "remarks":"<p>Wir möchten Sie herzlich zum Friedenauer Engelmarkt am 07.12.2014 (2. Advent) in der Zeit von 13 – 18 Uhr auf dem Breslauer Platz einladen. Es erwarten Sie Kunsthandwerk, selbstgemachte Kleinigkeiten und Leckereien, Infos aus dem Bezirk u.v.m. Eröffnet wird der Engelmarkt mit unserem Schirmherrn, Bezirksstadtrat Oliver Schworck, und den Friedenauer Engeln (es sind wieder drei!).</p>",
+    "todo":"mail",
     "copyright":""
   },
   {
@@ -4461,8 +4461,8 @@ var data = [
     "web":"",
     "fee":"",
     "kind":"gemeinnützig",
-    "remarks":"",
-    "todo":"",
+    "remarks":"<p>Der Weihnachtsmarkt an der Grünauer Friedenskirche am Don-Ugoletti-Platz wird von der Bühne Grünau e.V. veranstaltet.</p>",
+    "todo":"void",
     "copyright":""
   },
   {
@@ -4677,8 +4677,8 @@ var data = [
     "web":"",
     "fee":"",
     "kind":"gewerblich",
-    "remarks":"",
-    "todo":"",
+    "remarks":"<p>1000 Weihnachtsmänner werden auf dem Friedrichshagener Weihnachtsmarkt VERSCHENKT</p><p>Der Weihnachtsmarkt Bölschestraße bietet allen Gästen noch einmal kurz vor dem Fest die Möglichkeit, für ihre Lieben ein schönes Geschenk zu beschaffen. Da bieten sich zum Beispiel der Kunsthandwerker mit seiner original erzgebirgischen Holzkunst oder das reichhaltig vorhandene Schmuck- angebot und weitere Accessuire an. Darf es etwas künstlerischer sein, dann hin zu den Künstlern und Handwerkern mit ihren Bildern, Karten, Töpferwaren, Keramiken, Korbflechtarbeiten, Drechslerwaren und sonstigen Dingen die uns unser Leben verschönern. Für gute Laune sorgen die Schausteller mit Riesenrad, Kinderkarussell, Weihnachtsverlosung, Tütenangeln oder Pfeilwerfen. Nicht zu vergessen sind die Zuständigkeiten für das leibliche Wohl. Süßwaren von Zuckerwatte, Poppkorn, Crepes, Schokofrüchte und das Pfefferkuchenherz sind die Leckereien, das Deftige kommt vom Grillstand, Grünkohl mit Stinte, Kettwurst aus DDR Zeit, Ungarischer Langos, Mexikopfanne, russischer Borschtsch, Knofribrot, Fischbrötchen u.v.m. gehören zum Angebot. Wieder dabei ist unser Winzer aus Rheinland Pfalz, der seinen selbstprodu- zierten Glühwein und andere Produkte anbietet. Es wird ein durchgehendes Bühnenprogramm geben, welches aus dem singen- genden Weihnachtsmann Ronald Beitz, sowie weiteren Künstlern und Bläsern besteht.</p><p>Neu in diesem Jahr ist ein kleiner Streichelzoo.</p>",
+    "todo":"mail",
     "copyright":""
   },
   {
