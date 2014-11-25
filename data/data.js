@@ -3814,8 +3814,8 @@ var data = [
     "fee":"",
     "kind":"gewerblich",
     "remarks":"<p>Die traditionsreiche Advent-Künstlerstation gibt es auch dieses Jahr wieder am Platz vor dem Bahnhof Mexikoplatz.</p>",
-    "todo":"void",
-    "copyright":""
+    "todo":"ready",
+    "copyright":"AnnaER"
   },
   {
     "id":136,
@@ -4030,8 +4030,8 @@ var data = [
     "fee":"",
     "kind":"gemeinnützig",
     "remarks":"<p>Adventsmarkt für einen gemeinnützigen Zweck mit ca. 90 Ständen mit kunstgewerblichen Arbeiten, Keramik, Holzwaren, Imkererzeugnissen, Nostalgischem, Spielsachen, Bastel- und Handarbeiten, Selbstgebackenem, Glühwein, Kaffee und Kakao, Suppe, Wurst, Grillfleisch und vieles mehr.</p>",
-    "todo":"void",
-    "copyright":""
+    "todo":"ready",
+    "copyright":"geralt"
   },
   {
     "id":152,
@@ -4462,8 +4462,8 @@ var data = [
     "fee":"",
     "kind":"gemeinnützig",
     "remarks":"<p>Der Weihnachtsmarkt an der Grünauer Friedenskirche am Don-Ugoletti-Platz wird von der Bühne Grünau e.V. veranstaltet.</p>",
-    "todo":"void",
-    "copyright":""
+    "todo":"ready",
+    "copyright":"Gellinger"
   },
   {
     "id":166,
