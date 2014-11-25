@@ -141,9 +141,9 @@ var data = [
     "web":"www.christianskirken.de",
     "fee":"",
     "kind":"gemeinnützig",
-    "remarks":"<p>Schlendern sie gemütlichen über den dänischen Weihnachtsmarkt und halten sie Ausschau nach Krapfen, Glühwein, Weihnachtsschmuck und Weihnachtsleckereien.</p>",
-    "todo":"mail",
-    "copyright":""
+    "remarks":"<p>Dänische Spezialitäten: Smørrebrød, Snaps, Æbleskiver, Glögg, Hotdogs, Suppe, Ris a la mande, Kuchen, Dänische Lebensmittel, Tombola, Nisser, Engel, Weihnachtsschmuck, Glas, Kerzen, Mobiles, Textilien, Kindermode, Spielzeug und Dänisches Design</p><p>Eröffnung durch den dänischen Botschafter Per Poulsen-Hansen</p><p>Live Jazzmusik und vieles mehr...</p><p>Christianskirken - Die Dänische Kirche am Fehrbellinerplatz</p>",
+    "todo":"ready",
+    "copyright":"Christianskirken"
   },
   {
     "id":18,
@@ -1149,9 +1149,9 @@ var data = [
     "web":"www.ikarus-firmaris.de",
     "fee":"",
     "kind":"gemeinnützig",
-    "remarks":"<p>Der Mittelalterliche Weihnachtsmarkt in Karlshorst lädt Sie wie jedes Jahr ein zu mittelalterlichem Handwerk, Gewürzduft, handgetriebenem Karussel für Kinder und vielem mehr. Dazu präsentieren zahlreiche Karlshorster Einrichtungen und Kunstschaffende ihre Arbeit.</p><p>Am Samstag, 6. Dezember von 13 bis 22 Uhr und Sonntag, 7. Dezember von 13 bis 19 Uhr auf dem Johannes-Fest-Platz in 10318 Karlshorst.</p><p>NEU in diesem Jahr: ein Innen-Weihnachtsmarkt im Kulturhaus mit Ständen von Kleidung und Kindersachen, mit Klangholzschitzen, einer Nähstube, einer Backstube uhnd natürlich vielen, weiteren Bastelangebote für Kinder. Öffnungszeit des Kulturhauses jeweils 13 bis 19 Uhr.</p>",
-    "todo":"mail",
-    "copyright":""
+    "remarks":"<p>Werte Besucher, der Mittelalterliche Weihnachtsmarkt in Karlshorst lädt Sie wie jedes Jahr ein zu mittelalterlichem Handwerk, Gewürzduft, handgetriebenem Karussel für Kinder und vielem mehr. Dazu präsentieren zahlreiche Karlshorster Einrichtungen und Kunstschaffende ihre Arbeit.</p><p>Am Samstag, 6. Dezember von 13 bis 22 Uhr und Sonntag, 7. Dezember von 13 bis 19 Uhr auf dem Johannes-Fest-Platz in 10318 Karlshorst.</p><p>NEU in diesem Jahr: ein Innen-Weihnachtsmarkt im Kulturhaus mit Ständen von Kleidung und Kindersachen, mit Klangholzschitzen, einer Nähstube, einer Backstube uhnd natürlich vielen, weiteren Bastelangebote für Kinder. Öffnungszeit des Kulturhauses jeweils 13 bis 19 Uhr.</p>",
+    "todo":"ready",
+    "copyright":"iKARUS stadtteilzentrum"
   },
   {
     "id":32,
@@ -2301,9 +2301,9 @@ var data = [
     "web":"www.dorfkirchebritz.de",
     "fee":"",
     "kind":"gemeinnützig",
-    "remarks":"<p>Auch dieses Jahr findet der Adventsmarkt an der evangelische Dorfkirche in Berlin Britz statt.</p>",
-    "todo":"mail",
-    "copyright":""
+    "remarks":"<p>Am 30. November feiern wir wieder in der Ev. Dorfkirchengemeinde Britz unseren Adventsmarkt.</p><p>Alle sind herzlich eingeladen um 10 Uhr in der Kirche die ersten Adventslieder im Gottesdienst zu singen, gemeinsam zu beten und nach dem Gottesdienst ab 11 Uhr den romantischen Adventsmarkt rund um die Dorfkirche zu besuchen, oder sich im Gemeindegarten an vorweihnachtlichen Genüssen zu laben.</p><p>Um 15 Uhr gibt es in der Kirche für kleine und auch große Kinder das Puppentheater von Martin Lenz mit dem Märchen \"König Drosselbart\" und wunderbarer musikalischer Untermalung. Im Gemeindehaus gibt es eine Nähstube für Kinder.</p><p>Um 18 Uhr endet unser Britzer Adventsmarkt mit einer kurzen Abendandacht.</p>",
+    "todo":"ready",
+    "copyright":"Dorfkirchengemeinde Berlin-Britz"
   },
   {
     "id":78,
@@ -2517,9 +2517,9 @@ var data = [
     "web":"www.berlin.de/ba-neukoelln/org/arw/arw.index.html",
     "fee":"",
     "kind":"gemeinnützig",
-    "remarks":"<p>Jedes Jahr am zweiten Adventswochenende findet der traditionelle Alt-Rixdorfer Weihnachtsmarkt rund um den Richardplatz statt. Im Schein unzähliger Petroleumlichter unterstützen über 100 Vereine, Organisationen und Verbände die karitative Zielsetzung dieses Berlinweit einzigartigen Weihnachtsmarktes. An den Ständen gibt es viel schönes: vom selbstgebasteltes Spielzeug, allerlei aus Holz, Metall und Keramik, Weihnachtsschmuck, Kerzen, Honig, Marmelade, Bürsten, Glückwunschkarten, aber auch Kulinarisches über Rostbratwurst, kandierte Äpfel, Kuchen, Zuckerwatte sowie Getränken wie Glühwein, Kinderpunsch, Kakao, Honigmet, und vieles mehr. Weitere Attraktionen sind das Ponyreiten, die drei Weisen aus dem Morgenland mit ihren Kamelen, die historische Schmiede und die Ausstellung von Kutschen-Schöne. Der Weihnachtsmann begleitet von der historischen Polizeitruppe und die Hexe im Hexenhäuschen begeistern Groß und Klein.</p><p>Besuchen Sie uns im historischen Böhmischen Dorf mitten in Neukölln.</p>",
-    "todo":"mail",
-    "copyright":""
+    "remarks":"<p>Am Freitag, 5. Dezember 2014 um 17.00 Uhr wird der traditionelle Alt-Rixdorfer Weihnachtsmarkt rund um den Richardplatz vom Neuköllner Bezirksbürgermeister Heinz Buschkowsky eröffnet.</p><p>Im sanften Schein von zahllosen Petroleumlampen und mit Lichterketten üppig geschmückten Bäumen bieten über 140 karitative Verbände, Gruppen und Vereine selbstgemachte Kleinigkeiten, schönes Kunsthandwerk und liebevoll Gebasteltes für die zahlreichen Besucher. Für das leibliche Wohl ist ebenfalls gesorgt.</p><p>Wer zur rechten Zeit da ist, trifft die Drei Weisen aus dem Morgenland, die mit ihren Kamelen angereist sind und viele Engel und den Weihnachtsmann mitgebracht haben oder kann die Hexe Abraxa in ihrem Häuschen an der Schmiede besuchen.</p><p>Auf dem Rixdorfer Weihnachtsmarkt werden wie jedes Jahr nur Waren von gemeinnützigen Organisationen feilgeboten. Gerade das macht sein Berlinweit einzigartiges Flair für die Besucher aus.</p>",
+    "todo":"ready",
+    "copyright":"Bezirksamt Neukölln"
   },
   {
     "id":90,
@@ -3453,9 +3453,9 @@ var data = [
     "web":"www.gv-degenhardt.de",
     "fee":"",
     "kind":"gewerblich",
-    "remarks":"<p>Besuchen Sie unseren Weihnachtsmarkt auf dem Ferdinandmarkt.</p>",
-    "todo":"mail",
-    "copyright":""
+    "remarks":"<p>Alljährlich findet am ersten Adventssonntag ein stimmungsvoller Weihnachtsmarkt unter dem großen Dach des Ferdinandmarktes statt.</p><p>An zahlreichen Ständen bieten Unternehmen, Handwerksbetriebe oder private Hobbykünstler aus unserem Bezirk ihre Waren an festlich geschmückten Ständen an. Natürlich gibt es auch einen zünftigen Glühwein und viele kulinarische Köstlichkeiten.</p>",
+    "todo":"ready",
+    "copyright":"Jutta Goedicke"
   },
   {
     "id":130,
@@ -4317,9 +4317,9 @@ var data = [
     "web":"www.gruen-berlin.de",
     "fee":"",
     "kind":"gewerblich",
-    "remarks":"<p>Unter dem schützenden Dach der Lokhalle haben über 40 Händler ihre Stände stimmungsvoll dekoriert und bieten ausgefallene und vor allem selbst gefertigte Artikel. Neben Schmuck und Selbstgestricktem können sich die Besucher auf mutige Schokoladenvariationen, originelle Porzellanartikel, handgenähte Patchworkdecken, Naturseifen und viele kreative Geschenkideen freuen.</p><p>Auf der Bühne unter einer geschmückten Tanne präsentiert am ersten Advent das Ensemble „Cappella Vocale“ ein stilistisch außergewöhnliches Programm. Die Musiker von „Baila Berlin“ zeigen zum Finale, dass der Advent eine lebensfrohe Zeit voller Melodien und übermäßiger Lebensfreude ist. Zu den Klängen der zehnköpfigen Salsaband darf kräftig mitgetanzt werden.</p><p>Zum zweiten Advent stehen viele Nachwuchsmusiker der Leo Kestenberg Musikschule auf der Bühne. Den Anfang machen die Gesangssolisten mit einem abwechslungsreichen „Swinging Christmas“-Programm, gefolgt vom Streicherensemble „Die Saitenakrobaten“ und dem Lichtenrader Ensemble mit einem irisch und spanisch inspirierten Weihnachtskonzert. Die „Berlin Pipe Company“, ein Dudelsackensemble, bildet den fulminanten Abschluss. Für Spannung und beste Unterhaltung der ganz jungen Gäste sorgt um 14:30 Uhr die Weihnachtshexe Molly mit einer weihnachtlichen Reise um die Welt.</p><p>Eintrittspreise: Der Parkeintritt kostet 1,00 € pro Person (Park-Schein-Automat). Kinder unter 14 Jahren sowie Jahreskarteninhaber haben freien Eintritt.</p>",
-    "todo":"mail",
-    "copyright":""
+    "remarks":"<p>Unter dem schützenden Dach der Lokhalle haben über 40 Händler ihre Stände stimmungsvoll dekoriert und bieten ausgefallene und vor allem selbst gefertigte Artikel. Neben Schmuck und Selbstgestricktem können sich die Besucher auf mutige Schokoladenvariationen, originelle Porzellanartikel, handgenähte Patchworkdecken, Naturseifen und viele kreative Geschenkideen freuen.</p><p>Auf der Bühne unter einer geschmückten Tanne präsentiert am ersten Advent das Ensemble „Cappella Vocale“ ein stilistisch außergewöhnliches Programm. Die Musiker von „Baila Berlin“ zeigen zum Finale, dass der Advent eine lebensfrohe Zeit voller Melodien und übermäßiger Lebensfreude ist. Zu den Klängen der zehnköpfigen Salsaband darf kräftig mitgetanzt werden.</p><p>Zum zweiten Advent stehen viele Nachwuchsmusiker der Leo Kestenberg Musikschule auf der Bühne. Den Anfang machen die Gesangssolisten mit einem abwechslungsreichen „Swinging Christmas“-Programm, gefolgt vom Streicherensemble „Die Saitenakrobaten“ und dem Lichtenrader Ensemble mit einem irisch und spanisch inspirierten Weihnachtskonzert. Die „Berlin Pipe Company“, ein Dudelsackensemble, bildet den fulminanten Abschluss. Für Spannung und beste Unterhaltung der ganz jungen Gäste sorgt um 14:30 Uhr die Weihnachtshexe Molly mit einer weihnachtlichen Reise um die Welt.</p><p>Eintrittspreise: Der Parkeintritt kostet € 1,00 pro Person (ab 14 Jahren). Jahreskartenbesitzer 2014 oder 2015 haben freien Eintritt.</p>",
+    "todo":"ready",
+    "copyright":"grün Berlin GmbH"
   },
   {
     "id":148,
@@ -4749,9 +4749,9 @@ var data = [
     "web":"www.altglienicke.de",
     "fee":"",
     "kind":"gemeinnützig",
-    "remarks":"<p>Zum fünften Male findet im Altglienicker Ortskern am 30. November 2014, am 1. Adventssonntag, von 14.00 bis 19.00 Uhr unser Adventsmarkt statt. Damit gibt es auch ein erstes Jubiläum zu feiern. Organisiert wird er wieder vom Bürgerverein Altglienicke e.V. und der evangelischen Kirchengemeinde im Außengelände rund um die Altglienicker Pfarrkirche Semmelweis-/ Ecke Köpenicker Straße. Dort wird auch im Obergeschoss von 15.00 bis 18.00 Uhr das vom Bürgerverein betriebene Altglienicke Museum öffnen. In der Kirche selber gibt es zum einen um 14.00 Uhr einen kleinen Adventsgottesdienst, danach durchgehend mehrere musikalische Aufführungen. Dazu zählen u.a. um 15.30 Uhr ein Auftritt der Mobilen Musikschule Jutta Sobisch aus Bohnsdorf mit einem Kinder- und Jugendensemble sowie um 17.00 Uhr von Mitgliedern des Singkreises der evangelischen Kirchengemeinde.</p><p>Mit 30 Marktständen gibt es eine neue Rekordbeteiligung, waren es im vergangenen Jahr noch 23. So werden erstmals durchgehend zwei Doppelreihen an Ständen um die Kirche herum angeordnet. Es wird dort wieder wie im Vorjahr Essen, Trinken, Kleinkunst, Basteleien-und Geschenkartikel, Adventsgestecke und einiges mehr von zumeist regionalen Institutionen, Vereinen und Selbständigen geboten. Alle erstmals vertretenen Standnehmer runden das Angebot zusätzlich ab, da sie allesamt Dinge bieten, die es bisher noch nicht auf dem Adventsmarkt gab. Neben vielen kleinen Lagerfeuern zum Aufwärmen wird es diesmal auf dem Gelände auch ein kleines Häuschen zum Einkehren geben.</p><p>Alle Menschen aus der Region rund um Altglienicke und weiter her sind herzlich willkommen, den Beginn der Adventszeit in der immer wieder schönen Atmosphäre dieses von ehrenamtlichem Engagement getragenen Adventsmarkts zu feiern.</p>",
-    "todo":"mail",
-    "copyright":""
+    "remarks":"<p>Am Sonntag, den 30. November 2012 (1. Advent) laden von 14 bis 19 Uhr wieder rund um die Pfarrkirche (Semmelweisstr. 2, 12524 Berlin) über 30 Stände mit Kleinkunst und Handarbeiten sowie kulinarische Angebote an weihnachtlich geschmückten Ständen zum Besuch des zum fünften Male stattfindenden Adventsmarktes ein. Kleine Lagerfeuer bieten einen Raum um sich Aufzuwärmen.</p><p>In der Kirche findet um 14 Uhr findet eine Adventsandacht mit dem neuen Pfarrer Wolfram Geiger statt. Danach folgt dort ein Musikprogramm.</p>",
+    "todo":"ready",
+    "copyright":"Joachim Schmidt"
   },
   {
     "id":160,
