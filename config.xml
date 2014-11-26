@@ -57,7 +57,7 @@
 	<gap:splash src="splash.png" gap:platform="android" gap:qualifier="xxhdpi" />
 
 	<!-- Useful property -->
-	<preference name="phonegap-version" value="3.3.0" />
+	<preference name="phonegap-version" value="3.6.3" />
 	<preference name="orientation" value="default" />
 	<preference name="webviewbounce" value="false" />
 	<preference name="permissions" value="none" />
