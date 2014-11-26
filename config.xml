@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns="http://www.w3.org/ns/widgets"
+        xmlns:gap="http://phonegap.com/ns/1.0"
+        id="de.tursics.xmasmarkets"
+        version="1.0"
+        versionCode="1">
+
+	<!-- Essential property (Blackberry only supports latin character) -->
+	<name>Weihnachtsmärkte in Berlin</name>
+
+	<!-- Essential property (Blackberry should keep it at a reasonable length) -->
+	<description>Finde alle Weihnachtsmärkte in Berlin: die Großen, die Kleinen, die Bunten, die Lauten, die Besinnlichen und die Geheimtipps. Alle in einer App.</description>
+
+	<!-- Essential property -->
+	<author href="http://www.tursics.de" email="thomas@tursics.de">
+		Thomas Tursics
+	</author>
+
+	<!-- Default icon -->
+	<icon src="icon.png" />
+	<gap:splash src="splash.png" />
+
+	<!-- iOS icons -->
+	<gap:platform name="ios" />
+	<preference name="target-device" value="universal" />
+	<preference name="prerendered-icon" value="true" />
+	<!-- iOS 6.1 -->
+	<icon src="art/icon-57.png" gap:platform="ios" width="57" height="57" />
+	<icon src="art/icon-72.png" gap:platform="ios" width="72" height="72" />
+	<icon src="art/icon-114.png" gap:platform="ios" width="114" height="114" />
+	<icon src="art/icon-144.png" gap:platform="ios" width="144" height="144" />
+	<!-- iOS 7.0 -->
+	<icon src="art/icon-60.png" gap:platform="ios" width="60" height="60" />
+	<icon src="art/icon-76.png" gap:platform="ios" width="76" height="76" />
+	<icon src="art/icon-120.png" gap:platform="ios" width="120" height="120" />
+	<icon src="art/icon-152.png" gap:platform="ios" width="152" height="152" />
+	<gap:splash src="splash.png" gap:platform="ios" width="320" height="480" />
+	<gap:splash src="splash.png" gap:platform="ios" width="640" height="960" />
+	<gap:splash src="splash.png" gap:platform="ios" width="640" height="1136" />
+	<gap:splash src="splash.png" gap:platform="ios" width="768" height="1024" />
+	<gap:splash src="splash.png" gap:platform="ios" width="1024" height="768" />
+	<gap:splash src="splash.png" gap:platform="ios" width="1536" height="2048" />
+	<gap:splash src="splash.png" gap:platform="ios" width="2048" height="1536" />
+
+	<!-- Android -->
+	<gap:platform name="android" />
+	<preference name="android-minSdkVersion" value="15" />
+	<preference name="splash-screen-duration" value="200"/>
+	<icon src="art/icon-36.png" gap:platform="android" gap:qualifier="ldpi" />
+	<icon src="art/icon-48.png" gap:platform="android" gap:qualifier="mdpi" />
+	<icon src="art/icon-72.png" gap:platform="android" gap:qualifier="hdpi" />
+	<icon src="art/icon-96.png" gap:platform="android" gap:qualifier="xhdpi" />
+	<gap:splash src="splash.png" gap:platform="android" gap:qualifier="ldpi" />
+	<gap:splash src="splash.png" gap:platform="android" gap:qualifier="mdpi" />
+	<gap:splash src="splash.png" gap:platform="android" gap:qualifier="hdpi" />
+	<gap:splash src="splash.png" gap:platform="android" gap:qualifier="xhdpi" />
+	<gap:splash src="splash.png" gap:platform="android" gap:qualifier="xxhdpi" />
+
+	<!-- Useful property -->
+	<preference name="phonegap-version" value="3.3.0" />
+	<preference name="orientation" value="default" />
+	<preference name="webviewbounce" value="false" />
+	<preference name="permissions" value="none" />
+
+	<feature name="http://api.phonegap.com/1.0/network"/>
+
+	<access origin="*" />
+	<!-- <access origin="*" browserOnly="true" /> -->
+</widget>
