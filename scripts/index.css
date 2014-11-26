@@ -195,3 +195,18 @@ ul.calendar li div {
 ul.calendar li.gray div {
 	color:#fde4d0;
 }
+
+section[data-type="sidebar"] > nav > h2 {
+  text-indent: 0;
+  padding-left: 0.8rem;
+  padding-right: 0.8rem;
+}
+
+
+section[data-type="sidebar"] > nav > ul > li > a {
+  line-height: 3rem;
+  text-indent: 0;
+  padding-left: 1.6rem;
+  padding-right: 0.8rem;
+  white-space:normal;
+}
