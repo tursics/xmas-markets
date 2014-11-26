@@ -789,9 +789,9 @@ var data = [
     "web":"www.wilmersdorfer-arcaden.de",
     "fee":"",
     "kind":"gewerblich",
-    "remarks":"<p>Lassen Sie sich verzaubern</p><p>Alle Jahre wieder: Erleben Sie wundervolle Weihnachtsstimmung in der Fußgängerzone in der Wilmersdorfer Straße. Wir haben zahlreiche Highlights für Sie vorbereitet. Freuen Sie sich auf tausende und abertausende Lichter, unzählige glänzende Kugeln, tolle Aktionen und Angebote rund ums Fest der Liebe für groß und klein und einen direkten Draht zum Weihnachtsmann.</p>",
-    "todo":"mail",
-    "copyright":"PublicDomainPictures"
+    "remarks":"<p>Frohe Weihnachten oder God Jul (auf Skandinavisch) heißt es in diesem Jahr auf dem Weihnachtsmarkt der Willmersdorferstraße vom 28.11.2014 bis 29.12.2014 täglich von 11:00 Uhr bis 21:00 Uhr und am Sonntag von 13:00 Uhr bis 20:00 Uhr! Dort gibt es in diesem Jahr tolle Attraktionen.</p><p>Bestaunen Sie doch die wunderschöne Weihnachtstanne mit über 15.400 Lichtern oder die tolle Weihnachtskrippe mit lebensgroßen Figuren. Flanieren Sie im wunderschönen Weihnachtlichen Ambiente. Genießen Sie z.B. ein tolles Wildgericht, Köttbullar oder Kartoffelpuffer mit skandinavischem Lachs. Dazu ein schönes Glas Glögg mit Mandeln und Rosinen, Glühwein oder Eierpunsch?</p><p>Auch naschen ist an Weihnachten erlaubt!! Hierzu gibt es Feinstes aus Schokolade, gebrannte Mandeln, kandierte Früchte, Crêpes und Gebäck.</p><p>Im Bereich vor Karstadt finden Sie einzigartig in ganz Berlin unser Julhaus (Haus vom Nikolaus). Hier können unsere kleinen Gäste täglich in der Zeit von 16:00 Uhr bis 17:00 Uhr einen Wunschzettel beim Weihnachtsmann abgeben und sein tolles Haus und seine Rentiere anschauen.</p><p>Bewacht wird das Ganze von dem 2,50 m großen Riesenelch „Elmar“. Auch der Spaß bei den kleinen kommt nicht zu kurz hier gibt es das beliebte Ponyreiten, Kinderkarussell und die lustige Bimmelbahn. Also, in der Willmersdorferstraße bleibt kein Wunsch offen... Wir freuen uns auf Ihren Besuch!!!</p>",
+    "todo":"ready",
+    "copyright":"Angelique Lauenburger"
   },
   {
     "id":172,
