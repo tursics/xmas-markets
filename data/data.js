@@ -213,9 +213,9 @@ var data = [
     "web":"www.lindenkirche.de",
     "fee":"",
     "kind":"gemeinnützig",
-    "remarks":"<p>Viele Verkaufsstände, Trödel, Bücher, Tiffany, Tag der offenen Tür der Kita, Cafeteria, Historische Modellbahn, Brot aus dem Holzbackofen, \"Die Hauptstadtseife\", Tombola, Waffeln, Glühwein, Essen uvm.</p>",
-    "todo":"mail",
-    "copyright":""
+    "remarks":"<p>Viele Verkaufsstände, Trödel, großer Bücherstand, Waffeln, Tag der offenen Tür der Kita, Cafeteria, Historische Modellbahn, Musik, Essen, Glühwein, Tombola, \"Die Hauptstadtseife\", Brot aus dem Holzbackofen, uvm.</p><p>12:00 Uhr Beginn mit dem Bläserchor</p><p>16:00 Uhr Singspiel \"6.12. - Gutes kommt auch über Nacht\"</p>",
+    "todo":"ready",
+    "copyright":"Lindenkirchengemeinde"
   },
   {
     "id":16,
@@ -429,9 +429,9 @@ var data = [
     "web":"www.family-and-friends-eV.de",
     "fee":"",
     "kind":"teilgewerblich",
-    "remarks":"<p>Der Weihnachtsmarkt in der Preußenallee in Charlottenburg-Westend öffnet am 20. und 21. Dezember. Das Rüsseltier ist an beiden Tagen unterwegs, Greifvogelschau und Weihnachtskrippe.</p>",
-    "todo":"mail",
-    "copyright":""
+    "remarks":"<p>Am 4. Adventswochenende können sich alle Besucher und Besucherinnen auf winterliche Spezialitäten und süße Leckereien, die Märchenerzählerin Rumpumpel, Greifvögel mit ihrem Falkner sowie die Weihnachtskrippe mit lebenden Tieren freuen.</p><p>Künstler und Kunsthandwerker stellen ihre Produkte aus, lassen sich bei der Arbeit über die Schulter sehen und verkaufen ihre selbst gefertigten Kunst-Stücke an Ort und Stelle, darunter der Kupferklopfer und der Schmied, der Drechsler und der Gürtelmacher, das Kerzenziehen sowie von Hand gesponnene Wolle, die vor Ort zu Kleidungsstücken verarbeitet wird. Und ob Keramik der Extraklasse, gehäkelte und gefädelte Ketten, einzigartige Lampen aus Glas, Wohnliches aus Tiffany und Fusingglas, Glas- und Porzellanmalerei, Bilder und Karten aus gepressten Pflanzen, handgefertigte Mode aus Walkloden, Taschen und Körbe aus Tetrapak, Berliner Fotokunst sowie Architekturfotografie und Lost Places, Dekopageartikel im Shabby-Look und Patchwork, Tägliches aus Hauptsaechlich Leinen, Keramikblüten, Lesemagneten, ... Sie haben alle eines gemeinsam: Sie sind originell - und - original!</p><p>Und außerdem hat noch ein radelndes und sprechendes weihnachtliches Rüsseltier sein Kommen angesagt.</p>",
+    "todo":"ready",
+    "copyright":"Family & Friends e. V."
   },
   {
     "id":20,
@@ -503,7 +503,7 @@ var data = [
     "kind":"gemeinnützig",
     "remarks":"<p>The Anglican Parish of Berlin invites for this year’s varied Christmas Market. On the ground of the spacious church garden English and German stands offer specialties: Gifts, handicrafts, toys and games, a tombola, a raffle with wonderful prizes, homemade cakes and traditional mince pies along with other British specialties.</p><p>Lots of Christmas music with various choirs, bagpipes and a Christmas carol sing-along guarantee a special atmosphere. There is a room for children, with activities and readers to entertain them with Christmas tales. English books are on sale at great low prices in the chapel. Lots of refreshments will be on sale to keep energy and spirits high.</p>",
     "todo":"mail",
-    "copyright":""
+    "copyright":"St George’s Anglican Episcopal Church"
   },
   {
     "id":22,
@@ -573,9 +573,9 @@ var data = [
     "web":"www.klausenerplatz.de",
     "fee":"",
     "kind":"gemeinnützig",
-    "remarks":"<p>Am Sonntag, den 14. Dezember 2014 vor dem Bröhanmuseum zwischen 12.00 – 18.00 Uhr, findet wie schon seit über zehn Jahren auch in diesem Jahr wieder der kunsthandwerkliche Weihnachtsmarkt statt.</p>",
-    "todo":"mail",
-    "copyright":""
+    "remarks":"<p>Am Sonntag, den 14. Dezember 2014, findet - wie schon seit über zehn Jahren - vor dem Bröhanmuseum (Schloßstr. 1a) in Charlottenburg auch in diesem Jahr wieder zwischen 12.00 – 18.00 Uhr der kunsthandwerkliche Weihnachtsmarkt des Kiezbündnisses Klausenerplatz e.V. mit rund 40 Ständen statt.</p>",
+    "todo":"ready",
+    "copyright":"Kiezbündnis Klausenerplatz e.V."
   },
   {
     "id":2,
@@ -719,7 +719,7 @@ var data = [
     "kind":"gemeinnützig",
     "remarks":"<p>Seit Monaten schon haben viele fleißige Hände geklebt und gewerkelt und gebacken. Andere haben Spenden von Trödel, Büchern und Secondhand-Kleidung sortiert und präsentabel vorbereitet. Sänger und Instrumentalisten haben beständig geübt, Laienspieler geprobt, Organisatoren organisiert. Viele ehrenamtliche Helfer – Mitglieder und Freunde der Johannischen Kirche und des Johannischen Sozialwerks e.V. – haben das St.-Michaels-Heim und das Außengelände für Sie vorbereitet und geschmückt. Nun heißen wir Sie alle Herzlich willkommen!</p><p>Wir freuen uns und hoffen, dass Sie bei uns finden, was Ihnen gut tut: Vielleicht etwas Schmuck für den Tannenbaum, Weihnachtsgebäck wie zu Großmutters Zeiten, kulturelle und kulinarische Genüsse, einen schönen Weihnachtsstern, Weihnachtsstimmung bei Gesang und Bläserklang...</p><p>Wir danken für Ihr Kommen und das, was Sie uns an Freude und Zeit bringen. Der Reinerlös dieses Weihnachtsmarktes kommt der Arbeit des Johannischen Sozialwerks e.V. und damit Kindern und Jugendlichen, kranken, behinderten und hilfsbedürftigen Menschen zugute.</p><p>Eine gesegnete Adventszeit wünschen Ihnen das Johannische Sozialwerk e.V. sowie alle Helfer und Mitarbeiter</p>",
     "todo":"mail",
-    "copyright":""
+    "copyright":"PixelAnarchy"
   },
   {
     "id":4,
@@ -791,7 +791,7 @@ var data = [
     "kind":"gewerblich",
     "remarks":"<p>Lassen Sie sich verzaubern</p><p>Alle Jahre wieder: Erleben Sie wundervolle Weihnachtsstimmung in der Fußgängerzone in der Wilmersdorfer Straße. Wir haben zahlreiche Highlights für Sie vorbereitet. Freuen Sie sich auf tausende und abertausende Lichter, unzählige glänzende Kugeln, tolle Aktionen und Angebote rund ums Fest der Liebe für groß und klein und einen direkten Draht zum Weihnachtsmann.</p>",
     "todo":"mail",
-    "copyright":""
+    "copyright":"PublicDomainPictures"
   },
   {
     "id":172,
@@ -861,9 +861,9 @@ var data = [
     "web":"www.oldthing.de",
     "fee":"Eintritt 2 €, Kinder und ab 17:00 frei",
     "kind":"gewerblich",
-    "remarks":"<p>Weihnachten für Sammler - die Adventsbörse im Galeria Kaufhof Ostbahnhof, 4. Etage, Koppenstr. 8</p>",
-    "todo":"mail",
-    "copyright":""
+    "remarks":"<p>Auf der gesamten 4. Etage der Galeria Kaufhof Ostbahnhof mit rund 3000 m² werden nicht nur Kinder- & Sammlerherzen höher schlagen ob der liebevoll dargebotenen Kostbarkeiten. Alles handverlesene Einzelstücke und Unikate, deren Charme eine wohlig anmutende Aura zu versprühen vermag. Antikes Spielzeug und Christbaumschmuck, Puppen, Teddys, Modelleisenbahnen, Ansichtskarten, Briefmarken und Münzen aus längst vergangenen Tagen, Kleinantiquitäten und wunderschöner alter Schmuck.</p><p>Wer Sinn und Freude an alter Lebenskultur und Traditionellem hat und diese unverfälscht verschenken mag, ist hier genau richtig. Ob als persönliches Weihnachtsgeschenk für die Liebsten oder last-minute Kauf für sich selbst, das patinierte Angebot der oldthing Sammlerbörse kann der allerorts schrillen Massenkultur etwas von der Besinnlichkeit und Ruhe schenken, die die Weihnachtszeit so schön macht.</p><p>80 Händler aus ganz Deutschland stellen das Gros der teilnehmenden Aussteller. Neben den professionellen Händlern bietet die Börse auch Privatpersonen Gelegenheit, ihre eigene Sammlung anzupreisen.</p>",
+    "todo":"ready",
+    "copyright":"oldthing märkte"
   },
   {
     "id":30,
@@ -934,8 +934,8 @@ var data = [
     "fee":"",
     "kind":"gewerblich",
     "remarks":"<p>Die 9. KiezWeihnacht – ein beschaulicher Weihnachtsmarkt in Berlin-Friedrichshain – findet am zweiten und dritten Adventswochenende statt. Stimmungsvoll präsentieren sich auch im Jahr 2014 wieder über 60 Händler an der Samariterkirche, die vorwiegend aus dem Kiez stammen. Das Angebot ist so vielfältig wie der Kiez selbst. Kunsthandwerk und Schmuckdesign werden ebenso wie Kinderspielzeug oder Adventsdekoration erhältlich sein. Für das leibliche Wohl ist gesorgt, es gibt Bastelangebote für Kinder und -natürlich- einen Weihnachtsmann. Die Veranstalter, Händler und Kunsthandwerker in Friedrichshain wollen mit der Organisation dieses Weihnachtsmarktes ein beschauliches und nachbarschaftliches Ambiente schaffen. Nachbarn und Besucher sind eingeladen, Geschäfte der Umgebung kennenzulernen und ins Gespräch zukommen. Es werden Geschenkideen aller Art angeboten in einem Umfeld jenseits der allgegenwärtigen Vorweihnachtshektik. Die Erfahrungen der vergangenen Jahre zeigen, dass dieses Angebot von den Anwohnern gerne angenommen wird.</p><p>Für das kulturelle Ambiente sorgt die traditionsreiche evangelische Kirchengemeinde Galiläa-Samariter. So werden nachmittags und am frühen Abend Konzerte, Lesungen und ein Kinderprogramm in der Samariterkirche stattfinden. Da die Konzerte und Vorstellungen erfahrungsgemäß gut besucht sind, empfehlen wir, rechtzeitig zu erscheinen. Sobald die genauen Termine feststehen, werden diese der Presse bekanntgegeben.</p>",
-    "todo":"mail",
-    "copyright":""
+    "todo":"ready",
+    "copyright":"Steffen Belz"
   },
   {
     "id":24,
@@ -1223,7 +1223,7 @@ var data = [
     "kind":"gemeinnützig",
     "remarks":"<p>Auch in diesem Jahr findet wieder der traditionelle Lichtermarkt „Rund ums Rathaus“ Lichtenberg statt – und zwar zum 21. Mal. Zur Einstimmung auf die Weihnachtszeit können Lichtenbergerinnen und Lichtenberger am Sonntag, 30. November, von 13 bis 18 Uhr auf dem Lichtermarkt vorbei schauen oder das Fest selbst mitgestalten.</p><p>Auf der Bühne vor dem Rathaus werden die auf Leinwand gedruckten, historischen Motive des Lichtenberger Jahreskalenders versteigert. Der Erlös kommt der Bienen-AG des Barnim-Gymnasiums zu Gute. Nach der Auktion sorgt ein bunt gemischtes Programm mit verschiedenen musikalischen Höhepunkten für Unterhaltung: Jimmy Kelly von der „Kelly Family“ wird bekannte Lieder und eigene Kompositionen spielen. Und Schlagersänger Christian Anders wird die Menge nicht nur mit „Es fährt ein Zug nach Nirgendwo“ zum Schunkeln bewegen. Das Lichtenberger Puppentheater „Puppenpaule“ wird jeweils um 15 sowie um 16.30 Uhr die jüngeren Besucher im Ratssaal begeistern. Und wer möchte, kann sich im Fotozelt gemeinsam mit dem Weihnachtsmann ablichten lassen.</p><p>Zahlreiche freie gemeinnützige Vereine, Schulen und Senioreneinrichtungen bieten an bunten Ständen vorwiegend selbst gefertigte Weihnachtsgeschenke, Handarbeiten und selbst gebackene Weihnachtsleckereien an. Außerdem gibt es heißen Glühwein und Leckereien vom Grill.</p><Der Lichtermarkt wird vom Sozialamt des Bezirkes organisiert. Er ist nicht kommerziell ausgerichtet. Der Kauf der angebotenen Produkte unterstützt die ehrenamtliche Arbeit und das Engagement vieler Lichtenberger Initiativen und Vereine.</p>",
     "todo":"mail",
-    "copyright":""
+    "copyright":"PublicDomainPictures"
   },
   {
     "id":44,
@@ -1295,7 +1295,7 @@ var data = [
     "kind":"gemeinnützig",
     "remarks":"<p>Der interkulturelle Weihnachtsmarkt für den Stadtteil Marzahn Nordwest mit vielen Vereinen und Projekten aus dem Quartier findet auch dieses Jahr in den Passagen des Einkaufscenters „Zu den Eichen“ statt.</p>",
     "todo":"mail",
-    "copyright":""
+    "copyright":"mahdigermany"
   },
   {
     "id":42,
@@ -1437,9 +1437,9 @@ var data = [
     "web":"www.spree-center.de",
     "fee":"",
     "kind":"gewerblich",
-    "remarks":"<p>Bis Heiligabend findet der Weihnachtsmarkt im Spree Center Berlin-Hellersdorf statt.</p>",
+    "remarks":"<p>Bis Heiligabend findet der Weihnachtsmarkt im Spree Center Berlin-Hellersdorf statt.</p><p>An folgenden Tagen sorgen die Engel für ein Leuchten in den Augen unserer kleinen und großen Kunden: Samstag 06.12. 13.30 - 17.30 Uhr, Freitag 12.12. 10.00 - 12.00 Uhr und 15.00 - 17.00 Uhr, Montag 15.12. 10.00 - 12.00 Uhr und 15.00 - 17.00 Uhr, Sonntag 21.12. 14.00 - 18.00 Uhr</p>",
     "todo":"mail",
-    "copyright":""
+    "copyright":"PublicDomainPictures"
   },
   {
     "id":38,
@@ -1511,7 +1511,7 @@ var data = [
     "kind":"gewerblich",
     "remarks":"<p>Erleben Sie im Glanz der Lichter ein wunderbares Weihnachtsprogramm.</p><p>Es duftet im EASTGATE nach Weihnachten – nach gebrannten Mandeln, Tannengrün, Schokoladenäpfeln, Pfefferkuchen, \"Armeen\" von Nussknackern marschieren auf, Berge aus rotbäckigen Äpfeln, Orangen und Mandarinen locken mit ihren verführerischen Düften. Die Weihnachtsbäcker zaubern mit lieblichsten Aromen: Nelken, Anis oder Kardamom lassen Weihnachten schon ganz nah sein. Freuen Sie sich auf eine einzigartige Erlebniswelt, die Ihre Herzen weit aufschließt. Und auf der großen Weihnachtsbühne wechseln sich Sänger, Musiker und Geschichtenerzähler täglich ab, um die Besucher des EASTGATE mit einem begeisternden Weihnachtsprogramm zu erfreuen.</p>",
     "todo":"mail",
-    "copyright":""
+    "copyright":"PublicDomainPictures"
   },
   {
     "id":36,
@@ -1583,7 +1583,7 @@ var data = [
     "kind":"gewerblich",
     "remarks":"<p>Und wer „erst eins, dann zwei, dann drei, dann vier“ nicht mehr abwarten kann, kommt ins Marktplatz Center Hellersdorf und stimmt sich gemeinsam mit uns auf die Weihnachtszeit ein. Das Parken an den Verkaufsoffenen Sonntagen ist kostenlos. Außerdem gibt es unseren beliebten Einpackservice, der jedes Geschenk in besonderem Glanz erstrahlen lässt. Damit sie ganz unbeschwert einkaufen können, haben wir wie jedes Jahr unseren kostenfreien Garderobenservice für Sie.</p>",
     "todo":"mail",
-    "copyright":""
+    "copyright":"Markplatz Center Hellersdorf"
   },
   {
     "id":54,
@@ -1655,7 +1655,7 @@ var data = [
     "kind":"gewerblich",
     "remarks":"<p>Abseits des alltäglichen Weihnachtstrubels gibt es zum Jahresende im Sony Center am Potsdamer Platz in diesem Jahr Neues zu erleben. Ein bezauberndes Fabelwesen-Ensemble wird nicht nur Kinderaugen zum Leuchten bringen. Die Zwillingselfen Klara und Kasia, die kleinste Elfe Laura sowie ihr Beschützer Arion fügen sich mit ihrem funkelnden Antlitz perfekt in das in Licht getauchte Forum ein.</p><p>Ein weiteres Highlight wird die tägliche Tanz-Show der geheimnisvollen Elfe Stella sein. Zu jeder vollen Stunde wird sie das Publikum mit ihrer Anmut verzaubern und das Sony Center glanzvoll erstrahlen lassen.</p><p>Inmitten der einmaligen Architektur schwebt direkt unter dem weltberühmten Dach eine überdimensional große Lichtinstallation aus tausenden saphirblauen und goldenen Glanzlichtern. Leuchtende Sterne an den Fassaden sowie Lichterketten in den Weihnachtstannen runden das stimmungsvolle Lichtkonzept ab. Liebevolle Details schaffen eine Atmosphäre, die zum Verweilen einlädt.</p><p>Neben dem visuellem Erlebnis und Entertainment kommt auch das leibliche Wohl selbstverständlich nicht zu kurz. In urig-gemütlichen Hütten werden zünftiges Essen, festliche Spezialitäten, köstliche Süßigkeiten und leckere Getränke geboten.</p>",
     "todo":"mail",
-    "copyright":""
+    "copyright":"Forum Event Management GmbH "
   },
   {
     "id":50,
@@ -2087,7 +2087,7 @@ var data = [
     "kind":"gemeinnützig",
     "remarks":"<p>Am Samstag findet unser Adventsbasar vor und in der Heilandskirche zugunsten für „Brot für die Welt“ und für die Heilandskirche statt. Es gibt einen Vorweihnachtlicher Markt mit Musikprogramm (Orgel-, Chor- u. Bläsermusik). Für Kinderbetreuung und das leibliche Wohl ist gesorgt.</p><p>Eintritt frei – Spenden erbeten</p><p>Abschluss-Andacht um 15.00 Uhr</p>",
     "todo":"mail",
-    "copyright":""
+    "copyright":"condesign"
   },
   {
     "id":66,
@@ -2229,9 +2229,9 @@ var data = [
     "web":"www.schlossbritz.de",
     "fee":"Eintritt 3 €, ermäßigt 2 €, Kinder unter 6 Jahren und Anwohner frei",
     "kind":"gewerblich",
-    "remarks":"<p>Erleben Sie am 3. und 4. Adventwochenende den Gutshof von Schloss Britz in seinem ganz besonderen Weihnachtsambiente: Das Wandertheater Cocolorus Budenzauber präsentiert eine Nordische Märchenweihnacht, die einzigartig in Berlin sein dürfte. Frau Holle und die Schneekönigin bieten mit ihren lustigen Trollen der ganzen Familie ein buntes, fantasievolles Programm, mit dem sie Groß und Klein auf ein besinnliches Weihnachtsfest einstimmen wollen.</p><p>Der historische Markt auf dem Gutshof auf Schloss Britz bietet den Besucherinnen und Besuchern Stände mit altem Kunsthandwerk. Leckere Apfelkrapfen, frische Langos, Wildkessel, skandinavische Glühweinspezialitäten und viele weitere kulinarische Spezialitäten erwarten Sie in gemütlich weihnachtlicher Atmosphäre. Mit den Märchenspielen „Alarm im Kaspertheater“, „Der Fischer und seine Frau“ sowie „Der Rattenfänger“ wird auch den kleinsten Besuchern ein abwechslungsreiches Programm geboten. Neben den Feuerspielen „Araga Mysteria“, der Gauklergruppe „Max und Moritz im Quadrat“, dem lustigen akrobatischen Stück „Winterreigen“ und alter weihnachtlicher Musik der Gruppe „Cocolorus Diaboli“ wird den Besuchern an den Adventwochenenden mit den „Spirit Archers“ und Fahrten mit Schlittenhunden ein umfangreiches Programm geboten. Als Neuheit präsentiert die Wandergruppe Cocolorus Budenzauber eine Zwergenschmiede mit einer Zwergeneisenbahn, die neben dem historischen Karussel und den robusten Wikingerschiffen gern ausprobiert werden können.</p>",
-    "todo":"mail",
-    "copyright":""
+    "remarks":"<p>Auf dem Gutshof gibt es über 40 weihnachtliche Stände und viele Aktionen zu erleben, wie z.B. Fahrten mit Schlittenhunden, Ponyreiten, eine Greifvogelschau, Bogen- und Armbrustschießen, ein hölzernes Wasserrad mit einer Glückstalerschmiede, große eindrucksvolle Wikingerboote zum Erklettern, hölzerne Katapulte und Isenbartens Märchenzelt der Künstlergruppe Buochenhain. Premiere erleben die neugebaute Trolleisenbahn und eine Zwergenschmiede.</p><p>Die Märchenweihnacht wird von den Künstlern des Wandertheaters Cocolorus Budenzauber organisiert, dekoriert und bespielt und das verspricht neben den sonst üblichen „Glühwein- und Schlemmerangeboten“ vor allem ein niveauvolles herzerwärmendes und liebevoll handgemachtes Programm auf dem historischen Weihnachtsmarkt. So mischen sich eine wunderschöne (und bei Cocolorus natürlich liebenswerte) Schneekönigin mit ihren lustigen Trollen und die Frau Holle unter das Volk und laden Jung und Alt zum weihnachtlichen non-stop Programm auf der märchenhaften Bühne des Wandertheaters ein. </p><p>Es werden die Theaterstücke „Der Rattenfänger“, „Der Teufel und die gestohlenen Pfannkuchen“, „Die Sternentaler“ , „Hans im Glück“ und „Der Fischer und seine Frau“ aufgeführt und beim „Winterreigen“ und der „Wichtelwerkstatt“ gibt es viel Spaß, Tanz und Akrobatik in winterlichen Kostümen. Weihnachtliche Musik wird von Cocolorus Diaboli und von Kindern des Wandertheaters vorgetragen. Mit dabei sind auch die Gaukler von Max und Moritz im Quadrat mit ihren akrobatischen Späßen und einer fulminanten Feuershow.</p><p>Auch für das leibliche Wohl ist reichlich gesorgt und auf dem Weihnachtsmarkt findet man viele Leckereien wie z.B. gebackene Mandeln, Apfelkrapfen, Crepes, Wildspezialitäten, Langos, Knoblauchbrot, Fladen, Spieße, gegrilltes Feuerfleisch, Glühwein, mittelalterlichen Gewürzwein, Feuerzangenbowle, heißen Kirschwein, Quitten-Met und den skandinavischen Glühpunsch Glögi – hier ein Mix selbstgemachter nordischer Obstweine mit frisch gepresstem Mispelsaft und dem Saft der sehr vitaminreichen Cidoquitte, der „nordischen Zitrone“.</p><p>Das Weihnachtspektakel ist am Freitag von 14 -21 Uhr und am Samstag und Sontag von 11-21 Uhr geöffnet und wird jeden Abend mit dem Highlight „Araga Mysteria“, der eindrucksvollen Feuershow des Wandertheaters ausklingen.</p>",
+    "todo":"ready",
+    "copyright":"Cocolorus Diaboli"
   },
   {
     "id":74,
@@ -2373,9 +2373,9 @@ var data = [
     "web":"www.qm-koernerpark.de",
     "fee":"",
     "kind":"gemeinnützig",
-    "remarks":"<p>Am 3. Advents-Samstag, den 13. Dezember 2014, findet wieder der beliebte Weihnachtsbazar von 15 bis 18 Uhr auf der Terrasse vor der Galerie im Körnerpark statt. Es wird Marktstände und ein kleines Bühnenprogramm geben. Die Ständeanzahl auf diesem Bazar ist beschränkt. Das Angebot soll weihnachtlich ausgerichtet sein: Schmuck, Kekse, Gegrilltes, Gebasteltes, Kunst, Kerzen, Sterne…</p><p>Das Fest wird in Zusammenarbeit mit dem Quartiersmanagement Körnerpark veranstaltet und mit Fördermitteln aus dem Programm Soziale Stadt finanziert.</p>",
-    "todo":"mail",
-    "copyright":""
+    "remarks":"<p>Das diesjährige Weihnachtliche Kiezfest im Körnerpark findet am Samstag, den 13. Dezember in der Zeit von 15:00-18:00 Uhr statt. Viele Stände werden von Schulen, Vereinen und Aktiven aus dem Quartier organisiert, so dass wir einen bunten, multikulturellen Markt erleben können. Die Tombola-Päckchen werden gerade verschnürt. Die offizielle Eröffnung erfolgt um 16:00 Uhr. Auf der Bühne werden u.a. die Bläsergruppe der Albrecht-Dürer-Oberschule und die Nogat-Singers präsent sein, genauso wie Folkmusik und die Trommelgruppe aus dem Nachbarschaftsheim Neukölln.</p><p>Im Umfeld des historischen Körnerparks können wir zwar keinen Schnee versprechen, dafür jedoch weihnachtliche Illuminationen, einen großen, geschmückten Weihnachtsbaum und ein breites kunsthandwerkliches und kulinarisches Angebot mit vielen Überraschungen. Für Groß und Klein gehören natürlich auch der Weihnachtsmann und eine Tombola mit zum Programm.</p><p>Alle sind herzlich eingeladen, gemeinsam im Körnerkiez zu feiern.</p>",
+    "todo":"ready",
+    "copyright":"Multikultureller NachbarschaftsGarten Neukölln e.V."
   },
   {
     "id":72,
@@ -2447,7 +2447,7 @@ var data = [
     "kind":"gemeinnützig",
     "remarks":"<p>Wir laden Sie zu unseren Adventsbasar der evangelischen Kirchengemeinde Neu-Buckow ein.</p>",
     "todo":"mail",
-    "copyright":""
+    "copyright":"PublicDomainPictures"
   },
   {
     "id":76,
@@ -2591,7 +2591,7 @@ var data = [
     "kind":"gemeinnützig",
     "remarks":"<p>Der Nikolausmarkt ist eine Benefizverantstaltung für den Kinderbauernhof. Bringt bitte etwas Geld mit!</p><p>Basteln - Spielen - Leckereien - Geschenke zum Fest</p>",
     "todo":"mail",
-    "copyright":""
+    "copyright":"Kinderbauernhof Pinke-Panke"
   },
   {
     "id":80,
@@ -2733,9 +2733,9 @@ var data = [
     "web":"www.grueneliga-berlin.de",
     "fee":"",
     "kind":"gewerblich",
-    "remarks":"<p>Wenn Weihnachten, dann fairschenken! Der Adventsökomarkt der GRÜNEN LIGA am Kollwitzplatz findet an allen vier Adventssonntagen statt.</p><p>Ob Baumschmuck, Ohrringe, oder Kuscheltier: Auf dem Adventsökomarkt gibt es hochwertige Spielwaren, Textilien, Kunsthandwerk und Köstlichkeiten aus aller Welt, bei deren Herstellung soziale und ökologische Standards eingehalten werden. Die Erzeuger/-innen erhalten einen fairen Lohn und natürliche Ressourcen werden möglichst schonend verwendet.</p><p>Für den kleinen und großen Hunger wird gesorgt: Heißer Met und leckerer Wein, frisch gegrillte Bio-Steaks und -Würstchen, duftendes Adventsmarkt_05Weihnachtsgebäck und die köstlichen Vollkornwaffeln können beim Vorweihnachtsbummel genossen werden. Bei den Angeboten der Berliner und Brandenburger Bio-Höfe, -Fleischer, -Bäcker und Naturkostläden ist garantiert für jeden Geschmack etwas dabei.</p><p>Am Stand der GRÜNEN LIGA können die Besucher/-innen Bio-Weihnachtsgänse oder –Flugenten für das Weihnachtsessen bestellen.</p>",
+    "remarks":"<p>An allen vier Adventssonntagen von 12 bis 19 Uhr bietet der Adventsökomarkt der GRÜNEN LIGA Berlin am Kollwitzplatz in Berlin Prenzlauer Berg eine entspannte und stimmungsvolle Alternative zum hektischen Trubel der herkömmlichen Weihnachtsmärkte.</p><p>Warum das Weihnachtfest nicht mal ökologisch und fair feiern? Alles, was man dafür braucht, gibt es auf dem Adventsökomarkt. Angenehme und köstliche Düfte erfreuen die Nase. Von Rohkost bis Bratwurst ist für jeden Geschmack etwas Leckeres dabei. Neben veganem und glutenfreiem Backwerk, auch für Allergiker und empfindliche Menschen, werden unter anderem fantastische Lehmofenpizzen, köstliche Crêpes, süße Dinkelwaffeln und herzhaftes Dal angeboten. Zum Aufwärmen gibt es natürlich auch Glühwein und andere warme Getränke, wie Kaffee und Teespezialitäten.</p><p>Neben den zahlreichen Köstlichkeiten laden biologische, ökologische, fair gehandelte und handgefertigte Produkte zu einem Weihnachtsbummel der etwas anderen Art ein: von Kunsthandwerk über upgecycelte Unikate, antiquarische und neue Bücher, Papeterie bis hin zu Kleidung und Schmuck. Außerdem kann man sich an Informationsständen beispielsweise zum Wechsel auf Ökostrom beraten lassen.</p><p>Auch die kleinen Gäste kommen auf ihre Kosten. Die GRÜNE LIGA Berlin stellt ein handbetriebenes Kinderkarussell und eine Reitschule aus Holz bereit. Hier können sich Groß und Klein vergnügen. Nach so viel Trubel können sich die Gäste am Schwedenfeuer und in kleinen, gemütlichen Zelten aufwärmen und bei Speis und Trank zur Ruhe kommen.</p>",
     "todo":"mail",
-    "copyright":""
+    "copyright":"GRÜNE LIGA Berlin"
   },
   {
     "id":94,
@@ -2951,7 +2951,7 @@ var data = [
     "kind":"gemeinnützig",
     "remarks":"<p>Hier können Sie Essbares, Lesbares, Nützliches und Schönes erwerben. In der Kirche und in allen Räumen auf dem Gelände des Gemeindehauses, Alt-Wittenau 64 und auf der Dorfaue werden verschiedene Aktivitäten angeboten.</p><p>In der Dorfkirche: Bläser, Adventsmusik. Im Gemeindehaus: Kaffee und Kuchen. Und im Pavillon: Basteln und Spielen.</p><p>Der Erlös des Weihnachtsmarktes ist für die Aktion „Brot für die Welt“ bestimmt.</p>",
     "todo":"mail",
-    "copyright":""
+    "copyright":"Hans"
   },
   {
     "id":98,
@@ -3023,7 +3023,7 @@ var data = [
     "kind":"gemeinnützig",
     "remarks":"<p>Wir laden Sie herzlichst zum Weihnachtsmarkt vor der Johanneskirche Frohnau am 1. Advent ein.</p>",
     "todo":"mail",
-    "copyright":""
+    "copyright":"Gellinger"
   },
   {
     "id":106,
@@ -3095,7 +3095,7 @@ var data = [
     "kind":"gemeinnützig",
     "remarks":"<p>Der Soziale Weihnachtsmarkt ist eine bewährte Tradition des Veranstalters Goldnetz gGmbH, einmal im Jahr kurz vor Weihnachten einen etwas größeren Markt zu veranstalten. Einen Markt, auf dem sich auch die, die sonst aus finanziellen Gründen einen Bogen um die kommerziellen Weihnachtsmärkte machen müssen, ein wenig Weihnachtsstimmung leisten können. Und im Märkte machen kennt Goldnetz sich aus: berlinweit veranstaltet der gemeinnützige Träger die Sozialmärkte mit preisgünstigen Artikeln für Menschen mit weniger als 900 Euro Nettoeinkommen.</p>",
     "todo":"mail",
-    "copyright":""
+    "copyright":"PixelAnarchy"
   },
   {
     "id":108,
@@ -3167,7 +3167,7 @@ var data = [
     "kind":"gemeinnützig",
     "remarks":"<p>Auf dem Kladower Christkindlmarkt gibt es ein abwechslungsreiches Bühnenprogramm für und mit Groß und Klein. Den größten Anteil aber nimmt weihnachtliche Musik von Kindern für Kinder im Programm ein. Der Kladower Christkindlmarkt findet große Unterstützung durch das ortsansässige Gewerbe und viele Bürger. Diese spenden attraktive Gewinne für unsere Tombola.</p><p>Der Weihnachtsmann mit seinen Engeln darf natürlich auch nicht fehlen. Mit einem großen Sack voller kleiner Geschenke ziehen sie zur Freude der Kinder an beiden Tagen über den Markt. Für das leibliche Wohl ist natürlich auch durch die Arbeit vieler ehrenamtlicher Helfer gesorgt, in Form von Glühwein, nichtalkoholischen Getränken, Bier, Lumumba, Kaffee, Kuchen, Waffeln, Bratwurst, Steak, Pilzpfanne und Erbsensuppe. Dies natürlich zu angemessenen Preisen, damit bei einem Besuch mit der Familie jeder satt vom Platz geht.</p><p>Sie suchen nach einem Weihnachtsgeschenk? Dann gehen Sie doch die bekannte Runde. Dort finden Sie an einem der zahlreichen kunstgewerblichen Stände bestimmt etwas Schönes.</p>",
     "todo":"mail",
-    "copyright":""
+    "copyright":"Kladower Christkindlmarkt"
   },
   {
     "id":104,
@@ -3239,7 +3239,7 @@ var data = [
     "kind":"gemeinnützig",
     "remarks":"<p>Am 1. Advent, lädt das Evangelische Johannesstift von 12 bis 18 Uhr zu seinem traditionellen Weihnachtsmarkt ein. Bläsergruppen und besinnliche Veranstaltungen stimmen die Besucherinnen und Besucher auf die Vorweihnachtszeit ein. Für Kinder gibt es neben der beliebten Rundfahrt mit der Stiftseisenbahn „Hans Dampf“, Weihnachtszauberei und eine Weihnachtsbäckerei. In beleuchteten Zelten werden christliche Traditionen der Weihnachtszeit ausgestellt.</p><p>Auf dem Budenmarkt rund um die Stiftskirche können Besucherinnen und Besucher die vorweihnachtliche Atmosphäre genießen, Weihnachtsgeschenke kaufen und sich von den zahlreichen kulinarischen Leckereien verwöhnen lassen.</p><p>In der Weihnachtsstadt im großen Festsaal bieten Bewohnerinnen und Bewohner sowie Mitarbeiterinnen und Mitarbeiter kreative Geschenkideen an, von Kunstgewerbe bis zur Bastelarbeit.</p><p>Das Evangelische Johannesstift befindet sich in der Schönwalder Allee 26 in 13587 Berlin Spandau. Direkt vor der Tür hält der Bus M45 an der Haltestelle Johannesstift.</p>",
     "todo":"mail",
-    "copyright":""
+    "copyright":"Evangelischen Johannesstift"
   },
   {
     "id":100,
@@ -3599,7 +3599,7 @@ var data = [
     "kind":"gemeinnützig",
     "remarks":"<p>Wir laden unsere alle Gäste am 1. Advent um 10 Uhr zum Familiengottesdienst in die Kirche am Stölpchensee ein. Ab 14 Uhr findet direkt vor der Kirche der Weihnachtsmarkt auf dem Wilhelmplatz statt.</p>",
     "todo":"mail",
-    "copyright":""
+    "copyright":"PublicDomainPictures"
   },
   {
     "id":132,
@@ -3671,7 +3671,7 @@ var data = [
     "kind":"gemeinnützig",
     "remarks":"<p>Kommen sie zum großen Adventsbasar im Gemeindehaus der Evangelischen Kirchengemeinde Nikolassee.</p>",
     "todo":"mail",
-    "copyright":""
+    "copyright":"TaniaVdB"
   },
   {
     "id":118,
@@ -3887,7 +3887,7 @@ var data = [
     "kind":"gemeinnützig",
     "remarks":"<p>Alle Jahre wieder: Am 3. Advent öffnen wir für Sie die Villa wieder als „Das Weihnachtshaus“. Gemütlich brennende Feuerkörbe, der Duft von Punsch und gebrannten Mandeln, am offenen Feuer Stockbrot rösten – und an den Ständen gibt es schöne Sachen zu entdecken, die man anderswo selten findet: Vieles in den bunten Auslagen stammt aus Berliner Werkstätten für Menschen mit Behinderung und aus unseren Bastelgruppen. Kunsthandwerk, Schmuck und liebevoll hergestellte Kleinode zeigen dabei eindrucksvoll, wie viel Können und Kreativität dahinter stecken. Eine tolle Gelegenheit, um ganz besondere Geschenke zu entdecken.</p><p>Wer es ganz individuell möchte, erstellt mit uns einfach seine eigenen Weihnachtskarten. (Nicht nur) Kinder können ihr eigenes Lebkuchenhaus mit viel Zuckerguss und Leckereien verzieren oder an den Spielständen ihre Augen zum Leuchten bringen. Dazu gibt es Musik vom gläsernen Flügel und ein besinnliches Kulturprogramm. Attraktive Gewinne locken beim Rätselparcours, kurz, jede Menge gemütliche Weihnachtsstimmung, denn der Weihnachtsmann kommt auch vorbei. Feiern Sie mit uns einen fröhlichen Adventssonntag für die ganze Familie in barrierefreiem Ambiente – wir freuen uns auf Sie! Der Eintritt ist frei.</p>",
     "todo":"mail",
-    "copyright":""
+    "copyright":"Fürst Donnersmarck-Stiftung"
   },
   {
     "id":110,
@@ -3959,7 +3959,7 @@ var data = [
     "kind":"gewerblich",
     "remarks":"<p>Auch dieses Jahr findet der Weihnachtsmarkt vor dem Forum Steglitz in der Schloßstraße statt.</p>",
     "todo":"mail",
-    "copyright":""
+    "copyright":"Blume Events"
   },
   {
     "id":154,
@@ -4101,9 +4101,9 @@ var data = [
     "web":"www.lehmanns-bauernmarkt.de",
     "fee":"",
     "kind":"gewerblich",
-    "remarks":"<p>Traditioneller Weihnachtsmarkt mit handgemachten Marmeladen, Chutneys und Bio-Seifen, über 20 Sorten französische Salami, Biogewürze und Obstbrände vom Bodensee, handgearbeiteten Schmuckkästchen und Daumenkinos, Puppenkleidern und Kaufmannsläden, individuell hergestellte Geschenke aus einer Schauschmiede oder von einer Weberin und einer Porzellanmalerin, hausgemachten Getränken und Speisen wie Erbsensuppe aus der Gulaschkanone, Marienfelder Rostbratwurst, Blechkuchen, frischgebackenem Weihnachtsbrot und Griebenschmalz nach Oma Lehmanns Rezept, Chören und Orchestern. Auf die Kinder wartet neben den Tieren des Bauernhofs eine Märchenerzählerin im Stall.</p>",
-    "todo":"mail",
-    "copyright":""
+    "remarks":"<p>Ein weihnachtliches Jubiläum der besonderen Art findet in diesem Jahr in Marienfelde statt: Am zweiten und auch am dritten Advent öffnet zum zwanzigsten Mal der beliebte Weihnachtsmarkt auf Lehmanns Bauernhof in Marienfelde seine Pforten. Wegen des großen Besucherzuspruchs hat sich die Familie Lehmann entschlossen auch in diesem Jahr den Weihnachtsmarkt an zwei Adventswochenenden zu veranstalten. „Viele Gäste waren begeistert, dass es jetzt zwei Wochenenden in Marienfelde weihnachtet. Auch für Abwechslung ist gesorgt, so dass sich auf jeden Fall ein Besuch an beiden Wochenenden lohnt.“ erklärte Bauer Klaus Lehmann.</p><p>Wieder dabei ist beispielsweise eine Schauschmiede, wo es individuelle Geschenke aus Schmiedeeisen gibt und wo für Kinder kleine Andenken direkt geschmiedet werden. Bei einer Weberin und einem Schmuckworkshop für Kinder kann man seine Geschenkideen verwirklichen lassen. Anspruchsvolles Kunsthandwerk wie Lesemagnete von Marion Bartz, handgemachte Schreibgeräte und handgearbeitete Körbe finden ebenso Platz wie französische Salami, Obstbrände und Milchcreme. Neu dabei ist ein Bergbauer aus Österreich, der seine eigenen Produkte wie Bergkräuterextrakte und Kräuterkissen vorstellt.</p><p>Das traditionelle Speiseangebot konzentriert sich auf wenige Stände, hier findet man beispielsweise hausgemachte Erbsensuppe, Raclette, Marienfelder Bratwurst und natürlich Glühwein. Weitere Höhepunkte des Weihnachtsmarktes sind die zahlreichen und sympathischen Tiere des Bauernhofes. Alle Besucher können sich an beiden Adventswochenenden von Chören und Orchestern in Weihnachtsstimmung bringen lassen. Zum Jubiläum treten 12 verschiedene Chöre und Orchester auf der kleinen Bühne aus. Auf die Kinder warten eine Märchenerzählerin auf dem Kornboden und am Samstag und Sonntag Ponys und eine Kutsche.</p>",
+    "todo":"ready",
+    "copyright":"Lehmanns Bauernhof"
   },
   {
     "id":156,
@@ -4175,7 +4175,7 @@ var data = [
     "kind":"gemeinnützig",
     "remarks":"<p>Am 7. Dezember ist es wieder so weit: Der 30. Weihnachtsmarkt des TSV Marienfeld mit Beteiligung der Marienfelder Kyffhäuser Kamaradschaft in Alt-Marienfelde</p><p>Es gibt Vorführungen, Tombola für die Kinder, Malen und Basteln, eine Spielstraße, Bastelarbeiten, Essen und Trinken.</p>",
     "todo":"mail",
-    "copyright":""
+    "copyright":"TSV Marienfelde"
   },
   {
     "id":158,
@@ -4247,7 +4247,7 @@ var data = [
     "kind":"gemeinnützig",
     "remarks":"<p>Wir möchten Sie herzlich zum Friedenauer Engelmarkt am 07.12.2014 (2. Advent) in der Zeit von 13 – 18 Uhr auf dem Breslauer Platz einladen. Es erwarten Sie Kunsthandwerk, selbstgemachte Kleinigkeiten und Leckereien, Infos aus dem Bezirk u.v.m. Eröffnet wird der Engelmarkt mit unserem Schirmherrn, Bezirksstadtrat Oliver Schworck, und den Friedenauer Engeln (es sind wieder drei!).</p>",
     "todo":"mail",
-    "copyright":""
+    "copyright":"Silke Klimesch"
   },
   {
     "id":140,
@@ -4535,7 +4535,7 @@ var data = [
     "kind":"gemeinnützig",
     "remarks":"<p>Auf dem Anger vor dem Dorfklub findet jedes Jahr der kleine Adventsmarkt statt. Zum Adventsmarkt, am 29. November, können Sie wieder eine traditionelle Ausstellung der AG - Heimatmuseum besichtigen.</p><p>Diesmal stellen wir Ihre alten und neuen Puppenstuben und Puppenhäuser, Pferdeställe und Bauernhöfe aus. Wir nehmen sie auch gemalt oder aus Papier im Schuhkarton. Auch einzelne Möbelteile sind eine schöne Dekoration. Sollten Sie noch besonders schöne Engel oder Sterne haben, sind sie für den Himmel willkommen.</p>",
     "todo":"mail",
-    "copyright":""
+    "copyright":"Müggelheimer Heimatverein e. V."
   },
   {
     "id":164,
@@ -4607,7 +4607,7 @@ var data = [
     "kind":"gemeinnützig",
     "remarks":"<p>Zum Lichtermarkt und Adventskonzert gibt es ein buntes Markttreiben vor der Kirche, Märchenstunde und Programm der Grundschule.</p><p>Um 14:00 Uhr ist die Eröffnung mit dem Bläserensemble Köpenick, um 15:00 Uhr basteln im Musikzimmer der Kirche, um 15:30 Uhr Märchenstunde in der Taufkapelle, um 18:00 Uhr das Adventskonzert mit dem Köpenicker Chor \"Sing! Sing!\" unter Leitung von Lutz Haubold. Chorische und solistische Musik zu Advent und Weihnacht, u.a. von Johann Eccard, Samuel Scheidt, Caesar Franck, John Rutter sowie deutsche und internationale Weihnachtslieder.</p>",
     "todo":"mail",
-    "copyright":""
+    "copyright":"Gellinger"
   },
   {
     "id":162,
@@ -4679,7 +4679,7 @@ var data = [
     "kind":"gewerblich",
     "remarks":"<p>1000 Weihnachtsmänner werden auf dem Friedrichshagener Weihnachtsmarkt VERSCHENKT</p><p>Der Weihnachtsmarkt Bölschestraße bietet allen Gästen noch einmal kurz vor dem Fest die Möglichkeit, für ihre Lieben ein schönes Geschenk zu beschaffen. Da bieten sich zum Beispiel der Kunsthandwerker mit seiner original erzgebirgischen Holzkunst oder das reichhaltig vorhandene Schmuck- angebot und weitere Accessuire an. Darf es etwas künstlerischer sein, dann hin zu den Künstlern und Handwerkern mit ihren Bildern, Karten, Töpferwaren, Keramiken, Korbflechtarbeiten, Drechslerwaren und sonstigen Dingen die uns unser Leben verschönern. Für gute Laune sorgen die Schausteller mit Riesenrad, Kinderkarussell, Weihnachtsverlosung, Tütenangeln oder Pfeilwerfen. Nicht zu vergessen sind die Zuständigkeiten für das leibliche Wohl. Süßwaren von Zuckerwatte, Poppkorn, Crepes, Schokofrüchte und das Pfefferkuchenherz sind die Leckereien, das Deftige kommt vom Grillstand, Grünkohl mit Stinte, Kettwurst aus DDR Zeit, Ungarischer Langos, Mexikopfanne, russischer Borschtsch, Knofribrot, Fischbrötchen u.v.m. gehören zum Angebot. Wieder dabei ist unser Winzer aus Rheinland Pfalz, der seinen selbstprodu- zierten Glühwein und andere Produkte anbietet. Es wird ein durchgehendes Bühnenprogramm geben, welches aus dem singen- genden Weihnachtsmann Ronald Beitz, sowie weiteren Künstlern und Bläsern besteht.</p><p>Neu in diesem Jahr ist ein kleiner Streichelzoo.</p>",
     "todo":"mail",
-    "copyright":""
+    "copyright":"Hans"
   },
   {
     "id":168,
@@ -4823,7 +4823,7 @@ var data = [
     "kind":"gewerblich",
     "remarks":"<p>Lichterglanz erfüllt das historische Gelände: Beim Weihnachtsmarkt in den Späth’schen Baumschulen lässt es sich der Weihnachtsmann nicht nehmen, mit seinem Lieblingsrentier anzureisen. Von der großen Bühne im Hof klingt besinnliche Musik. radioBERLIN 88,8 Moderator Ingo Hoppe führt durch ein Programm voller Überraschungen und Weihnachtszauber.</p><p>Monbijou-Theater und Märchenerzählerin Ellen Luckas begeistern Kinder und ihre Eltern in der Märchenhütte. Die kleinen Gäste können auch Geschenke basteln, Kerzen ziehen und auf Eseln reiten. Ein historisches Kinderkarussell bittet zur Fahrt. Die Weihnachtskrippe aus Südtirol zeigt Szenen voller Nostalgie. Naturwarenwerkstätten, Schmuckdesigner und Kunsthandwerker bieten an mehr als 100 liebevoll dekorierten Ständen einfallsreiche Geschenkideen an.</p><p>In der ältesten Baumschule Deutschlands erwartet die Gäste ein Weihnachtsmarkt wie aus dem Bilderbuch. Mittendrin: der Späth’sche Tannenwald mit den besten Weihnachtsbäumen von Berlin. Wunderbare Düfte und Leckereien, Pulsnitzer Lebkuchen, echter Obstglühwein in acht Sorten aus Thüringen, ein Lagerfeuer für Groß und Klein, köstliche Kekse aus der Weihnachtsbäckerei und Bratäpfel frisch aus dem Hofcafé – Genießen Sie mit Freunden, Familie, Kindern, Kolleginnen und Kollegen genießen in den Späth’schen Baumschulen einen der schönsten Weihnachtsmärkte der Stadt.</p>",
     "todo":"mail",
-    "copyright":""
+    "copyright":"Späth’schen Baumschulen"
   },
   {
     "id":1000,
@@ -5039,7 +5039,7 @@ var data = [
     "kind":"gewerblich",
     "remarks":"<p>Vom 24. November bis zum 26. Dezember 2014 rundet der traditionelle Weihnachtsmarkt mit aufwendigen Dekorationen und festlich glitzernden Linden in der Alten Potsdamer Straße die Winterwelt ab. Dort gibt es alles, was das Herz begehrt: vom leckeren Apfel mit Schokoglasur über Baumschmuck aus dem Erzgebirge bis hin zum Zimtstern. Auf dem Handwerkermarkt kann jeder Töpfern, Holzschnitzern, Bäckern, Filzern, Korbmachern und Co. zuschauen, wie die schönen Weihnachtsgeschenke, die an den Ständen verkauft werden, entstehen.</p><p>Der Weihnachtsmarkt ist täglich von 10 bis 22 Uhr (am 24. Dezember 2014 bis 14 Uhr) geöffnet.</p>",
     "todo":"mail",
-    "copyright":""
+    "copyright":"Bergmann Eventgastronomie"
   },
   {
     "id":1006,
@@ -5111,6 +5111,6 @@ var data = [
     "kind":"gewerblich",
     "remarks":"<p>Seit 23 Jahren laden Galeria Kaufhof und die Firma Bergmann Eventgastronomie zur Advents‐ und Weihnachtszeit auf den Berliner Alexanderplatz ein. Unter dem Motto „Shoppen am ALEX – Feiern am Alex“ haben sich wieder ALEXA und MediaMarkt, SATURN und C&A dem gemeinsamen Weihnachtsmarkttreiben angeschlossen.</p><p>Auch in diesem Jahr erwartet ab dem 24. November die Berlinerinnen und Berlin und die Gäste der Hauptstadt nicht „nur“ ein Weihnachtsmarkt, sondern der gesamte Alexanderplatz als „der“ Weihnachtsplatz Berlins und lockt zum Bummel und Staunen, zum Schnuppern und Genießen zum Kosten und Kaufen.</p><p>Der Weihnachtsmarkt ist bis zum 28. Dezember 2014 täglich von 10 – 22.00 Uhr (24.12. bis 16.00 Uhr) geöffnet, Eisbahn und Partyhaus bis zum 4. Januar 2015.</p>",
     "todo":"mail",
-    "copyright":""
+    "copyright":"Bergmann Eventgastronomie"
   }
 ];
