@@ -176,40 +176,6 @@ function getOpeningTime( obj, diffdays)
 	return '';
 }
 
-function sortDataByDate( a, b)
-{
-	var daysA = getNextOpeningDays( a);
-	var daysB = getNextOpeningDays( b);
-
-	a.data_next_open = daysA;
-	b.data_next_open = daysB;
-
-	if( daysA == daysB) {
-		var timeA = getOpeningTime( a, daysA);
-		var timeB = getOpeningTime( b, daysB);
-		var intA = parseInt( timeA.substr( 6, 2));
-		var intB = parseInt( timeB.substr( 6, 2));
-
-		if( intA != intB) {
-			return intB - intA;
-		} else {
-			intA = parseInt( timeA.substr( 9, 2));
-			intB = parseInt( timeB.substr( 9, 2));
-		}
-
-		if( intA != intB) {
-			return intB - intA;
-		} else {
-			intA = parseInt( timeA.substr( 0, 2));
-			intB = parseInt( timeB.substr( 0, 2));
-		}
-
-		return intA - intB;
-	}
-
-	return daysA - daysB;
-}
-
 function getNextMarketOpeningTime( obj)
 {
 	var days = getNextOpeningDays( obj);
@@ -252,9 +218,14 @@ function getNextMarketOpeningTime( obj)
 	return openingtime;
 }
 
-function composeMarketItem( obj)
+function composeMarketItem( obj, diffdays)
 {
-	var openingtime = getNextMarketOpeningTime( obj);
+	var openingtime = '';
+	if( -1 == diffdays) {
+		openingtime = getNextMarketOpeningTime( obj);
+	} else {
+		openingtime = 'von ' + getOpeningTime( obj, diffdays) + ' Uhr';
+	}
 
 	if( 'hide' == obj.todo) { return ''; }
 //	if( 'mail' == obj.todo) { return ''; }
@@ -267,14 +238,213 @@ function composeMarketItem( obj)
 	return '<li>' + img + '<a href="javascript:callOneMarket(' + obj.id + ');">' + txt + '</a></li>';
 }
 
+// ·································································
+
+function sortDataToday( a, b)
+{
+	var timeA = getOpeningTime( a, 0);
+	var timeB = getOpeningTime( b, 0);
+
+	a.data_next_open = timeA;
+	b.data_next_open = timeB;
+
+	if(( '' != timeA) && ('' != timeB)) {
+		var intA = parseInt( timeA.substr( 6, 2));
+		var intB = parseInt( timeB.substr( 6, 2));
+
+		if( intA != intB) {
+			return intB - intA;
+		} else {
+			intA = parseInt( timeA.substr( 9, 2));
+			intB = parseInt( timeB.substr( 9, 2));
+		}
+
+		if( intA != intB) {
+			return intB - intA;
+		} else {
+			intA = parseInt( timeA.substr( 0, 2));
+			intB = parseInt( timeB.substr( 0, 2));
+		}
+
+		if( intA != intB) {
+			return intA - intB;
+		}
+
+		return a.name < b.name ? 1 : -1;
+	} else if( '' != timeA) {
+		return 1;
+	} else if( '' != timeB) {
+		return -1;
+	}
+
+	return 0;
+}
+
+function fillListTodayMarkets()
+{
+	document.querySelector( '#tab-market-today').   setAttribute( 'aria-selected', 'true');
+	document.querySelector( '#tab-market-tomorrow').setAttribute( 'aria-selected', 'false');
+	document.querySelector( '#tab-market-all').     setAttribute( 'aria-selected', 'false');
+//	document.querySelector( '#tab-market-nearby').  setAttribute( 'aria-selected', 'false');
+//	document.querySelector( '#tab-market-favorite').setAttribute( 'aria-selected', 'false');
+
+	var txt = '<div class="center"><progress></progress></div>';
+	document.querySelector( '#marketlist').innerHTML = txt;
+	txt = '';
+
+ 	data.sort( sortDataToday);
+
+	txt += '<header>Heute geöffnet</header>';
+ 	for( var i = 0; i < data.length; ++i) {
+ 		var obj = data[ i];
+
+ 		if( '' != obj.data_next_open) {
+			txt += composeMarketItem( obj, 0);
+ 		}
+	}
+
+	txt = composeList( txt);
+	txt = composeSectionList( txt);
+
+	txt = '<div style="margin:-1.5rem -1.5rem 1rem -1.5rem;"><img src="art/teaser.jpg" style="width:100%;"></div>' + txt;
+
+	document.querySelector('#marketlist').innerHTML = txt;
+}
+
+document.querySelector('#tab-market-today').addEventListener('click', function() {
+	fillListTodayMarkets();
+});
+
+// ·································································
+
+function sortDataTomorrow( a, b)
+{
+	var timeA = getOpeningTime( a, 1);
+	var timeB = getOpeningTime( b, 1);
+
+	a.data_next_open = timeA;
+	b.data_next_open = timeB;
+
+	if(( '' != timeA) && ('' != timeB)) {
+		var intA = parseInt( timeA.substr( 6, 2));
+		var intB = parseInt( timeB.substr( 6, 2));
+
+		if( intA != intB) {
+			return intB - intA;
+		} else {
+			intA = parseInt( timeA.substr( 9, 2));
+			intB = parseInt( timeB.substr( 9, 2));
+		}
+
+		if( intA != intB) {
+			return intB - intA;
+		} else {
+			intA = parseInt( timeA.substr( 0, 2));
+			intB = parseInt( timeB.substr( 0, 2));
+		}
+
+		if( intA != intB) {
+			return intA - intB;
+		}
+
+		return a.name < b.name ? 1 : -1;
+	} else if( '' != timeA) {
+		return 1;
+	} else if( '' != timeB) {
+		return -1;
+	}
+
+	return 0;
+}
+
+function fillListTomorrowMarkets()
+{
+	document.querySelector( '#tab-market-today').   setAttribute( 'aria-selected', 'false');
+	document.querySelector( '#tab-market-tomorrow').setAttribute( 'aria-selected', 'true');
+	document.querySelector( '#tab-market-all').     setAttribute( 'aria-selected', 'false');
+//	document.querySelector( '#tab-market-nearby').  setAttribute( 'aria-selected', 'false');
+//	document.querySelector( '#tab-market-favorite').setAttribute( 'aria-selected', 'false');
+
+	var txt = '<div class="center"><progress></progress></div>';
+	document.querySelector( '#marketlist').innerHTML = txt;
+	txt = '';
+
+ 	data.sort( sortDataTomorrow);
+
+	txt += '<header>Morgen geöffnet</header>';
+ 	for( var i = 0; i < data.length; ++i) {
+ 		var obj = data[ i];
+
+ 		if( '' != obj.data_next_open) {
+			txt += composeMarketItem( obj, 1);
+ 		}
+	}
+
+	txt = composeList( txt);
+	txt = composeSectionList( txt);
+
+	txt = '<div style="margin:-1.5rem -1.5rem 1rem -1.5rem;"><img src="art/teaser.jpg" style="width:100%;"></div>' + txt;
+
+	document.querySelector('#marketlist').innerHTML = txt;
+}
+
+document.querySelector('#tab-market-tomorrow').addEventListener('click', function() {
+	fillListTomorrowMarkets();
+});
+
+// ·································································
+
+function sortDataAll( a, b)
+{
+	var daysA = getNextOpeningDays( a);
+	var daysB = getNextOpeningDays( b);
+
+	a.data_next_open = daysA;
+	b.data_next_open = daysB;
+
+	if( daysA == daysB) {
+		var timeA = getOpeningTime( a, daysA);
+		var timeB = getOpeningTime( b, daysB);
+		var intA = parseInt( timeA.substr( 6, 2));
+		var intB = parseInt( timeB.substr( 6, 2));
+
+		if( intA != intB) {
+			return intB - intA;
+		} else {
+			intA = parseInt( timeA.substr( 9, 2));
+			intB = parseInt( timeB.substr( 9, 2));
+		}
+
+		if( intA != intB) {
+			return intB - intA;
+		} else {
+			intA = parseInt( timeA.substr( 0, 2));
+			intB = parseInt( timeB.substr( 0, 2));
+		}
+
+		if( intA != intB) {
+			return intA - intB;
+		}
+
+		return a.name < b.name ? 1 : -1;
+	}
+
+	return daysA - daysB;
+}
+
 function fillListAllMarkets()
 {
-	var txt = '';
+	document.querySelector( '#tab-market-today').   setAttribute( 'aria-selected', 'false');
+	document.querySelector( '#tab-market-tomorrow').setAttribute( 'aria-selected', 'false');
+	document.querySelector( '#tab-market-all').     setAttribute( 'aria-selected', 'true');
+//	document.querySelector( '#tab-market-nearby').  setAttribute( 'aria-selected', 'false');
+//	document.querySelector( '#tab-market-favorite').setAttribute( 'aria-selected', 'false');
 
-//	txt += '<header><i class="icon-heart-filled"></i> Meine Lieblingsmärkte</header>';
-//	txt += '<li aria-disabled="true"><p>Kein Weihnachtsmarkt ausgewählt</p></li>';
+	var txt = '<div class="center"><progress></progress></div>';
+	document.querySelector( '#marketlist').innerHTML = txt;
+	txt = '';
 
- 	data.sort( sortDataByDate);
+ 	data.sort( sortDataAll);
 	var workingDate = new Date();
 	workingDate.setHours( 0, 0, 0, 0);
  	var nextOpen = -1;
@@ -299,7 +469,7 @@ function fillListAllMarkets()
  			}
  		}
 
-		txt += composeMarketItem( obj);
+		txt += composeMarketItem( obj, -1);
 	}
 
 	txt = composeList( txt);
@@ -307,8 +477,138 @@ function fillListAllMarkets()
 
 	txt = '<div style="margin:-1.5rem -1.5rem 1rem -1.5rem;"><img src="art/teaser.jpg" style="width:100%;"></div>' + txt;
 
-	document.querySelector('#drawer > article').innerHTML = txt;
+	document.querySelector('#marketlist').innerHTML = txt;
 }
+
+document.querySelector('#tab-market-all').addEventListener('click', function() {
+	fillListAllMarkets();
+});
+
+// ·································································
+
+function sortDataNearby( a, b)
+{
+	var daysA = getNextOpeningDays( a);
+	var daysB = getNextOpeningDays( b);
+
+	a.data_next_open = daysA;
+	b.data_next_open = daysB;
+
+	if( daysA == daysB) {
+		var timeA = getOpeningTime( a, daysA);
+		var timeB = getOpeningTime( b, daysB);
+		var intA = parseInt( timeA.substr( 6, 2));
+		var intB = parseInt( timeB.substr( 6, 2));
+
+		if( intA != intB) {
+			return intB - intA;
+		} else {
+			intA = parseInt( timeA.substr( 9, 2));
+			intB = parseInt( timeB.substr( 9, 2));
+		}
+
+		if( intA != intB) {
+			return intB - intA;
+		} else {
+			intA = parseInt( timeA.substr( 0, 2));
+			intB = parseInt( timeB.substr( 0, 2));
+		}
+
+		if( intA != intB) {
+			return intA - intB;
+		}
+
+		return a.name < b.name ? 1 : -1;
+	}
+
+	return daysA - daysB;
+}
+
+function fillListNearbyMarkets()
+{
+	document.querySelector( '#tab-market-today').   setAttribute( 'aria-selected', 'false');
+	document.querySelector( '#tab-market-tomorrow').setAttribute( 'aria-selected', 'false');
+	document.querySelector( '#tab-market-all').     setAttribute( 'aria-selected', 'false');
+//	document.querySelector( '#tab-market-nearby').  setAttribute( 'aria-selected', 'true');
+//	document.querySelector( '#tab-market-favorite').setAttribute( 'aria-selected', 'false');
+
+	var txt = '<div class="center"><progress></progress></div>';
+	document.querySelector( '#marketlist').innerHTML = txt;
+	txt = '';
+
+ 	data.sort( sortDataNearby);
+
+	txt = '<div style="margin:-1.5rem -1.5rem 1rem -1.5rem;"><img src="art/teaser.jpg" style="width:100%;"></div>' + txt;
+
+	document.querySelector('#marketlist').innerHTML = txt;
+}
+
+//document.querySelector('#tab-market-nearby').addEventListener('click', function() {
+//	fillListNearbyMarkets();
+//});
+
+// ·································································
+
+function sortDataFavorite( a, b)
+{
+	var daysA = getNextOpeningDays( a);
+	var daysB = getNextOpeningDays( b);
+
+	a.data_next_open = daysA;
+	b.data_next_open = daysB;
+
+	if( daysA == daysB) {
+		var timeA = getOpeningTime( a, daysA);
+		var timeB = getOpeningTime( b, daysB);
+		var intA = parseInt( timeA.substr( 6, 2));
+		var intB = parseInt( timeB.substr( 6, 2));
+
+		if( intA != intB) {
+			return intB - intA;
+		} else {
+			intA = parseInt( timeA.substr( 9, 2));
+			intB = parseInt( timeB.substr( 9, 2));
+		}
+
+		if( intA != intB) {
+			return intB - intA;
+		} else {
+			intA = parseInt( timeA.substr( 0, 2));
+			intB = parseInt( timeB.substr( 0, 2));
+		}
+
+		if( intA != intB) {
+			return intA - intB;
+		}
+
+		return a.name < b.name ? 1 : -1;
+	}
+
+	return daysA - daysB;
+}
+
+function fillListFavoriteMarkets()
+{
+	document.querySelector( '#tab-market-today').   setAttribute( 'aria-selected', 'false');
+	document.querySelector( '#tab-market-tomorrow').setAttribute( 'aria-selected', 'false');
+	document.querySelector( '#tab-market-all').     setAttribute( 'aria-selected', 'false');
+//	document.querySelector( '#tab-market-nearby').  setAttribute( 'aria-selected', 'false');
+//	document.querySelector( '#tab-market-favorite').setAttribute( 'aria-selected', 'true');
+
+	var txt = '<div class="center"><progress></progress></div>';
+	document.querySelector( '#marketlist').innerHTML = txt;
+	txt = '';
+
+ 	data.sort( sortDataFavorite);
+
+	txt = '<div style="margin:-1.5rem -1.5rem 1rem -1.5rem;"><img src="art/teaser.jpg" style="width:100%;"></div>' + txt;
+
+	document.querySelector('#marketlist').innerHTML = txt;
+}
+
+//document.querySelector('#tab-market-favorite').addEventListener('click', function() {
+//	fillListFavoriteMarkets();
+//});
 
 // ·································································
 
@@ -420,30 +720,6 @@ function fillListOneMarket()
 	document.querySelector('#onemarket > article').innerHTML = txt;
 }
 
-function fillListOneMarketDebug()
-{
-	var txt = '';
-	var obj = getObjFromID( config.currentMarketId);
-
-	txt += '<section data-type="list"><header>' + obj.name + '</header></section>';
-	txt += '<p>' + getNextMarketOpeningTime( obj) + '</p>';
-	txt += '<p>' + obj.street + '<br>' + obj.zip_city + ' (' + obj.district + ')</p>';
-	txt += '<p><a href="mailto:' + obj.email + '">' + obj.email + '</a></p>';
-	txt += '<p><a href="http://' + obj.web + '">' + obj.web + '</a></p>';
-	txt += '<p>ID: ' + obj.id + '</p>';
-
-	if( '' == obj.fee) {
-		txt += '<p>Kein Eintritt</p>';
-	} else {
-		txt += '<p>' + obj.fee + '</p>';
-	}
-
-	txt += '<p>' + obj.kind + '</p>';
-	txt += '<p>' + obj.remarks + '</p>';
-
-	document.querySelector('#onemarket > article').innerHTML = txt;
-}
-
 function callOneMarket( marketId)
 {
 	document.querySelector('#onemarket').className = 'current';
@@ -455,11 +731,7 @@ function callOneMarket( marketId)
 	config.currentMarketId = marketId;
 
 	var obj = getObjFromID( marketId);
-//	if( 'ready' == obj.todo) {
-		setTimeout( fillListOneMarket, config.timeout);
-//	} else {
-//		setTimeout( fillListOneMarketDebug, config.timeout);
-//	}
+	setTimeout( fillListOneMarket, config.timeout);
 }
 
 document.querySelector('#btn-onemarket-back').addEventListener('click', function() {
@@ -469,6 +741,6 @@ document.querySelector('#btn-onemarket-back').addEventListener('click', function
 
 // ·································································
 
-setTimeout( fillListAllMarkets, config.timeout);
+setTimeout( fillListTodayMarkets, config.timeout);
 
 // ·································································

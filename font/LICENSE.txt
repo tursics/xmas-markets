@@ -1,12 +1,12 @@
 Font license info
 
 
-## Typicons
+## Font Awesome
 
-   (c) Stephen Hutchings 2012
+   Copyright (C) 2012 by Dave Gandy
 
-   Author:    Stephen Hutchings
-   License:   SIL (http://scripts.sil.org/OFL)
-   Homepage:  http://typicons.com/
+   Author:    Dave Gandy
+   License:   SIL ()
+   Homepage:  http://fortawesome.github.com/Font-Awesome/
 
 

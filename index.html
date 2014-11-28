@@ -6,17 +6,18 @@
 	<meta name="msapplication-tap-highlight" content="no"/>
 	<title>Weihnachtsmärkte in Berlin</title>
 	<link rel="stylesheet" href="font/xmas-symbols.css">
-	<link rel="stylesheet" href="scripts/cross_browser.css" >
 	<link rel="stylesheet" href="scripts/buttons.css">
+	<link rel="stylesheet" href="scripts/cross_browser.css" >
 	<link rel="stylesheet" href="scripts/drawer.css">
 	<link rel="stylesheet" href="scripts/headers.css">
-	<link rel="stylesheet" href="scripts/index.css">
 	<link rel="stylesheet" href="scripts/lists.css">
 	<link rel="stylesheet" href="scripts/progress_activity.css">
 	<link rel="stylesheet" href="scripts/status.css">
+	<link rel="stylesheet" href="scripts/tabs.css">
 	<link rel="stylesheet" href="scripts/toolbars.css">
 	<link rel="stylesheet" href="scripts/transitions.css">
 	<link rel="stylesheet" href="scripts/util.css">
+	<link rel="stylesheet" href="scripts/index.css">
 </head>
 <body>
 
@@ -56,7 +57,16 @@
 			<h1>Weihnachtsmärkte <em>in Berlin</em></h1>
 		</header>
 		<article class="content scrollable header">
-			<div class="center"><progress></progress></div>
+			<ul role="tablist" class="bb-tablist" data-type="filter">
+				<li role="presentation"><a href="#" role="tab" id="tab-market-today">Heute</a></li>
+				<li role="presentation"><a href="#" role="tab" id="tab-market-tomorrow">Morgen</a></li>
+				<li role="presentation"><a href="#" role="tab" id="tab-market-all">Alle</a></li>
+<!--				<li role="presentation"><a href="#" role="tab" id="tab-market-nearby"><i class="icon-direction"></i></a></li> -->
+<!--				<li role="presentation"><a href="#" role="tab" id="tab-market-favorite"><i class="icon-star-filled"></i></a></li> -->
+			</ul>
+			<div id="marketlist">
+				<div class="center"><progress></progress></div>
+			</div>
 		</article>
 	</section>
 </section>
