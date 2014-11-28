@@ -3093,9 +3093,9 @@ var data = [
     "web":"www.goldnetz-berlin.de",
     "fee":"",
     "kind":"gemeinnützig",
-    "remarks":"<p>Der Soziale Weihnachtsmarkt ist eine bewährte Tradition des Veranstalters Goldnetz gGmbH, einmal im Jahr kurz vor Weihnachten einen etwas größeren Markt zu veranstalten. Einen Markt, auf dem sich auch die, die sonst aus finanziellen Gründen einen Bogen um die kommerziellen Weihnachtsmärkte machen müssen, ein wenig Weihnachtsstimmung leisten können. Und im Märkte machen kennt Goldnetz sich aus: berlinweit veranstaltet der gemeinnützige Träger die Sozialmärkte mit preisgünstigen Artikeln für Menschen mit weniger als 900 Euro Nettoeinkommen.</p>",
-    "todo":"mail",
-    "copyright":"PixelAnarchy"
+    "remarks":"<p>\"Geschenke für alle!\" ist das Motto des 9. großen Weihnachtsmarktes vom Goldnetz Sozialmarkt Berlin. Um 14 Uhr eröffnen Bezirksstadtrat für Soziales und Gesundheit Frank Bewig gemeinsam mit Gisela Pfeifer-Mellar, Geschäftsführerin von Goldnetz gGmbH, unseren Weihnachtsmarkt 2014.</p><p>Alle Jahre wieder ist es uns eine Herzensangelegenheit, Menschen mit geringem Einkommen zu Weihnachten einen gabenreichen Tisch zu decken. Dazu laden wir Sie auf unseren Weihnachtsmarkt auf dem Földerichplatz, Spandau, ganz herzlich ein.</p><p>Freuen Sie sich auf ein buntes Bühnenprogramm mit Musik von Weldvox, Kies und Schotter, dem Posaunenchor der Matthias-Claudius-Gemeinde, Parker’s Pack und Garet Cosmo. Es gibt auch eine spannende Tombola, dabei es nur Gewinne gibt! Auch für leckere Speisen und Getränke wird gesorgt sein und unsere kleinen Gäste dürfen sich vom Nikolaus überraschen lassen.</p><p>Wir freuen uns auf Sie!</p><p>Der Markt macht’s… unsere Märkte richten sich an alle, die monatlich über weniger als 900,- € Nettoeinkommen verfügen. Nachzuweisen bitte unter Vorlage des „Berlinpass“, ALG I/II-, Renten-, BAFÖG-Bescheid oder einer Verdienstbescheinigung. Diese Unterlagen gelten in Verbindung mit dem Personalausweis.</p>",
+    "todo":"ready",
+    "copyright":"Goldnetz gGmbH"
   },
   {
     "id":108,
@@ -3597,8 +3597,8 @@ var data = [
     "web":"www.wannseebote.ekbo.de",
     "fee":"",
     "kind":"gemeinnützig",
-    "remarks":"<p>Wir laden unsere alle Gäste am 1. Advent um 10 Uhr zum Familiengottesdienst in die Kirche am Stölpchensee ein. Ab 14 Uhr findet direkt vor der Kirche der Weihnachtsmarkt auf dem Wilhelmplatz statt.</p>",
-    "todo":"mail",
+    "remarks":"<p>Am 1. Advent treffen wir uns nun schon zum 10. Mal zum Weihnachtsmarkt auf dem Wilhelmplatz. Unsere Gäste erwartet in diesem Jahr wieder viele Freunde aus nah und fern und geschmackvoll eingerichtete Verkaufsstände mit einem interessanten Angebot vielfältiger Art, dazu deftige Bratwürste sowie Glühwein auf dem Platz sowie ein vorweihnachtliches Angebot in der Kirche und im Alten Schulhaus.</p><p>Die Blasmusik des Posaunenchors der Evangelischen Freikirche und das Leierkastenspiel bilden die musikalische Untermalung auf dem Weihnachtsmarkt. Im Alten Schulhaus sorgen fleißige Helferinnen für Kaffee, Kuchen und – der Jahreszeit gemäß – schmackhaften Glühwein. Das Team die Erzieherinnen unseres Evangelischen Kindergartens beschäftigt wieder die kleinen Besucher auf adventliche Weise.</p><p>In der Kirche werden wir uns auch diesmal mit vorweihnachtlichen Liedern auf das Fest einstimmen. Der Kantatenchor wird um 16 Uhr mit einem Offenen Singen dabei sein. Ab 17.45 Uhr führen wir das Glockenspiel im Turm vor.</p><p>Aber vielleicht am wichtigsten: Auch auf diesem Weihnachtsmarkt werden wir den Überschuss bei den Gemeindeständen einem guten Zweck zuführen. Wie in den vergangenen Jahren bildet der Weihnachtsmarkt den Abschluss der großen Spendenaktion unserer Gemeinde zum Erntedank. Dieses Mal geht es um die dringend benötigte Hilfe für das zerstörte uralte christliche Aramäerdorf Maaloula in Syrien.</p>",
+    "todo":"ready",
     "copyright":"PublicDomainPictures"
   },
   {
