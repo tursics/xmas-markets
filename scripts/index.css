@@ -214,3 +214,19 @@ section[data-type="sidebar"] > nav > ul > li > a {
   padding-right: 0.8rem;
   white-space:normal;
 }
+
+.ios section[role="region"] > header:first-child {
+	padding-top:2rem;
+}
+
+.ios section[data-type="sidebar"] > header {
+	padding-top:2rem;
+}
+
+.ios #markettab {
+	top:7rem;
+}
+
+.ios #marketlist {
+	padding-top:6rem;
+}
