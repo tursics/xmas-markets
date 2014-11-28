@@ -290,6 +290,7 @@ function fillListTodayMarkets()
 
 	var txt = '<div class="center"><progress></progress></div>';
 	document.querySelector( '#marketlist').innerHTML = txt;
+	window.scrollTo( 0, 0);
 	txt = '';
 
  	data.sort( sortDataToday);
@@ -367,6 +368,7 @@ function fillListTomorrowMarkets()
 
 	var txt = '<div class="center"><progress></progress></div>';
 	document.querySelector( '#marketlist').innerHTML = txt;
+	window.scrollTo( 0, 0);
 	txt = '';
 
  	data.sort( sortDataTomorrow);
@@ -442,6 +444,7 @@ function fillListAllMarkets()
 
 	var txt = '<div class="center"><progress></progress></div>';
 	document.querySelector( '#marketlist').innerHTML = txt;
+	window.scrollTo( 0, 0);
 	txt = '';
 
  	data.sort( sortDataAll);
@@ -455,16 +458,16 @@ function fillListAllMarkets()
 
  		if( obj.data_next_open > nextOpen) {
  			if( maxOpen <= obj.data_next_open) {
-				txt += '<header><i class="icon-clock"></i> Geschlossene Märkte</header>';
+				txt += '<header>Geschlossene Märkte</header>';
 				nextOpen = 36500;
  			} else if( 0 == obj.data_next_open) {
-				txt += '<header><i class="icon-clock"></i> Heute geöffnet</header>';
+				txt += '<header>Heute geöffnet</header>';
 				nextOpen = obj.data_next_open;
  			} else if( 1 == obj.data_next_open) {
-				txt += '<header><i class="icon-clock"></i> Morgen geöffnet</header>';
+				txt += '<header>Morgen geöffnet</header>';
 				nextOpen = obj.data_next_open;
  			} else {
-				txt += '<header><i class="icon-clock"></i> Weihnachtsmärkte</header>';
+				txt += '<header>Weihnachtsmärkte</header>';
 				nextOpen = maxOpen;
  			}
  		}
@@ -534,6 +537,7 @@ function fillListNearbyMarkets()
 
 	var txt = '<div class="center"><progress></progress></div>';
 	document.querySelector( '#marketlist').innerHTML = txt;
+	window.scrollTo( 0, 0);
 	txt = '';
 
  	data.sort( sortDataNearby);
@@ -597,6 +601,7 @@ function fillListFavoriteMarkets()
 
 	var txt = '<div class="center"><progress></progress></div>';
 	document.querySelector( '#marketlist').innerHTML = txt;
+	window.scrollTo( 0, 0);
 	txt = '';
 
  	data.sort( sortDataFavorite);

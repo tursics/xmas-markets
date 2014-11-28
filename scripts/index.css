@@ -143,12 +143,17 @@
     }
 
 /* Filters */
-[role="tablist"][data-type="filter"] {
+#markettab {
 	background-color:rgba(255,255,255,.9);
 	left:0;
 	position:fixed;
 	top:5rem;
+	width:100%;
 	z-index:10;
+}
+
+[role="tablist"][data-type="filter"] {
+	background-color:rgba(255,255,255,.1);
 }
 
 #marketlist {
