@@ -13,10 +13,10 @@
 }
 
 .bb-tablist {
-  display: -webkit-flex;
-  display: flex;
-  align-items: -webkit-flex-end;
-  align-items: flex-end;
+/*  display: -webkit-flex;*/
+/*  display: flex;*/
+/*  align-items: -webkit-flex-end;*/
+/*  align-items: flex-end;*/
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -29,8 +29,8 @@
 
 /* RTL support in gaia right now keeps buttons in same direction as LTR */
 html[dir="rtl"] .bb-tablist {
-  -webkit-flex-direction: row-reverse;
-  flex-direction: row-reverse;
+/*  -webkit-flex-direction: row-reverse;*/
+/*  flex-direction: row-reverse;*/
 }
 
 .bb-tablist > li {
@@ -41,8 +41,8 @@ html[dir="rtl"] .bb-tablist {
   background-color: #ffffff;
   list-style: none;
   pointer-events: all;
-  -webkit-flex: 1 1 0;
-  flex: 1 1 0;
+/*  -webkit-flex: 1 1 0;*/
+/*  flex: 1 1 0;*/
 }
 
 .bb-tablist > li > a,
@@ -211,8 +211,8 @@ html[dir="rtl"] .bb-tablist {
  * ---------------------------------- */
 
 .bb-tablist[data-type="filter"] {
-  display: -webkit-flex;
-  display: flex;
+/*  display: -webkit-flex;*/
+/*  display: flex;*/
   position: relative;
   height: 4rem;
   background: #fff;
@@ -225,6 +225,7 @@ html[dir="rtl"] .bb-tablist {
 }
 
 .bb-tablist[data-type="filter"] > li {
+  display: inline-block;
   background: none;
   position: relative;
   color: #737272;
