@@ -501,8 +501,8 @@ var data = [
     "web":"www.stgeorges.de",
     "fee":"",
     "kind":"gemeinnützig",
-    "remarks":"<p>The Anglican Parish of Berlin invites for this year’s varied Christmas Market. On the ground of the spacious church garden English and German stands offer specialties: Gifts, handicrafts, toys and games, a tombola, a raffle with wonderful prizes, homemade cakes and traditional mince pies along with other British specialties.</p><p>Lots of Christmas music with various choirs, bagpipes and a Christmas carol sing-along guarantee a special atmosphere. There is a room for children, with activities and readers to entertain them with Christmas tales. English books are on sale at great low prices in the chapel. Lots of refreshments will be on sale to keep energy and spirits high.</p>",
-    "todo":"mail",
+    "remarks":"<p>The Anglican Parish of Berlin invites for this year’s varied Christmas Market. On the ground of the spacious church garden English and German stands offer specialties: Gifts, handicrafts, toys and games, a tombola, a raffle with wonderful prizes, homemade cakes and traditional mince pies along with other British specialties.</p><p>Lots of Christmas music with various choirs, bagpipes and a Christmas carol sing-along guarantee a special atomosphere. There is a room for children, with activities and professional readers to entertain them with Christmas tales in English and German. English books are on sale at great low prices in the chapel. Lots of alcoholic and nonalcoholic refreshments will be on sale to keep energy and spirits high!</p>",
+    "todo":"ready",
     "copyright":"St George’s Anglican Episcopal Church"
   },
   {
