@@ -1,0 +1,20 @@
+{
+	"version": "1.4",
+
+	"name": "Weihnachtsmärkte in Berlin",
+	"description": "Finde alle Weihnachtsmärkte in Berlin: die großen, die kleinen, die bunten, die lebhaften, die besinnlichen und die Geheimtipps. Alle in einer App.",
+	"developer": {
+		"name": "Thomas Tursics",
+		"url": "http://www.tursics.de"
+	},
+	"default_locale": "de",
+
+	"launch_path": "/index.html",
+	"icons": {
+		"128": "/art/cicle-128.png",
+		"512": "/art/cicle-512.png"
+	},
+	"installs_allowed_from": [
+		"*"
+	]
+}
