@@ -636,7 +636,7 @@ function composeMarketCalendar( obj)
 
 	var months = new Array( "Jan", "Feb", "Mär", "Apr", "Mai", "Jun", "Jul", "Aug", "Sep", "Okt", "Nov", "Dez");
 	var workingDate = new Date();
-	workingDate.setDate( config.startDate.getDate());
+	workingDate.setFullYear( config.startDate.getFullYear(), config.startDate.getMonth(), config.startDate.getDate());
 
 	var weekday = (workingDate.getDay() + 6) % 7;
 	for( var i = 0; i < weekday; ++i) {
