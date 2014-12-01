@@ -218,6 +218,8 @@ html[dir="rtl"] .bb-tablist {
   background: #fff;
   border-bottom: 0.1rem solid #e7e7e7;
   box-sizing: border-box;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .bb-tablist[data-type="filter"]:before {
@@ -250,7 +252,6 @@ html[dir="rtl"] .bb-tablist {
   line-height: 4rem;
   font-style: italic;
   text-decoration: none;
-  text-overflow: ellipsis;
 }
 
 .bb-tablist[data-type="filter"] > li > a:before,
