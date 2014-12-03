@@ -5,44 +5,37 @@
         version="1.5"
         versionCode="6">
 
-	<!-- Essential property (Blackberry only supports latin character) -->
 	<name>Weihnachtsmärkte in Berlin</name>
-
-	<!-- Essential property (Blackberry should keep it at a reasonable length) -->
 	<description>Finde alle Weihnachtsmärkte in Berlin: die großen, die kleinen, die bunten, die lebhaften, die besinnlichen und die Geheimtipps. Alle in einer App.</description>
-
-	<!-- Essential property -->
-	<author href="http://www.tursics.de" email="thomas@tursics.de">
-		Thomas Tursics
-	</author>
-
-	<!-- Default icon -->
+	<author href="http://www.tursics.de" email="thomas@tursics.de">Thomas Tursics</author>
 	<icon src="icon.png" />
 	<gap:splash src="splash.png" />
 
-	<!-- iOS icons -->
+	<!-- iOS settings -->
 	<gap:platform name="ios" />
 	<preference name="target-device" value="universal" />
 	<preference name="prerendered-icon" value="true" />
-	<!-- iOS 6.1 -->
-	<icon src="art/icon-57.png" gap:platform="ios" width="57" height="57" />
-	<icon src="art/icon-72.png" gap:platform="ios" width="72" height="72" />
-	<icon src="art/icon-114.png" gap:platform="ios" width="114" height="114" />
-	<icon src="art/icon-144.png" gap:platform="ios" width="144" height="144" />
-	<!-- iOS 7.0 -->
-	<icon src="art/icon-60.png" gap:platform="ios" width="60" height="60" />
-	<icon src="art/icon-76.png" gap:platform="ios" width="76" height="76" />
+	<icon src="art/icon-57.png"  gap:platform="ios" width="57"  height="57"  /> <!-- iOS 6.1 -->
+	<icon src="art/icon-72.png"  gap:platform="ios" width="72"  height="72"  /> <!-- iOS 6.1 -->
+	<icon src="art/icon-114.png" gap:platform="ios" width="114" height="114" /> <!-- iOS 6.1 -->
+	<icon src="art/icon-144.png" gap:platform="ios" width="144" height="144" /> <!-- iOS 6.1 -->
+	<icon src="art/icon-60.png"  gap:platform="ios" width="60"  height="60"  />
+	<icon src="art/icon-76.png"  gap:platform="ios" width="76"  height="76"  />
 	<icon src="art/icon-120.png" gap:platform="ios" width="120" height="120" />
 	<icon src="art/icon-152.png" gap:platform="ios" width="152" height="152" />
+	<!-- icon src="art/icon-180.png" gap:platform="ios" width="180" height="180" / -->
 	<gap:splash src="splash.png" gap:platform="ios" width="320" height="480" />
 	<gap:splash src="splash.png" gap:platform="ios" width="640" height="960" />
 	<gap:splash src="splash.png" gap:platform="ios" width="640" height="1136" />
+	<gap:splash src="splash.png" gap:platform="ios" width="750" height="1334" />
+	<gap:splash src="splash.png" gap:platform="ios" width="1242" height="2208" />
+	<gap:splash src="splash.png" gap:platform="ios" width="2208" height="1242" />
 	<gap:splash src="splash.png" gap:platform="ios" width="768" height="1024" />
 	<gap:splash src="splash.png" gap:platform="ios" width="1024" height="768" />
 	<gap:splash src="splash.png" gap:platform="ios" width="1536" height="2048" />
 	<gap:splash src="splash.png" gap:platform="ios" width="2048" height="1536" />
 
-	<!-- Android -->
+	<!-- Android settings -->
 	<gap:platform name="android" />
 	<preference name="android-minSdkVersion" value="15" />
 	<preference name="splash-screen-duration" value="200"/>
@@ -50,21 +43,27 @@
 	<icon src="art/icon-48.png" gap:platform="android" gap:qualifier="mdpi" />
 	<icon src="art/icon-72.png" gap:platform="android" gap:qualifier="hdpi" />
 	<icon src="art/icon-96.png" gap:platform="android" gap:qualifier="xhdpi" />
+	<!-- icon src="art/icon-.png" gap:platform="android" gap:qualifier="xxhdpi" / -->
+	<!-- icon src="art/icon-.png" gap:platform="android" gap:qualifier="fr-xxhdpi" / -->
 	<gap:splash src="splash.png" gap:platform="android" gap:qualifier="ldpi" />
 	<gap:splash src="splash.png" gap:platform="android" gap:qualifier="mdpi" />
 	<gap:splash src="splash.png" gap:platform="android" gap:qualifier="hdpi" />
 	<gap:splash src="splash.png" gap:platform="android" gap:qualifier="xhdpi" />
-	<gap:splash src="splash.png" gap:platform="android" gap:qualifier="xxhdpi" />
+	<!-- gap:splash src="splash.png" gap:platform="android" gap:qualifier="fr-xhdpi" / -->
+	<!-- gap:splash src="splash.png" gap:platform="android" gap:qualifier="port-xxhdpi" / -->
+	<!-- gap:splash src="splash.png" gap:platform="android" gap:qualifier="land-xxhdpi" / -->
 
-	<!-- Useful property -->
+	<!-- Windows Phone settings -->
+	<gap:platform name="winphone" />
+	<!-- icon src="art/icon.png" gap:platform="winphone" / -->
+	<!-- icon src="art/tileicon.png" gap:platform="winphone" gap:role="background" / -->
+	<!-- gap:splash src="art/winphone/splash.jpg" gap:platform="winphone" / -->
+
 	<preference name="phonegap-version" value="3.6.3" />
 	<preference name="orientation" value="default" />
 	<preference name="webviewbounce" value="false" />
 	<preference name="permissions" value="none" />
-
 	<feature name="http://api.phonegap.com/1.0/geolocation"/>
 	<feature name="http://api.phonegap.com/1.0/network"/>
-
 	<access origin="*" />
-	<!-- <access origin="*" browserOnly="true" /> -->
 </widget>
