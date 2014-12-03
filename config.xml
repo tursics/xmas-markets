@@ -43,8 +43,8 @@
 	<icon src="art/icon-48.png" gap:platform="android" gap:qualifier="mdpi" />
 	<icon src="art/icon-72.png" gap:platform="android" gap:qualifier="hdpi" />
 	<icon src="art/icon-96.png" gap:platform="android" gap:qualifier="xhdpi" />
-	<!-- icon src="art/icon-.png" gap:platform="android" gap:qualifier="xxhdpi" / -->
-	<!-- icon src="art/icon-.png" gap:platform="android" gap:qualifier="fr-xxhdpi" / -->
+	<icon src="art/icon-144.png" gap:platform="android" gap:qualifier="xxhdpi" />
+	<!-- icon src="art/icon-192.png" gap:platform="android" gap:qualifier="xxxhdpi" / -->
 	<gap:splash src="splash.png" gap:platform="android" gap:qualifier="ldpi" />
 	<gap:splash src="splash.png" gap:platform="android" gap:qualifier="mdpi" />
 	<gap:splash src="splash.png" gap:platform="android" gap:qualifier="hdpi" />
@@ -55,9 +55,9 @@
 
 	<!-- Windows Phone settings -->
 	<gap:platform name="winphone" />
-	<!-- icon src="art/icon.png" gap:platform="winphone" / -->
-	<!-- icon src="art/tileicon.png" gap:platform="winphone" gap:role="background" / -->
-	<!-- gap:splash src="art/winphone/splash.jpg" gap:platform="winphone" / -->
+	<icon src="art/icon-wp.png" gap:platform="winphone" />
+	<icon src="art/icon-wp-bg.png" gap:platform="winphone" gap:role="background" />
+	<gap:splash src="splash-wp.jpg" gap:platform="winphone" />
 
 	<preference name="phonegap-version" value="3.6.3" />
 	<preference name="orientation" value="default" />
