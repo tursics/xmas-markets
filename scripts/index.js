@@ -221,7 +221,11 @@ function getNextMarketOpeningTime( obj)
 function composeMarketItem( obj, diffdays)
 {
 	var openingtime = '';
-	if( -1 == diffdays) {
+	if( -2 == diffdays) {
+		var km = parseInt( obj.data_km * 10);
+		var km2 = parseInt( km / 10) * 10;
+		openingtime = (km2 / 10) + ',' + (km - km2) + ' km entfernt, ' + getNextMarketOpeningTime( obj);
+	} else if( -1 == diffdays) {
 		openingtime = getNextMarketOpeningTime( obj);
 	} else {
 		openingtime = 'von ' + getOpeningTime( obj, diffdays) + ' Uhr';
@@ -497,42 +501,38 @@ document.querySelector('#tab-market-all').addEventListener('click', function() {
 
 // ·································································
 
+var gLat = null;
+var gLon = null;
+
+if( typeof Number.prototype.toRadians == 'undefined') {
+	Number.prototype.toRadians = function() { return this * Math.PI / 180; };
+}
+
+function getDistance( lat1, lon1, lat2, lon2)
+{
+	var R = 6371; // km
+	var dLat = (lat2 - lat1).toRadians();
+	var dLon = (lon2 - lon1).toRadians(); 
+	var a = Math.sin( dLat / 2) * Math.sin( dLat / 2) +
+			Math.cos( lat1.toRadians()) * Math.cos( lat2.toRadians()) * 
+			Math.sin( dLon / 2) * Math.sin( dLon / 2); 
+	var c = 2 * Math.atan2( Math.sqrt( a), Math.sqrt( 1 - a)); 
+	return R * c;
+}
+
 function sortDataNearby( a, b)
 {
-	var daysA = getNextOpeningDays( a);
-	var daysB = getNextOpeningDays( b);
+	var kmA = getDistance( a.lat, a.long, gLat, gLon);
+	var kmB = getDistance( b.lat, b.long, gLat, gLon);
 
-	a.data_next_open = daysA;
-	b.data_next_open = daysB;
+	a.data_km = kmA;
+	b.data_km = kmB;
 
-	if( daysA == daysB) {
-		var timeA = getOpeningTime( a, daysA);
-		var timeB = getOpeningTime( b, daysB);
-		var intA = parseInt( timeA.substr( 6, 2));
-		var intB = parseInt( timeB.substr( 6, 2));
-
-		if( intA != intB) {
-			return intB - intA;
-		} else {
-			intA = parseInt( timeA.substr( 9, 2));
-			intB = parseInt( timeB.substr( 9, 2));
-		}
-
-		if( intA != intB) {
-			return intB - intA;
-		} else {
-			intA = parseInt( timeA.substr( 0, 2));
-			intB = parseInt( timeB.substr( 0, 2));
-		}
-
-		if( intA != intB) {
-			return intA - intB;
-		}
-
+	if( kmA == kmB) {
 		return a.name < b.name ? 1 : -1;
 	}
 
-	return daysA - daysB;
+	return kmA - kmB;
 }
 
 function fillListNearbyMarkets()
@@ -543,21 +543,54 @@ function fillListNearbyMarkets()
 	document.querySelector( '#tab-market-nearby').  setAttribute( 'aria-selected', 'true');
 //	document.querySelector( '#tab-market-favorite').setAttribute( 'aria-selected', 'false');
 
-	var txt = '<div class="center"><progress></progress></div>';
+	var txt = '<header>Suche die GPS-Position</header>';
+	txt = composeList( txt);
+	txt = composeSectionList( txt);
+	txt += '<div class="center" style="padding-top:3rem;"><progress></progress></div>';
+	txt = '<div style="margin:-1.5rem -1.5rem 1rem -1.5rem;"><img src="art/teaser.jpg" style="width:100%;"></div>' + txt;
 	document.querySelector( '#marketlist').innerHTML = txt;
 	window.scrollTo( 0, 0);
 	txt = '';
 
- 	data.sort( sortDataNearby);
+	if( 'geolocation' in navigator) {
+		function success( position) {
+			gLat = position.coords.latitude;
+			gLon = position.coords.longitude;
+			var txt = '';
 
-	txt = '<header>In der Nähe</header>' + txt;
+			data.sort( sortDataNearby);
 
-	txt = composeList( txt);
-	txt = composeSectionList( txt);
+			for( var i = 0; i < data.length; ++i) {
+				var obj = data[ i];
 
-	txt = '<div style="margin:-1.5rem -1.5rem 1rem -1.5rem;"><img src="art/teaser.jpg" style="width:100%;"></div>' + txt;
+				txt += composeMarketItem( obj, -2);
+			}
 
-	document.querySelector('#marketlist').innerHTML = txt;
+			txt = '<header>In der Nähe</header>' + txt;
+			txt = composeList( txt);
+			txt = composeSectionList( txt);
+			txt = '<div style="margin:-1.5rem -1.5rem 1rem -1.5rem;"><img src="art/teaser.jpg" style="width:100%;"></div>' + txt;
+			document.querySelector('#marketlist').innerHTML = txt;
+		}
+
+		function error() {
+			var txt = '<li style="height:auto;"><p style="white-space:normal;line-height:2rem;">Bitte schalten sie den GPS-Empfänger ein.</p></li>';
+			txt = '<header>In der Nähe</header>' + txt;
+			txt = composeList( txt);
+			txt = composeSectionList( txt);
+			txt = '<div style="margin:-1.5rem -1.5rem 1rem -1.5rem;"><img src="art/teaser.jpg" style="width:100%;"></div>' + txt;
+			document.querySelector('#marketlist').innerHTML = txt;
+		}
+
+		navigator.geolocation.getCurrentPosition( success, error);
+	} else {
+		txt = '<li style="height:auto;"><p style="white-space:normal;line-height:2rem;">Konnte keinen GPS-Empfänger finden.</p></li>';
+		txt = '<header>In der Nähe</header>' + txt;
+		txt = composeList( txt);
+		txt = composeSectionList( txt);
+		txt = '<div style="margin:-1.5rem -1.5rem 1rem -1.5rem;"><img src="art/teaser.jpg" style="width:100%;"></div>' + txt;
+		document.querySelector('#marketlist').innerHTML = txt;
+	}
 }
 
 document.querySelector('#tab-market-nearby').addEventListener('click', function() {
