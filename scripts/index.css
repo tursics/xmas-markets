@@ -219,6 +219,18 @@ section[data-type="sidebar"] > nav > ul > li > a {
   white-space:normal;
 }
 
+.icon-direction:before {
+  border: 0.2rem solid black;
+  -webkit-border-radius: 2rem;
+  -moz-border-radius: 2rem;
+  border-radius: 2rem;
+  padding: 0.3rem;
+}
+
+.bb-tablist[data-type="filter"] > li > a[aria-selected="true"] > .icon-direction:before {
+  border-color:#0AC;
+}
+
 .ios section[role="region"] > header:first-child {
 	padding-top:2rem;
 }
