@@ -6,6 +6,7 @@
         versionCode="7">
 
 	<name>Weihnachtsmärkte in Berlin</name>
+	<name xml:lang="de">Weihnachtsmärkte in Berlin</name>
 	<description>Finde alle Weihnachtsmärkte in Berlin: die großen, die kleinen, die bunten, die lebhaften, die besinnlichen und die Geheimtipps. Alle in einer App.</description>
 	<author href="http://www.tursics.de" email="thomas@tursics.de">Thomas Tursics</author>
 	<icon src="icon.png" />
