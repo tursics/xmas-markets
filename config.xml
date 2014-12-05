@@ -6,7 +6,6 @@
         versionCode="7">
 
 	<name>Weihnachtsmärkte in Berlin</name>
-	<name xml:lang="de">Weihnachtsmärkte in Berlin</name>
 	<description>Finde alle Weihnachtsmärkte in Berlin: die großen, die kleinen, die bunten, die lebhaften, die besinnlichen und die Geheimtipps. Alle in einer App.</description>
 	<author href="http://www.tursics.de" email="thomas@tursics.de">Thomas Tursics</author>
 	<icon src="icon.png" />
@@ -56,6 +55,12 @@
 
 	<!-- Windows Phone settings -->
 	<gap:platform name="winphone" />
+	<gap:config-file platform="winphone" parent="/Deployment" mode="replace">
+		<Languages xmlns="">
+			<Language code="de-DE" />
+		</Languages>
+		<DefaultLanguage xmlns="" code="de-DE" />
+	</gap:config-file>
 	<icon src="art/icon-wp.png" gap:platform="winphone" />
 	<icon src="art/icon-wp-bg.png" gap:platform="winphone" gap:role="background" />
 	<gap:splash src="splash-wp.jpg" gap:platform="winphone" />
