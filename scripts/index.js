@@ -222,9 +222,17 @@ function composeMarketItem( obj, diffdays)
 {
 	var openingtime = '';
 	if( -2 == diffdays) {
-		var km = parseInt( obj.data_km * 10);
-		var km2 = parseInt( km / 10) * 10;
-		openingtime = (km2 / 10) + ',' + (km - km2) + ' km entfernt, ' + getNextMarketOpeningTime( obj);
+		var km = parseInt( obj.data_km * 2);
+		var km2 = parseInt( km / 2) * 2;
+		if(( 0 == km) && (0 == km2)) {
+			openingtime = 'Gleich hier, ' + getNextMarketOpeningTime( obj);
+		} else if( 10 <= km2) {
+			openingtime = (km2 / 2) + ' km entfernt, ' + getNextMarketOpeningTime( obj);
+		} else if( 0 == (km - km2)) {
+			openingtime = (km2 / 2) + ' km entfernt, ' + getNextMarketOpeningTime( obj);
+		} else {
+			openingtime = (km2 / 2) + ',5 km entfernt, ' + getNextMarketOpeningTime( obj);
+		}
 	} else if( -1 == diffdays) {
 		openingtime = getNextMarketOpeningTime( obj);
 	} else {
@@ -522,9 +530,13 @@ function getDistance( lat1, lon1, lat2, lon2)
 
 function sortDataNearby( a, b)
 {
+	var daysA = getNextOpeningDays( a);
+	var daysB = getNextOpeningDays( b);
 	var kmA = getDistance( a.lat, a.long, gLat, gLon);
 	var kmB = getDistance( b.lat, b.long, gLat, gLon);
 
+	a.data_next_open = daysA;
+	b.data_next_open = daysB;
 	a.data_km = kmA;
 	b.data_km = kmB;
 
@@ -563,7 +575,13 @@ function fillListNearbyMarkets()
 			for( var i = 0; i < data.length; ++i) {
 				var obj = data[ i];
 
-				txt += composeMarketItem( obj, -2);
+		 		if( 36500 != obj.data_next_open) {
+					txt += composeMarketItem( obj, -2);
+				}
+			}
+
+			if( '' == txt) {
+				txt = '<li style="height:auto;"><p style="white-space:normal;line-height:2rem;">Es gibt keine Weihnachtsmärkte in der Nähe die geöffnet haben</p></li>';
 			}
 
 			txt = '<header>In der Nähe</header>' + txt;
