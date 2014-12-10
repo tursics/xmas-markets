@@ -11,11 +11,13 @@
       -webkit-transform: translateX(100%);
       z-index: 15;
       z-index: 100; /* -> drawer */
+	  display:none;
     }
     section[role="region"][data-position="right"] {
       position: absolute;
     }
     [data-position="right"].current {
+	  display:block;
       animation: rightToCurrent 0.4s forwards;
       -webkit-animation: rightToCurrent 0.4s forwards;
     }
@@ -146,7 +148,7 @@
 #markettab {
 	background-color:rgba(255,255,255,.9);
 	left:0;
-	position:fixed;
+	position:absolute;
 	top:5rem;
 	width:100%;
 	z-index:10;
