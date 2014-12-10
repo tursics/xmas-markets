@@ -7,7 +7,7 @@ config.endDate = new Date();
 config.endDate.setFullYear( 2015, 0, 6); // month - 1
 
 // ·································································
-
+/*
 var utils = this.utils || {};
 
 utils.status = (function() {
@@ -107,7 +107,7 @@ utils.status = (function() {
 		}
 	};
 })();
-
+*/
 // ·································································
 
 function composeSectionList( content)
