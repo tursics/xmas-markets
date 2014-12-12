@@ -250,6 +250,18 @@ function composeMarketItem( obj, diffdays)
 	return '<li>' + img + '<a href="javascript:callOneMarket(' + obj.id + ');">' + txt + '</a></li>';
 }
 
+function setActiveTab( tabName)
+{
+	var tabArray = new Array( '#tab-market-today', '#tab-market-tomorrow', '#tab-market-all', '#tab-market-days', '#tab-market-nearby', '#tab-market-favorite');
+
+	for( var i = 0; i < tabArray.length; ++i) {
+		var tab = tabArray[ i];
+		if( document.querySelector( tab) !== null) {
+			document.querySelector( tab).setAttribute( 'aria-selected', tab == tabName ? 'true' : 'false');
+		}
+	}
+}
+
 // ·································································
 
 function sortDataToday( a, b)
@@ -294,11 +306,7 @@ function sortDataToday( a, b)
 
 function fillListTodayMarkets()
 {
-	document.querySelector( '#tab-market-today').   setAttribute( 'aria-selected', 'true');
-	document.querySelector( '#tab-market-tomorrow').setAttribute( 'aria-selected', 'false');
-	document.querySelector( '#tab-market-all').     setAttribute( 'aria-selected', 'false');
-	document.querySelector( '#tab-market-nearby').  setAttribute( 'aria-selected', 'false');
-//	document.querySelector( '#tab-market-favorite').setAttribute( 'aria-selected', 'false');
+	setActiveTab( '#tab-market-today');
 
 	var txt = '<div class="center"><progress></progress></div>';
 	document.querySelector( '#marketlist').innerHTML = txt;
@@ -328,9 +336,11 @@ function fillListTodayMarkets()
 	document.querySelector('#marketlist').innerHTML = txt;
 }
 
-document.querySelector('#tab-market-today').addEventListener('click', function() {
-	fillListTodayMarkets();
-});
+if( document.querySelector('#tab-market-today') !== null) {
+	document.querySelector('#tab-market-today').addEventListener('click', function() {
+		fillListTodayMarkets();
+	});
+}
 
 // ·································································
 
@@ -376,11 +386,7 @@ function sortDataTomorrow( a, b)
 
 function fillListTomorrowMarkets()
 {
-	document.querySelector( '#tab-market-today').   setAttribute( 'aria-selected', 'false');
-	document.querySelector( '#tab-market-tomorrow').setAttribute( 'aria-selected', 'true');
-	document.querySelector( '#tab-market-all').     setAttribute( 'aria-selected', 'false');
-	document.querySelector( '#tab-market-nearby').  setAttribute( 'aria-selected', 'false');
-//	document.querySelector( '#tab-market-favorite').setAttribute( 'aria-selected', 'false');
+	setActiveTab( '#tab-market-tomorrow');
 
 	var txt = '<div class="center"><progress></progress></div>';
 	document.querySelector( '#marketlist').innerHTML = txt;
@@ -456,11 +462,7 @@ function sortDataAll( a, b)
 
 function fillListAllMarkets()
 {
-	document.querySelector( '#tab-market-today').   setAttribute( 'aria-selected', 'false');
-	document.querySelector( '#tab-market-tomorrow').setAttribute( 'aria-selected', 'false');
-	document.querySelector( '#tab-market-all').     setAttribute( 'aria-selected', 'true');
-	document.querySelector( '#tab-market-nearby').  setAttribute( 'aria-selected', 'false');
-//	document.querySelector( '#tab-market-favorite').setAttribute( 'aria-selected', 'false');
+	setActiveTab( '#tab-market-all');
 
 	var txt = '<div class="center"><progress></progress></div>';
 	document.querySelector( '#marketlist').innerHTML = txt;
@@ -549,11 +551,7 @@ function sortDataNearby( a, b)
 
 function fillListNearbyMarkets()
 {
-	document.querySelector( '#tab-market-today').   setAttribute( 'aria-selected', 'false');
-	document.querySelector( '#tab-market-tomorrow').setAttribute( 'aria-selected', 'false');
-	document.querySelector( '#tab-market-all').     setAttribute( 'aria-selected', 'false');
-	document.querySelector( '#tab-market-nearby').  setAttribute( 'aria-selected', 'true');
-//	document.querySelector( '#tab-market-favorite').setAttribute( 'aria-selected', 'false');
+	setActiveTab( '#tab-market-nearby');
 
 	var txt = '<header>Suche die GPS-Position</header>';
 	txt = composeList( txt);
@@ -657,11 +655,7 @@ function sortDataFavorite( a, b)
 
 function fillListFavoriteMarkets()
 {
-	document.querySelector( '#tab-market-today').   setAttribute( 'aria-selected', 'false');
-	document.querySelector( '#tab-market-tomorrow').setAttribute( 'aria-selected', 'false');
-	document.querySelector( '#tab-market-all').     setAttribute( 'aria-selected', 'false');
-	document.querySelector( '#tab-market-nearby').  setAttribute( 'aria-selected', 'false');
-//	document.querySelector( '#tab-market-favorite').setAttribute( 'aria-selected', 'true');
+	setActiveTab( '#tab-market-favorite');
 
 	var txt = '<div class="center"><progress></progress></div>';
 	document.querySelector( '#marketlist').innerHTML = txt;
@@ -775,7 +769,11 @@ function fillListOneMarket()
 	txt += '<li style="clear:both;"></li>';
 	txt += '</ul></p>';
 
-	txt += '<p>' + obj.street + ', ' + obj.zip_city + ' ' + obj.district + '</p>';
+	if( typeof obj.zip_city !== 'undefined') {
+		txt += '<p>' + obj.street + ', ' + obj.zip_city + ' ' + obj.district + '</p>';
+	} else {
+		txt += '<p>' + obj.street + ', ' + obj.zip + ' ' + obj.city + '</p>';
+	}
 	txt += '</div>';
 
 	txt += '<p>Öffnungszeiten</p>';
