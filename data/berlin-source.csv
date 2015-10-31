@@ -1,0 +1,438 @@
+id;bezirk;name;strasse;plz_ort;von;bis;veranstalter;oeffnungszeiten;email;w3;bemerkungen;lat;lng
+2;Charlottenburg-Wilmersdorf;Weihnachtsmarkt vor dem Schloss Charlottenburg;Spandauer Damm zwischen Luisenplatz und Klausenerplatz;14059 Berlin;2015-11-23;2015-12-26;"werbeteam berlin/Tommy Erbe
+Tel.: 261 20 12, Fax: 261 20 22";"Mo-Do 14:00-22:00
+Fr-So 12:00-22:00
+25./26.12. 12:00-20:00";info@werbeteam-berlin.de;www.werbeteam-berlin.de;24.12. geschlossen, gewerblicher Weihnachtsmarkt;52.519951;13.295946
+4;Charlottenburg-Wilmersdorf;32. Weihnachtsmarkt an der Gedächtniskirche;Breitscheidplatz ;10789 Berlin;2015-11-23;2016-01-03;"Arbeitsgemeinschaft City e.V.
+Budapester Str. 41
+Tel.: 262 95 92, Fax: 262 95 93
+Schaustellerverband Berlin e.V.
+www.schaustellerverband-berlin.de";"So-Do 11:00-21:00
+Fr-Sa 11:00-22:00
+24.12. 11:00-14:00
+25./26.12. 13:00-21:00
+31.12. 11:00-02:00
+01.01. 13:00-21:00";info@svbev.de;www.agcity.de;"gewerblicher  Weihnachtsmarkt, Eintritt frei,
+31.12. 10:00 Gottesdienst,
+31.12. 18:00, 20:00, 22:00, 24:00 Silvesterfeuerwerke";52.5048861;13.3355106
+6;Charlottenburg-Wilmersdorf;Weihnachtsmarkt in der Fußgängerzone Wilmersdorfer Straße;Wilmersdorfer Straße;10627 Berlin;2015-11-26;2015-12-28;Lauenburger, A., Tel.: 0163/495 77 62;"Mo-Fr 11:00-21:00
+Sa 10:00-21:00
+So 12:00-19:00
+24.12. 10:00-14:00
+25./26.12. geschlossen";lauenburger-pony@gmx.de;www.wilmersdorfer-arcaden.de;gewerblicher Weihnachtsmarkt  ;52.509313;13.305994
+8;Charlottenburg-Wilmersdorf;Weihnachten in Westend (teilgewerblich);Preußenallee;14052 Berlin;2015-12-19;2015-12-20;"Family & Friends e. V.
+Tel. und Fax: 305 55 21";11:00-20:00;kontakt@family-and-friends-eV.de;www.family-and-friends-eV.de;teilgewerblicher Weihnachtsmarkt, Eintritt frei, das Rüsseltier ist an beiden Tagen unterwegs, Greifvogelschau und Weihnachtskrippe, Kunsthandwerk;52.512538;13.259213
+10;Charlottenburg-Wilmersdorf;Weihnachtsmarkt Berlin-Grunewald des Johannischen Sozialwerks e. V.;"St.-Michaels-Heim
+ Bismarckallee 23";14193 Berlin;2015-11-27;2015-11-29;"Johannisches Sozialwerk e.V.
+Tel.: 89 68 80, Fax: 89 68 81 85";"Fr 16:00-20:00
+Sa 14:00-20:00
+So 12:00-18:00";;www.johannisches-sozialwerk.de;gemeinnütziger Weihnachtsmarkt;52.488350;13.27725
+12;Charlottenburg-Wilmersdorf;Schwedischer Weihnachtsbasar;Landhausstr. 26;10717 Berlin;2015-11-28;2015-11-29;"Schwedische Victoriagemeinde
+Tel.: 864 95 90, Fax: 86 49 59 99";"Sa 10:00-19:00
+So 12:00-18:00";berlin@svenskakyrkan.se;www.svenskakyrkan.se;"Die Lichterkönigin Lucia kommt an beiden Tagen um 16:00 Uhr,
+gemeinnütziger Weihnachtsmarkt ";52.487400;13.3287
+14;Charlottenburg-Wilmersdorf;Dänischer Weihnachtsmarkt;Brienner Str. 12;10713 Berlin;2015-11-28;2015-11-29;"Dänische Gemeinde Berlin
+Tel. und Fax: 873 44 30";"Sa 12:00-18:00
+So 12:00-17:00";;www.christianskirken.de;gemeinnütziger Weihnachtsmarkt;52.488090;13.31249
+16;Charlottenburg-Wilmersdorf;Weihnachtsmarkt rund um die Grunewaldkirche;Bismarckallee 28 B;14193 Berlin;2015-11-29;2015-11-29;"Evangelische Kirchengemeinde Grunewald, Kontakt: Petra Krüger, Claudia Noll
+, AB/Fax: 23 25 83 02";11:00-19:00;weihnachtsmarkt@grunewaldgemeinde.de;www.grunewaldgemeinde.de;gemeinnütziger Weihnachtsmarkt;52.485430;13.27483
+18;Charlottenburg-Wilmersdorf;Nikolausmarkt der Beschäftigungs- und Bildungsträger;im Rathaus Charlottenburg, Otto-Suhr-Allee 100;10585 Berlin;2015-11-26;2015-11-26;"BA Charlottenburg-Wilmersdorf von Berlin
+Abt. Soziales + Gesundheit
+Tel.: 902 91 43 04";11:00-14:30;cw801003@charlottenburg-wilmersdorf.de;;gemeinnütziger Weihnachtsmarkt;52.517122;13.30807
+20;Charlottenburg-Wilmersdorf;33. Weihnachtsmarkt in der Lindenkirche;Homburger Str. 48;14197 Berlin;2015-12-05;2015-12-05;"Evangelische Lindenkirchengemeinde
+Tel.: 827 92 20, Fax: 82 79 22 41";12:00-18:00;buero@lindenkirche.de;www.lindenkirche.de;gemeinnütziger Weihnachtsmarkt;52.474501;13.309133
+22;Charlottenburg-Wilmersdorf;Christmas Fair / A very British Christmas;Preußenallee 17-19;14052 Berlin;2015-12-05;2015-12-05;St George's Church, Preußenallee 17-19, 14052 Berlin, Tel. und Fax: 304 12 80;14:30-18:00;office@stgeorges.de;www.stgeorges.de;gemeinnütziger Weihnachtsmarkt;52.512430;13.25837
+24;Charlottenburg-Wilmersdorf;Kunsthandwerklicher Weihnachtsmarkt vor dem Bröhanmuseum;Schloßstr. 1/1 A;14059 Berlin;2015-12-13;2015-12-13;"Kiezbündnis Klausenerplatz e.V.
+Tel.: 30 82 44 95, Fax: 30 82 44 98";12:00-18:00;info@klausenerplatz.de;www.klausenerplatz.de;gemeinnütziger Weihnachtsmarkt;52.518946;13.295796
+26;Friedrichshain-Kreuzberg;Traditioneller Weihnachtsbasar im Finnland-Zentrum;Schleiermacherstr. 24a;10961 Berlin;2015-11-21;2015-11-22;Suomi Keskus - Finnlandzentrum e. V., Schleiermacherstr. 24a, 10961 Berlin, Tel.: 781 81 89;12:00-18:00;info@finnlandzentrum.de;www.finnlandzentrum.de;gemeinnütziger Weihnachtsmarkt;52.489650;13.39731
+28;Friedrichshain-Kreuzberg;Adventsbasar Heilig-Kreuz-Kirche;Zossener Str. 65;10961 Berlin;2015-11-28;2015-11-28;Evangelische Kirchengemeinde Heilig Kreuz - Passion, Zossener Str. 65, 10961 Berlin, Tel.: 81 49 25 82 od. 691 20 07;14:00-18:00;m.schmieder@heiligkreuzpassion.de;www.heiligkreuzpassion.de;gemeinnütziger Weihnachtsmarkt, kuesterei@heiligkreuzpassion.de;52.496520;13.39575
+30;Friedrichshain-Kreuzberg;10. KiezWeihnacht an der Samariterkirche;Samariterplatz/Samariterstr. 14;10247 Berlin;2015-12-05;2015-12-06;"Samariter-Galiläa-Gemeinde und Die Friedrichshainer 
+Kontakt: Steffen Belz, Kinzigstr. 35,    
+Tel.: 74 77 26 01";13:00-20:00;;www.kiezweihnacht.de;gewerblicher Weihnachtsmarkt;52.517660;13.46609
+32;Friedrichshain-Kreuzberg;10. KiezWeihnacht an der Samariterkirche;Samariterplatz/Samariterstr. 14;10247 Berlin;2015-12-12;2015-12-13;"Samariter-Galiläa-Gemeinde und Die Friedrichshainer 
+Kontakt: Steffen Belz, Kinzigstr. 35,    
+Tel.: 74 77 26 01";13:00-20:00;;www.kiezweihnacht.de;gewerblicher Weihnachtsmarkt;52.517660;13.46609
+34;Lichtenberg;22. Lichtenberger Lichtermarkt rund ums Rathaus Lichtenberg;Möllendorffstr. 6;10367 Berlin;2015-11-29;2015-11-29;"BA Lichtenberg
+Frau Räpricht
+Tel.: 902 96 82 05";13:00-19:00;jacqueline.raepricht@lichtenberg.berlin.de;;gemeinnütziger Weihnachtsmarkt;52.515918;13.479572
+36;Lichtenberg;Mittelalterlicher Weihnachtsmarkt Karlshorst;Auf dem Johannes-Fest-Platz Karlshorst;10318 Berlin;2015-12-05;2015-12-06;"iKARUS stadtteilzentrum
+Tel.: 89 62 25 52, Fax: 89 62 35 47";"Sa 13:00-22:00
+So 13:00-18:00";ikarus@sozdia.de;www.ikarus-firmaris.de;gemeinnütziger Weihnachtsmarkt;52.4820698;13.5259398
+38;Marzahn-Hellersdorf;Weihnachtsmarkt im Marktplatz Center Hellersdorf;Stendaler Str. 24;12627 Berlin;2015-11-23;2015-12-24;"MEC METRO-ECE Centermanagement GmbH & Co. KG
+Tel.: 99 28 84 - 0, 
+Fax: 992 88 42 50";"Mo-Sa 10:00-20:00
+06.12./20.12. 13:00-18:00
+24.12. 09:00-14:00";;;gewerblicher Weihnachtsmarkt;52.537490;13.60488
+40;Marzahn-Hellersdorf;Weihnachtliche Aktionen im EASTGATE Berlin;Marzahner Promenade 1 A;12679 Berlin;2015-11-23;2015-12-24;"ECE Projektmanagement GmbH & Co. KG
+Tel.: 911 45 90, Fax: 911 45 91 11";"Mo-Sa 10:00-20:00
+06.12./20.12. 13:00-18:00
+24.12. 10:00-14:00";info@eastgate-berlin.de;www.eastgate-berlin.de;gewerblicher Weihnachtsmarkt;52.542820;13.54264
+42;Marzahn-Hellersdorf;Weihnachtsmarkt im Spree Center Berlin-Hellersdorf;Hellersdorfer Str. 77-83;12619 Berlin;2015-11-23;2015-12-24;"Spree Center Berlin-Hellersdorf
+1.-3. Tranche GbR
+Wolfgang Kohlberg, Centermanager
+Tel.: 56 88 08 - 0, Fax: 56 88 08 88";"Mo-Fr 09:00-19:30
+Sa 09:00-18:00
+06.12./20.12. 13:00-18:00
+24.12. 09:00-14:00";post@spree-center.de;www.spree-center.de;gewerblicher Weihnachtsmarkt;52.520910;13.58713
+44;Marzahn-Hellersdorf;2. Familien-Weihnachtsmarkt;Alice-Salomon-Platz;12627 Berlin;2015-11-27;2015-12-23;"Wollenschlaeger, Thilo-Harry
+Tel.: 0163/400 05 00 und 03322/428 82 45
+Fax: 03322/423 41 39";täglich 11:00-21:00;info@wollenschlaeger-berlin.de;www.wollenschlaeger-berlin.de;gewerblicher Weihnachtsmarkt;52.537131;13.604357
+46;Marzahn-Hellersdorf;Adventsmarkt im Dorf Marzahn;Alt-Marzahn, Dorfanger, zwischen Kirche und Bezirksmuseum;12685 Berlin;2015-11-29;2015-11-29;"Evangelischer Dorfkindergarten, Hinter der Mühle 5, 12685 Berlin, Leiterin: Frau Vogel, Tel.: 85 74 86 64 - 21 (Gemeindebüro), - 31 (Kindergarten)
+Herr Pfarrer Ingolf Göbel
+Tel.: 85 74 86 64 - 0, Fax: 85 74 86 64 28";13:00-18:00;;;gemeinnütziger Weihnachtsmarkt;52.54340;13.56056
+48;Marzahn-Hellersdorf;19. Kaulsdorfer Weihnachtsmarkt;Dorfstraße, Kirchengelände und Gelände der Firma Schilkin GmbH;12621 Berlin;2015-12-05;2015-12-05;"BA Marzahn-Hellersdorf und ansässige Kirchen, 
+Interessengemeinschaft Kaulsdorf,
+Kontakt: Gabriele Kokel, Tel.: 0177/326 32 65 und Gabriele Maria Donka (IG Kaulsdorf), 
+Tel.: 85 71 83 15                     ";13:00-19:00;kontakt@vitabelle-fitness.de;www.heimatverein-marzahn.de;gemeinnütziger Weihnachtsmarkt;52.507946;13.581117
+50;Marzahn-Hellersdorf;Interkultureller Weihnachtsmarkt;"Einkaufscenter ""Zu den Eichen"", Wittenberger Str. 80";12689 Berlin;2015-12-11;2015-12-11;Vision e. V., Alexander Reiser, Wittenberger Str. 67, 12689 Berlin, Tel.: 43 20 88 72 oder 60 92 38 05, Fax: 43 20 88 74;14:00-18:00;vision-ev@gmx.de;;gemeinnütziger Weihnachtsmarkt;52.5653076;13.5704957
+52;Marzahn-Hellersdorf;Feuriger Advent;Freizeitforum Marzahn, Marzahner Promenade 55;12679 Berlin;2015-12-11;2015-12-11;"Promenaden Management Marzahner Promenade (L.I.S.T. GmbH / conceptfabrik) in Zusammenarbeit mit dem Freizeitforum Marzahn, der Hauptbibliothek ""Mark Twain"" u. a.";15:00-19:00;m-promenade@list-gmbh.de;www.marzahnerpromenade.de;gemeinnütziger Weihnachtsmarkt;52.5470202;13.5540553
+54;Mitte;Weihnachtsmarkt u. Winterwelt am Potsdamer Platz;Potsdamer Platz, Marlene-Dietrich-Platz;10785 Berlin;2015-11-23;2015-12-27;"Bergmann Eventgastronomie, Arnold Bergmann,
+Tel.: 033439/656 43
+Reservierung: 0177/828 53 87, Fax: 25 93 91 93
+reservierung@bergmannevent.de, www.bergmann-entertainment.de
+www.winterwelt-berlin.de";"Mo-So 10:00-22:00
+Schmankerl-Hütte 10:00-03:00
+Winterwelt: 31.10.-03.01.2016,
+am 15.11. und 22.11. geschlossen";info@bergmannevent.de;www.bergmannevent.de;"mit Rodelbahn, Eisstockbahn, Eisbahn, Schmankerl-Hütte, Stiegl Alm
+gewerblicher Weihnachtsmarkt";52.509008;13.376262
+56;Mitte;Weihnachtsmarkt Alex;mit Eisbahn, Eisstockbahn, Partyhaus vom Nikolaus, Wichtelhaus vor der Galeria Kaufhof;10178 Berlin;2015-11-23;2015-12-27;"Bergmann Eventgastronomie, Arnold Bergmann,
+Tel.: 033439/656 43
+Reservierung: 0177/828 53 87, Fax: 25 93 91 93
+reservierung@bergmannevent.de
+www.bergmann-entertainment.de";"Mo-So 10:00-22:00
+24.12. 10:00-14:00";info@bergmannevent.de;www.bergmannevent.de;"Eisbahn und Partyhaus: 23.11.2015 - 03.01.2016,
+gewerblicher Weihnachtsmarkt";52.521918;13.413215
+58;Mitte;8. Berliner Weihnachtszeit vor dem Roten Rathaus mit der Eiswelt am Neptunbrunnen;Rathausstr. 15;10178 Berlin;2015-11-23;2015-11-29;"Laubinger Veranstaltungsagentur
+Tel.: 0163/481 48 40
+www.laubinger.de";"Mo-Fr 12:00-22:00
+Sa-So 11:00-22:00
+25./26.12. 11:00-21:00";info@laubinger.de;www.berlinerweihnachtszeit.de;" geschlossen am 24.12., 
+gewerblicher Weihnachtsmarkt, www.laubinger.de";52.519494;13.407032
+60;Mitte;Wintertraum am ALEXA;Dircksenstraße zwischen Voltairestraße und Schicklerstraße;10179 Berlin;2015-11-23;2015-12-23;"Charles Blume Vergnügungsbetriebe GmbH, 27798 Hude
+Tel.: 04408/80 63 73,
+Fax: 04408/80 63 74";"Mo-Fr 14:00-22:00
+Sa-So 12:00-22:00";blume-service@t-online.de;www.blume-service.de;gewerblicher  Weihnachtsmarkt;52.517248;13.417182
+62;Mitte;WeihnachtsZauber Gendarmenmarkt;Gendarmenmarkt;10117 Berlin;2015-11-23;2015-12-31;"WeihnachtsZauber Gendarmenmarkt GmbH Helmut Russ und Gunda Kniep
+Tel.: 20 91 26 32, 0172/456 22 55, 
+Fax: 20 91 26 33";"täglich 11:00-22:00
+Fr, Sa 11:00-23:00
+24.12. 11:00-18:00
+25./26.12. 11:00-22:00
+31.12. 11:00-01:00";office@weihnachtsmarkt-berlin.de;www.weihnachtsmarkt-berlin.de;"Eintritt 1 €,  Mo-Fr  11:00-14:00 Eintritt frei
+(außer am 24.12., 25.12., 26.12., 31.12.),
+Silvesterfeier 19:00-01:00
+Eintritt 12 €
+gewerblicher Weihnachtsmarkt";52.513828;13.39235
+64;Mitte;Fabelhafte Weihnachten im Sony Center am Potsdamer Platz;Bellevuestr. 5;10785 Berlin;2015-11-28;2016-01-03;"Forum Event Management GmbH
+Tel.: 25 75 16 01, Fax: 25 75 16 40";"
+Do, Fr, Sa 14:00-22:00, 24.12. geschlossen";event.berlin@forum-event.de;www.sonycenter.de;"gewerblicher Weihnachtsmarkt
+Wunderschöne Lichtkunst, fabelhafte Wesen und tägliche Live-Shows mit einer zauberhaften Fee verwandeln das Sony Center in einen magischen Ort";52.510390;13.37365
+66;Mitte;Adventsbasar;vor und in der Heilandskirche Moabit, Thusnelda-Allee 1;10555 Berlin;2015-11-28;2015-11-28;Evangelische Kirchengemeinde Moabit West, Thusnelda-Allee 1, 10555 Berlin-Moabit, Tel.: 30 30 69 88 - 0, Fax: 30 30 69 88 - 2;10:00-15:00;thusnelda1@kgmoabit-west.de;www.kgmoabit-west.de;"gemeinnütziger Weihnachtsmarkt
+Eintritt frei";52.525892;13.339548
+68;Mitte;20. Berliner Umwelt- und Weihnachtsmarkt 2015;Sophienstraße in Mitte;10178 Berlin;2015-11-28;2015-11-29;"EVENTS - Ralf Bielefeldt, Zehdenicker Str. 14, 10119 Berlin,
+Tel.: 48 49 62 27 und 0177/688 22 45,
+Fax: 32 51 98 53";"Sa 12:00-20:00
+So 11:00-19:00";post@weihnachtsmarkt-sophienstrasse.de;www.weihnachtsmarkt-sophienstrasse.de;gewerblicher Weihnachtsmarkt, facebook.com/weihnachtsmarkt.sophienstrasse;52.525647;13.400861
+70;Mitte;20. Berliner Umwelt- und Weihnachtsmarkt 2015;Sophienstraße in Mitte;10178 Berlin;2015-12-05;2015-12-06;"EVENTS - Ralf Bielefeldt, Zehdenicker Str. 14, 10119 Berlin,
+Tel.: 48 49 62 27 und 0177/688 22 45,
+Fax: 32 51 98 53";"Sa 12:00-20:00
+So 11:00-19:00";post@weihnachtsmarkt-sophienstrasse.de;www.weihnachtsmarkt-sophienstrasse.de;gewerblicher Weihnachtsmarkt, facebook.com/weihnachtsmarkt.sophienstrasse;52.525647;13.400861
+72;Mitte;20. Berliner Umwelt- und Weihnachtsmarkt 2015;Sophienstraße in Mitte;10178 Berlin;2015-12-12;2015-12-13;"EVENTS - Ralf Bielefeldt, Zehdenicker Str. 14, 10119 Berlin,
+Tel.: 48 49 62 27 und 0177/688 22 45,
+Fax: 32 51 98 53";"Sa 12:00-20:00
+So 11:00-19:00";post@weihnachtsmarkt-sophienstrasse.de;www.weihnachtsmarkt-sophienstrasse.de;gewerblicher Weihnachtsmarkt, facebook.com/weihnachtsmarkt.sophienstrasse;52.525647;13.400861
+74;Mitte;20. Berliner Umwelt- und Weihnachtsmarkt 2015;Sophienstraße in Mitte;10178 Berlin;2015-12-19;2015-12-20;"EVENTS - Ralf Bielefeldt, Zehdenicker Str. 14, 10119 Berlin,
+Tel.: 48 49 62 27 und 0177/688 22 45,
+Fax: 32 51 98 53";"Sa 12:00-20:00
+So 11:00-19:00";post@weihnachtsmarkt-sophienstrasse.de;www.weihnachtsmarkt-sophienstrasse.de;gewerblicher Weihnachtsmarkt, facebook.com/weihnachtsmarkt.sophienstrasse;52.525647;13.400861
+76;Neukölln;Nordische Märchenweihnacht - Weihnachtsmarkt auf dem Gutshof des Schlosses Britz;Alt-Britz 73;12359 Berlin;2015-12-11;2015-12-13;"Kulturstiftung Schloss Britz
+Tel.: 60 97 92 30, Fax: 609 79 23 39";"Fr 14:00-21:00
+Sa 11:00-21:00
+So 11:00-21:00";info@schlossbritz.de;www.schlossbritz.de;Eintritt 3 €, ermäßigt 2 €, Kinder unter 6 Jahren und Anwohner frei, www.cocolorus-diaboli.de, gewerblicher Weihnachtsmarkt;52.446960;13.43781
+78;Neukölln;Nordische Märchenweihnacht - Weihnachtsmarkt auf dem Gutshof des Schlosses Britz;Alt-Britz 73;12359 Berlin;2015-12-18;2015-12-20;"Kulturstiftung Schloss Britz
+Tel.: 60 97 92 30, Fax: 609 79 23 39";"Fr 14:00-21:00
+Sa 11:00-21:00
+So 11:00-21:00";info@schlossbritz.de;www.schlossbritz.de;Eintritt 3 €, ermäßigt 2 €, Kinder unter 6 Jahren und Anwohner frei, www.cocolorus-diaboli.de, gewerblicher Weihnachtsmarkt;52.446960;13.43781
+80;Neukölln;28. Alt-Buckower Adventsmarkt;Nebenstraße Alt-Buckow 2-38;12349 Berlin;2015-11-28;2015-11-29;"AG ""Das Sympathische Buckow e. V."" und die
+Evangelische Kirchengemeinde Alt-Buckow,
+Ansprechpartner für die Organisation: Christian Rieth
+Tel.: 0179/394 55 14, Fax: 34 35 98 73";"Sa 13:00-20:00
+So 11:00-19:00";post@advents-markt.de;www.advents-markt.de;gemeinnütziger Weihnachtsmarkt, Eintritt frei;52.422879;13.433156
+82;Neukölln;Adventsmarkt der Evangelischen Kirchengemeinde Alt-Buckow;an der Dorfkirche Alt-Buckow;12349 Berlin;2015-11-28;2015-11-29;Evangelische Kirchengemeinde Alt-Buckow, Tel.: 604 10 10, Fax: 605 19 06;"Sa 14:00-20:00
+So 13:00-19:00";buero@dorfkirche.de;www.dorfkirche.de;gemeinnütziger Weihnachtsmarkt;52.421877;13.430844
+84;Neukölln;Adventsmarkt an der Britzer Dorfkirche ;Backbergstr. 38 ;12359 Berlin;2015-11-29;2015-11-29;"Evangelische Dorfkirchengemeinde Berlin-Britz 
+Tel.: 606 29 12, Fax: 63 41 39 00";12:30-18:00;dorfkirchebritz@t-online.de;www.dorfkirchebritz.de;"gemeinnütziger Weihnachtsmarkt
+11:00 Festlicher Gottesdienst zum 1. Advent
+18:00 Abschluss-Andacht";52.448270;13.43695
+86;Neukölln;43. Alt-Rixdorfer Weihnachtsmarkt;Richardplatz;12055 Berlin;2015-12-04;2015-12-06;"BA Neukölln
+Christian Bärmann
+Tel.: 902 39 25 53,
+Fax.: 902 39 34 70";"Fr 17:00-21:00
+Sa 14:00-21:00
+So 14:00-20:00";;www.berlin.de/ba-neukoelln/org/arw/arw.index.html;gemeinnütziger Weihnachtsmarkt;52.474158;13.44528
+88;Pankow;Lucia Weihnachtsmarkt in der Kulturbrauerei;Kulturbrauerei in Prenzlauer Berg, Schönhauser Allee   36-39;10435 Berlin;2015-11-23;2015-12-22;"Ketering GmbH (Veranstalter, Vermietung)
+Tel.: 44 31 07 37,
+Fax: 25 74 85 50
+Presse-Marketing-Programm:
+Fête Company
+Tel.: 449 25 94";"Mo-Fr 15:00-22:00
+Sa-So 13:00-22:00";jul@lucia-weihnachtsmarkt.de;www.lucia-weihnachtsmarkt.de;"Eintritt frei, http://www.lucia-weihnachtsmarkt.de
+gewerblicher
+Weihnachtsmarkt";52.540507;13.41442
+90;Pankow;Adventsökomarkt und Ökomarkt der GRÜNEN LIGA am Kollwitzplatz;Wörther Straße / Kollwitz- bis Knaackstraße;10405 Berlin;2015-11-29;2015-11-29;"GRÜNE LIGA BERLIN
+e. V., E. Westphal,
+Prenzlauer Allee 8, 10405 Berlin
+Tel.: 44 33 91 48, Fax: 44 33 91 33";12:00-19:00;oekomarkt.kollwitzplatz@grueneliga.de;www.grueneliga-berlin.de;gewerblicher Weihnachtsmarkt;52.536404;13.417079
+92;Pankow;Adventsökomarkt und Ökomarkt der GRÜNEN LIGA am Kollwitzplatz;Wörther Straße / Kollwitz- bis Knaackstraße;10405 Berlin;2015-12-06;2015-12-06;"GRÜNE LIGA BERLIN
+e. V., E. Westphal,
+Prenzlauer Allee 8, 10405 Berlin
+Tel.: 44 33 91 48, Fax: 44 33 91 33";12:00-19:00;oekomarkt.kollwitzplatz@grueneliga.de;www.grueneliga-berlin.de;gewerblicher Weihnachtsmarkt;52.536404;13.417079
+94;Pankow;Adventsökomarkt und Ökomarkt der GRÜNEN LIGA am Kollwitzplatz;Wörther Straße / Kollwitz- bis Knaackstraße;10405 Berlin;2015-12-13;2015-12-13;"GRÜNE LIGA BERLIN
+e. V., E. Westphal,
+Prenzlauer Allee 8, 10405 Berlin
+Tel.: 44 33 91 48, Fax: 44 33 91 33";12:00-19:00;oekomarkt.kollwitzplatz@grueneliga.de;www.grueneliga-berlin.de;gewerblicher Weihnachtsmarkt;52.536404;13.417079
+96;Pankow;Adventsökomarkt und Ökomarkt der GRÜNEN LIGA am Kollwitzplatz;Wörther Straße / Kollwitz- bis Knaackstraße;10405 Berlin;2015-12-20;2015-12-20;"GRÜNE LIGA BERLIN
+e. V., E. Westphal,
+Prenzlauer Allee 8, 10405 Berlin
+Tel.: 44 33 91 48, Fax: 44 33 91 33";12:00-19:00;oekomarkt.kollwitzplatz@grueneliga.de;www.grueneliga-berlin.de;gewerblicher Weihnachtsmarkt;52.536404;13.417079
+98;Pankow;Nikolausmarkt auf dem Kinderbauernhof Pinkepanke;Am Bürgerpark 15-18, S-Bhf. Wollankstraße ;13156 Berlin;2015-12-06;2015-12-06;"Frau Rose
+Tel.: 0177/464 16 75";14:00-18:00;;;"keine Standvermietung!
+gemeinnütziger Weihnachtsmarkt";52.569076;13.388773
+100;Reinickendorf;"Weihnachtsmarkt im EKZ ""Der Clou"" - Weihnachtsaktion im Einkaufszentrum ""Der Clou""";am Kurt-Schumacher-Platz;13405 Berlin;2015-11-16;2015-12-24;"Center-Management des Einkaufszentrums ""Der Clou""
+Tel.: 49 87 20 96, Fax: 495 27 63";"Mo-Sa 10:00-20:00
+06./20.12. 13:00-18:00
+24.12. 10:00-14:00                    ";info@derclouberlin.de;www.derclouberlin.de;"""Himmelsbäckerei"" für Kinder  
+30.11. - 18.12.
+jeweils 10:00, 11:00, 16:00 und 17:00
+nach vorheriger Anmeldung
+im Büro des Center-
+Managements,   
+gewerblicher 
+Weihnachtsmarkt";52.563043;13.327618
+102;Reinickendorf;Weihnachtsfachmarkt in den Hallen Am Borsigturm;Am Borsigturm 2, Einkaufscenter;13507 Berlin ;2015-11-23;2015-12-24;"Center Manager: Herr Wilhelm, Werbegemeinschaft Hallen am Borsigturm
+Tel.: 72 62 66 00";"Mo-Sa 10:00-20:00
+06./20.12. 13:00-18:00
+24.12. 10:00-14:00";info@hallenamborsigturm.de;www.hallenamborsigturm.de;gewerblicher Weihnachtsmarkt;52.584894;13.285817
+104;Reinickendorf;XIII. Kunsthandwerklicher Weihnachtsmarkt Frohnau;Zeltinger Platz / Ludolfingerplatz;13465 Berlin;2015-12-05;2015-12-06;"Interessengemeinschaft Frohnauer Geschäfte - IFG
+Kontakt/Organisation: KUNSTHAND-BERLIN
+Cornelja Hasler
+Tel.: 40 63 70 31, 0173/216 66 88,
+Fax: 401 74 40";11:00-18:00;info@kunsthand-berlin.de;www.kunsthand-berlin.de;gewerblicher Weihnachtsmarkt;52.633130;13.289572
+106;Reinickendorf;Adventsmarkt der Evangelischen Kirchengemeinde Alt-Wittenau;Dorfaue;13437 Berlin;2015-11-28;2015-11-28;"Evangelische Kirchengemeinde Alt-Wittenau, Gemeindebüro: Alt-Wittenau 29
+Tel.: 43 72 12 62, Fax: 43 72 12 66";14:00-17:30;info@dorfkirchewittenau.de;www.dorfkirchewittenau.de;"gemeinnütziger
+Weihnachtsmarkt";52.592455;13.329694
+108;Reinickendorf;Weihnachtsmarkt vor der Johanneskirche Frohnau;Zeltinger Platz 18;13465 Berlin;2015-11-29;2015-11-29;"Johanneskirche Frohnau
+Tel.: 401 20 33, Fax: 401 20 79";14:00-18:00;post@ekg-frohnau.de;www.ekg-frohnau.de;"gemeinnütziger
+Weihnachtsmarkt
+Eintritt frei";52.634140;13.29209
+110;Spandau;42. Spandauer Weihnachtsmarkt;Spandauer Altstadt;13597 Berlin;2015-11-25;2015-12-23;"Partner für Spandau Gesellschaft für Bezirksmarketing mbH
+Ansprechpartner: Herr Dettmann
+Tel.: 36 75 72 61, Fax: 35 30 23 32";täglich ab 11:00;info@partner-fuer-spandau.de;www.spandauer-weihnachtsmarkt.de;"gewerblicher
+Weihnachtsmarkt";52.537052;13.204966
+112;Spandau;45. Spandauer Weihnachtstraum - Kleiner Weihnachtsmarkt;auf dem Rathausvorplatz;13597 Berlin;2015-11-25;2015-12-27;"Wollenschlaeger, Thilo-Harry
+Tel.: 0163/400 05 00 und 03322/428 82 45
+Fax: 03322/423 41 39";"Mo-Do 11:00-21:00
+Fr 11:00-22:00,
+Sa 10:00-22:00,
+So 11:00-21:00";info@wollenschlaeger-berlin.de;www.wollenschlaeger-berlin.de;"geschlossen am 24.12.15,
+gewerblicher
+Weihnachtsmarkt";52.535232;13.200732
+114;Spandau;Weihnachtsmarkt im Evangelischen Johannesstift;Schönwalder Allee 26;13587 Berlin;2015-11-29;2015-11-29;"Evangelisches Johannesstift
+Tel.: 33 60 90, Fax: 33 60 95 06";12:00-18:00;info@Evangelisches-Johannesstift.de;www.evangelisches-johannesstift.de;"gemeinnütziger
+Weihnachtsmarkt";52.567834;13.191662
+116;Spandau;Sozialer Weihnachtsmarkt von Goldnetz;Földerichplatz;13595 Berlin;2015-12-05;2015-12-05;"Goldnetz gGmbH
+Tel.: 28 88 37 77, Fax: 28 88 37 35";14:00-18:00;;www.goldnetz-berlin.de;gemeinnütziger Weihnachtsmarkt;52.520905;13.193291
+118;Spandau;28. Kladower Christkindlmarkt;Imchenplatz;14089 Berlin;2015-12-05;2015-12-06;"Cladower Dorf Union e. V., Tel. und Fax: 331 23 22
+Tel. und Fax: 331 23 22
+";12:00-19:00;;www.kladower-christkindlmarkt.de;"gemeinnütziger
+Weihnachtsmarkt";52.452567;13.148174
+120;Steglitz-Zehlendorf;19. Markt der Kontinente 2015 in den Museen Dahlem (letztmalig);Museen Dahlem, Lansstr. 8;14195 Berlin;2015-11-21;2015-11-22;"Verein der Freunde des Ethnologischen Museums e. V. in Zusammenarbeit mit den Staatlichen Museen zu Berlin
+Tel.: 830 14 38
+www.smb.museum.de";11:00-19:00;www.smb.museum.de;www.marktderkontinente.de;"Europa und die Welt
+Eintritt 8 €, ermäßigt 4 €, bis 18 Jahre Eintritt frei für die Museen Dahlem inklusive Markt, Konzerte, Workshops, Führungen, Kinderprogramm
+zum Auftakt am 21.11.: Kinderfest der Kontinente
+gewerblicher Weihnachtsmarkt";52.457319;13.293020
+122;Steglitz-Zehlendorf;19. Markt der Kontinente 2015 in den Museen Dahlem (letztmalig);Museen Dahlem, Lansstr. 8;14195 Berlin;2015-11-28;2015-11-29;"Verein der Freunde des Ethnologischen Museums e. V. in Zusammenarbeit mit den Staatlichen Museen zu Berlin
+Tel.: 830 14 38, www.smb.museum.de";11:00-19:00;www.smb.museum.de;www.marktderkontinente.de;"Asien
+Eintritt 8 €, ermäßigt 4 €, bis 18 Jahre Eintritt frei für die Museen Dahlem inklusive Markt, Konzerte, Workshops, Führungen, Kinderprogramm
+zum Auftakt am 21.11.: Kinderfest der Kontinente
+gewerblicher Weihnachtsmarkt";52.457319;13.293020
+124;Steglitz-Zehlendorf;Advent in der Königlichen Gartenakademie;Altensteinstr. 15a;14195 Berlin;2015-11-20;2015-12-23;Königliche Gartenakademie, Tel.: 83 22 09 00, Fax: 832 20 90 10;"Di-Sa 11:00-17:30
+So 11:00-17:00";info@koenigliche-gartenakademie.de;www.koenigliche-gartenakademie.de;gewerblicher Weihnachtmarkt, Mo. geschlossen;52.455766;13.300563
+126;Steglitz-Zehlendorf;19. Markt der Kontinente 2015 in den Museen Dahlem (letztmalig);Museen Dahlem, Lansstr. 8;14195 Berlin;2015-12-05;2015-12-06;"Verein der Freunde des Ethnologischen Museums e. V. in Zusammenarbeit mit den Staatlichen Museen zu Berlin
+Tel.: 830 14 38, www.smb.museum.de";11:00-19:00;www.smb.museum.de;www.marktderkontinente.de;"Amerika
+Eintritt 8 €, ermäßigt 4 €, bis 18 Jahre Eintritt frei für die Museen Dahlem inklusive Markt, Konzerte, Workshops, Führungen, Kinderprogramm
+zum Auftakt am 21.11.: Kinderfest der Kontinente
+gewerblicher Weihnachtsmarkt";52.457319;13.293020
+128;Steglitz-Zehlendorf;19. Markt der Kontinente 2015 in den Museen Dahlem (letztmalig);Museen Dahlem, Lansstr. 8;14195 Berlin;2015-12-12;2015-12-13;"Verein der Freunde des Ethnologischen Museums e. V. in Zusammenarbeit mit den Staatlichen Museen zu Berlin
+Tel.: 830 14 38, www.smb.museum.de";11:00-19:00;www.smb.museum.de;www.marktderkontinente.de;"Afrika
+Eintritt 8 €, ermäßigt 4 €, bis 18 Jahre Eintritt frei für die Museen Dahlem inklusive Markt, Konzerte, Workshops, Führungen, Kinderprogramm
+zum Auftakt am 21.11.: Kinderfest der Kontinente
+gewerblicher Weihnachtsmarkt";52.457319;13.293020
+130;Steglitz-Zehlendorf;5. Zehlendorfer Weihnachtsmarkt auf der Dorfaue;Teltower Damm, am Rathaus Zehlendorf;14163 Berlin;2015-11-23;2015-12-30;"BA Steglitz-Zehlendorf, Büro des Bezirksbürgermeisters
+www.steglitz-zehlendorf.de
+Durchführung: Schausteller- und Gastronomiebetriebe Laurence Blume
+Tel.: 0151/24 11 78 50,
+Fax: 815 20 85
+lb@blume-events.de";"So-Do 11:00-21:00
+Fr-Sa 11:00-22:00
+24.12.: 11:00-16:00
+25.12./26.12.: 13:00-20:00
+";laurenceblume@web.de;www.blume-events.de;"
+gewerblicher
+Weihnachtsmarkt";52.433530;13.259371
+132;Steglitz-Zehlendorf;Steglitzer Weihnachtsmarkt vor dem Forum Steglitz;Schloßstr. 1;12163 Berlin;2015-11-23;2016-01-06;"Schausteller- und Gastronomiebetriebe Laurence Blume
+Tel.: 0151/24 11 78 50,
+Fax: 815 20 85
+lb@blume-events.de";"täglich 10:30-21:00
+So 10:30-20:00
+24.12.: 10:30-16:00
+25./26.12.: 10:30-20:00";laurenceblume@web.de;www.blume-events.de;"gewerblicher
+Weihnachtsmarkt";52.464220;13.3272
+134;Steglitz-Zehlendorf;Adventsmarkt auf der Domäne Dahlem;Königin-Luise-Str. 49;14195 Berlin;2015-11-28;2015-11-29;"Domäne Dahlem Veranstaltungsgesellschaft mbH
+Tel.: 66 63 00 10,
+Fax: 66 63 00 20";11:00-19:00;kontakt@domaene-dahlem.de;www.domaene-dahlem.de;"Eintritt 3 €,
+ermäßigt 1 € (Auszubildende, Studierende, Freiwilligendienst-Leistende, berlinpass-Inhaber, Schwerbehinderte ab 80 %)
+freier Eintritt für Kinder
+und Jugendliche
+bis 18 Jahre, gewerblicher
+Weihnachtsmarkt";52.458420;13.28866
+136;Steglitz-Zehlendorf;Adventsmarkt auf der Domäne Dahlem;Königin-Luise-Str. 49;14195 Berlin;2015-12-05;2015-12-06;"Domäne Dahlem Veranstaltungsgesellschaft mbH
+Tel.: 66 63 00 10,
+Fax: 66 63 00 20";11:00-19:00;kontakt@domaene-dahlem.de;www.domaene-dahlem.de;"Eintritt 3 €,
+ermäßigt 1 € (Auszubildende, Studierende, Freiwilligendienst-Leistende, berlinpass-Inhaber, Schwerbehinderte ab 80 %)
+freier Eintritt für Kinder
+und Jugendliche
+bis 18 Jahre,                                       gewerblicher
+Weihnachtsmarkt";52.458420;13.28866
+138;Steglitz-Zehlendorf;Adventsmarkt auf der Domäne Dahlem;Königin-Luise-Str. 49;14195 Berlin;2015-12-12;2015-12-13;"Domäne Dahlem Veranstaltungsgesellschaft mbH
+Tel.: 66 63 00 10,
+Fax: 66 63 00 20";11:00-19:00;kontakt@domaene-dahlem.de;www.domaene-dahlem.de;"Eintritt 3 €,
+ermäßigt 1 € (Auszubildende, Studierende, Freiwilligendienst-Leistende, berlinpass-Inhaber, Schwerbehinderte ab 80 %)
+freier Eintritt für Kinder
+und Jugendliche
+bis 18 Jahre,
+gewerblicher
+Weihnachtsmarkt";52.458420;13.28866
+140;Steglitz-Zehlendorf;Adventsmarkt auf der Domäne Dahlem;Königin-Luise-Str. 49;14195 Berlin;2015-12-19;2015-12-20;"Domäne Dahlem Veranstaltungsgesellschaft mbH
+Tel.: 66 63 00 10,
+Fax: 66 63 00 20";11:00-19:00;kontakt@domaene-dahlem.de;www.domaene-dahlem.de;"Eintritt 3 €,
+ermäßigt 1 € (Auszubildende, Studierende, Freiwilligendienst-Leistende, berlinpass-Inhaber, Schwerbehinderte ab 80 %)
+freier Eintritt für Kinder
+und Jugendliche
+bis 18 Jahre,
+gewerblicher
+Weihnachtsmarkt";52.458420;13.28866
+142;Steglitz-Zehlendorf;Weihnachtsmarkt auf dem Ferdinandmarkt;Ferdinandstr. 34-35;12209 Berlin;2015-11-29;2015-11-29;"Müller-Degenhardt & Degenhardt Marktstandvermietung GbR
+Tel.: 824 20 45, Fax: 824 20 47";11:00-19:00;info@gv-degenhardt.de;www.gv-degenhardt.de;"gewerblicher
+Weihnachtsmarkt";52.428165;13.328123
+144;Steglitz-Zehlendorf;Advent-Künstlerstation am Bahnhof Mexikoplatz;Platz vor dem Bahnhof Mexikoplatz;14163 Berlin;2015-11-29;2015-11-29;Martin, Ramona, Tel.: 802 87 79;11:00-19:00;;;"gewerblicher
+Weihnachtsmarkt";52.437584;13.232588
+146;Steglitz-Zehlendorf;Advent-Künstlerstation am Bahnhof Mexikoplatz;Platz vor dem Bahnhof Mexikoplatz;14163 Berlin;2015-12-06;2015-12-06;Martin, Ramona, Tel.: 802 87 79;11:00-19:00;;;"gewerblicher
+Weihnachtsmarkt";52.437584;13.232588
+148;Steglitz-Zehlendorf;Advent-Künstlerstation am Bahnhof Mexikoplatz;Platz vor dem Bahnhof Mexikoplatz;14163 Berlin;2015-12-13;2015-12-13;Martin, Ramona, Tel.: 802 87 79;11:00-19:00;;;"gewerblicher
+Weihnachtsmarkt";52.437584;13.232588
+150;Steglitz-Zehlendorf;Advent-Künstlerstation am Bahnhof Mexikoplatz;Platz vor dem Bahnhof Mexikoplatz;14163 Berlin;2015-12-20;2015-12-20;Martin, Ramona, Tel.: 802 87 79;11:00-19:00;;;"gewerblicher
+Weihnachtsmarkt";52.437584;13.232588
+152;Steglitz-Zehlendorf;Märchenhafter Weihnachtsmarkt im Grunewald;Hüttenweg 100 (am Grunewaldsee), Jagdschloss Grunewald;14193 Berlin;2015-12-05;2015-12-06;"Stiftung Preußische Schlösser und Gärten Berlin-Brandenburg, Abt. Schlossmanagement
+Kontakt: Jagdschloss Grunewald
+Tel.: 813 35 97
+";11:00-19:00;schloss-grunewald@spsg.de;www.spsg.de;"Eintritt 3 €/ 2 € erm., inkl. Besichtigung im Schloss und Jagdzeugmagazin, Kinder unter 6 Jahren haben freien Eintritt, 
+gewerblicher
+Weihnachtsmarkt";52.467266;13.261708
+154;Steglitz-Zehlendorf;Adventsbasar im Gemeindehaus St. Michael;Hohenzollernstr. 28;14109 Berlin;2015-11-21;2015-11-22;"Katholische Kirchengemeinde Zu den hl. Zwölf Aposteln Berlin
+Tel.: 805 86 29 70";"Sa 15:00-19:30
+So 09:00-15:00";pfarrbuero@hl-12-apostel.de;www.hl-12-apostel.de;"gemeinnütziger
+Weihnachtsmarkt";52.417810;13.150609
+156;Steglitz-Zehlendorf;Großer Adventsbasar im Gemeindehaus;Kirchweg 6;14129 Berlin;2015-11-28;2015-11-28;"Evangelische Kirchengemeinde Nikolassee 
+Tel.: 80 19 76 30";11:00-18:00;webmaster@gemeinde-nikolassee.de;www.gemeinde-nikolassee.de;"gemeinnütziger
+Weihnachtsmarkt";52.425202;13.20455
+158;Steglitz-Zehlendorf;Weihnachtsmarkt der Wilhelmplatz-Initiative und der Ev. Kirchengemeinde Wannsee;Kirche am Stölpchensee, Auf dem Wilhelmplatz;14109 Berlin;2015-11-29;2015-11-29;"Evangelische Kirchengemeinde Berlin-Wannsee
+Tel.: 805 16 50";13:00-18:00;KGWannsee@freenet.de;www.wannseebote.ekbo.de;gemeinnütziger Weihnachtsmarkt;52.412281;13.141813
+160;Steglitz-Zehlendorf;Das Weihnachtshaus in der Villa Donnersmarck;Schädestr. 9-13;14165 Berlin;2015-12-13;2015-12-13;"Villa Donnersmarck/Fürst-Donnersmarck-Stiftung
+Tel.: 84 71 87 0, Fax: 84 71 87 23";15:00-19:00;villadonnersmarck@fdst.de;www.villadonnersmarck.de;"gemeinnütziger
+Weihnachtsmarkt";52.427180;13.25836
+162;Tempelhof-Schöneberg;Adventsmarkt in der Lokhalle;Lokhalle im Natur-Park Schöneberger Südgelände, S-Bahnhof Priesterweg;12157 Berlin;2015-11-29;2015-11-29;"Grün Berlin GmbH
+Tel.: 70 09 06 24, Fax: 700 90 69 24";12:00-18:00;info@suedgelaende.de;www.gruen-berlin.de;"gewerblicher
+Weihnachtsmarkt";52.459078;13.358147
+164;Tempelhof-Schöneberg;Adventsmarkt in der Lokhalle;Lokhalle im Natur-Park Schöneberger Südgelände, S-Bahnhof Priesterweg;12157 Berlin;2015-12-06;2015-12-06;"Grün Berlin GmbH
+Tel.: 70 09 06 24, Fax: 700 90 69 24";12:00-18:00;info@suedgelaende.de;www.gruen-berlin.de;"gewerblicher
+Weihnachtsmarkt";52.459078;13.358147
+166;Tempelhof-Schöneberg;26. Weihnachtsmarkt auf dem Winterfeldtplatz;Winterfeldtplatz ;10785 Berlin;2015-11-29;2015-11-29;"Frau Trostdorff
+Tel.: 215 65 39, 0172/301 51 81,
+0157/74 30 19 69,
+Fax: 215 65 39";11:00-19:00;trostdorff@web.de;www.weihnachtsmarkt-winterfeldtplatz.de;"gewerblicher
+Weihnachtsmarkt";52.496518;13.354376
+168;Tempelhof-Schöneberg;26. Weihnachtsmarkt auf dem Winterfeldtplatz;Winterfeldtplatz ;10785 Berlin;2015-12-06;2015-12-06;"Frau Trostdorff
+Tel.: 215 65 39, 0172/301 51 81,
+0157/74 30 19 69,
+Fax: 215 65 39";11:00-19:00;trostdorff@web.de;www.weihnachtsmarkt-winterfeldtplatz.de;"gewerblicher
+Weihnachtsmarkt";52.496518;13.354376
+170;Tempelhof-Schöneberg;26. Weihnachtsmarkt auf dem Winterfeldtplatz;Winterfeldtplatz ;10785 Berlin;2015-12-13;2015-12-13;"Frau Trostdorff
+Tel.: 215 65 39, 0172/301 51 81,
+0157/74 30 19 69,
+Fax: 215 65 39";11:00-19:00;trostdorff@web.de;www.weihnachtsmarkt-winterfeldtplatz.de;"gewerblicher
+Weihnachtsmarkt";52.496518;13.354376
+172;Tempelhof-Schöneberg;26. Weihnachtsmarkt auf dem Winterfeldtplatz;Winterfeldtplatz ;10785 Berlin;2015-12-20;2015-12-20;"Frau Trostdorff
+Tel.: 215 65 39, 0172/301 51 81,
+0157/74 30 19 69,
+Fax: 215 65 39";11:00-19:00;trostdorff@web.de;www.weihnachtsmarkt-winterfeldtplatz.de;"gewerblicher
+Weihnachtsmarkt";52.496518;13.354376
+174;Tempelhof-Schöneberg;21. Weihnachtsmarkt auf Lehmanns Bauernhof am Zweiten Advent;Alt-Marienfelde 35-37;12277 Berlin;2015-12-04;2015-12-06;"Lehmanns Bauernmarkt
+Tel.: 72 01 41 50, 0179/958 05 15,
+Fax: 72 01 41 49";"Fr 14:00-20:00
+Sa-So 12:00-20:00";Lehmanns-Bauernmarkt@gmx.de;www.lehmanns-bauernmarkt.de;"gewerblicher
+Weihnachtsmarkt, Eintritt frei";52.411971;13.366999
+176;Tempelhof-Schöneberg;21. Weihnachtsmarkt auf Lehmanns Bauernhof am Dritten Advent;Alt-Marienfelde 35-37;12277 Berlin;2015-12-11;2015-12-13;"Lehmanns Bauernmarkt
+Tel.: 72 01 41 50, 0179/958 05 15,
+Fax: 72 01 41 49";"Fr 14:00-20:00
+Sa-So 12:00-20:00";Lehmanns-Bauernmarkt@gmx.de;www.lehmanns-bauernmarkt.de;"gewerblicher
+Weihnachtsmarkt, Eintritt frei";52.411971;13.366999
+178;Tempelhof-Schöneberg;39. Lichtenrader Lichtermarkt;Alt-Lichtenrade, rund um den Dorfteich (Giebel-Pfuhl);12305 Berlin;2015-11-29;2015-11-29;"BA Tempelhof-Schöneberg
+Ansprechpartnerin: Frau Barnekow
+Tel.: 902 77 23 01,
+Fax: 902 77 22 20       ";13:00-19:00;;;"gemeinnütziger
+Weihnachtsmarkt";52.405230;13.399936
+180;Tempelhof-Schöneberg;31. Marienfelder Weihnachtsmarkt des TSV Marienfelde 1890 e. V.;Alte Feuerwache, Alt-Marienfelde 36;12277 Berlin;2015-12-05;2015-12-06;"TSV Marienfelde 1890 e. V.
+Tel.: 722 45 46, Fax: 74 30 59 65";12:00-19:00;sport@tsv-marienfelde.de;www.tsv-marienfelde.de;"mit Beteiligung der
+Marienfelder Kyffhäuser,
+gemeinnütziger
+Weihnachtsmarkt";52.412750;13.36764
+182;Tempelhof-Schöneberg;9. Friedenauer Engelmarkt;Breslauer Platz am Rathaus Friedenau;12159 Berlin;2015-12-06;2015-12-06;"Friedenau-Netzwerk
+Magrit Knapp
+Tel.: 852 33 56";13:00-18:00;Magrit.knapp@friedenau-netzwerk.de;www.friedenau-netzwerk.de;"gemeinnütziger
+Weihnachtsmarkt";52.472222;13.335556
+184;Treptow-Köpenick;"Weihnachtsmarkt in den Späth'schen Baumschulen
+Lichterglanz im Tannenwald - präsentiert von radioBERLIN 88,8";Späthstr. 80/81;12437 Berlin;2015-12-05;2015-12-06;"Späth'sche Baumschulen Handel GmbH
+Tel.: 63  90 03 32";11:00-20:00;info@spaethsche-baumschulen.de;www.spaethsche-baumschulen.de;"Eintritt 3 €, Kinder bis 16 Jahre frei
+Die Späth'schen Baumschulen spenden einen Teil des Eintrittsgeldes an das Kinder-, Jugend- und Familienzentrumhaus RumBa in Treptow-Köpenick,
+gewerblicher Weihnachtsmarkt
+Lichterglanz im Tannenwald - präsentiert von radio BERLIN 88,8";52.454340;13.47371
+186;Treptow-Köpenick;Köpenick, die Weihnachtsinsel (teilgewerblich);Schlossinsel Köpenick, Schlossplatz Köpenick;12555 Berlin;2015-12-11;2015-12-13;"Bezirksamt Treptow-Köpenick von Berlin
+Tel.: 902 97 27 60, Fax: 902 97 28 50, Herr Lemaitre, Tel.: 0173/617 25 51, Fax: 61 67 40 09";"Fr 14:00-21:00
+Sa 12:00-21:00
+So 12:00-20:00";veranstaltungen@ba-tk.berlin.de;www.berlin.de/ba-treptow-koepenick/aktuelles/koepenickerweihnachtsinsel.html;"gewerblicher
+Weihnachtsmarkt";52.444676;13.574498
+188;Treptow-Köpenick;"Weihnachtsmarkt in den Späth'schen Baumschulen
+Lichterglanz im Tannenwald - präsentiert von radioBERLIN 88,8";Späthstr. 80/81;12437 Berlin;2015-12-12;2015-12-13;"Späth'sche Baumschulen Handel GmbH
+Tel.: 63  90 03 32";11:00-20:00;info@spaethsche-baumschulen.de;www.spaethsche-baumschulen.de;"Eintritt 3 €, Kinder bis 16 Jahre frei
+Die Späth'schen Baumschulen spenden einen Teil des Eintrittsgeldes an das Kinder-, Jugend- und Familienzentrumhaus RumBa in Treptow-Köpenick,
+gewerblicher Weihnachtsmarkt
+Lichterglanz im Tannenwald - präsentiert von radio BERLIN 88,8";52.454340;13.47371
+190;Treptow-Köpenick;Weihnachtsmarkt Friedrichshagen Bölschestraße;Marktplatz Bölschestraße;12587 Berlin;2015-12-19;2015-12-20;"Wolfgang Hirche,
+15370 Vogelsdorf
+Tel.: 033439/779 79, 0172/309 49 77,
+Fax: 033439/779 80";"Sa 09:00-22:00
+So 11:00-20:00";Markt-Hirche@web.de;;"gewerblicher
+Weihnachtsmarkt";52.451915;13.624878
+192;Treptow-Köpenick;Lichtermarkt an der Christuskirche;Firlstr. 16;12459 Berlin;2015-11-28;2015-11-28;"Evangelische Kirchengemeinde Berlin-Oberschöneweide, Tel.: 535 31 55 Ansprechpartner: Herr Noak   
+Tel.: 97 60 14 17";14:00-18:00;gemeinde@ev-kirche-oberschoeneweide.de;www.ev-kirche-oberschoeneweide.de;"gemeinnütziger
+Weihnachtsmarkt, 14:00 Eröffnung mit Bläserensemble Köpenick, 15:00 Basteln im Musikzimmer der Kirche,  18:00 Adventskonzert mit dem Köpenicker Chor ""Sing! Sing!""
+Basteln und Kaffee in der Grundschule an der Wuhlheide";52.463090;13.52339
+194;Treptow-Köpenick;Müggelheimer Weihnachtsmarkt mit altem Handwerk und Markt;"westl. Seite Dorfanger Müggelheim und Dorfklub ""Alte Schule""";12559 Berlin;2015-11-28;2015-11-28;"Müggelheimer Heimatverein e. V.
+Tel.: 659 86 13";10:00-20:00;Mueggelheimer-heimatverein@gmx.de;www.mueggelheimer-heimatverein.de;gemeinnütziger Weihnachtsmarkt;52.411639;13.662379
+196;Treptow-Köpenick;6. Altglienicker Advents-Markt;Rund um die Pfarrkirche, Semmelweisstr. 2;12524 Berlin;2015-11-29;2015-11-29;"Evangelische Kirchengemeinde
+Altglienicke
+Tel.: 672 83 81 und
+Bürgerverein Altglienicke e. V.";14:00-19:00;"buergerverein@altglienicke.de
+";www.altglienicke.de;gemeinnütziger Weihnachtsmarkt;52.421910;13.5393

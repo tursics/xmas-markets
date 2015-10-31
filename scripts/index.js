@@ -2,9 +2,9 @@ var config = this.config || {};
 config.timeout = 400;
 config.currentMarketId = 0;
 config.startDate = new Date();
-config.startDate.setFullYear( 2014, 10, 17); // month - 1
+config.startDate.setFullYear( 2015, 10, 16); // month - 1
 config.endDate = new Date();
-config.endDate.setFullYear( 2015, 0, 6); // month - 1
+config.endDate.setFullYear( 2016, 0, 6); // month - 1
 
 // ·································································
 /*
@@ -245,9 +245,9 @@ function composeMarketItem( obj, diffdays)
 //	if( '' == obj.todo) { return ''; }
 
 	var txt = '<p>' + obj.name + '</p><p>' + openingtime + '</p>';
-	var img = '<aside class="pack-begin"><img src="art/' + obj.id + '/128.jpg"></aside>';
+	var img = '<aside class="pack-begin"><img src="art/' + obj.uuid + '/128.jpg"></aside>';
 
-	return '<li>' + img + '<a href="javascript:callOneMarket(' + obj.id + ');">' + txt + '</a></li>';
+	return '<li>' + img + '<a href="javascript:callOneMarket(' + obj.uuid + ');">' + txt + '</a></li>';
 }
 
 function setActiveTab( tabName)
@@ -675,10 +675,10 @@ function fillListFavoriteMarkets()
 
 // ·································································
 
-function getObjFromID( id)
+function getObjFromID( uuid)
 {
  	for( var i = 0; i < data.length; ++i) {
-		if( data[i].id == id) {
+		if( data[i].uuid == uuid) {
 			return data[i];
 		}
 	}
@@ -743,7 +743,7 @@ function fillListOneMarket()
 	var txt = '';
 	var obj = getObjFromID( config.currentMarketId);
 
-	txt += '<div style="margin:-1.5rem -1.5rem -1rem -1.5rem;"><img src="art/' + obj.id + '/1200.jpg" style="width:100%;"></div>';
+	txt += '<div style="margin:-1.5rem -1.5rem -1rem -1.5rem;"><img src="art/' + obj.uuid + '/1200.jpg" style="width:100%;"></div>';
 
 	txt += '<div style="margin:0 -1.5rem 1rem -1.5rem;padding:1.5rem 1.5rem 0 1.5rem;text-align:center;border-bottom:1px solid #f97c17;background:#fde4d0;">';
 	txt += '<p style="color:#f97c17;">' + obj.name + '</p>';
@@ -762,7 +762,7 @@ function fillListOneMarket()
 
 	txt += '<div style="margin:1rem -1.5rem 1rem -1.5rem;padding:0 1.5rem 0 1.5rem;text-align:center;border-top:1px solid #f97c17;border-bottom:1px solid #f97c17;background:#fde4d0;">';
 	txt += '<p><ul style="margin:0 auto 0 auto;max-width:4rem;">';
-//	txt += '<li style="float:left;padding:0 2rem 0 0;"><a id="buttonFav" href="javascript:callChangeFavorite(' + obj.id + ');" class="bb-button" style="font-size:3rem;min-width:4rem;min-height:4rem;text-align:center;padding:1rem 0 0 0;"><i class="icon-heart"></i></a></li>';
+//	txt += '<li style="float:left;padding:0 2rem 0 0;"><a id="buttonFav" href="javascript:callChangeFavorite(' + obj.uuid + ');" class="bb-button" style="font-size:3rem;min-width:4rem;min-height:4rem;text-align:center;padding:1rem 0 0 0;"><i class="icon-heart"></i></a></li>';
 //	txt += '<li style="float:left;padding:0 2rem 0 0;"><button><i class="icon-map"></i></button></li>';
 //	txt += '<li style="float:left;padding:0 2rem 0 0;"><button>Sharen</button></li>';
 //	txt += '<li style="float:left;padding:0 2rem 0 0;"><button>BVG</button></li>';
