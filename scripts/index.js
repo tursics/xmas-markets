@@ -534,8 +534,8 @@ function sortDataNearby( a, b)
 {
 	var daysA = getNextOpeningDays( a);
 	var daysB = getNextOpeningDays( b);
-	var kmA = getDistance( a.lat, a.long, gLat, gLon);
-	var kmB = getDistance( b.lat, b.long, gLat, gLon);
+	var kmA = getDistance( a.lat, a.lng, gLat, gLon);
+	var kmB = getDistance( b.lat, b.lng, gLat, gLon);
 
 	a.data_next_open = daysA;
 	b.data_next_open = daysB;
