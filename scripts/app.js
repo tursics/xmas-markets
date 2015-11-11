@@ -12,7 +12,9 @@ requirejs.config({
 
 requirejs(['app/main', 'app/config', 'app/design'],
 function(main, config, design) {
-	console.log( config);
+	if( typeof Number.prototype.toRadians == 'undefined') {
+		Number.prototype.toRadians = function() { return this * Math.PI / 180; };
+	}
 });
 
 // ·································································
