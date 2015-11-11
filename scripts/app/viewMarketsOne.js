@@ -3,12 +3,60 @@
 define( ['app/config','app/view'], function( config, view) {
 	var idView = '#onemarket';
 
+	function composeCalendar( obj)
+	{
+		var txt = '';
+
+		txt += '<p style="margin:0 -1.5rem 0 -1.5rem;"><ul class="calendar">';
+
+		var months = new Array( "Jan", "Feb", "Mär", "Apr", "Mai", "Jun", "Jul", "Aug", "Sep", "Okt", "Nov", "Dez");
+		var workingDate = new Date();
+		workingDate.setFullYear( config.startDate.getFullYear(), config.startDate.getMonth(), config.startDate.getDate());
+
+		var weekday = (workingDate.getDay() + 6) % 7;
+		for( var i = 0; i < weekday; ++i) {
+			txt += '<li class="empty"></li>';
+		}
+
+		while( workingDate <= config.endDate) {
+			var style = '';
+			if( 1 == workingDate.getDay()) {
+				style = ' style="clear:both;"';
+			}
+
+			var classStr = '';
+			var daystr = view.dateToStr( workingDate);
+	   		if(( typeof obj[ daystr] === 'undefined') || ('' == obj[ daystr].trim())) {
+	   			classStr = ' class="gray"';
+    		}
+
+			txt += '<li' + classStr + style + '>' + workingDate.getDate() + '<div>' + months[workingDate.getMonth()] + '</div></li>';
+
+			workingDate.setDate( workingDate.getDate() + 1);
+		}
+
+		while( workingDate.getDay() != 1) {
+			txt += '<li class="gray">' + workingDate.getDate() + '<div>' + months[workingDate.getMonth()] + '</div></li>';
+
+			workingDate.setDate( workingDate.getDate() + 1);
+		}
+
+		txt += '</ul></p>';
+		txt += '<div style="clear:both;"></div>';
+
+		return txt;
+	}
+
 	return {
 		init: function()
 		{
 		},
 		fillList: function()
 		{
+			if( typeof view === 'undefined') {
+				view = require( 'app/view');
+			}
+
 			var txt = '';
 			var obj = config.getMarketByID( config.currentMarketId);
 
@@ -48,7 +96,7 @@ define( ['app/config','app/view'], function( config, view) {
 
 			txt += '<p>Öffnungszeiten</p>';
 			txt += '<p>' + obj.hours + '</p>';
-			txt += composeMarketCalendar( obj);
+			txt += composeCalendar( obj);
 
 			txt += '<div style="margin:1rem -1.5rem -1.5rem -1.5rem;padding:0 1.5rem 0 1.5rem;text-align:center;border-top:1px solid #f97c17;border-bottom:1px solid #f97c17;background:#fde4d0;">';
 			txt += '<p>Bildnachweis: ' + obj.copyright + '</p>';
