@@ -14,7 +14,19 @@ define( ['data/berlin'], function( dataBerlin) {
 		currentMarketId: 0,
 		startDate: new Date( start),
 		endDate: new Date( end),
-		markets: markets
+		views: new Array(),
+		markets: markets,
+
+		getMarketByID: function( uuid)
+		{
+			for( var i = 0; i < this.markets.length; ++i) {
+				if( this.markets[i].uuid == uuid) {
+					return this.markets[i];
+				}
+			}
+
+			return null;
+		}
 	};
 });
 
