@@ -1,21 +1,21 @@
 // ·································································
 
-define( ['app/config', 'app/viewMarketsOne'], function( config, viewOneMarket) {
+define( ['app/config', 'app/viewMarketsOne'], function( config, viewMarketsOne) {
 	function onMarket()
 	{
 		var marketId = this.getAttribute( 'data-market');
+		window.scrollTo( 0, 0);
 
 		document.querySelector('#onemarket').className = 'current';
 		document.querySelector('[data-position="current"]').className = 'left';
 
-		window.scrollTo( 0, 0);
 		var txt = '<div class="center"><progress></progress></div>';
 		document.querySelector('#onemarket > article').innerHTML = txt;
 
 		config.currentMarketId = marketId;
 
 		var obj = config.getMarketByID( marketId);
-		setTimeout( viewOneMarket.fillList(), config.timeout);
+		setTimeout( viewMarketsOne.fillList(), config.timeout);
 	}
 
 	return {
