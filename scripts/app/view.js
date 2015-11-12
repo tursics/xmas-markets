@@ -1,34 +1,54 @@
 // ·································································
 
 define( ['app/config', 'app/viewMarketsOne'], function( config, viewMarketsOne) {
+
+	// ·····························································
 	function onMarket()
 	{
 		var marketId = this.getAttribute( 'data-market');
+
+		document.querySelector( '#onemarket').className = 'current';
+		document.querySelector( '[data-position="current"]').className = 'left';
+
 		window.scrollTo( 0, 0);
-
-		document.querySelector('#onemarket').className = 'current';
-		document.querySelector('[data-position="current"]').className = 'left';
-
 		var txt = '<div class="center"><progress></progress></div>';
-		document.querySelector('#onemarket > article').innerHTML = txt;
+		document.querySelector( '#onemarket > article').innerHTML = txt;
 
 		config.currentMarketId = marketId;
 
-		var obj = config.getMarketByID( marketId);
+		var obj = config.getMarketByID( config.currentMarketId);
 		setTimeout( viewMarketsOne.fillList(), config.timeout);
 	}
 
+	// ·····························································
+	function getToday()
+	{
+		var today = new Date();
+//		today.setDate(today.getDate() + 0);
+		return today;
+	}
+
+	// ·····························································
 	return {
+
+		// ·························································
 		add: function( viewName, title)
 		{
 			config.views.push( viewName);
 
 			var child = document.createElement( 'li');
-			child.style.width = '23%';
 			child.setAttribute( 'role', 'presentation');
 			child.innerHTML = '<a href="#" role="tab" id="' + viewName.substr( 1) + '">' + title + '</a>';
 			document.querySelector( '#markettab>ul').appendChild( child);
+
+			var objs = document.querySelector( '#markettab>ul').getElementsByTagName( 'li');
+			var width = (objs.length <= 3 ? 32 : (objs.length <= 4 ? 23 : 18));
+			for( var i = 0; i < objs.length; ++i) {
+				objs[i].style.width = width + '%';
+			}
 		},
+
+		// ·························································
 		setActive: function( viewName)
 		{
 			for( var i = 0; i < config.views.length; ++i) {
@@ -38,19 +58,27 @@ define( ['app/config', 'app/viewMarketsOne'], function( config, viewMarketsOne) 
 				}
 			}
 		},
+
+		// ·························································
 		showProgress: function()
 		{
 			window.scrollTo( 0, 0);
 			document.querySelector( '#marketlist').innerHTML = '<div class="center"><progress></progress></div>';
 		},
+
+		// ·························································
 		composeSectionList: function( content)
 		{
 			return '<section data-type="list">' + content + '</section>';
 		},
+
+		// ·························································
 		composeList: function( content)
 		{
 			return '<ul>' + content + '</ul>';
 		},
+
+		// ·························································
 		composeMarketItem: function( obj, diffdays)
 		{
 			var openingtime = '';
@@ -80,18 +108,22 @@ define( ['app/config', 'app/viewMarketsOne'], function( config, viewMarketsOne) 
 //			if( '' == obj.todo) { return ''; }
 
 			var txt = '<p>' + obj.name + '</p><p>' + openingtime + '</p>';
-			var img = '<aside class="pack-begin"><img src="art/' + obj.uuid + '/128.jpg"></aside>';
+			var img = '<aside class="pack-begin"><img src="art/' + obj.path + '/' + obj.uuid + '/128.jpg"></aside>';
 
-			return '<li data-market="' + obj.uuid + '">' + img + '' + txt + '</li>';
+			return '<li data-market="' + obj.path + '-' + obj.uuid + '">' + img + '' + txt + '</li>';
 		},
+
+		// ·························································
 		finishMarketList: function( txt)
 		{
-			document.querySelector('#marketlist').innerHTML = txt;
-			var objs = document.querySelector('#marketlist').getElementsByTagName( 'li');
+			document.querySelector( '#marketlist').innerHTML = txt;
+			var objs = document.querySelector( '#marketlist').getElementsByTagName( 'li');
 			for( var i = 0; i < objs.length; ++i) {
 				objs[i].addEventListener( 'click', onMarket);
 			}
 		},
+
+		// ·························································
 		dateToStr: function( obj)
 		{
 			var str = obj.getFullYear().toString();
@@ -107,9 +139,11 @@ define( ['app/config', 'app/viewMarketsOne'], function( config, viewMarketsOne) 
 
 			return str;
 		},
+
+		// ·························································
 		getOpeningTime: function( obj, diffdays)
 		{
-			var workingDate = new Date();
+			var workingDate = getToday();
 			workingDate.setDate( workingDate.getDate() + diffdays);
 
 			var daystr = this.dateToStr( workingDate);
@@ -119,17 +153,19 @@ define( ['app/config', 'app/viewMarketsOne'], function( config, viewMarketsOne) 
 
 			return '';
 		},
+
+		// ·························································
 		getNextOpeningDays: function( obj)
 		{
 			var days = 0;
 
-			var workingDate = new Date();
+			var workingDate = getToday();
 			while( workingDate < config.startDate) {
 				++days;
 				workingDate.setDate( workingDate.getDate() + 1);
 			}
 
-			var late = new Date();
+			var late = getToday();
 			late.setTime( config.endDate.getTime());
 			late.setDate( late.getDate() + 1);
 
@@ -145,18 +181,20 @@ define( ['app/config', 'app/viewMarketsOne'], function( config, viewMarketsOne) 
 
 			return 36500;
 		},
+
+		// ·························································
 		getNextMarketOpeningTime: function( obj)
 		{
 			var days = this.getNextOpeningDays( obj);
 			var openingtime = '';
 
-			var workingDate = new Date();
+			var workingDate = getToday();
 			workingDate.setHours( 0, 0, 0, 0);
 			var nowTime = workingDate.getTime();
 			workingDate.setDate( workingDate.getDate() - (workingDate.getDay() + 6) % 7);
 			var mondayTime = workingDate.getTime();
 
-			workingDate = new Date();
+			workingDate = getToday();
 			workingDate.setDate( workingDate.getDate() + days);
 			var workTime = workingDate.getTime();
 			var weekday = workingDate.getDay();
@@ -167,7 +205,7 @@ define( ['app/config', 'app/viewMarketsOne'], function( config, viewMarketsOne) 
 			var weekdays = new Array( "Sonntag", "Montag", "Dienstag", "Mittwoch", "Donnerstag", "Freitag", "Samstag");
 
 			if( maxOpen <= days) {
-				openingtime = 'Geschlossen';
+				openingtime = 'Vorbei';
 			} else if( 0 == days) {
 				openingtime = 'Heute von ' + this.getOpeningTime( obj, days) + ' Uhr';
 			} else if( 1 == days) {
