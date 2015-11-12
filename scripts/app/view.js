@@ -6,6 +6,9 @@ define( ['app/config', 'app/viewMarketsOne'], function( config, viewMarketsOne) 
 	function onMarket()
 	{
 		var marketId = this.getAttribute( 'data-market');
+		if(( typeof marketId === 'undefined') || (null == marketId)) {
+			return;
+		}
 
 		document.querySelector( '#onemarket').className = 'current';
 		document.querySelector( '[data-position="current"]').className = 'left';
