@@ -1,45 +1,7 @@
 // ·································································
 
-define( ['app/config','app/view'], function( config, view) {
+define( ['app/config','app/view','app/sort'], function( config, view, sort) {
 	var idView = '#tab-market-all';
-
-	function sortFn( a, b)
-	{
-		var daysA = view.getNextOpeningDays( a);
-		var daysB = view.getNextOpeningDays( b);
-
-		a.data_next_open = daysA;
-		b.data_next_open = daysB;
-
-		if( daysA == daysB) {
-			var timeA = view.getOpeningTime( a, daysA);
-			var timeB = view.getOpeningTime( b, daysB);
-			var intA = parseInt( timeA.substr( 6, 2));
-			var intB = parseInt( timeB.substr( 6, 2));
-
-			if( intA != intB) {
-				return intB - intA;
-			} else {
-				intA = parseInt( timeA.substr( 9, 2));
-				intB = parseInt( timeB.substr( 9, 2));
-			}
-
-			if( intA != intB) {
-				return intB - intA;
-			} else {
-				intA = parseInt( timeA.substr( 0, 2));
-				intB = parseInt( timeB.substr( 0, 2));
-			}
-
-			if( intA != intB) {
-				return intA - intB;
-			}
-
-			return a.name < b.name ? 1 : -1;
-		}
-
-		return daysA - daysB;
-	}
 
 	return {
 		init: function()
@@ -54,10 +16,10 @@ define( ['app/config','app/view'], function( config, view) {
 		{
 			view.setActive( idView);
 			view.showProgress();
+		 	sort.all();
 
 			var txt = '';
 
-		 	config.markets.sort( sortFn);
 			var workingDate = new Date();
 			workingDate.setHours( 0, 0, 0, 0);
  			var nextOpen = -1;
@@ -68,16 +30,16 @@ define( ['app/config','app/view'], function( config, view) {
 
 		 		if( obj.data_next_open > nextOpen) {
  					if( maxOpen <= obj.data_next_open) {
-						txt += '<header>Geschlossene Märkte</header>';
+						txt += '<header>Zu spät</header>';
 						nextOpen = 36500;
  					} else if( 0 == obj.data_next_open) {
-						txt += '<header>Heute geöffnet</header>';
+						txt += '<header>Heute</header>';
 						nextOpen = obj.data_next_open;
  					} else if( 1 == obj.data_next_open) {
-						txt += '<header>Morgen geöffnet</header>';
+						txt += '<header>Ab morgen</header>';
 						nextOpen = obj.data_next_open;
  					} else {
-						txt += '<header>Weihnachtsmärkte</header>';
+						txt += '<header>Veranstaltungen</header>';
 						nextOpen = maxOpen;
  					}
  				}

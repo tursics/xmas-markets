@@ -1,40 +1,7 @@
 // ·································································
 
-define( ['app/config','app/view'], function( config, view) {
+define( ['app/config','app/view','app/sort'], function( config, view, sort) {
 	var idView = '#tab-market-nearby';
-	var lat = null;
-	var lon = null;
-
-	function getDistance( lat1, lon1, lat2, lon2)
-	{
-		var R = 6371; // km
-		var dLat = (lat2 - lat1).toRadians();
-		var dLon = (lon2 - lon1).toRadians(); 
-		var a = Math.sin( dLat / 2) * Math.sin( dLat / 2) +
-				Math.cos( lat1.toRadians()) * Math.cos( lat2.toRadians()) * 
-				Math.sin( dLon / 2) * Math.sin( dLon / 2); 
-		var c = 2 * Math.atan2( Math.sqrt( a), Math.sqrt( 1 - a)); 
-		return R * c;
-	}
-
-	function sortFn( a, b)
-	{
-		var daysA = view.getNextOpeningDays( a);
-		var daysB = view.getNextOpeningDays( b);
-		var kmA = getDistance( a.lat, a.lng, lat, lon);
-		var kmB = getDistance( b.lat, b.lng, lat, lon);
-
-		a.data_next_open = daysA;
-		b.data_next_open = daysB;
-		a.data_km = kmA;
-		b.data_km = kmB;
-
-		if( kmA == kmB) {
-			return a.name < b.name ? 1 : -1;
-		}
-
-		return kmA - kmB;
-	}
 
 	return {
 		init: function()
@@ -60,11 +27,11 @@ define( ['app/config','app/view'], function( config, view) {
 
 			if( 'geolocation' in navigator) {
 				function success( position) {
-					lat = position.coords.latitude;
-					lon = position.coords.longitude;
+					config.userLat = position.coords.latitude;
+					config.userLon = position.coords.longitude;
 					var txt = '';
 
-					config.markets.sort( sortFn);
+				 	sort.around();
 
 					for( var i = 0; i < config.markets.length; ++i) {
 						var obj = config.markets[ i];
@@ -75,7 +42,7 @@ define( ['app/config','app/view'], function( config, view) {
 					}
 
 					if( '' == txt) {
-						txt = '<li style="height:auto;"><p style="white-space:normal;line-height:2rem;">Es gibt keine Weihnachtsmärkte in der Nähe die geöffnet haben</p></li>';
+						txt = '<li style="height:auto;"><p style="white-space:normal;line-height:2rem;">Es gibt keine Veranstaltungen in der Nähe</p></li>';
 					}
 
 					txt = '<header>In der Nähe</header>' + txt;
