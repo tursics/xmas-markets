@@ -1,12 +1,17 @@
 // ·································································
 
-define( ['app/config','app/viewMarketsToday','app/viewMarketsTomorrow','app/viewMarketsAll','app/viewMarketsNearby'],
-function( config, viewMarketsToday, viewMarketsTomorrow, viewMarketsAll, viewMarketsNearby)
+define( ['app/config','app/viewMarketsToday','app/viewMarketsTomorrow','app/viewMarketsNextDays','app/viewMarketsAll','app/viewMarketsNearby'/*,'app/viewMarketsFavorite'*/],
+function( config, viewMarketsToday, viewMarketsTomorrow, viewMarketsNextDays, viewMarketsAll, viewMarketsNearby/*, viewMarketsFavorite*/)
 {
-	viewMarketsToday.init();
-	viewMarketsTomorrow.init();
+	if( viewMarketsToday.count() < 4) {
+		viewMarketsNextDays.init();
+	} else {
+		viewMarketsToday.init();
+		viewMarketsTomorrow.init();
+	}
 	viewMarketsAll.init();
 	viewMarketsNearby.init();
+//	viewMarketsFavorite.init();
 
 	document.querySelector('#btn-onemarket-back').addEventListener('click', function() {
 		window.scrollTo( 0, 0);
@@ -15,7 +20,11 @@ function( config, viewMarketsToday, viewMarketsTomorrow, viewMarketsAll, viewMar
 		document.querySelector('[data-position="current"]').className = 'current';
 	});
 
-	setTimeout( viewMarketsToday.fillList, config.timeout);
+	if( viewMarketsToday.count() < 4) {
+		setTimeout( viewMarketsNextDays.fillList, config.timeout);
+	} else {
+		setTimeout( viewMarketsToday.fillList, config.timeout);
+	}
 
 	return {
 	};
