@@ -2,8 +2,8 @@
 <widget xmlns="http://www.w3.org/ns/widgets"
         xmlns:gap="http://phonegap.com/ns/1.0"
         id="de.tursics.xmasmarkets"
-        version="1.7"
-        versionCode="8">
+        version="15.11.1"
+        versionCode="9">
 
 	<name>Weihnachtsmärkte in Berlin</name>
 	<description>Finde alle Weihnachtsmärkte in Berlin: die großen, die kleinen, die bunten, die lebhaften, die besinnlichen und die Geheimtipps. Alle in einer App.</description>
@@ -65,7 +65,7 @@
 	<icon src="art/icon-wp-bg.png" gap:platform="winphone" gap:role="background" />
 	<gap:splash src="splash-wp.jpg" gap:platform="winphone" />
 
-	<preference name="phonegap-version" value="3.6.3" />
+	<preference name="phonegap-version" value="cli-5.1.1" />
 	<preference name="orientation" value="default" />
 	<preference name="webviewbounce" value="false" />
 	<preference name="permissions" value="none" />
