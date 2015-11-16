@@ -1,0 +1,1 @@
+Lucia Weihnachtsmarkt in der Kulturbrauerei, Berlin-Prenzlauer Berg (Fotograf: Kai Bienert)

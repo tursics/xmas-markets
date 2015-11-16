@@ -1,0 +1,1 @@
+Foto: K. Wendland
