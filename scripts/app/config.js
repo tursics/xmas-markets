@@ -17,7 +17,7 @@ define( ['data/berlin', 'data/moers'], function( dataBerlin, dataMoers) {
 	}
 
 	addData( 'Berlin', dataBerlin.data);
-	addData( 'Moers', dataMoers.data);
+//	addData( 'Moers', dataMoers.data);
 
 	return {
 		timeout: 400,
