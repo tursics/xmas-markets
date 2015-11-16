@@ -1,6 +1,6 @@
 // ·································································
 
-define( ['app/config','app/view'], function( config, view) {
+define( ['ajax','app/config','app/view'], function( ajax, config, view) {
 	var idView = '#onemarket';
 
 //	function callChangeFavorite( marketId)
@@ -112,10 +112,14 @@ define( ['app/config','app/view'], function( config, view) {
 			}
 
 			txt += '<div style="margin:1rem -1.5rem -1.5rem -1.5rem;padding:0 1.5rem 0 1.5rem;text-align:center;border-top:1px solid #f97c17;border-bottom:1px solid #f97c17;background:#fde4d0;">';
-			txt += '<p>Bildnachweis: ' + obj.copyright + '</p>';
+			txt += '<p id="copyright"></p>';
 			txt += '</div>';
 
 			document.querySelector('#onemarket > article').innerHTML = txt;
+
+			ajax.get( 'art/' + obj.path + '/' + obj.uuid + '/LICENSE.md', {}, function( text) {
+				document.querySelector('#copyright').innerHTML = 'Bildnachweis: ' + text;
+			});
 		}
 	};
 });
