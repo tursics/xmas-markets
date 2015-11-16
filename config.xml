@@ -65,7 +65,7 @@
 	<icon src="art/icon-wp-bg.png" gap:platform="winphone" gap:role="background" />
 	<gap:splash src="splash-wp.jpg" gap:platform="winphone" />
 
-	<preference name="phonegap-version" value="cli-5.1.1" />
+	<!-- <preference name="phonegap-version" value="cli-5.1.1" /> -->
 	<preference name="orientation" value="default" />
 	<preference name="webviewbounce" value="false" />
 	<preference name="permissions" value="none" />
