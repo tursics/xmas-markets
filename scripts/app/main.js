@@ -19,6 +19,16 @@ function( config, viewMarketsToday, viewMarketsTomorrow, viewMarketsNextDays, vi
 		document.querySelector('#onemarket').className = 'right';
 		document.querySelector('[data-position="current"]').className = 'current';
 	});
+	document.addEventListener( 'backbutton', function(e){
+		if( document.querySelector('[data-position="current"]').className != 'current'){
+			window.scrollTo( 0, 0);
+
+			document.querySelector('#onemarket').className = 'right';
+			document.querySelector('[data-position="current"]').className = 'current';
+		} else {
+			navigator.app.exitApp();
+		}
+	}, false);
 
 	if( viewMarketsToday.count() < 4) {
 		setTimeout( viewMarketsNextDays.fillList, config.timeout);
