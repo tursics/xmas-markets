@@ -5,6 +5,9 @@ requirejs.config({
 	paths: {
 		app: '../app',
 		data: '../../data'
+	},
+	shim: {
+		leaflet: { exports: 'L' }
 	}
 });
 

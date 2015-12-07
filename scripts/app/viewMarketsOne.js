@@ -1,6 +1,6 @@
 // ·································································
 
-define( ['ajax','app/config','app/view'], function( ajax, config, view) {
+define( ['ajax','leaflet','app/config','app/view'], function( ajax, L, config, view) {
 	var idView = '#onemarket';
 
 //	function callChangeFavorite( marketId)
@@ -94,6 +94,7 @@ define( ['ajax','app/config','app/view'], function( ajax, config, view) {
 //			txt += '<li style="float:left;padding:0 2rem 0 0;"><button>Wetter</button></li>';
 			txt += '<li style="clear:both;"></li>';
 			txt += '</ul></p>';
+			txt += '<div id="map" style="height:15em;"></div>';
 
 			if( typeof obj.zip_city !== 'undefined') {
 				txt += '<p>' + obj.street + ', ' + obj.zip_city + ' ' + obj.district + '</p>';
@@ -120,6 +121,22 @@ define( ['ajax','app/config','app/view'], function( ajax, config, view) {
 			ajax.get( 'art/' + obj.path + '/' + obj.uuid + '/LICENSE.md', {}, function( text) {
 				document.querySelector('#copyright').innerHTML = 'Bildnachweis: ' + text;
 			});
+
+			var mapboxToken = 'pk.eyJ1IjoidHVyc2ljcyIsImEiOiJjaWh3Z3ZlNGYwMm01dWtrbzEyc3o5Z2l2In0.y9Lzc24BygGS_lmbpfRpxg';
+			var mapboxTiles = L.tileLayer( 'https://{s}.tiles.mapbox.com/v4/tursics.l7ad5ee8/{z}/{x}/{y}.png?access_token=' + mapboxToken, {
+				attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>'
+			});
+
+			var map = L.map('map', {zoomControl: false})
+				.addLayer( mapboxTiles)
+				.setView([obj.lat, obj.lng], 16);
+
+			var circle = L.circle([obj.lat, obj.lng], 20, {
+				color:'#000',
+				fillColor:'#F97C17',
+				fillOpacity:0.5,
+				weight:1
+			}).addTo(map);
 		}
 	};
 });
