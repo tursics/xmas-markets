@@ -206,6 +206,17 @@ ul.calendar li.gray div {
 	color:#fde4d0;
 }
 
+div.adventcalendar {
+	padding:0 0 1.5em 0;
+}
+
+div.advent {
+	border:1px solid #ffffff;
+	color:#ffffff;
+	float:left;
+	width:11.4%;
+}
+
 section[data-type="sidebar"] > nav > h2 {
   text-indent: 0;
   padding-left: 0.8rem;

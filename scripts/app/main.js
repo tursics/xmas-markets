@@ -1,7 +1,7 @@
 // ·································································
 
-define( ['app/config','app/viewMarketsToday','app/viewMarketsTomorrow','app/viewMarketsNextDays','app/viewMarketsAll','app/viewMarketsNearby'/*,'app/viewMarketsFavorite'*/],
-function( config, viewMarketsToday, viewMarketsTomorrow, viewMarketsNextDays, viewMarketsAll, viewMarketsNearby/*, viewMarketsFavorite*/)
+define( ['app/config','app/viewAdventCalendar','app/viewMarketsToday','app/viewMarketsTomorrow','app/viewMarketsNextDays','app/viewMarketsAll','app/viewMarketsNearby'/*,'app/viewMarketsFavorite'*/],
+function( config, viewAdventCalendar, viewMarketsToday, viewMarketsTomorrow, viewMarketsNextDays, viewMarketsAll, viewMarketsNearby/*, viewMarketsFavorite*/)
 {
 	if( viewMarketsToday.count() < 4) {
 		viewMarketsNextDays.init();
@@ -12,6 +12,7 @@ function( config, viewMarketsToday, viewMarketsTomorrow, viewMarketsNextDays, vi
 	viewMarketsAll.init();
 	viewMarketsNearby.init();
 //	viewMarketsFavorite.init();
+//	viewAdventCalendar.init();
 
 	document.querySelector('#btn-onemarket-back').addEventListener('click', function() {
 		window.scrollTo( 0, 0);
