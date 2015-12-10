@@ -13,7 +13,7 @@ define( ['app/config', 'app/viewMarketsOne'], function( config, viewMarketsOne) 
 		document.querySelector( '#onemarket').className = 'current';
 		document.querySelector( '[data-position="current"]').className = 'left';
 
-		window.scrollTo( 0, 0);
+//		window.scrollTo( 0, 0);
 		var txt = '<div class="center"><progress></progress></div>';
 		document.querySelector( '#onemarket > article').innerHTML = txt;
 
@@ -65,7 +65,7 @@ define( ['app/config', 'app/viewMarketsOne'], function( config, viewMarketsOne) 
 		// ·························································
 		showProgress: function()
 		{
-			window.scrollTo( 0, 0);
+//			window.scrollTo( 0, 0);
 			document.querySelector( '#marketlist').innerHTML = '<div class="center"><progress></progress></div>';
 		},
 
@@ -92,6 +92,8 @@ define( ['app/config', 'app/viewMarketsOne'], function( config, viewMarketsOne) 
 					openingtime = 'Gleich hier, ' + this.getNextMarketOpeningTime( obj);
 				} else if(( 1 == km) && (0 == km2)) {
 					openingtime = 'Gleich um die Ecke, ' + this.getNextMarketOpeningTime( obj);
+				} else if( 200 < km2) {
+					openingtime = 'Viel zu weit weg, ' + this.getNextMarketOpeningTime( obj);
 				} else if( 10 <= km2) {
 					openingtime = (km2 / 2) + ' km entfernt, ' + this.getNextMarketOpeningTime( obj);
 				} else if( 0 == (km - km2)) {
