@@ -86,15 +86,15 @@ define( ['ajax','leaflet','app/config','app/view'], function( ajax, L, config, v
 			txt += '<p>' + obj.remarks + '</p>';
 
 			txt += '<div style="margin:1rem -1.5rem 1rem -1.5rem;padding:0 1.5rem 0 1.5rem;text-align:center;border-top:1px solid #f97c17;border-bottom:1px solid #f97c17;background:#fde4d0;">';
-			txt += '<p><ul style="margin:0 auto 0 auto;max-width:4rem;">';
+//			txt += '<p><ul style="margin:0 auto 0 auto;max-width:4rem;">';
 //			txt += '<li style="float:left;padding:0 2rem 0 0;"><a id="buttonFav" href="javascript:callChangeFavorite(' + obj.uuid + ');" class="bb-button" style="font-size:3rem;min-width:4rem;min-height:4rem;text-align:center;padding:1rem 0 0 0;"><i class="icon-heart"></i></a></li>';
 //			txt += '<li style="float:left;padding:0 2rem 0 0;"><button><i class="icon-map"></i></button></li>';
 //			txt += '<li style="float:left;padding:0 2rem 0 0;"><button>Sharen</button></li>';
 //			txt += '<li style="float:left;padding:0 2rem 0 0;"><button>BVG</button></li>';
 //			txt += '<li style="float:left;padding:0 2rem 0 0;"><button>Wetter</button></li>';
-			txt += '<li style="clear:both;"></li>';
-			txt += '</ul></p>';
-			txt += '<div id="map" style="height:15em;"></div>';
+//			txt += '<li style="clear:both;"></li>';
+//			txt += '</ul></p>';
+			txt += '<div id="map" style="height:25rem;margin:0 -1.5rem 0 -1.5rem;border-bottom:1px solid #f97c17;"></div>';
 
 			if( typeof obj.zip_city !== 'undefined') {
 				txt += '<p>' + obj.street + ', ' + obj.zip_city + ' ' + obj.district + '</p>';
@@ -117,6 +117,7 @@ define( ['ajax','leaflet','app/config','app/view'], function( ajax, L, config, v
 			txt += '</div>';
 
 			document.querySelector('#onemarket > article').innerHTML = txt;
+			document.querySelector('#onemarket > article').scrollTo( 0, 0);
 
 			ajax.get( 'art/' + obj.path + '/' + obj.uuid + '/LICENSE.md', {}, function( text) {
 				document.querySelector('#copyright').innerHTML = 'Bildnachweis: ' + text;
@@ -131,7 +132,7 @@ define( ['ajax','leaflet','app/config','app/view'], function( ajax, L, config, v
 				.addLayer( mapboxTiles)
 				.setView([obj.lat, obj.lng], 16);
 
-			var circle = L.circle([obj.lat, obj.lng], 20, {
+			var circle = L.circle([obj.lat, obj.lng], 25, {
 				color:'#000',
 				fillColor:'#F97C17',
 				fillOpacity:0.5,
