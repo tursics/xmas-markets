@@ -2,8 +2,8 @@
 <widget xmlns="http://www.w3.org/ns/widgets"
         xmlns:gap="http://phonegap.com/ns/1.0"
         id="de.tursics.xmasmarkets"
-        version="15.12.1"
-        versionCode="11">
+        version="15.12.2"
+        versionCode="12">
 
 	<name>Weihnachtsmärkte in Berlin</name>
 	<description>Finde alle Weihnachtsmärkte in Berlin: die großen, die kleinen, die bunten, die lebhaften, die besinnlichen und die Geheimtipps. Alle in einer App.</description>
