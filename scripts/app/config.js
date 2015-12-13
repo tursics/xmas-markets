@@ -23,7 +23,7 @@ define( ['data/berlin', 'data/moers'], function( dataBerlin, dataMoers) {
 		timeout: 400,
 		currentMarketId: 0,
 		startDate: new Date( firstDay),
-		endDate: new Date( lastDay),
+		endDate: new Date( lastDay + (1000 * 60 * 60 * 24)),
 		views: new Array(),
 		markets: markets,
 		userLat: null,
