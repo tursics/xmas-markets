@@ -10,14 +10,16 @@ Federated state Brandenburg
 - http://daten.berlin.de/datensaetze/brandenburger-weihnachtsm%C3%A4rkte
 - CC-BY-3.0-DE http://creativecommons.org/licenses/by/3.0/de/
 - attribution: "Berlin.de"
+- download: http://www.berlin.de/sen/wirtschaft/service/maerkte-feste/weihnachtsmaerkte/brandenburger-weihnachtsmaerkte/index.php/index.json?ipp=500
 
 City of Berlin
 ==============
 
-- "Berliner Weihnachtsmärkte 2014" (but the data are from 2015)
-- http://daten.berlin.de/datensaetze/berliner-weihnachtsm%C3%A4rkte-2014
+- "Berliner Weihnachtsmärkte"
+- http://daten.berlin.de/datensaetze/berliner-weihnachtsm%C3%A4rkte-0
 - CC-BY-3.0-DE http://creativecommons.org/licenses/by/3.0/de/
 - attribution: "Senatsverwaltung für Wirtschaft, Technologie und Forschung"
+- download: http://www.berlin.de/sen/wirtschaft/service/maerkte-feste/weihnachtsmaerkte/index.php/index.json?ipp=500
 
 City of Moers
 =============
