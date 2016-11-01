@@ -3,17 +3,7 @@
 
 //-----------------------------------------------------------------------
 
-var dataSource = 'berlin',
-	dataURI = 'http://www.berlin.de/sen/wirtschaft/service/maerkte-feste/weihnachtsmaerkte/index.php/index/all.json?ipp=500',
-	dataVec = [];
-
-//-----------------------------------------------------------------------
-
-function push_back(data) {
-	'use strict';
-
-	dataVec.push(data);
-}
+var dataVec = [];
 
 //-----------------------------------------------------------------------
 
@@ -65,6 +55,9 @@ function parseOpeningHours(str) {
 					} else if ('täglich' === left[0]) {
 						// täglich 10:00-20:00
 						daily = date[1];
+					} else if ('Winterwelt:' === left[0]) {
+						// ignore me
+						left = date[0].split('-');
 					} else {
 						left = date[0].split('.');
 						if (left.length === 3) {
@@ -78,6 +71,8 @@ function parseOpeningHours(str) {
 							// 24.12/25.12. 10:00-20:00
 							days.push(left[0] + '.' + left[1] + '. ' + date[1]);
 							days.push(left[2].substr(1) + '.' + left[3] + '. ' + date[1]);
+						} else {
+							console.log('- could not parse date [1]: ' + arr[i]);
 						}
 					}
 				} else if (left.length === 2) {
@@ -92,6 +87,8 @@ function parseOpeningHours(str) {
 							weekdays[j % 7] = date[1].replace(',', '');
 						}
 					}
+				} else {
+					console.log('- could not parse date [2]: ' + date[0]);
 				}
 			} else if ((date.length === 3) && ('Fr,' === date[0]) && ('Sa' === date[1])) {
 				weekdays[weekdaysName.indexOf(date[0].substr(0, 2))] = date[2];
@@ -99,6 +96,13 @@ function parseOpeningHours(str) {
 			} else if ((date.length === 3) && ('Sa,' === date[0]) && ('So' === date[1])) {
 				weekdays[weekdaysName.indexOf(date[0].substr(0, 2))] = date[2];
 				weekdays[weekdaysName.indexOf(date[1])] = date[2];
+			} else if ((date.length === 4) && ('Mi,' === date[0]) && ('Do,' === date[1]) && ('So' === date[2])) {
+				weekdays[weekdaysName.indexOf(date[0].substr(0, 2))] = date[3];
+				weekdays[weekdaysName.indexOf(date[1].substr(0, 2))] = date[3];
+				weekdays[weekdaysName.indexOf(date[2])] = date[3];
+			} else if ((date.length === 4) && ('alle' === date[0]) && ('übrigen' === date[1]) && ('Tage' === date[2])) {
+				// alle übrigen Tage 10:00-20:00
+				daily = date[3];
 			} else if ((date.length === 5) && ('am' === date[0]) && ('und' === date[2])) {
 				// am 24.12. und 25.12. 10:00-20:00
 				days.push(date[1] + ' ' + date[4]);
@@ -109,6 +113,8 @@ function parseOpeningHours(str) {
 				weekdays[weekdaysName.indexOf(date[1].substr(0, 2))] = date[3].replace(',', '');
 				weekdays[weekdaysName.indexOf(date[2])] = date[3].replace(',', '');
 				days.push(date[4] + ' ' + date[5]);
+			} else {
+				console.log('- could not parse date [3]: ' + arr[i]);
 			}
 		}
 	}
@@ -136,6 +142,12 @@ function testOpeningHours(obj, data) {
 	var i, item, checkDate, checkTime, splitted,
 		weekdaysName = ['Mo', 'Di', 'Mi', 'Do', 'Fr', 'Sa', 'So'];
 
+	if (isNaN(Date.parse(obj.begin)) || (Date.parse(obj.begin) < Date.parse((new Date().getFullYear()) + "-01-01"))) {
+		console.log('- ' + obj.name + ' has invalid begin date: ' + obj.begin);
+	}
+	if (isNaN(Date.parse(obj.end)) || (Date.parse(obj.end) < Date.parse((new Date().getFullYear()) + "-01-01"))) {
+		console.log('- ' + obj.name + ' has invalid end date: ' + obj.end);
+	}
 	if (0 === data.length) {
 		console.log('- ' + obj.name + ' has no opening hours!');
 	}
@@ -183,36 +195,123 @@ function testOpeningHours(obj, data) {
 
 //-----------------------------------------------------------------------
 
+function buildOpeningHours(obj, hours) {
+	'use strict';
+
+	function prefix(date) {
+		return date.getFullYear() + twoDigits(date.getMonth() + 1) + twoDigits(date.getDate());
+	}
+
+	function getOpeningHours(date) {
+		var ret = '', i, item, itemDate, itemWeekday, d, m,
+			weekdaysName = ['So', 'Mo', 'Di', 'Mi', 'Do', 'Fr', 'Sa'];
+
+		for (i = 0; i < hours.length; ++i) {
+			item = hours[i].split(' ');
+			if (1 === item.length) {
+				ret = item[0];
+			} else if (2 === item.length) {
+				itemDate = item[0];
+				itemWeekday = weekdaysName.indexOf(itemDate);
+				if (itemWeekday > -1) {
+					if (itemWeekday === date.getDay()) {
+						ret = item[1];
+					}
+				} else {
+					itemDate = itemDate.split('.');
+					d = parseInt(itemDate[0], 10);
+					m = parseInt(itemDate[1], 10);
+
+					if ((d === date.getDate()) && (m === (date.getMonth() + 1))) {
+						ret = item[1];
+					}
+				}
+			}
+		}
+
+		return ret;
+	}
+
+	var currentDate = new Date(new Date(obj.begin).getFullYear() + "-11-01"),
+		endDate = new Date(obj.begin);
+
+	for (currentDate; currentDate < endDate; currentDate.setDate(currentDate.getDate() + 1)) {
+		obj[prefix(currentDate)] = '';
+	}
+
+	currentDate = endDate;
+	endDate = new Date(obj.end);
+	endDate.setDate(endDate.getDate() + 1);
+
+	for (currentDate; currentDate < endDate; currentDate.setDate(currentDate.getDate() + 1)) {
+		obj[prefix(currentDate)] = getOpeningHours(currentDate, hours);
+	}
+
+	currentDate = endDate;
+	endDate = new Date((new Date(obj.begin).getFullYear() + 1) + "-01-16");
+	for (currentDate; currentDate < endDate; currentDate.setDate(currentDate.getDate() + 1)) {
+		obj[prefix(currentDate)] = '';
+	}
+
+	obj.hours = hours.join('<br>');
+}
+
+//-----------------------------------------------------------------------
+
+function buildGeo(obj, latitude, longitude) {
+	'use strict';
+
+	var lat = parseFloat(latitude.replace(',', '.')),
+		lng = parseFloat(longitude.replace(',', '.'));
+
+	if (isNaN(lat) || isNaN(lng) || (lat < 51.0) || (lat > 53.9) || (lng < 11.0) || (lng > 14.9)) {
+		console.log('- ' + obj.name + ' is not geo-coded correctly: ' + latitude + ' - ' + longitude);
+	}
+
+	obj.lat = lat;
+	obj.lng = lng;
+}
+
+//-----------------------------------------------------------------------
+
 function analyseDataLine(data) {
 	'use strict';
 
-	var obj = {};
+	var obj = {}, hours;
 
-	function parseDates() {
-		var currentDate, endDate,
-			hours = parseOpeningHours(data.oeffnungszeiten);
-//		obj.begin = data.von;
-//		obj.end = data.bis;
-
-		testOpeningHours(obj, hours);
-
-		currentDate = new Date(new Date(obj.begin).getFullYear() + "-11-16");
-		endDate = new Date((new Date(obj.begin).getFullYear() + 1) + "-01-07");
-
-//		for (currentDate; currentDate < endDate; currentDate.setDate(currentDate.getDate() + 1)) {
-//			obj[currentDate.getFullYear() + twoDigits(currentDate.getMonth() + 1) + twoDigits(currentDate.getDate())] = '';
-//		}
-
-		obj.hours = hours.join('<br>');
-		obj.oeffnungszeiten = data.oeffnungszeiten;
-	}
-
+	obj.id = parseInt(data.id, 10);
+	obj.uuid = obj.id;
+//	obj.uuid = ?;
+	obj.district = data.bezirk || '';
 	obj.name = data.name;
-	parseDates();
+	obj.street = data.strasse;
+	obj.zip_city = data.plz_ort;
+	obj.begin = data.von;
+	obj.end = data.bis;
 
-	push_back(obj);
+	hours = parseOpeningHours(data.oeffnungszeiten);
+	testOpeningHours(obj, hours);
+	buildOpeningHours(obj, hours);
 
-//	console.log(obj.name);
+	obj.organizer = data.veranstalter;
+//	obj.org_address = ?;
+//	obj.org_contact = ?;
+//	obj.phone = ?;
+//	obj.phone2 = ?;
+//	obj.fax = ?;
+	obj.email = data.email;
+	obj.web = data.w3;
+//	obj.facebook = ?;
+//	obj.kind = ?;
+	buildGeo(obj, data.lat, data.lng);
+//	obj.fee = ?;
+//	obj.remarks = ?;
+//	obj.todo = ?;
+//	obj.transit = ?;
+
+//  obj.bemerkungen = data.bemerkungen;
+
+	dataVec.push(obj);
 }
 
 //-----------------------------------------------------------------------
@@ -265,7 +364,7 @@ function analyseJSON(savepath, json) {
 
 //-----------------------------------------------------------------------
 
-function loadJSON(filepath, savepath) {
+function loadJSON(filepath, savepath, callback) {
 	'use strict';
 
 	console.log('Loading ' + filepath);
@@ -280,16 +379,16 @@ function loadJSON(filepath, savepath) {
 				json = JSON.parse(json);
 			}
 			analyseJSON(savepath, json);
+
+			callback();
 		}
 	});
 }
 
 //-----------------------------------------------------------------------
 
-function downloadFile(filepath, uri, savepath) {
+function downloadFile(filepath, uri, callback) {
 	'use strict';
-
-	console.log('Downloading ' + uri);
 
 	var fs = require('fs'),
 		http = require('http'),
@@ -297,13 +396,15 @@ function downloadFile(filepath, uri, savepath) {
 
 	http.get(uri, function (response) {
 		response.pipe(file);
-		loadJSON(filepath, savepath);
+		file.on('finish', function () {
+			file.close(callback);
+		});
 	});
 }
 
 //-----------------------------------------------------------------------
 
-function parseFolder(path) {
+function parseFolder(path, dataSource, dataURI, callback) {
 	'use strict';
 
 	var fs = require('fs'),
@@ -312,36 +413,64 @@ function parseFolder(path) {
 		savename = dataSource + '-' + now.getFullYear() + twoDigits(now.getMonth() + 1) + twoDigits(now.getDate()) + '.js',
 		filepath = path + '/' + filename,
 		savepath = path + '/' + savename,
+		releasepath = path + '/../data/' + dataSource + '.js',
 		found = false;
+
+	dataVec = [];
 
 	fs.readdir(path, function (err, files) {
 		files.forEach(function (file) {
 			if (file === filename) {
 				found = true;
 				console.log('Use cached file ' + filepath);
-				loadJSON(filepath, savepath);
+				loadJSON(filepath, savepath, function () {
+					fs.createReadStream(savepath).pipe(fs.createWriteStream(releasepath));
+
+					callback();
+				});
 			}
 		});
 
 		if (!found) {
-			downloadFile(filepath, dataURI, savepath);
+			console.log('Downloading ' + dataURI);
+			downloadFile(filepath, dataURI, function () {
+				loadJSON(filepath, savepath, function () {
+					fs.createReadStream(savepath).pipe(fs.createWriteStream(releasepath));
+
+					callback();
+				});
+			});
 		}
 	});
 }
 
 //-----------------------------------------------------------------------
 
-function buildBerlin() {
+function buildBerlin(callback) {
 	'use strict';
 
-	parseFolder('.');
+	parseFolder('.', 'berlin', 'http://www.berlin.de/sen/wirtschaft/service/maerkte-feste/weihnachtsmaerkte/index.php/index/all.json?ipp=500', callback);
+}
+
+//-----------------------------------------------------------------------
+
+function buildBrandenburg(callback) {
+	'use strict';
+
+	parseFolder('.', 'brandenburg', 'http://www.berlin.de/sen/wirtschaft/service/maerkte-feste/weihnachtsmaerkte/brandenburger-weihnachtsmaerkte/index.php/index.json?ipp=500', callback);
 }
 
 //-----------------------------------------------------------------------
 
 try {
 	console.log();
-	buildBerlin();
+	buildBerlin(function () {
+		'use strict';
+
+		console.log();
+		buildBrandenburg(function () {
+		});
+	});
 } catch (e) {
 	console.error(e);
 }
