@@ -1,11 +1,14 @@
-// ·································································
+/*jslint browser: true*/
+/*global require,define*/
 
-define( ['app/config', 'app/viewMarketsOne'], function( config, viewMarketsOne) {
+//-----------------------------------------------------------------------
+
+define(['app/config', 'app/viewMarketsOne'], function (config, viewMarketsOne) {
+	'use strict';
 
 	// ·····························································
-	function onMarket()
-	{
-		var marketId = this.getAttribute( 'data-market');
+	function onMarket() {
+		var marketId = this.getAttribute('data-market');
 		if(( typeof marketId === 'undefined') || (null == marketId)) {
 			return;
 		}
@@ -160,37 +163,37 @@ define( ['app/config', 'app/viewMarketsOne'], function( config, viewMarketsOne) 
 		},
 
 		// ·························································
-		getNextOpeningDays: function( obj)
+		getNextOpeningDays: function(obj)
 		{
 			var days = 0;
 
 			var workingDate = getToday();
-			while( workingDate < config.startDate) {
+			while (workingDate < config.startDate) {
 				++days;
-				workingDate.setDate( workingDate.getDate() + 1);
+				workingDate.setDate(workingDate.getDate() + 1);
 			}
 
 			var late = getToday();
-			late.setTime( config.endDate.getTime());
-			late.setDate( late.getDate() + 1);
+			late.setTime(config.endDate.getTime());
+			late.setDate(late.getDate() + 1);
 
-			while( workingDate < late) {
-				var daystr = this.dateToStr( workingDate);
-		    	if(( typeof obj[ daystr] !== 'undefined') && (obj[ daystr].trim() != '')) {
+			while (workingDate < late) {
+				var daystr = this.dateToStr(workingDate);
+		    	if ((typeof obj[daystr] !== 'undefined') && (obj[daystr].trim() !== '')) {
 					return days;
 	    		}
 
 				++days;
-				workingDate.setDate( workingDate.getDate() + 1);
+				workingDate.setDate(workingDate.getDate() + 1);
 			}
 
 			return 36500;
 		},
 
 		// ·························································
-		getNextMarketOpeningTime: function( obj)
+		getNextMarketOpeningTime: function(obj)
 		{
-			var days = this.getNextOpeningDays( obj);
+			var days = this.getNextOpeningDays(obj);
 			var openingtime = '';
 
 			var workingDate = getToday();
@@ -234,4 +237,4 @@ define( ['app/config', 'app/viewMarketsOne'], function( config, viewMarketsOne) 
 	};
 });
 
-// ·································································
+//-----------------------------------------------------------------------
