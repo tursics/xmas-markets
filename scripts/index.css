@@ -164,6 +164,7 @@
 
 #marketlist {
 	padding-top:4rem;
+	position:relative;
 }
 
     /* Device rotation */
@@ -207,14 +208,24 @@ ul.calendar li.gray div {
 }
 
 div.adventcalendar {
-	padding:0 0 1.5em 0;
+	padding:0 2.5rem 0 0;
+	margin:0;
+
+	position:absolute;
+	left:-1.5rem;
+	top:2.5rem;
+	width:100%;
+	height:80%;
+	background:rgba(255,255,0,.5);
+	border:1px solid #ffffff;
 }
 
 div.advent {
 	border:1px solid #ffffff;
 	color:#ffffff;
 	float:left;
-	width:11.4%;
+	height:30%;
+	width:11%;
 }
 
 section[data-type="sidebar"] > nav > h2 {
@@ -258,4 +269,29 @@ section[data-type="sidebar"] > nav > ul > li > a {
 
 .ios #marketlist {
 	padding-top:6rem;
+}
+
+.leaflet-bar {
+	background:#fde4d0;
+	border-right:1px solid #f97c17;
+	border-bottom:1px solid #f97c17;
+	border-radius: 0 !important;
+	box-shadow: none !important;
+	padding: 1rem;
+}
+
+.leaflet-left .leaflet-control {
+	margin-left: 0 !important;
+}
+
+.leaflet-top .leaflet-control {
+	margin-top: 0 !important;
+}
+
+.leaflet-bar a {
+	border:1px solid #f97c17 !important;
+}
+
+.leaflet-bar a:last-child {
+	border-top: none !important;
 }
