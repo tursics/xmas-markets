@@ -1,52 +1,55 @@
-// ·································································
+/*jslint browser: true*/
+/*global require,define*/
 
-define( ['app/config', 'app/view'], function( config, view)
-{
+//-----------------------------------------------------------------------
+
+define(['app/config', 'app/view'], function (config, view) {
+	'use strict';
 
 	// ·····························································
-	function openingTimeFn( a, b, timeA, timeB)
-	{
+	function openingTimeFn(a, b, timeA, timeB) {
 		a.data_next_open = timeA;
 		b.data_next_open = timeB;
 
-		if(( '' != timeA) && ('' != timeB)) {
-			if( a.group != b.group) {
+		if (('' !== timeA) && ('' !== timeB)) {
+			if (a.group !== b.group) {
 				return a.group > b.group ? 1 : -1;
 			}
 
-			var intA = parseInt( timeA.substr( 6, 2));
-			var intB = parseInt( timeB.substr( 6, 2));
-			if(( timeA.length < 6) || (timeB.length < 6)) {
+			var intA = parseInt(timeA.substr(6, 2), 10),
+				intB = parseInt(timeB.substr(6, 2), 10);
+
+			if ((timeA.length < 6) || (timeB.length < 6)) {
 				intA = 0;
 				intB = 0;
 			}
 
-			if( intA != intB) {
+			if (intA !== intB) {
 				return intB - intA;
 			} else {
-				intA = parseInt( timeA.substr( 9, 2));
-				intB = parseInt( timeB.substr( 9, 2));
-				if(( timeA.length < 6) || (timeB.length < 6)) {
+				intA = parseInt(timeA.substr(9, 2), 10);
+				intB = parseInt(timeB.substr(9, 2), 10);
+				if ((timeA.length < 6) || (timeB.length < 6)) {
 					intA = 0;
 					intB = 0;
 				}
 			}
 
-			if( intA != intB) {
+			if (intA !== intB) {
 				return intB - intA;
 			} else {
-				intA = parseInt( timeA.substr( 0, 2));
-				intB = parseInt( timeB.substr( 0, 2));
+				intA = parseInt(timeA.substr(0, 2), 10);
+				intB = parseInt(timeB.substr(0, 2), 10);
 			}
 
-			if( intA != intB) {
+			if (intA !== intB) {
 				return intA - intB;
 			}
 
 			return a.name < b.name ? 1 : -1;
-		} else if( '' != timeA) {
+		} else if ('' !== timeA) {
 			return 1;
-		} else if( '' != timeB) {
+		} else if ('' !== timeB) {
 			return -1;
 		}
 
@@ -55,29 +58,28 @@ define( ['app/config', 'app/view'], function( config, view)
 
 	// ·····························································
 
-	function openingTimeAll( a, b)
-	{
-		var daysA = view.getNextOpeningDays( a);
-		var daysB = view.getNextOpeningDays( b);
+	function openingTimeAll(a, b) {
+		var daysA = view.getNextOpeningDays(a),
+			daysB = view.getNextOpeningDays(b);
 
 		a.data_next_open = daysA;
 		b.data_next_open = daysB;
 
-		if( daysA == daysB) {
-			if( a.group != b.group) {
+		if (daysA === daysB) {
+			if (a.group !== b.group) {
 				return a.group > b.group ? 1 : -1;
 			}
 
-			var timeA = view.getOpeningTime( a, daysA);
-			var timeB = view.getOpeningTime( b, daysB);
-			var intA = parseInt( timeA.substr( 6, 2));
-			var intB = parseInt( timeB.substr( 6, 2));
-			if(( timeA.length < 6) || (timeB.length < 6)) {
+			var timeA = view.getOpeningTime(a, daysA);
+			var timeB = view.getOpeningTime(b, daysB);
+			var intA = parseInt(timeA.substr(6, 2), 10);
+			var intB = parseInt(timeB.substr(6, 2), 10);
+			if ((timeA.length < 6) || (timeB.length < 6)) {
 				intA = 0;
 				intB = 0;
 			}
 
-			if( intA != intB) {
+			if (intA !== intB) {
 				return intB - intA;
 			} else {
 				intA = parseInt( timeA.substr( 9, 2));
@@ -133,9 +135,8 @@ define( ['app/config', 'app/view'], function( config, view)
 	}
 
 	// ·····························································
-	function getDistance( lat1, lon1, lat2, lon2)
-	{
-		if(( typeof lat1 === 'undefined') || (typeof lon1 === 'undefined') || (typeof lat2 === 'undefined') || (typeof lon2 === 'undefined') || ( lat1 === '') || (lon1 === '') || (lat2 === '') || (lon2 === '')) {
+	function getDistance(lat1, lon1, lat2, lon2) {
+		if ((typeof lat1 === 'undefined') || (typeof lon1 === 'undefined') || (typeof lat2 === 'undefined') || (typeof lon2 === 'undefined') || ( lat1 === '') || (lon1 === '') || (lat2 === '') || (lon2 === '')) {
 			return 0;
 		}
 
@@ -150,20 +151,26 @@ define( ['app/config', 'app/view'], function( config, view)
 	}
 
 	// ·····························································
-	function distance( a, b)
-	{
-		var daysA = view.getNextOpeningDays( a);
-		var daysB = view.getNextOpeningDays( b);
-		var kmA = getDistance( a.lat, a.lng, config.userLat, config.userLon);
-		var kmB = getDistance( b.lat, b.lng, config.userLat, config.userLon);
+	function distance( a, b) {
+		var daysA = view.getNextOpeningDays(a),
+			daysB = view.getNextOpeningDays(b),
+			kmA = 0,
+			kmB = 0;
+
+		if ((a.lat !== null) && (a.lng !== null)) {
+			kmA = getDistance(a.lat, a.lng, config.userLat, config.userLon);
+		}
+		if ((b.lat !== null) && (b.lng !== null)) {
+			kmB = getDistance(b.lat, b.lng, config.userLat, config.userLon);
+		}
 
 		a.data_next_open = daysA;
 		b.data_next_open = daysB;
 		a.data_km = kmA;
 		b.data_km = kmB;
 
-		if( kmA == kmB) {
-			if( a.group != b.group) {
+		if (kmA === kmB) {
+			if (a.group != b.group) {
 				return a.group > b.group ? 1 : -1;
 			}
 
@@ -198,4 +205,4 @@ define( ['app/config', 'app/view'], function( config, view)
 	};
 });
 
-// ·································································
+//-----------------------------------------------------------------------
