@@ -3,7 +3,8 @@
 
 //-----------------------------------------------------------------------
 
-var dataVec = [];
+var dataVec = [],
+	lastTimeDataVec = [];
 
 //-----------------------------------------------------------------------
 
@@ -274,14 +275,84 @@ function buildGeo(obj, latitude, longitude) {
 
 //-----------------------------------------------------------------------
 
+function push_back(obj) {
+	'use strict';
+
+	var i, item;
+
+	for (i = 0; i < dataVec.length; ++i) {
+		item = dataVec[i];
+		if (item.id === obj.id) {
+			console.log('- duplicate market ' + obj.name);
+		} else if ((item.lat === obj.lat) && (item.lng === obj.lng)) {
+			console.log('- duplicate market position ' + obj.name);
+		}
+	}
+
+	if (obj.uuid === null) {
+		console.log('- ' + obj.name + ' has no UUID');
+	}
+
+	dataVec.push(obj);
+}
+
+//-----------------------------------------------------------------------
+
+function getRefData(obj) {
+	'use strict';
+
+	var i = 0;
+
+	for (i = 0; i < lastTimeDataVec.length; ++i) {
+//		if (lastTimeDataVec[i].id === id) {
+		if ((lastTimeDataVec[i].lat === obj.lat) && (lastTimeDataVec[i].lng === obj.lng)) {
+			return lastTimeDataVec[i];
+		}
+	}
+
+	return {
+		id: obj.id,
+		uuid: null,
+		district: '',
+		name: '',
+		street: '',
+		zip_city: '',
+		begin: '',
+		end: '',
+		organizer: '',
+		org_address: '',
+		org_contact: '',
+		phone: '',
+		phone2: '',
+		fax: '',
+		email: '',
+		web: '',
+		facebook: '',
+		kind: '',
+		lat: '',
+		lng: '',
+		fee: '',
+		remarks: '',
+		todo: '',
+		transit: ''
+//		bemerkungen: ''
+	};
+}
+
+//-----------------------------------------------------------------------
+
 function analyseDataLine(data) {
 	'use strict';
 
-	var obj = {}, hours;
+	var obj = {}, hours, ref;
 
 	obj.id = parseInt(data.id, 10);
-	obj.uuid = obj.id;
-//	obj.uuid = ?;
+	buildGeo(obj, data.lat, data.lng);
+
+	ref = getRefData(obj);
+
+//	obj.uuid = obj.id;
+	obj.uuid = ref.uuid;
 	obj.district = data.bezirk || '';
 	obj.name = data.name;
 	obj.street = data.strasse;
@@ -303,7 +374,6 @@ function analyseDataLine(data) {
 	obj.web = data.w3;
 //	obj.facebook = ?;
 //	obj.kind = ?;
-	buildGeo(obj, data.lat, data.lng);
 //	obj.fee = ?;
 //	obj.remarks = ?;
 //	obj.todo = ?;
@@ -311,7 +381,7 @@ function analyseDataLine(data) {
 
 //  obj.bemerkungen = data.bemerkungen;
 
-	dataVec.push(obj);
+	push_back(obj);
 }
 
 //-----------------------------------------------------------------------
@@ -360,6 +430,29 @@ function analyseJSON(savepath, json) {
 	}
 
 	saveAsJSFile(savepath, dataVec);
+}
+
+//-----------------------------------------------------------------------
+
+function loadLastTimeJSON(filepath, callback) {
+	'use strict';
+
+	console.log('Loading ' + filepath);
+
+	var fs = require('fs');
+
+	fs.readFile(filepath, 'utf-8', function (err, json) {
+		if (err) {
+			console.error(err);
+		} else {
+			if ((typeof json === 'string') && (0 === json.indexOf('define({ data:'))) {
+				json = JSON.parse(json.substr(14, json.length - 14 - 4)); // });\n
+			}
+
+			lastTimeDataVec = json;
+			callback();
+		}
+	});
 }
 
 //-----------------------------------------------------------------------
@@ -417,16 +510,20 @@ function parseFolder(path, dataSource, dataURI, callback) {
 		found = false;
 
 	dataVec = [];
+	lastTimeDataVec = [];
 
 	fs.readdir(path, function (err, files) {
 		files.forEach(function (file) {
 			if (file === filename) {
 				found = true;
 				console.log('Use cached file ' + filepath);
-				loadJSON(filepath, savepath, function () {
-					fs.createReadStream(savepath).pipe(fs.createWriteStream(releasepath));
 
-					callback();
+				loadLastTimeJSON(releasepath, function () {
+					loadJSON(filepath, savepath, function () {
+						fs.createReadStream(savepath).pipe(fs.createWriteStream(releasepath));
+
+						callback();
+					});
 				});
 			}
 		});
@@ -434,10 +531,12 @@ function parseFolder(path, dataSource, dataURI, callback) {
 		if (!found) {
 			console.log('Downloading ' + dataURI);
 			downloadFile(filepath, dataURI, function () {
-				loadJSON(filepath, savepath, function () {
-					fs.createReadStream(savepath).pipe(fs.createWriteStream(releasepath));
+				loadLastTimeJSON(releasepath, function () {
+					loadJSON(filepath, savepath, function () {
+						fs.createReadStream(savepath).pipe(fs.createWriteStream(releasepath));
 
-					callback();
+						callback();
+					});
 				});
 			});
 		}
