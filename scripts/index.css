@@ -271,6 +271,11 @@ section[data-type="sidebar"] > nav > ul > li > a {
 	padding-top:6rem;
 }
 
+[data-type="list"] aside span[data-type="img"], [data-type="list"] aside img {
+	border-radius: 1rem;
+	border: 1px solid #ccc;
+}
+
 .leaflet-bar {
 	background:#fde4d0;
 	border-right:1px solid #f97c17;
