@@ -73,7 +73,7 @@ function parseOpeningHours(str) {
 							days.push(left[0] + '.' + left[1] + '. ' + date[1]);
 							days.push(left[2].substr(1) + '.' + left[3] + '. ' + date[1]);
 						} else {
-							console.log('- could not parse date [1]: ' + arr[i]);
+							console.log('- could not parse date [1a]: ' + arr[i]);
 						}
 					}
 				} else if (left.length === 2) {
@@ -87,6 +87,8 @@ function parseOpeningHours(str) {
 						for (j = from; j < (to + 1); ++j) {
 							weekdays[j % 7] = date[1].replace(',', '');
 						}
+					} else {
+						console.log('- could not parse date [1b]: ' + date[0]);
 					}
 				} else {
 					console.log('- could not parse date [2]: ' + date[0]);
@@ -448,7 +450,7 @@ function saveAsJSFile(filepath, data) {
 		str = '';
 
 	str += "define({ data:\n";
-	str += JSON.stringify(data, null, '  ');
+	str += JSON.stringify(data, null, "\t");
 	str += "\n});\n";
 
 	fs.writeFile(filepath, str, function (err) {
