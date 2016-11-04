@@ -144,13 +144,13 @@ function testOpeningHours(obj, data) {
 		weekdaysName = ['Mo', 'Di', 'Mi', 'Do', 'Fr', 'Sa', 'So'];
 
 	if (isNaN(Date.parse(obj.begin)) || (Date.parse(obj.begin) < Date.parse((new Date().getFullYear()) + "-01-01"))) {
-		console.log('- ' + obj.name + ' has invalid begin date: ' + obj.begin);
+		console.log('- ' + obj.name.replace(/\r\n|\r|\n/g, ' ') + ' has invalid begin date: ' + obj.begin);
 	}
 	if (isNaN(Date.parse(obj.end)) || (Date.parse(obj.end) < Date.parse((new Date().getFullYear()) + "-01-01"))) {
-		console.log('- ' + obj.name + ' has invalid end date: ' + obj.end);
+		console.log('- ' + obj.name.replace(/\r\n|\r|\n/g, ' ') + ' has invalid end date: ' + obj.end);
 	}
 	if (0 === data.length) {
-		console.log('- ' + obj.name + ' has no opening hours!');
+		console.log('- ' + obj.name.replace(/\r\n|\r|\n/g, ' ') + ' has no opening hours!');
 	}
 
 	for (i = 0; i < data.length; ++i) {
@@ -230,6 +230,10 @@ function buildOpeningHours(obj, hours) {
 			}
 		}
 
+		if (ret === 'geschlossen') {
+			ret = '';
+		}
+
 		return ret;
 	}
 
@@ -275,6 +279,22 @@ function buildGeo(obj, latitude, longitude) {
 
 //-----------------------------------------------------------------------
 
+function buildInternet(obj, www, mail) {
+	'use strict';
+
+	if (mail.indexOf('mailto:') === 0) {
+		mail = mail.substr(7);
+	}
+	if ((www.length > 0) && (www.indexOf('http://') < 0)) {
+		www = 'http://' + www;
+	}
+
+	obj.email = mail;
+	obj.web = www;
+}
+
+//-----------------------------------------------------------------------
+
 function push_back(obj) {
 	'use strict';
 
@@ -284,16 +304,42 @@ function push_back(obj) {
 		item = dataVec[i];
 		if (item.id === obj.id) {
 			console.log('- duplicate market ' + obj.name);
-		} else if ((item.lat === obj.lat) && (item.lng === obj.lng)) {
-			console.log('- duplicate market position ' + obj.name);
+		} else if ((parseInt(item.lat * 10000, 10) === parseInt(obj.lat * 10000, 10)) && (parseInt(item.lng * 10000, 10) === parseInt(obj.lng * 10000, 10))) {
+			if (obj.name !== item.name) {
+				console.log('- duplicate market position ' + obj.name + ' and ' + item.name);
+			} else {
+				console.log('- duplicate market position ' + obj.name);
+			}
 		}
 	}
 
 	if (obj.uuid === null) {
-		console.log('- ' + obj.name + ' has no UUID');
+		console.log('- ' + obj.name.replace(/\r\n|\r|\n/g, ' ') + ' has no UUID');
 	}
 
 	dataVec.push(obj);
+}
+
+//-----------------------------------------------------------------------
+
+function addOwnData() {
+	'use strict';
+
+	var i, j, item;
+
+	for (i = 0; i < lastTimeDataVec.length; ++i) {
+		item = lastTimeDataVec[i];
+		for (j = 0; j < dataVec.length; ++j) {
+			if (dataVec[j].uuid === item.uuid) {
+				break;
+			}
+		}
+
+		if (j >= dataVec.length) {
+			console.log('- missing old market ' + item.name);
+			push_back(item);
+		}
+	}
 }
 
 //-----------------------------------------------------------------------
@@ -305,7 +351,7 @@ function getRefData(obj) {
 
 	for (i = 0; i < lastTimeDataVec.length; ++i) {
 //		if (lastTimeDataVec[i].id === id) {
-		if ((lastTimeDataVec[i].lat === obj.lat) && (lastTimeDataVec[i].lng === obj.lng)) {
+		if ((parseInt(lastTimeDataVec[i].lat * 10000, 10) === parseInt(obj.lat * 10000, 10)) && (parseInt(lastTimeDataVec[i].lng * 10000, 10) === parseInt(obj.lng * 10000, 10))) {
 			return lastTimeDataVec[i];
 		}
 	}
@@ -351,7 +397,6 @@ function analyseDataLine(data) {
 
 	ref = getRefData(obj);
 
-//	obj.uuid = obj.id;
 	obj.uuid = ref.uuid;
 	obj.district = data.bezirk || '';
 	obj.name = data.name;
@@ -363,21 +408,21 @@ function analyseDataLine(data) {
 	hours = parseOpeningHours(data.oeffnungszeiten);
 	testOpeningHours(obj, hours);
 	buildOpeningHours(obj, hours);
+	buildInternet(obj, data.w3, data.email);
 
 	obj.organizer = data.veranstalter;
-//	obj.org_address = ?;
-//	obj.org_contact = ?;
-//	obj.phone = ?;
-//	obj.phone2 = ?;
-//	obj.fax = ?;
-	obj.email = data.email;
-	obj.web = data.w3;
-//	obj.facebook = ?;
-//	obj.kind = ?;
-//	obj.fee = ?;
-//	obj.remarks = ?;
-//	obj.todo = ?;
-//	obj.transit = ?;
+//	obj.org_address = ref.;
+	obj.org_contact = ref.org_contact;
+//	obj.phone = ref.;
+//	obj.phone2 = ref.;
+//	obj.fax = ref.;
+	obj.facebook = ref.facebook || '';
+	obj.twitter = ref.twitter || '';
+//	obj.kind = ref.kind;
+	obj.fee = ref.fee;
+	obj.remarks = ref.remarks;
+	obj.todo = ref.todo;
+//	obj.transit = ref.;
 
 //  obj.bemerkungen = data.bemerkungen;
 
@@ -428,6 +473,8 @@ function analyseJSON(savepath, json) {
 	for (i = 0; i < data.length; ++i) {
 		analyseDataLine(data[i]);
 	}
+
+	addOwnData();
 
 	saveAsJSFile(savepath, dataVec);
 }
