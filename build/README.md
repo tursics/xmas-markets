@@ -7,6 +7,11 @@ Preparation
 1. Download node.js http://nodecode.de/installation | https://nodejs.org/en/
 2. ... http://nodecode.de/nodejs-konsolen-grundlagen
 
+Run
+---
+
+node build_berlin.js
+
 Download the data
 -----------------
 
