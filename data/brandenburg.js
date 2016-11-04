@@ -4,162 +4,163 @@ define({ data:
     "id": 9,
     "lat": 51.836122,
     "lng": 14.147538,
-    "uuid": null,
+    "uuid": 1,
 	"org_contact": "",
 	"facebook": "",
-	"fee": "",
-	"remarks": "",
-	"todo": ""
+	"fee": "Eintritt frei",
+	"remarks": "<p>Sternenlichter und Kerzenschein, Glühwein und Apfelpunsch, Gaumenschmaus und Handwerkskunst. Gönnen Sie sich besinnliche Stunden in der Vorweihnachtszeit, freuen Sie sich auf ein stimmungsvolles Festprogramm für die ganze Familie und wärmen Sie sich am lodernden Feuer.</p><p>Entfliehen Sie dem hektischen Weihnachtsstress und besuchen Sie Burg im Spreewald zum Adventsfest vom 3. bis 4. Dezember 2016.</p><p>Programm Samstag, 03. Dezember 2016 | 14:00 - 21:00 Uhr</p><p>13:00 – 14:00 Uhr<br>Weihnachtliche Klänge und Markttreiben</p><p>14:00 – 14:15 Uhr<br>Markteröffnung und Stollenanschnitt für einen guten Zweck, freundlich zur Verfügung gestellt von der Bäckerei Mieth</p><p>14:30 – 14:50 Uhr<br>Gemischter Chor der Chorgemeinschaft „Concordia“ Burg (Spreewald) mit Adventsmusik zum Hören und Mitsingen</p><p>15:00 – 15:30 Uhr<br>Marikas Kindertanzakademie mit zauberhaften Tanzeinlagen</p><p>15:30 – 16:00 Uhr<br>Das Kinder- und Jugendensemble Pfiffikus gestaltet ein Weihnachtsprogramm mit Tanz, Gesang und Kabarett</p><p>16:00 – 16:30 Uhr<br>Fototermin beim Weihnachtsmann und Abgabe der Wunschzettel für den Weihnachtsbaum</p><p>16:30 – 17:15 Uhr<br>Krippenspiel „Stern über Bethlehem“ - präsentiert von: MichaelisChöre e. V. sowie Chöre der Region unter musikalischer Leitung von Michael Zumpe</p><p>17:30 – 18:15 Uhr<br>Die Guitarreros mit weihnachtlichen Gitarrenklängen „Mit dem Christkind einmal um die Welt“</p><p>18:30 – 21:00 Uhr<br>Party unterm Weihnachtsbaum mit der UC Band aus Lübbenau</p><p>Programm Sonntag, 04. Dezember 2016 | 14:00 - 19:00 Uhr</p><p>13:00 – 14:00 Uhr<br>Weihnachtliche Klänge und Markttreiben</p><p>14:00 – 14:30 Uhr<br>Marktandacht mit Pfarrer Michael Heimann von der evangelischen Kirchengemeinde Burg (Spreewald)</p><p>14:30 – 15:30 Uhr<br>Das Blasorchester Cottbus e.V. mit weihnachtlichen Klängen -  Bläsermusik</p><p>15:30 – 16:00 Uhr<br>Die Werbener Fußball Girls 2000 e.V. mit einer weihnachtlichen Tanzshow</p><p>16:00 – 16:15 Uhr<br>Fototermin beim Weihnachtsmann und Abgabe der Wunschzettel für den Weihnachtsbaum</p><p>16:15 – 17:00 Uhr<br>Weihnachtsprogramm für Kinder: Wer hilft dem Weihnachtsmann? mit der ABC-Show</p><p>17:15 – 17:40 Uhr<br>Beauty & Fire Feuershow - fantastische Feuerelemente in rasantem Spiel</p><p>17:40 – 19:00 Uhr<br>Marie Joana - Weihnachtsshow mit Saxophon, Gitarre und Gesang</p><p>19:00 – 20:00 Uhr<br>Musik unterm Weihnachtsbaum</p>",
+	"todo": "mail"
   },
   {
     "id": 71,
     "lat": 51.581017,
     "lng": 14.172796,
-    "uuid": null,
+    "uuid": 2,
 	"org_contact": "",
 	"facebook": "",
 	"fee": "",
 	"remarks": "",
-	"todo": ""
+	"todo": "mail"
   },
   {
     "id": 63,
     "lat": 52.401853,
     "lng": 13.058649,
-    "uuid": null,
+    "uuid": 3,
 	"org_contact": "",
 	"facebook": "",
 	"fee": "",
-	"remarks": "",
-	"todo": ""
+	"remarks": "<p>Seit vielen Jahren besucht Sinterklaas mit seinen Helfern das Holländische Viertel in Potsdam auf Einladung des Fördervereins zur Pflege niederländischer Kultur in Potsdam e. V.</p><p>Aus Holland kommend, wo er am 5. Dezember traditionell die Kinder beschenkt, wird er auf seiner Heimfahrt nach Spanien zum wiederholten Mal im Potsdamer Hafenbecken von vielen kleinen und großen Kindern erwartet.</p><p>Auf einem Schimmel reitet er dann ins Holländische Viertel. Begleitet wurde er bisher von seinen zwarte Pieten, die Süßigkeiten verteilen, und einer originellen Pietenkapelle, nun von seinen Helfern.</p><p>Holländische und einheimische Handwerkerstände zeigen an diesem Wochenende im Holländischen Viertel ihr Können. Sinterklaas wird an beiden Tagen für die Kinder da.</p><p>Man kann sehen wie Kniepertjes, eine Honigwaffel, am offenen Feuer gebacken werden, wie Holzschuhe hergestellt werden und dem Senfmacher, Korbmacher, Perlenstickerin und vielen anderen bei ihrer Arbeit zuschauen.</p><p>Feuerkörbe werden für Licht und Wärme sorgen und wen das nicht erwärmen sollte, kann einen Genever probieren. Viele weitere Stände mit schönen Dingen, aber auch Stände mit Naschereien werden zum Kaufen oder zum Sofortverzehr einladen.</p><p>Romantische Stimmung inmitten der Backsteinbauten wird einen Besuch im Holländischen Viertel zum Erlebnis werden lassen und über 70 Niederländer werden dazu beitragen.</p>",
+	"todo": "mail"
   },
   {
     "id": 61,
     "lat": 52.391549,
     "lng": 13.066689,
-    "uuid": null,
+    "uuid": 4,
 	"org_contact": "",
 	"facebook": "",
 	"fee": "",
 	"remarks": "",
-	"todo": ""
+	"todo": "mail"
   },
   {
     "id": 73,
     "lat": 52.402336,
     "lng": 13.263857,
-    "uuid": null,
+    "uuid": 5,
 	"org_contact": "",
 	"facebook": "",
-	"fee": "",
-	"remarks": "",
-	"todo": ""
+	"fee": "Der Eintritt ist frei!",
+	"remarks": "<p>Traditionell findet der Weihnachtsmarkt auch in diesem Jahr wieder am 3. Advent auf dem Gelände der St. Andreaskirche, auf dem Marktplatz in der Teltower Altstadt und im Bürgerhaus statt. Handgefertigte Produkte, weihnachtlichen Artikel und Kunsthandwerk werden angeboten.</p><p>Um 14 Uhr wird der Weihnachtsmarkt feierlich auf der Treppe des Neuen Rathauses durch den Bürgermeister Thomas Schmidt und Pfarrer Thomas Karzek eröffnet. Der Männerchor „Frohsinn Teltow 1874“ begrüßt alle Gäste mit einem Ständchen.</p><p>Viele gemeinnützige und soziale Einrichtungen sowie Sportvereine sorgen für das leibliche Wohl und bieten warme Getränke, Bratwurst, selbstgebackenen Kuchen und andere Leckereien an. Im Bürgerhaus gibt es alles für die kleinen Besucher: Clown Ela unterhält die Kinder, der Heimatverein stellt historisches Spielzeug aus und an der Bastelstraße können wieder alle Besucher kreativ werden. Der Weihnachtsmann dreht den ganzen Tag seine Runden mit einem Sack voller Kleinigkeiten auf dem Weihnachtsmarkt.</p><p>Um 15 Uhr wird der Verbindungsweg zwischen Ritterstraße und Zeppelinufer feierlich eingeweiht. Der „Dr. Walter Romberg Steig“ erinnert an den Mathematiker und DDR-Politiker, der von 1997 bis 2014 in Teltow lebte.</p><p>Zum Abschluss des Weihnachtsmarktes lädt die St. Andreaskirche um 18 Uhr zum Konzert mit weihnachtlicher Bläser- und Chormusik ein. Der Eintritt ist frei, um eine Spende wird gebeten. Ein musikalisches Erlebnis, das sich lohnt.</p>",
+	"todo": "ready"
   },
   {
     "id": 75,
     "lat": 52.363834,
     "lng": 12.93641,
-    "uuid": null,
+    "uuid": 6,
 	"org_contact": "",
 	"facebook": "",
 	"fee": "",
 	"remarks": "",
-	"todo": ""
+	"todo": "mail"
   },
   {
     "id": 5,
     "lat": 52.293471,
     "lng": 12.859223,
-    "uuid": null,
+    "uuid": 7,
 	"org_contact": "",
-	"facebook": "",
-	"fee": "",
-	"remarks": "",
-	"todo": ""
+	"hours": "08:00-18:00",
+	"facebook": "https://www.facebook.com/Spargelhof.Klaistow",
+	"fee": "Eintritt frei",
+	"remarks": "<p>Weihnachten und Stroh gehören zusammen und stehen für Gemütlichkeit. Sehr stimmungsvoll zeigt dies der Klaistower Stroh-Advent und der ländliche Weihnachtsmarkt.</p><p>Auch in der Vorweihnachtszeit zeigen wir die meterhohen Strohfiguren aus der Welt der Erfindungen. Sowohl die Stroh-Ausstellung als auch unser ganzer Hof mit seinem ländlichen Weihnachtsmarkt erstrahlen in stimmungsvollem Lichterglanz.</p><p>Die Kleinen können sich auf eine Krippe mit Schafen, ein Kinderkino und ein Strohballen-Labyrinth freuen. An den Adventswochenenden kommen Angebote wie das Basteln von Stroh-Sternen, die Vorlesestunden „Geschichten im Stroh“ oder das gemeinsame Plätzchenbacken hinzu. Dann ist auch der Weihnachtsmann auf unserem Hof zu Gast und kann in seiner gemütlichen Strohwohnung besucht werden. Und am Nikolaus-Tag sowie an allen Adventssonntagen bietet unsere Hofbäckerei Plätzchenbacken an.</p><p>Lassen Sie sich unsere hausgemachten Spezialitäten wie Heidelbeer-Glühwein, geröstete Kürbiskerne, Stollen und Dominosteine schmecken. In unserem gemütlichen Scheunenrestaurant verwöhnen wir Sie mit leckerem Enten- und Wildbraten. Auch das Entenbuffet wird es wieder geben. Ab dem 18. November heißt es dann von 17 bis 20 Uhr 'Ente satt'. Auf Vorbestellung servieren wir Ihnen außerdem ganze Gans nebst Beilagen und tranchieren sie am Tisch.</p><p>Auch für den heimischen Herd können Sie bei uns Gänse im Hofladen bestellen. Und wer auf der Suche nach Geschenken für die Lieben ist, wird hier und in der Dekoscheune oder an einem der Stände auf unserem ländlichen Weihnachtsmarkt fündig. Auch ein Gutschein, beispielsweise für ein Spargelessen im nächsten Jahr oder ein Präsentkorb sorgen für Freude bei den Beschenkten.</p><p>Bei uns erwartet Sie eine große Auswahl an frisch geschlagenen Tannenbäumen. Der Weihnachtsbaumverkauf ist ab dem ab dem 27. November täglich geöffnet.</p>",
+	"todo": "ready"
   },
   {
     "id": 53,
     "lat": 52.597108,
     "lng": 12.888295,
-    "uuid": null,
+    "uuid": 8,
 	"org_contact": "",
-	"facebook": "",
+	"facebook": "https://www.facebook.com/ldvc.nauen/",
 	"fee": "",
-	"remarks": "",
-	"todo": ""
+	"remarks": "<p>Immer am Donnerstag vor dem ersten Advent eröffnet der Campus ab 16:00 Uhr die Weihnachtsmarktsaison im Havelland mit dem Adventsbasar. Über 45 Stände bieten in bester Markttradition Handwerkskunst, Kulinarisches und Aktionen, wie z.B. einem Büchermarkt. Das Schülerradio übernimmt die Unterhaltung und ein Weihnachtsmann steht für die Kinderwünsche bereit.</p>",
+	"todo": "mail"
   },
   {
     "id": 55,
     "lat": 52.606475,
     "lng": 12.876052,
-    "uuid": null,
+    "uuid": 9,
 	"org_contact": "",
 	"facebook": "",
 	"fee": "",
-	"remarks": "",
-	"todo": ""
+	"remarks": "<p>Pünktlich zum 3. Adventswochenende öffnen in der Altstadt von Nauen wieder zahlreiche Höfe ihre Tore für die Besucher. Auch auf dem Martin-Luther-Platz gibt es ein buntes Treiben mit zahlreichen Marktständen. In der Galerie am Blauen Haus ist die Ausstellung 'Die Welt der Dinosaurier' zu sehen sowie Kinderprogramme und ein Theaterstück.</p>",
+	"todo": "mail"
   },
   {
     "id": 31,
     "lat": 52.47799,
     "lng": 12.84191,
-    "uuid": null,
+    "uuid": 10,
 	"org_contact": "",
 	"facebook": "",
 	"fee": "",
-	"remarks": "",
-	"todo": ""
+	"remarks": "<p>Am 26. November 2016 findet auf dem Gelände der Freilichtbühne in der Zeit von 14 bis 19 Uhr der Weihnachtsmarkt statt. Nach der Eröffnung durch den Bürgermeister und die Fischerkönigin lässt das Ketziner Blasorchester weihnachtliche Melodien erklingen. Es sind diverse Verkaufsstände, eine Tombola sowie ein Kinderkarussell vor Ort. Außerdem wird der Weihnachtsmann mit Geschenken für die Kinder erwartet. Nebenan im Haus der Begegnung sind alle Kinder zum Basteln von Weihnachtsdekorationen eingeladen. Ab 16 Uhr wird im angrenzenden Jugendclub das weihnachtliche Puppenspiel „Wo ist bloß der Weihnachtsmann!!“ von dem „Berliner Puppenkoffer“ aufgeführt.</p><p>Für das leibliche Wohl ist ausreichend vorgesorgt. Die Feuerwehr ist mit der Gulaschkanone bereits ab 12 Uhr anwesend.</p>",
+	"todo": "mail"
   },
   {
     "id": 33,
     "lat": 52.33716,
     "lng": 12.53977,
-    "uuid": null,
+    "uuid": 11,
 	"org_contact": "",
 	"facebook": "",
 	"fee": "",
 	"remarks": "",
-	"todo": ""
+	"todo": "mail"
   },
   {
     "id": 67,
     "lat": 52.04192,
     "lng": 12.57561,
-    "uuid": null,
+    "uuid": 12,
 	"org_contact": "",
 	"facebook": "",
 	"fee": "",
-	"remarks": "",
-	"todo": ""
+	"remarks": "<p>Willkommen am 26. und 27. November zwischen 12 und 18 Uhr zu unserem besonderen Familien-Weihnachtsmarkt im Naturparkzentrum in Raben!</p><p>SAMSTAG</p><p>10 Uhr: Eselwanderung<br>12 Uhr: Weihnachtsbaum schmücken und 'anblasen'<br>14 Uhr: Polnische Tanzgruppe<br>15 Uhr: Puppentheater<br>16 Uhr: Fackelwanderung zur Burg Rabenstein<br>17 Uhr: Freiluftkino im Lichtergarten</p><p>SONNTAG</p><p>14 Uhr: Polnische Tanzgruppe<br>15 Uhr: Märchenstunde<br>16 Uhr: Fackelwanderung zur Burg Rabenstein<br>17 Uhr: Freiluftkino im Lichtergarten</p><p>Stände und Aktionen</p><p>An verschiedenen Ständen im Gebäude können Weihnachtsgeschenke und -dekorationen selbst gebastelt werden.</p><p>In der 'Alten Brennerei': Märchenausstellung, Adventsgestecke basteln, Mehl mit der römischen Handmühle mahlen und sieben, Filzen, Enkaustik (künstlerische Wachsmaltechnik), Info & Fackelverkauf</p><p>In der 'Weihnachtswerkstatt' im Gartenhaus: Seidenmalerei, Kekshäuser und Dominosteinlokomotiven bauen, Kerzen gießen, Seifenbälle formen, Briefe an den Weihnachtsmann, Flämingladen mit regionalen Produkten im Gewölbekeller</p><p>Marktgelände: nostalgisches Kinderkarussell, polnisches Kunsthandwerk aus der Partnerregion Nowy Tomysl, Honig & Honigprodukte, Zuckerwatte, kandierte Äpfel & Co., Holzspielzeug, Kinderbücher und Regionalromane des Wiesengrundverlags, Backwaren und heiße Waffeln, Kerzen, Kerzenhalter, Dekoration, Goldschmied, heiße Getränke und Speisen, Kräuterhütte, Holzwerkstatt</p><p>Garten: Feuerschalen zum Aufwärmen, Lichtpfad (ab 16 Uhr), Freiluftkino (17 Uhr)</p><p>Und sonst: Ponyreiten, Esel streicheln, der Weihnachtsmann verteilt kleine Geschenke, Lagerfeuer mit Stockbrot (nach der Fackelwanderung), Weihnachtsquiz</p>",
+	"todo": "mail"
   },
   {
     "id": 49,
     "lat": 52.090439,
     "lng": 13.17399,
-    "uuid": null,
+    "uuid": 13,
 	"org_contact": "",
 	"facebook": "",
 	"fee": "",
 	"remarks": "",
-	"todo": ""
+	"todo": "mail"
   },
   {
     "id": 51,
     "lat": 52.245629,
     "lng": 14.41368,
-    "uuid": null,
+    "uuid": 14,
 	"org_contact": "",
 	"facebook": "",
 	"fee": "",
 	"remarks": "",
-	"todo": ""
+	"todo": "mail"
   },
   {
     "id": 83,
     "lat": null,
     "lng": null,
     "name": "Seelower Weihnacht rund um die Stadtkirche",
-    "uuid": null,
+    "uuid": 15,
 	"org_contact": "",
 	"facebook": "",
 	"fee": "",
@@ -170,23 +171,23 @@ define({ data:
     "id": 81,
     "lat": 52.565408,
     "lng": 13.725794,
-    "uuid": null,
+    "uuid": 16,
 	"org_contact": "",
 	"facebook": "",
 	"fee": "",
 	"remarks": "",
-	"todo": ""
+	"todo": "mail"
   },
   {
     "id": 35,
     "lat": 52.297575,
     "lng": 13.624696,
-    "uuid": null,
+    "uuid": 17,
 	"org_contact": "",
 	"facebook": "",
 	"fee": "",
 	"remarks": "",
-	"todo": ""
+	"todo": "mail"
   },
   {
     "id": 79,
