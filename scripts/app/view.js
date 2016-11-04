@@ -8,27 +8,29 @@ define(['app/config', 'app/viewMarketsOne'], function (config, viewMarketsOne) {
 
 	// ·····························································
 	function onMarket() {
-		var marketId = this.getAttribute('data-market');
-		if(( typeof marketId === 'undefined') || (null == marketId)) {
+		var marketId = this.getAttribute('data-market'),
+			txt,
+			obj;
+
+		if ((typeof marketId === 'undefined') || (null === marketId)) {
 			return;
 		}
 
-		document.querySelector( '#onemarket').className = 'current';
-		document.querySelector( '[data-position="current"]').className = 'left';
+		document.querySelector('#onemarket').className = 'current';
+		document.querySelector('[data-position="current"]').className = 'left';
 
 //		window.scrollTo( 0, 0);
-		var txt = '<div class="center"><progress></progress></div>';
-		document.querySelector( '#onemarket > article').innerHTML = txt;
+		txt = '<div class="center"><progress></progress></div>';
+		document.querySelector('#onemarket > article').innerHTML = txt;
 
 		config.currentMarketId = marketId;
 
-		var obj = config.getMarketByID( config.currentMarketId);
-		setTimeout( viewMarketsOne.fillList(), config.timeout);
+		obj = config.getMarketByID(config.currentMarketId);
+		setTimeout(viewMarketsOne.fillList(), config.timeout);
 	}
 
 	// ·····························································
-	function getToday()
-	{
+	function getToday() {
 		var today = new Date();
 //		today.setDate(today.getDate() + 0);
 		return today;
@@ -38,96 +40,99 @@ define(['app/config', 'app/viewMarketsOne'], function (config, viewMarketsOne) {
 	return {
 
 		// ·························································
-		add: function( viewName, title)
-		{
-			config.views.push( viewName);
+		add: function (viewName, title) {
+			config.views.push(viewName);
 
-			var child = document.createElement( 'li');
-			child.setAttribute( 'role', 'presentation');
-			child.innerHTML = '<a href="#" role="tab" id="' + viewName.substr( 1) + '">' + title + '</a>';
-			document.querySelector( '#markettab>ul').appendChild( child);
+			var objs,
+				width,
+				i,
+				child = document.createElement('li');
 
-			var objs = document.querySelector( '#markettab>ul').getElementsByTagName( 'li');
-			var width = (objs.length <= 3 ? 32 : (objs.length <= 4 ? 23 : 18));
-			for( var i = 0; i < objs.length; ++i) {
+			child.setAttribute('role', 'presentation');
+			child.innerHTML = '<a href="#" role="tab" id="' + viewName.substr(1) + '">' + title + '</a>';
+			document.querySelector('#markettab>ul').appendChild(child);
+
+			objs = document.querySelector('#markettab>ul').getElementsByTagName('li');
+			width = (objs.length <= 3 ? 32 : (objs.length <= 4 ? 23 : 18));
+			for (i = 0; i < objs.length; ++i) {
 				objs[i].style.width = width + '%';
 			}
 		},
 
 		// ·························································
-		setActive: function( viewName)
-		{
-			for( var i = 0; i < config.views.length; ++i) {
-				var view = config.views[ i];
-				if( document.querySelector( view) !== null) {
-					document.querySelector( view).setAttribute( 'aria-selected', view == viewName ? 'true' : 'false');
+		setActive: function (viewName) {
+			var i, view;
+
+			for (i = 0; i < config.views.length; ++i) {
+				view = config.views[i];
+				if (document.querySelector(view) !== null) {
+					document.querySelector(view).setAttribute('aria-selected', view === viewName ? 'true' : 'false');
 				}
 			}
 		},
 
 		// ·························································
-		showProgress: function()
-		{
-//			window.scrollTo( 0, 0);
-			document.querySelector( '#marketlist').innerHTML = '<div class="center"><progress></progress></div>';
+		showProgress: function () {
+//			window.scrollTo(0, 0);
+			document.querySelector('#marketlist').innerHTML = '<div class="center"><progress></progress></div>';
 		},
 
 		// ·························································
-		composeSectionList: function( content)
-		{
+		composeSectionList: function (content) {
 			return '<section data-type="list">' + content + '</section>';
 		},
 
 		// ·························································
-		composeList: function( content)
-		{
+		composeList: function (content) {
 			return '<ul>' + content + '</ul>';
 		},
 
 		// ·························································
-		composeMarketItem: function( obj, diffdays)
-		{
-			var openingtime = '';
-			if( -2 == diffdays) {
-				var km = parseInt( obj.data_km * 2);
-				var km2 = parseInt( km / 2) * 2;
-				if(( 0 == km) && (0 == km2)) {
-					openingtime = 'Gleich hier, ' + this.getNextMarketOpeningTime( obj);
-				} else if(( 1 == km) && (0 == km2)) {
-					openingtime = 'Gleich um die Ecke, ' + this.getNextMarketOpeningTime( obj);
-				} else if( 200 < km2) {
-					openingtime = 'Viel zu weit weg, ' + this.getNextMarketOpeningTime( obj);
-				} else if( 10 <= km2) {
-					openingtime = (km2 / 2) + ' km entfernt, ' + this.getNextMarketOpeningTime( obj);
-				} else if( 0 == (km - km2)) {
-					openingtime = (km2 / 2) + ' km entfernt, ' + this.getNextMarketOpeningTime( obj);
+		composeMarketItem: function (obj, diffdays) {
+			var openingtime = '', km, km2, txt, img;
+
+			if (-2 === diffdays) {
+				km = parseInt(obj.data_km * 2, 10);
+				km2 = parseInt(km / 2, 10) * 2;
+				if ((0 === km) && (0 === km2)) {
+					openingtime = 'Gleich hier, ' + this.getNextMarketOpeningTime(obj);
+				} else if ((1 === km) && (0 === km2)) {
+					openingtime = 'Gleich um die Ecke, ' + this.getNextMarketOpeningTime(obj);
+				} else if (200 < km2) {
+					openingtime = 'Viel zu weit weg, ' + this.getNextMarketOpeningTime(obj);
+				} else if (10 <= km2) {
+					openingtime = (km2 / 2) + ' km entfernt, ' + this.getNextMarketOpeningTime(obj);
+				} else if (0 === (km - km2)) {
+					openingtime = (km2 / 2) + ' km entfernt, ' + this.getNextMarketOpeningTime(obj);
 				} else {
-					openingtime = (km2 / 2) + ',5 km entfernt, ' + this.getNextMarketOpeningTime( obj);
+					openingtime = (km2 / 2) + ',5 km entfernt, ' + this.getNextMarketOpeningTime(obj);
 				}
-			} else if( -1 == diffdays) {
-				openingtime = this.getNextMarketOpeningTime( obj);
+			} else if (-1 === diffdays) {
+				openingtime = this.getNextMarketOpeningTime(obj);
 			} else {
-				openingtime = 'von ' + this.getOpeningTime( obj, diffdays) + ' Uhr';
+				openingtime = 'von ' + this.getOpeningTime(obj, diffdays) + ' Uhr';
 			}
 
-			if( 'hide' == obj.todo) { return ''; }
-//			if( 'mail' == obj.todo) { return ''; }
-//			if( 'ready' == obj.todo) { return ''; }
-//			if( '' == obj.todo) { return ''; }
+			if ('hide' === obj.todo) { return ''; }
+//			if ('mail' === obj.todo) { return ''; }
+//			if ('ready' === obj.todo) { return ''; }
+//			if ('' === obj.todo) { return ''; }
+			openingtime = obj.todo + ' | <a href="mailto:' + obj.email + '">Mail</a> und <a href="' + obj.web + '" target="_blank">Web</a>';
 
-			var txt = '<p>' + obj.name + '</p><p>' + openingtime + '</p>';
-			var img = '<aside class="pack-begin"><img src="art/' + obj.path + '/' + obj.uuid + '/128.jpg"></aside>';
+			txt = '<p>' + obj.name + '</p><p>' + openingtime + '</p>';
+			img = '<aside class="pack-begin"><img src="art/' + obj.path + '/' + obj.uuid + '/128.jpg"></aside>';
 
-			return '<li data-market="' + obj.path + '-' + obj.uuid + '">' + img + '' + txt + '</li>';
+			return '<li data-market="' + obj.path + '-' + obj.uuid + '">' + img + txt + '</li>';
 		},
 
 		// ·························································
-		finishMarketList: function( txt)
-		{
-			document.querySelector( '#marketlist').innerHTML = txt;
-			var objs = document.querySelector( '#marketlist').getElementsByTagName( 'li');
-			for( var i = 0; i < objs.length; ++i) {
-				objs[i].addEventListener( 'click', onMarket);
+		finishMarketList: function (txt) {
+			var objs, i;
+
+			document.querySelector('#marketlist').innerHTML = txt;
+			objs = document.querySelector('#marketlist').getElementsByTagName('li');
+			for (i = 0; i < objs.length; ++i) {
+				objs[i].addEventListener('click', onMarket);
 			}
 		},
 
