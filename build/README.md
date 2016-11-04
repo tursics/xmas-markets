@@ -25,6 +25,9 @@ Download the data
 - City of Wesel
   - "Veranstaltungen in Wesel"
   - https://www.offenesdatenportal.de/dataset/veranstaltungen-in-wesel
+- City of Krefeld
+  - "Veranstaltungskalender der Stadt Krefeld"
+  - https://www.krefeld.de/www/event.nsf/apijson.xsp/view-event-month?compact=false
 - City of Cologne
   - "Veranstaltungen der Stadt Köln"
   - http://offenedaten-koeln.de/dataset/veranstaltungen-der-stadt-k%C3%B6ln
