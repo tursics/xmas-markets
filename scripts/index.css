@@ -274,6 +274,12 @@ section[data-type="sidebar"] > nav > ul > li > a {
 [data-type="list"] aside span[data-type="img"], [data-type="list"] aside img {
 	border-radius: 1rem;
 	border: 1px solid #ccc;
+	background-image: url(../art/default/128.jpg);
+}
+
+section#onemarket article.content div:first-child img {
+	width: 100%;
+	background: url(../art/default/1200.jpg) center center / cover;
 }
 
 .leaflet-bar {
