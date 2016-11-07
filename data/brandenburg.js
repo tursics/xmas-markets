@@ -29,9 +29,9 @@ define({ data:
     "uuid": 3,
 	"org_contact": "",
 	"facebook": "",
-	"fee": "",
-	"remarks": "<p>Seit vielen Jahren besucht Sinterklaas mit seinen Helfern das Holländische Viertel in Potsdam auf Einladung des Fördervereins zur Pflege niederländischer Kultur in Potsdam e. V.</p><p>Aus Holland kommend, wo er am 5. Dezember traditionell die Kinder beschenkt, wird er auf seiner Heimfahrt nach Spanien zum wiederholten Mal im Potsdamer Hafenbecken von vielen kleinen und großen Kindern erwartet.</p><p>Auf einem Schimmel reitet er dann ins Holländische Viertel. Begleitet wurde er bisher von seinen zwarte Pieten, die Süßigkeiten verteilen, und einer originellen Pietenkapelle, nun von seinen Helfern.</p><p>Holländische und einheimische Handwerkerstände zeigen an diesem Wochenende im Holländischen Viertel ihr Können. Sinterklaas wird an beiden Tagen für die Kinder da.</p><p>Man kann sehen wie Kniepertjes, eine Honigwaffel, am offenen Feuer gebacken werden, wie Holzschuhe hergestellt werden und dem Senfmacher, Korbmacher, Perlenstickerin und vielen anderen bei ihrer Arbeit zuschauen.</p><p>Feuerkörbe werden für Licht und Wärme sorgen und wen das nicht erwärmen sollte, kann einen Genever probieren. Viele weitere Stände mit schönen Dingen, aber auch Stände mit Naschereien werden zum Kaufen oder zum Sofortverzehr einladen.</p><p>Romantische Stimmung inmitten der Backsteinbauten wird einen Besuch im Holländischen Viertel zum Erlebnis werden lassen und über 70 Niederländer werden dazu beitragen.</p>",
-	"todo": "mail"
+	"fee": "Eintritt frei - bedingt rollstuhlgeeignet",
+	"remarks": "<p>Sinterklaas ist der niederländische Nikolaus, der traditionell in unserem Nachbarland am 5. Dezember die Kinder beschenkt. Auf der Reise in sein Winterquartier besucht er das Holländische Viertel in Potsdam. Es ist schöner Brauch, dass der Sinterklaas und seine Helfer mit dem Schiff der Weißen Flotte im Potsdamer Hafen ankommen und vom Oberbürgermeister, vielen Kindern und Gästen in Empfang genommen werden. Begleitet von einer original niederländischen Kapelle und gesichert von der Potsdamer Polizei reitet er im Anschluss in das Holländische Viertel.</p><p>Hier haben die Kinder Gelegenheit, mit Sinterklaas ins Gespräch zu kommen. Kleine Gedichte und Lieder werden von den Pieten mit Süßigkeiten belohnt. Handwerker und Händler aus den Niederlanden führen ihr Gewerk vor. So kann man sehen, wie Wolle auf einem Spinnrad gesponnen wird, wie Senf hergestellt wird oder wie Holzschuhe geschnitzt werden. Der Korbmacher und eine Perlenstickerin lassen sich auf die Finger schauen und der Waffelbäcker hat es am Feuer schön warm.</p><p>Der Duft von Matjes, Kniepertjes und Genever zieht durch das Viertel, es wird gesungen und den alten Weisen an der originalen Drehorgel gelauscht. Regionale und ansässige Händler und Gastronomen kümmern sich um die kulinarische Versorgung. Weihnachtsgeschenke kann man hier gut finden; Schmuck aus kleinen Manufakturen der Region oder von Designern aus Mexiko, ein kuschliges Fell, eine gewebte Decke, Töpferwaren aus dem Land Brandenburg, ausgezeichnete Spezialitäten wie Obstbrände und Whisky aus Werder oder hausgemachte Backmischungen für Brot oder Kekse.</p><p>Das Sinterklaas-Fest findet in diesem Jahr bereits zum 20. Mal statt.</p><p>Die Parkflächen in der Innenstadt sind begrenzt, der Veranstalter bittet darum, öffentliche Verkehrsmittel zu nutzen.</p>",
+	"todo": "ready"
   },
   {
     "id": 61,
@@ -75,7 +75,7 @@ define({ data:
 	"hours": "08:00-18:00",
 	"facebook": "https://www.facebook.com/Spargelhof.Klaistow",
 	"fee": "Eintritt frei",
-	"remarks": "<p>Weihnachten und Stroh gehören zusammen und stehen für Gemütlichkeit. Sehr stimmungsvoll zeigt dies der Klaistower Stroh-Advent und der ländliche Weihnachtsmarkt.</p><p>Auch in der Vorweihnachtszeit zeigen wir die meterhohen Strohfiguren aus der Welt der Erfindungen. Sowohl die Stroh-Ausstellung als auch unser ganzer Hof mit seinem ländlichen Weihnachtsmarkt erstrahlen in stimmungsvollem Lichterglanz.</p><p>Die Kleinen können sich auf eine Krippe mit Schafen, ein Kinderkino und ein Strohballen-Labyrinth freuen. An den Adventswochenenden kommen Angebote wie das Basteln von Stroh-Sternen, die Vorlesestunden „Geschichten im Stroh“ oder das gemeinsame Plätzchenbacken hinzu. Dann ist auch der Weihnachtsmann auf unserem Hof zu Gast und kann in seiner gemütlichen Strohwohnung besucht werden. Und am Nikolaus-Tag sowie an allen Adventssonntagen bietet unsere Hofbäckerei Plätzchenbacken an.</p><p>Lassen Sie sich unsere hausgemachten Spezialitäten wie Heidelbeer-Glühwein, geröstete Kürbiskerne, Stollen und Dominosteine schmecken. In unserem gemütlichen Scheunenrestaurant verwöhnen wir Sie mit leckerem Enten- und Wildbraten. Auch das Entenbuffet wird es wieder geben. Ab dem 18. November heißt es dann von 17 bis 20 Uhr 'Ente satt'. Auf Vorbestellung servieren wir Ihnen außerdem ganze Gans nebst Beilagen und tranchieren sie am Tisch.</p><p>Auch für den heimischen Herd können Sie bei uns Gänse im Hofladen bestellen. Und wer auf der Suche nach Geschenken für die Lieben ist, wird hier und in der Dekoscheune oder an einem der Stände auf unserem ländlichen Weihnachtsmarkt fündig. Auch ein Gutschein, beispielsweise für ein Spargelessen im nächsten Jahr oder ein Präsentkorb sorgen für Freude bei den Beschenkten.</p><p>Bei uns erwartet Sie eine große Auswahl an frisch geschlagenen Tannenbäumen. Der Weihnachtsbaumverkauf ist ab dem ab dem 27. November täglich geöffnet.</p>",
+	"remarks": "<p>Weihnachten und Stroh gehören zusammen und stehen für Gemütlichkeit. Sehr stimmungsvoll zeigt das der Stroh-Advent auf dem Spargel- und Erlebnishof Klaistow.</p><p>Entdecken Sie „Die Welt der Erfindungen“ beim 3. Stroh-Festival mit seinen riesigen Figuren wie Telefon, Kompass und Glühbirne - alles aus Stroh gebaut und mit Ähren dekoriert. Sowohl die Strohfiguren als auch der ganze Hof mit seinem ländlichen Weihnachtsmarkt erstrahlen bis zum 23. Dezember in einem ganz besonderen Lichterglanz.</p><p>Hausgemachte Leckerei wie Heidelbeer-Glühwein, geröstete Kürbiskerne, Stollen und Dominosteine sorgen ebenso wie Enten- und Wildbraten für weihnachtliche Genüsse. Ganze Gans nebst Beilagen wird im weihnachtlich dekorierten Scheunenrestaurant auf Vorbestellung serviert. Außerdem gibt es eine große Auswahl an frisch geschlagenen Weihnachtsbäumen.</p><p>Wer auf der Suche nach Geschenken für die Lieben ist, wird im Hofladen und in der Dekoscheune oder an einem der Weihnachtsmarktstände fündig. Auch ein Gutschein, beispielsweise für ein Spargelessen im nächsten Jahr oder ein Präsentkorb sorgen für Freude bei den Beschenkten.</p><p>Die Kleinen können sich auf eine Krippe mit Schafen, ein nostalgisches Kinderkarussell, ein Kinderkino, ein Strohballen-Labyrinth und einen Strohparcours für Bobby-Cars freuen. An den Adventswochenenden kommen Angebote wie das Basteln von Stroh-Sternen, die Vorlesestunden „Geschichten im Stroh“ oder das gemeinsame Plätzchenbacken hinzu. Dann ist auch der Weihnachtsmann auf dem Hof der Familien Buschmann und Winkelmann zu Gast und kann in seiner gemütlichen Strohwohnung besucht werden.</p><p>Ein Spaziergang durch das Naturwildgehege rundet den Ausflug ab. Und das alles bei freiem Eintritt!</p>",
 	"todo": "ready"
   },
   {
@@ -86,8 +86,8 @@ define({ data:
 	"org_contact": "",
 	"facebook": "https://www.facebook.com/ldvc.nauen/",
 	"fee": "",
-	"remarks": "<p>Immer am Donnerstag vor dem ersten Advent eröffnet der Campus ab 16:00 Uhr die Weihnachtsmarktsaison im Havelland mit dem Adventsbasar. Über 45 Stände bieten in bester Markttradition Handwerkskunst, Kulinarisches und Aktionen, wie z.B. einem Büchermarkt. Das Schülerradio übernimmt die Unterhaltung und ein Weihnachtsmann steht für die Kinderwünsche bereit.</p>",
-	"todo": "mail"
+	"remarks": "<p>Adventsbasar auf dem Leonardo da Vinci Campus, Donnerstag, 24. November 2016 von 15.30 Uhr bis 18.00 Uhr</p><p>Immer am Donnerstag vor dem ersten Advent eröffnet der Leonardo da Vinci Campus ab 15.30 Uhr die Weihnachtsmarktsaison im Havelland mit dem Adventsbasar. Über 45 Stände bieten in bester Markttradition Handwerkskunst, Kulinarisches und Aktionen.</p>",
+	"todo": "ready"
   },
   {
     "id": 55,
@@ -109,7 +109,7 @@ define({ data:
 	"facebook": "",
 	"fee": "",
 	"remarks": "<p>Am 26. November 2016 findet auf dem Gelände der Freilichtbühne in der Zeit von 14 bis 19 Uhr der Weihnachtsmarkt statt. Nach der Eröffnung durch den Bürgermeister und die Fischerkönigin lässt das Ketziner Blasorchester weihnachtliche Melodien erklingen. Es sind diverse Verkaufsstände, eine Tombola sowie ein Kinderkarussell vor Ort. Außerdem wird der Weihnachtsmann mit Geschenken für die Kinder erwartet. Nebenan im Haus der Begegnung sind alle Kinder zum Basteln von Weihnachtsdekorationen eingeladen. Ab 16 Uhr wird im angrenzenden Jugendclub das weihnachtliche Puppenspiel „Wo ist bloß der Weihnachtsmann!!“ von dem „Berliner Puppenkoffer“ aufgeführt.</p><p>Für das leibliche Wohl ist ausreichend vorgesorgt. Die Feuerwehr ist mit der Gulaschkanone bereits ab 12 Uhr anwesend.</p>",
-	"todo": "mail"
+	"todo": "wir haben kein Interesse"
   },
   {
     "id": 33,
@@ -130,8 +130,8 @@ define({ data:
 	"org_contact": "",
 	"facebook": "",
 	"fee": "",
-	"remarks": "<p>Willkommen am 26. und 27. November zwischen 12 und 18 Uhr zu unserem besonderen Familien-Weihnachtsmarkt im Naturparkzentrum in Raben!</p><p>SAMSTAG</p><p>10 Uhr: Eselwanderung<br>12 Uhr: Weihnachtsbaum schmücken und 'anblasen'<br>14 Uhr: Polnische Tanzgruppe<br>15 Uhr: Puppentheater<br>16 Uhr: Fackelwanderung zur Burg Rabenstein<br>17 Uhr: Freiluftkino im Lichtergarten</p><p>SONNTAG</p><p>14 Uhr: Polnische Tanzgruppe<br>15 Uhr: Märchenstunde<br>16 Uhr: Fackelwanderung zur Burg Rabenstein<br>17 Uhr: Freiluftkino im Lichtergarten</p><p>Stände und Aktionen</p><p>An verschiedenen Ständen im Gebäude können Weihnachtsgeschenke und -dekorationen selbst gebastelt werden.</p><p>In der 'Alten Brennerei': Märchenausstellung, Adventsgestecke basteln, Mehl mit der römischen Handmühle mahlen und sieben, Filzen, Enkaustik (künstlerische Wachsmaltechnik), Info & Fackelverkauf</p><p>In der 'Weihnachtswerkstatt' im Gartenhaus: Seidenmalerei, Kekshäuser und Dominosteinlokomotiven bauen, Kerzen gießen, Seifenbälle formen, Briefe an den Weihnachtsmann, Flämingladen mit regionalen Produkten im Gewölbekeller</p><p>Marktgelände: nostalgisches Kinderkarussell, polnisches Kunsthandwerk aus der Partnerregion Nowy Tomysl, Honig & Honigprodukte, Zuckerwatte, kandierte Äpfel & Co., Holzspielzeug, Kinderbücher und Regionalromane des Wiesengrundverlags, Backwaren und heiße Waffeln, Kerzen, Kerzenhalter, Dekoration, Goldschmied, heiße Getränke und Speisen, Kräuterhütte, Holzwerkstatt</p><p>Garten: Feuerschalen zum Aufwärmen, Lichtpfad (ab 16 Uhr), Freiluftkino (17 Uhr)</p><p>Und sonst: Ponyreiten, Esel streicheln, der Weihnachtsmann verteilt kleine Geschenke, Lagerfeuer mit Stockbrot (nach der Fackelwanderung), Weihnachtsquiz</p>",
-	"todo": "mail"
+	"remarks": "<p>Am 26. und 27. November findet in Raben zu Füßen der Burg Rabenstein der 20. „etwas andere“ Weihnachtsmarkt im Naturparkzentrum Hoher Fläming statt. Mit Zug und Burgenlinie ist eine Anreise nach Raben entspannt auch ohne Auto möglich.</p><p>Wenn Glühweinduft in die Nase steigt, ein Jauchzen vom nostalgischen Kinderkarussell zu hören ist, ein wärmendes Lagerfeuer in der Feuerschale knistert oder fleißige Kekshausbauer am Werkeln sind … dann ist wieder Weihnachtsmarkt in Raben! In diesem Jahr lädt der Naturparkverein Hoher Fläming bereits zum 20. Mal am ersten Adventswochenende zu diesem besonderen Familien-Weihnachtsmarkt rund um das Naturparkzentrum nach Raben ein.</p><p>Ob auf einer Eselwanderung, beim Kerzen gießen, Adventsgestecke basteln oder Kekshäuser bauen, beim Puppentheater oder bei der Märchenerzählen, bei der Fackelwanderung zur Burg Rabenstein oder beim Stockbrotbacken am Lagerfeuer – das vielseitige Programm lädt zum Mitmachen ein.</p><p>Erstmals beim „etwas anderen“ Weihnachtsmarkt sind Gäste aus dem polnischen Partnerlandkreis Nowy Tomyśl dabei, welche sich nicht nur mit regionaltypischem Kunsthandwerk sondern auch mit einer Tanzgruppe präsentieren.</p><p>Anlässlich des Jubiläums gibt es weitere Besonderheiten. Die Gäste werden gebeten, am Samstag den Weihnachtsbaum vor dem Naturparkzentrum zu schmücken, der anschließend feierlich „angeblasen“ werden soll. Ein „Lichterpfad“ führt durch den Naturgarten zwischen „Alter Brennerei“ und „Weihnachtswerkstatt“. Und in der neu gestalteten Märchenausstellung hat ein fesches Rotkäppchen keine Angst vor’m „bösen Wolf“.</p><p>Lassen Sie sich überraschen und auf die Adventszeit einstimmen: Willkommen am 26. und 27. November zwischen 12 und 18 Uhr im Naturparkzentrum in Raben!</p><p>Die Anreise ist bequem mit der Burgenlinie möglich. Bereits seit Ostern ist der Burgenbus im Hohen Fläming unterwegs und verbindet das Flämingstädtchen Niemegk, Raben mit der Burg Rabenstein, das Schloss Wiesenburg und die Burg Eisenhardt miteinander. Fünf Mal am Tag, passend zu den Zügen aus Richtung Berlin und Potsdam, fährt der Bus vom Bahnhof Bad Belzig durch den Naturpark Hoher Fläming und wieder zurück zum Bahnhof.</p>",
+	"todo": "ready"
   },
   {
     "id": 49,
@@ -193,89 +193,89 @@ define({ data:
     "id": 79,
     "lat": 52.352459,
     "lng": 13.631623,
-    "uuid": null,
+    "uuid": 18,
 	"org_contact": "",
 	"facebook": "",
 	"fee": "",
-	"remarks": "",
-	"todo": ""
+	"remarks": "<p>Pony reiten und weitere Attraktionen auf dem Weihnachtsmarkt. Schwein vom Spieß, Quarkkeulchen, Heiße Cocktails, Bleiverglasung, Karten legen und Hand lesen, Holzschnitzer, Töpfer, Kinderkarussell, Lagerfeuer</p><p>Zur freundlichen Beachtung: Es ist nicht gestattet Essen, Trinken und Tiere mit in die Kirche zu nehmen!</p>",
+	"todo": "mail"
   },
   {
     "id": 3,
     "lat": 52.028398,
     "lng": 13.577502,
-    "uuid": null,
+    "uuid": 19,
 	"org_contact": "",
 	"facebook": "",
 	"fee": "",
-	"remarks": "",
-	"todo": ""
+	"remarks": "<p>Der Ort erwartet die Besucher in weihnachtlicher Atmosphäre. Eine große Zahl Kunsthandwerker ergänzen das Angebot der Glashütter Läden.</p>",
+	"todo": "mail"
   },
   {
     "id": 57,
     "lat": 52.091695,
     "lng": 14.651374,
-    "uuid": null,
+    "uuid": 20,
 	"org_contact": "",
 	"facebook": "",
-	"fee": "",
-	"remarks": "",
-	"todo": ""
+	"fee": "Eintritt frei",
+	"remarks": "<p>buntes Unterhaltungsprogramm, der Weihnachtsmann ist zu Besuch, mit Händlern und Handwerkern</p>",
+	"todo": "mail"
   },
   {
     "id": 11,
     "lat": 52.839539,
     "lng": 13.728796,
-    "uuid": null,
+    "uuid": 21,
 	"org_contact": "",
 	"facebook": "",
 	"fee": "",
-	"remarks": "",
-	"todo": ""
+	"remarks": "<p>Eröffnung des Weihnachtsmarktes: Freitag, 25. November 2016: 18 – 21 Uhr! Lampionumzug zum Weihnachtsmarkt mit der Schneekönigin! Treffpunkt 17 Uhr Karl-Marx-Platz. Um 18 Uhr öffnet unser Nikolaus dann die Tore! Öffnungszeiten des Weihnachtsmarktes: Täglich von 12 – 20 Uhr, sonnabends schon ab 10 Uhr! Verkürzter O-Bus-Takt an den Wochenenden!</p><p>Und das erwartet Sie:</p><p>Ein schöner Baum! * Und eine Pyramide * Gesangs- und Posaunenchöre * Puppen- und Figurentheater * Eine mongolische Jurte als märchenhaftes Lesezelt * Ein russisches Blockhaus * Ein Guckloch Kino * Eine kleine Ritterburg * Eine geheimnisvolle Schaubude * Und ein mechanisches Karussell für Groß und Klein! * Weihnachtsgeschenke basteln * Kerzen farbig tauchen * Schafe streicheln * Selber Backen! * Am Feuer wärmen * Handwerk * Süße Leckereien, Deftiges, Glühwein & Vieles mehr...</p>",
+	"todo": "mail"
   },
   {
     "id": 13,
     "lat": 52.832024,
     "lng": 13.820018,
-    "uuid": null,
+    "uuid": 22,
 	"org_contact": "",
 	"facebook": "",
 	"fee": "",
-	"remarks": "",
-	"todo": ""
+	"remarks": "<p>Am Samstag, dem 26. November öffnet der diesjährige Krippenmarkt um 13.00 Uhr seine Pforten. Das Besondere in diesem Jahr, neben den Ständen und dem Programm in der Kirche: in Eberswalde wird die Aktion „Brot für die Welt“ für unsere Landeskirche Berlin-Brandenburg-schlesische Oberlausitz eröffnet. Federführend ist das Diakonische Werk, unter dessen Dach die Aktion beheimatet ist. Dazu wird es Veranstaltungen auf dem Weihnachtsmarkt der Stadt (Marktplatz) und in der Maria-Magdalenen-Kirche geben. Mit dabei ist auf jeden Fall die Bäckerei Wiese mit der wir ein Projekt erarbeiten, in dem u.a. Flüchtlinge/Asylbewerber und Konfirmand_innen miteinander backen und zu Gunsten der Aktion Brot verkaufen.</p><p>Zum Abschluss um 19.00 Uhr gibt es ein Konzert des Dresdner Blechbläserquartetts zusammen mit Kantor Siegfried Ruch. (Eintritt: Vorverkauf 10,- €, Abendkasse 12,- €) Seien Sie herzlich eingeladen zu diesem Tag und sagen Sie es weiter.</p>",
+	"todo": "mail"
   },
   {
     "id": 15,
     "lat": 52.85023,
     "lng": 13.826186,
-    "uuid": null,
+    "uuid": 23,
 	"org_contact": "",
 	"facebook": "",
 	"fee": "",
 	"remarks": "",
-	"todo": ""
+	"todo": "mail"
   },
   {
     "id": 19,
     "lat": 52.837133,
     "lng": 13.787587,
-    "uuid": null,
+    "uuid": 24,
 	"org_contact": "",
 	"facebook": "",
-	"fee": "",
-	"remarks": "",
-	"todo": ""
+	"fee": "freier Eintritt",
+	"remarks": "<p>Es erwarten Sie über 30 Künstler mit einzigartigen Geschenkideen: Malerei & Grafik, Fotografie, Keramik, Kalender, Glaskunst, Schmuckunikate, Filz – und Textilarbeiten, Holz – als Spielzeug, Schmuck und Objekt.</p><p>Für süße und herzhafte Leckereien sowie warme Getränke sorgen das Weinkontor in der Ofenfabrik, die Bäckerei Dellinger und die Backofengruppe der Mühle.</p><p>Wir freuen uns am 2. Adventssonntag über Ihren Besuch in der weihnachtlich verzauberten Kunst-Mühle.</p>",
+	"todo": "mail"
   },
   {
     "id": 21,
     "lat": 52.831466,
     "lng": 13.759154,
-    "uuid": null,
+    "uuid": 25,
 	"org_contact": "",
 	"facebook": "",
 	"fee": "",
 	"remarks": "",
-	"todo": ""
+	"todo": "mail"
   },
   {
     "id": 23,

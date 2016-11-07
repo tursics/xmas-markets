@@ -1,1 +1,1 @@
-Jan Bouman Haus
+Förderverein zur Pflege der niederländischen Kultur in Potsdam e.V., Fotografin Alie Ziel

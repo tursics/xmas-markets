@@ -1,1 +1,1 @@
-Naturparkzentrum Hoher Fläming
+Naturparkverein Hoher Fläming e. V.
