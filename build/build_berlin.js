@@ -483,7 +483,7 @@ function analyseJSON(savepath, json) {
 
 //-----------------------------------------------------------------------
 
-function loadLastTimeJSON(filepath, callback) {
+function loadLastTimeJS(filepath, callback) {
 	'use strict';
 
 	console.log('Loading ' + filepath);
@@ -518,6 +518,7 @@ function loadJSON(filepath, savepath, callback) {
 			console.error(err);
 		} else {
 			if (typeof json === 'string') {
+console.log(json.substr(0, 5));
 				json = JSON.parse(json);
 			}
 			analyseJSON(savepath, json);
@@ -534,24 +535,34 @@ function downloadFile(filepath, uri, callback) {
 
 	var fs = require('fs'),
 		http = require('http'),
+		https = require('https'),
 		file = fs.createWriteStream(filepath);
 
-	http.get(uri, function (response) {
-		response.pipe(file);
-		file.on('finish', function () {
-			file.close(callback);
+	if (uri.indexOf('https://') === 0) {
+		https.get(uri, function (response) {
+			response.pipe(file);
+			file.on('finish', function () {
+				file.close(callback);
+			});
 		});
-	});
+	} else {
+		http.get(uri, function (response) {
+			response.pipe(file);
+			file.on('finish', function () {
+				file.close(callback);
+			});
+		});
+	}
 }
 
 //-----------------------------------------------------------------------
 
-function parseFolder(path, dataSource, dataURI, callback) {
+function parseFolder(path, dataSource, dataURI, fileType, callback) {
 	'use strict';
 
 	var fs = require('fs'),
 		now = new Date(),
-		filename = dataSource + '-' + now.getFullYear() + twoDigits(now.getMonth() + 1) + twoDigits(now.getDate()) + '.json',
+		filename = dataSource + '-' + now.getFullYear() + twoDigits(now.getMonth() + 1) + twoDigits(now.getDate()) + '.' + fileType,
 		savename = dataSource + '-' + now.getFullYear() + twoDigits(now.getMonth() + 1) + twoDigits(now.getDate()) + '.js',
 		filepath = path + '/' + filename,
 		savepath = path + '/' + savename,
@@ -567,7 +578,7 @@ function parseFolder(path, dataSource, dataURI, callback) {
 				found = true;
 				console.log('Use cached file ' + filepath);
 
-				loadLastTimeJSON(releasepath, function () {
+				loadLastTimeJS(releasepath, function () {
 					loadJSON(filepath, savepath, function () {
 						fs.createReadStream(savepath).pipe(fs.createWriteStream(releasepath));
 
@@ -580,7 +591,7 @@ function parseFolder(path, dataSource, dataURI, callback) {
 		if (!found) {
 			console.log('Downloading ' + dataURI);
 			downloadFile(filepath, dataURI, function () {
-				loadLastTimeJSON(releasepath, function () {
+				loadLastTimeJS(releasepath, function () {
 					loadJSON(filepath, savepath, function () {
 						fs.createReadStream(savepath).pipe(fs.createWriteStream(releasepath));
 
@@ -597,7 +608,7 @@ function parseFolder(path, dataSource, dataURI, callback) {
 function buildBerlin(callback) {
 	'use strict';
 
-	parseFolder('.', 'berlin', 'http://www.berlin.de/sen/wirtschaft/service/maerkte-feste/weihnachtsmaerkte/index.php/index/all.json?ipp=500', callback);
+	parseFolder('.', 'berlin', 'http://www.berlin.de/sen/wirtschaft/service/maerkte-feste/weihnachtsmaerkte/index.php/index/all.json?ipp=500', 'json', callback);
 }
 
 //-----------------------------------------------------------------------
@@ -605,7 +616,15 @@ function buildBerlin(callback) {
 function buildBrandenburg(callback) {
 	'use strict';
 
-	parseFolder('.', 'brandenburg', 'http://www.berlin.de/sen/wirtschaft/service/maerkte-feste/weihnachtsmaerkte/brandenburger-weihnachtsmaerkte/index.php/index.json?ipp=500', callback);
+	parseFolder('.', 'brandenburg', 'http://www.berlin.de/sen/wirtschaft/service/maerkte-feste/weihnachtsmaerkte/brandenburger-weihnachtsmaerkte/index.php/index.json?ipp=500', 'json', callback);
+}
+
+//-----------------------------------------------------------------------
+
+function buildMoers(callback) {
+	'use strict';
+
+	parseFolder('.', 'moers', 'https://www.moers.de/de/opendataxml/christmas-xml/', 'xml', callback);
 }
 
 //-----------------------------------------------------------------------
@@ -617,6 +636,9 @@ try {
 
 		console.log();
 		buildBrandenburg(function () {
+			console.log();
+			buildMoers(function () {
+			});
 		});
 	});
 } catch (e) {
