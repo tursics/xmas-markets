@@ -34,7 +34,11 @@ function parseOpeningHours(str) {
 		to,
 		res = [];
 
-	arr = str.replace(/\r\n|\r|\n/g, '\n').split('\n');
+	if (typeof str === 'string') {
+		arr = str.replace(/\r\n|\r|\n/g, '\n').split('\n');
+	} else {
+		console.log('- could not parse date of type ' + (typeof str) + ': ' + JSON.stringify(str, null, ' '));
+	}
 
 	for (i = 0; i < arr.length; ++i) {
 		if (arr[i].length > 0) {
@@ -93,6 +97,21 @@ function parseOpeningHours(str) {
 				} else {
 					console.log('- could not parse date [2]: ' + date[0]);
 				}
+			} else if ((date.length === 5) && ('Uhr' === date[1]) && ('bis' === date[2]) && ('Uhr' === date[4])) {
+				// 10.00 Uhr bis 20.00 Uhr
+				date[0] = date[0].replace('.', ':');
+				date[3] = date[3].replace('.', ':');
+
+				if (date[0].length < 3) {
+					// 10 Uhr
+					date[0] = twoDigits(parseInt(date[0], 10)) + ':00';
+				}
+				if (date[3].length < 3) {
+					// 10 Uhr
+					date[3] = twoDigits(parseInt(date[3], 10)) + ':00';
+				}
+
+				daily = date[0] + '-' + date[3];
 			} else if ((date.length === 3) && ('Fr,' === date[0]) && ('Sa' === date[1])) {
 				weekdays[weekdaysName.indexOf(date[0].substr(0, 2))] = date[2];
 				weekdays[weekdaysName.indexOf(date[1])] = date[2];
@@ -304,13 +323,15 @@ function push_back(obj) {
 
 	for (i = 0; i < dataVec.length; ++i) {
 		item = dataVec[i];
-		if (item.id === obj.id) {
-			console.log('- duplicate market ' + obj.name);
-		} else if ((parseInt(item.lat * 10000, 10) === parseInt(obj.lat * 10000, 10)) && (parseInt(item.lng * 10000, 10) === parseInt(obj.lng * 10000, 10))) {
-			if (obj.name !== item.name) {
-				console.log('- duplicate market position ' + obj.name + ' and ' + item.name);
-			} else {
-				console.log('- duplicate market position ' + obj.name);
+		if (item.id !== null) {
+			if (item.id === obj.id) {
+				console.log('- duplicate market ' + obj.name);
+			} else if ((parseInt(item.lat * 10000, 10) === parseInt(obj.lat * 10000, 10)) && (parseInt(item.lng * 10000, 10) === parseInt(obj.lng * 10000, 10))) {
+				if (obj.name !== item.name) {
+					console.log('- duplicate market position ' + obj.name + ' and ' + item.name);
+				} else {
+					console.log('- duplicate market position ' + obj.name);
+				}
 			}
 		}
 	}
@@ -389,13 +410,14 @@ function getRefData(obj) {
 
 //-----------------------------------------------------------------------
 
-function analyseDataLine(data) {
+function analyseDataLineBerlin(data) {
 	'use strict';
 
 	var obj = {}, hours, ref;
 
 	obj.id = parseInt(data.id, 10);
-	buildGeo(obj, data.lat, data.lng);
+	obj.lat = 0;
+	obj.lng = 0;
 
 	ref = getRefData(obj);
 
@@ -427,6 +449,124 @@ function analyseDataLine(data) {
 //	obj.transit = ref.;
 
 //  obj.bemerkungen = data.bemerkungen;
+
+	push_back(obj);
+}
+
+//-----------------------------------------------------------------------
+
+function analyseDataLineMoers(data) {
+	'use strict';
+
+	var obj = {}, dates, hours, ref = {}, arr;
+
+	obj.id = null;
+//	buildGeo(obj, data.lat, data.lng);
+//
+//	ref = getRefData(obj);
+
+	obj.uuid = ref.uuid || null;
+	obj.district = '';
+	obj.name = data.title;
+	obj.location = data.locationname;
+	obj.street = data.locationstreetaddress;
+	obj.zip_city = data.locationzip + ' ' + data.location;
+
+	dates = data.date.split('bis');
+	if (dates.length === 1) {
+		obj.begin = dates[0];
+		obj.end = dates[0];
+	} else if (dates.length === 2) {
+		obj.begin = dates[0].trim();
+		obj.end = dates[1].trim();
+	} else {
+		console.log('Invalid date of ' + obj.name + ': ' + data.date);
+	}
+
+	arr = obj.begin.split('.');
+	obj.begin = arr[2] + '-' + arr[1] + '-' + arr[0];
+	arr = obj.end.split('.');
+	obj.end = arr[2] + '-' + arr[1] + '-' + arr[0];
+
+	hours = parseOpeningHours(data.time);
+	testOpeningHours(obj, hours);
+	buildOpeningHours(obj, hours);
+	buildInternet(obj, data.documenturl, '');
+
+	obj.organizer = data.organizername;
+	obj.org_contact = ref.org_contact || data.organizerurl;
+	obj.group = ref.group || '';
+	obj.facebook = ref.facebook || '';
+	obj.twitter = ref.twitter || '';
+	obj.fee = ref.fee;
+	obj.remarks = ref.remarks;
+	obj.todo = ref.todo;
+
+	push_back(obj);
+}
+
+//-----------------------------------------------------------------------
+
+function analyseDataLineWesel(data) {
+	'use strict';
+
+	var obj = {}, dates, hours, ref = {}, arr;
+
+	obj.id = parseInt(data.datensatznummer, 10);
+//	buildGeo(obj, data.lat, data.lng);
+//
+//	ref = getRefData(obj);
+
+	obj.uuid = ref.uuid || null;
+	obj.district = '';
+	obj.name = data.bezeichnung;
+	obj.location = data.veranstaltungsort;
+	obj.street = data.strasse;
+	obj.zip_city = data.plz + ' ' + data.ort;
+	obj.begin = data.datum1;
+	obj.end = data.datum2;
+
+	arr = obj.begin.split('.');
+	obj.begin = arr[2] + '-' + arr[1] + '-' + arr[0];
+	if (typeof obj.end !== 'string') {
+		obj.end = JSON.stringify(obj.end, null, ' ');
+		if ('{}' === obj.end) {
+			obj.end = obj.begin;
+		}
+	} else {
+		arr = obj.end.split('.');
+		obj.end = arr[2] + '-' + arr[1] + '-' + arr[0];
+	}
+
+	hours = parseOpeningHours('');
+	testOpeningHours(obj, hours);
+	buildOpeningHours(obj, hours);
+	buildInternet(obj, data.link_href, '');
+
+	obj.organizer = data.veranstalter_name;
+	obj.org_contact = ref.org_contact || data.veranstalter_website;
+	obj.group = ref.group || '';
+	obj.facebook = ref.facebook || '';
+	obj.twitter = ref.twitter || '';
+	obj.fee = ref.fee;
+	obj.remarks = ref.remarks || data.kurztext;
+	obj.todo = ref.todo;
+
+/*
+{
+  kategorie: 'Musik und Konzerte',
+  beschreibung: {},
+  buehnenhaus_abo: {},
+  buecherei_reihe: {},
+  fb5_veranstaltung: {},
+  gs_veranstaltung: {},
+  highlight: {},
+  highlight_bez: {},
+  stadtfuehrung: {},
+  vos: {},
+  vos_datum: {},
+  wes_775: 'nein' }
+*/
 
 	push_back(obj);
 }
@@ -472,8 +612,21 @@ function analyseJSON(savepath, json) {
 	var data = json.index,
 		i;
 
-	for (i = 0; i < data.length; ++i) {
-		analyseDataLine(data[i]);
+	if (typeof data !== 'undefined') {
+		for (i = 0; i < data.length; ++i) {
+			analyseDataLineBerlin(data[i]);
+		}
+	} else if (typeof json.christmasevents !== 'undefined') {
+		data = json.christmasevents.entry;
+
+		for (i = 0; i < data.length; ++i) {
+			analyseDataLineMoers(data[i]);
+		}
+	} else {
+		data = json.pressemeldungen.datensatz;
+		for (i = 0; i < data.length; ++i) {
+			analyseDataLineWesel(data[i]);
+		}
 	}
 
 	addOwnData();
@@ -490,18 +643,23 @@ function loadLastTimeJS(filepath, callback) {
 
 	var fs = require('fs');
 
-	fs.readFile(filepath, 'utf-8', function (err, json) {
-		if (err) {
-			console.error(err);
-		} else {
-			if ((typeof json === 'string') && (0 === json.indexOf('define({ data:'))) {
-				json = JSON.parse(json.substr(14, json.length - 14 - 4)); // });\n
-			}
+	if (fs.existsSync(filepath)) {
+		fs.readFile(filepath, 'utf-8', function (err, json) {
+			if (err) {
+				console.error(err);
+			} else {
+				if ((typeof json === 'string') && (0 === json.indexOf('define({ data:'))) {
+					json = JSON.parse(json.substr(14, json.length - 14 - 4)); // });\n
+				}
 
-			lastTimeDataVec = json;
-			callback();
-		}
-	});
+				lastTimeDataVec = json;
+				callback();
+			}
+		});
+	} else {
+		lastTimeDataVec = [];
+		callback();
+	}
 }
 
 //-----------------------------------------------------------------------
@@ -511,16 +669,20 @@ function loadJSON(filepath, savepath, callback) {
 
 	console.log('Loading ' + filepath);
 
-	var fs = require('fs');
+	var fs = require('fs'),
+		parser = require('xml2json');
 
 	fs.readFile(filepath, 'utf-8', function (err, json) {
 		if (err) {
 			console.error(err);
 		} else {
 			if (typeof json === 'string') {
-console.log(json.substr(0, 5));
+				if ('<?xml' === json.substr(0, 5)) {
+					json = parser.toJson(json);
+				}
 				json = JSON.parse(json);
 			}
+
 			analyseJSON(savepath, json);
 
 			callback();
@@ -629,6 +791,25 @@ function buildMoers(callback) {
 
 //-----------------------------------------------------------------------
 
+function buildKleve(callback) {
+	'use strict';
+
+//	parseFolder('.', 'kleve', 'https://www.offenesdatenportal.de/dataset/fc1b9c2c-cbd3-42e7-98ce-de8abd9aec11/resource/e3682fd9-4952-4356-b349-3b611e79c8f5/download/160427-marktverzeichnis-2016.csv', 'csv', callback);
+//	parseFolder('.', 'kleve', 'https://www.kleve.de/www/event.nsf/apijson.xsp/view-event-month?compact=false', 'json', callback);
+
+	callback();
+}
+
+//-----------------------------------------------------------------------
+
+function buildWesel(callback) {
+	'use strict';
+
+	parseFolder('.', 'wesel', 'https://www.wesel.de/de/system/-preview-xml/&src1=xml-veranstaltungen', 'xml', callback);
+}
+
+//-----------------------------------------------------------------------
+
 try {
 	console.log();
 	buildBerlin(function () {
@@ -638,6 +819,12 @@ try {
 		buildBrandenburg(function () {
 			console.log();
 			buildMoers(function () {
+				console.log();
+				buildKleve(function () {
+					console.log();
+					buildWesel(function () {
+					});
+				});
 			});
 		});
 	});

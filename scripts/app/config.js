@@ -3,7 +3,7 @@
 
 //-----------------------------------------------------------------------
 
-define(['data/berlin', 'data/brandenburg'], function (dataBerlin, dataBrandenburg) {
+define(['data/berlin', 'data/brandenburg', 'data/moers', 'data/wesel'], function (dataBerlin, dataBrandenburg, dataMoers, dataWesel) {
 	'use strict';
 
 	var firstDay = 4000000000000,
@@ -25,8 +25,10 @@ define(['data/berlin', 'data/brandenburg'], function (dataBerlin, dataBrandenbur
 		markets = markets.concat(data);
 	}
 
-	addData('Berlin', dataBerlin.data);
-	addData('Brandenburg', dataBrandenburg.data);
+//	addData('Berlin', dataBerlin.data);
+//	addData('Brandenburg', dataBrandenburg.data);
+//	addData('Moers', dataMoers.data);
+	addData('Wesel', dataWesel.data);
 
 	return {
 		timeout: 400,
