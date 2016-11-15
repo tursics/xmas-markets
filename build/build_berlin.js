@@ -323,7 +323,7 @@ function push_back(obj) {
 
 	for (i = 0; i < dataVec.length; ++i) {
 		item = dataVec[i];
-		if (item.id !== null) {
+		if ((item.id !== null) && (typeof obj.id !== 'undefined')) {
 			if (item.id === obj.id) {
 				console.log('- duplicate market ' + obj.name);
 			} else if ((parseInt(item.lat * 10000, 10) === parseInt(obj.lat * 10000, 10)) && (parseInt(item.lng * 10000, 10) === parseInt(obj.lng * 10000, 10))) {
@@ -370,7 +370,21 @@ function addOwnData() {
 function getRefData(obj) {
 	'use strict';
 
-	var i = 0;
+	function normalizeName(name) {
+		var str = name || '';
+
+		return str;
+	}
+
+	function guid() {
+		function s4() {
+			return Math.floor((1 + Math.random()) * 0x10000).toString(16).substring(1);
+		}
+		return s4() + s4() + '-' + s4() + '-' + s4() + '-' + s4() + '-' + s4() + s4() + s4();
+	}
+
+	var i = 0,
+		name = normalizeName(obj.name);
 
 	for (i = 0; i < lastTimeDataVec.length; ++i) {
 //		if (lastTimeDataVec[i].id === id) {
@@ -379,11 +393,18 @@ function getRefData(obj) {
 		}
 	}
 
+	for (i = 0; i < lastTimeDataVec.length; ++i) {
+		if (normalizeName(lastTimeDataVec[i].name) === name) {
+			return lastTimeDataVec[i];
+		}
+	}
+
 	return {
 		id: obj.id,
-		uuid: null,
+		uuid: guid(),
 		district: '',
 		name: '',
+		location: '',
 		street: '',
 		zip_city: '',
 		begin: '',
@@ -416,14 +437,15 @@ function analyseDataLineBerlin(data) {
 	var obj = {}, hours, ref;
 
 	obj.id = parseInt(data.id, 10);
-	obj.lat = 0;
-	obj.lng = 0;
+	obj.name = data.name;
+	buildGeo(obj, data.lat, data.lng);
 
 	ref = getRefData(obj);
 
 	obj.uuid = ref.uuid;
 	obj.district = data.bezirk || '';
 	obj.name = data.name;
+	obj.location = '';
 	obj.street = data.strasse;
 	obj.zip_city = data.plz_ort;
 	obj.begin = data.von;
@@ -461,9 +483,12 @@ function analyseDataLineMoers(data) {
 	var obj = {}, dates, hours, ref = {}, arr;
 
 	obj.id = null;
+	obj.name = data.title;
+	obj.lat = 0;
+	obj.lng = 0;
 //	buildGeo(obj, data.lat, data.lng);
-//
-//	ref = getRefData(obj);
+
+	ref = getRefData(obj);
 
 	obj.uuid = ref.uuid || null;
 	obj.district = '';
@@ -513,6 +538,9 @@ function analyseDataLineWesel(data) {
 	var obj = {}, dates, hours, ref = {}, arr;
 
 	obj.id = parseInt(data.datensatznummer, 10);
+	obj.name = data.bezeichnung;
+	obj.lat = 0;
+	obj.lng = 0;
 //	buildGeo(obj, data.lat, data.lng);
 //
 //	ref = getRefData(obj);
@@ -805,7 +833,9 @@ function buildKleve(callback) {
 function buildWesel(callback) {
 	'use strict';
 
-	parseFolder('.', 'wesel', 'https://www.wesel.de/de/system/-preview-xml/&src1=xml-veranstaltungen', 'xml', callback);
+//	parseFolder('.', 'wesel', 'https://www.wesel.de/de/system/-preview-xml/&src1=xml-veranstaltungen', 'xml', callback);
+
+	callback();
 }
 
 //-----------------------------------------------------------------------
