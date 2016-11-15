@@ -698,7 +698,7 @@ function loadJSON(filepath, savepath, callback) {
 	console.log('Loading ' + filepath);
 
 	var fs = require('fs'),
-		parser = require('xml2json');
+		parser;
 
 	fs.readFile(filepath, 'utf-8', function (err, json) {
 		if (err) {
@@ -706,6 +706,7 @@ function loadJSON(filepath, savepath, callback) {
 		} else {
 			if (typeof json === 'string') {
 				if ('<?xml' === json.substr(0, 5)) {
+					parser = require('xml2json');
 					json = parser.toJson(json);
 				}
 				json = JSON.parse(json);
