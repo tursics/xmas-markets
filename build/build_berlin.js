@@ -60,6 +60,16 @@ function parseOpeningHours(str) {
 					} else if ('täglich' === left[0]) {
 						// täglich 10:00-20:00
 						daily = date[1];
+					} else if ('Uhr' === date[1]) {
+						// 10.00 Uhr
+						date[0] = date[0].replace('.', ':');
+
+						if (date[0].length < 3) {
+							// 10 Uhr
+							date[0] = twoDigits(parseInt(date[0], 10)) + ':00';
+						}
+
+						daily = date[0];
 					} else if ('Winterwelt:' === left[0]) {
 						// ignore me
 						left = date[0].split('-');
@@ -199,7 +209,12 @@ function testOpeningHours(obj, data) {
 			splitted = checkTime.split('-');
 			if ((checkTime.length !== 11) || (splitted.length !== 2) || (splitted[0].length !== 5) || (splitted[1].length !== 5)) {
 				if ('geschlossen' !== checkTime) {
-					console.log('- ' + obj.name + ' has wrong opening time: ' + checkTime);
+					splitted = checkTime.split(':');
+					if ((splitted.length !== 2) || (parseInt(splitted[0], 10) > 24) || (parseInt(splitted[1], 10) > 60)) {
+						console.log('- ' + obj.name + ' has wrong opening time: ' + checkTime);
+					} else {
+						console.log('- Warning: ' + obj.name + ' has only beginning time: ' + checkTime);
+					}
 				}
 			} else {
 				splitted = checkTime.split('-')[0].split(':');
