@@ -117,7 +117,7 @@ define(['app/config', 'app/viewMarketsOne'], function (config, viewMarketsOne) {
 //			if ('mail' === obj.todo) { return ''; }
 //			if ('ready' === obj.todo) { return ''; }
 //			if ('' === obj.todo) { return ''; }
-			openingtime = obj.todo + ' | <a href="mailto:' + obj.email + '">Mail</a> und <a href="' + obj.web + '" target="_blank">Web</a>';
+//			openingtime = obj.todo + ' | <a href="mailto:' + obj.email + '">Mail</a> und <a href="' + obj.web + '" target="_blank">Web</a>';
 
 			txt = '<p>' + obj.name + '</p><p>' + openingtime + '</p>';
 			img = '<aside class="pack-begin"><img src="art/' + obj.path + '/' + obj.uuid + '/128.jpg"></aside>';
@@ -137,15 +137,14 @@ define(['app/config', 'app/viewMarketsOne'], function (config, viewMarketsOne) {
 		},
 
 		// ·························································
-		dateToStr: function( obj)
-		{
+		dateToStr: function (obj) {
 			var str = obj.getFullYear().toString();
 
-			if( obj.getMonth() < 9) {
+			if (obj.getMonth() < 9) {
 				str += '0';
 			}
 			str += obj.getMonth() + 1;
-			if( obj.getDate() < 10) {
+			if (obj.getDate() < 10) {
 				str += '0';
 			}
 			str += obj.getDate();
@@ -154,39 +153,38 @@ define(['app/config', 'app/viewMarketsOne'], function (config, viewMarketsOne) {
 		},
 
 		// ·························································
-		getOpeningTime: function( obj, diffdays)
-		{
-			var workingDate = getToday();
-			workingDate.setDate( workingDate.getDate() + diffdays);
+		getOpeningTime: function (obj, diffdays) {
+			var workingDate = getToday(), daystr;
+			workingDate.setDate(workingDate.getDate() + diffdays);
 
-			var daystr = this.dateToStr( workingDate);
-			if( typeof obj[ daystr] !== 'undefined') {
-				return obj[ daystr].trim();
+			daystr = this.dateToStr(workingDate);
+			if (typeof obj[daystr] !== 'undefined') {
+				return obj[daystr].trim();
 			}
 
 			return '';
 		},
 
 		// ·························································
-		getNextOpeningDays: function(obj)
-		{
-			var days = 0;
+		getNextOpeningDays: function (obj) {
+			var days = 0,
+				workingDate = getToday(),
+				late = getToday(),
+				daystr;
 
-			var workingDate = getToday();
 			while (workingDate < config.startDate) {
 				++days;
 				workingDate.setDate(workingDate.getDate() + 1);
 			}
 
-			var late = getToday();
 			late.setTime(config.endDate.getTime());
 			late.setDate(late.getDate() + 1);
 
 			while (workingDate < late) {
-				var daystr = this.dateToStr(workingDate);
-		    	if ((typeof obj[daystr] !== 'undefined') && (obj[daystr].trim() !== '')) {
+				daystr = this.dateToStr(workingDate);
+				if ((typeof obj[daystr] !== 'undefined') && (obj[daystr].trim() !== '')) {
 					return days;
-	    		}
+				}
 
 				++days;
 				workingDate.setDate(workingDate.getDate() + 1);
@@ -196,42 +194,50 @@ define(['app/config', 'app/viewMarketsOne'], function (config, viewMarketsOne) {
 		},
 
 		// ·························································
-		getNextMarketOpeningTime: function(obj)
-		{
-			var days = this.getNextOpeningDays(obj);
-			var openingtime = '';
+		getNextMarketOpeningTime: function (obj) {
+			var days = this.getNextOpeningDays(obj),
+				openingtime = '',
+				workingDate = getToday(),
+				nowTime,
+				mondayTime,
+				workTime,
+				weekday,
+				diffNow,
+				diffDays,
+				maxOpen,
+				diffWeeks,
+				weekdays;
 
-			var workingDate = getToday();
-			workingDate.setHours( 0, 0, 0, 0);
-			var nowTime = workingDate.getTime();
-			workingDate.setDate( workingDate.getDate() - (workingDate.getDay() + 6) % 7);
-			var mondayTime = workingDate.getTime();
+			workingDate.setHours(0, 0, 0, 0);
+			nowTime = workingDate.getTime();
+			workingDate.setDate(workingDate.getDate() - (workingDate.getDay() + 6) % 7);
+			mondayTime = workingDate.getTime();
 
 			workingDate = getToday();
-			workingDate.setDate( workingDate.getDate() + days);
-			var workTime = workingDate.getTime();
-			var weekday = workingDate.getDay();
-			var diffNow = parseInt((workTime - nowTime) / 1000 / 60 / 60 / 24);
-			var diffDays = parseInt((workTime - mondayTime) / 1000 / 60 / 60 / 24);
-			var maxOpen = parseInt((config.endDate.getTime() - nowTime) / 1000 / 60 / 60 / 24);
-			var diffWeeks = parseInt(diffDays / 7);
-			var weekdays = new Array( "Sonntag", "Montag", "Dienstag", "Mittwoch", "Donnerstag", "Freitag", "Samstag");
+			workingDate.setDate(workingDate.getDate() + days);
+			workTime = workingDate.getTime();
+			weekday = workingDate.getDay();
+			diffNow = parseInt((workTime - nowTime) / 1000 / 60 / 60 / 24, 10);
+			diffDays = parseInt((workTime - mondayTime) / 1000 / 60 / 60 / 24, 10);
+			maxOpen = parseInt((config.endDate.getTime() - nowTime) / 1000 / 60 / 60 / 24, 10);
+			diffWeeks = parseInt(diffDays / 7, 10);
+			weekdays = ["Sonntag", "Montag", "Dienstag", "Mittwoch", "Donnerstag", "Freitag", "Samstag"];
 
-			if( maxOpen <= days) {
+			if (maxOpen <= days) {
 				openingtime = 'Vorbei';
-			} else if( 0 == days) {
-				openingtime = 'Heute von ' + this.getOpeningTime( obj, days) + ' Uhr';
-			} else if( 1 == days) {
-				openingtime = 'Morgen von ' + this.getOpeningTime( obj, days) + ' Uhr';
-			} else if( 0 == diffWeeks) {
-				openingtime = weekdays[weekday] + ' von ' + this.getOpeningTime( obj, days) + ' Uhr';
-			} else if( 1 == diffWeeks) {
-				if( diffNow < 6) {
-					openingtime = weekdays[weekday] + ' von ' + this.getOpeningTime( obj, days) + ' Uhr';
+			} else if (0 === days) {
+				openingtime = 'Heute von ' + this.getOpeningTime(obj, days) + ' Uhr';
+			} else if (1 === days) {
+				openingtime = 'Morgen von ' + this.getOpeningTime(obj, days) + ' Uhr';
+			} else if (0 === diffWeeks) {
+				openingtime = weekdays[weekday] + ' von ' + this.getOpeningTime(obj, days) + ' Uhr';
+			} else if (1 === diffWeeks) {
+				if (diffNow < 6) {
+					openingtime = weekdays[weekday] + ' von ' + this.getOpeningTime(obj, days) + ' Uhr';
 				} else {
 					openingtime = 'Nächste Woche ' + weekdays[weekday];
 				}
-			} else if( 4 > diffWeeks){
+			} else if (4 > diffWeeks) {
 				openingtime = weekdays[weekday] + ' in ' + diffWeeks + ' Wochen';
 			} else {
 				openingtime = 'Kurz vor Weihnachten';
