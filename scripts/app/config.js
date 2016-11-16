@@ -3,7 +3,8 @@
 
 //-----------------------------------------------------------------------
 
-define(['data/berlin', 'data/brandenburg', 'data/moers', 'data/wesel'], function (dataBerlin, dataBrandenburg, dataMoers, dataWesel) {
+//define(['data/berlin', 'data/brandenburg', 'data/moers', 'data/wesel'], function (dataBerlin, dataBrandenburg, dataMoers, dataWesel) {
+define(['data/berlin', 'data/brandenburg', 'data/moers'], function (dataBerlin, dataBrandenburg, dataMoers) {
 	'use strict';
 
 	var firstDay = 4000000000000,
@@ -27,8 +28,8 @@ define(['data/berlin', 'data/brandenburg', 'data/moers', 'data/wesel'], function
 
 //	addData('Berlin', dataBerlin.data);
 //	addData('Brandenburg', dataBrandenburg.data);
-//	addData('Moers', dataMoers.data);
-	addData('Wesel', dataWesel.data);
+	addData('Moers', dataMoers.data);
+//	addData('Wesel', dataWesel.data);
 
 	return {
 		timeout: 400,
