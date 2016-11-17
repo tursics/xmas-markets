@@ -63,9 +63,9 @@ define(['data/berlin', 'data/brandenburg', 'data/moers'], function (dataBerlin, 
 		markets = markets.concat(data);
 	}
 
-//	addData('Berlin', dataBerlin.data);
-//	addData('Brandenburg', dataBrandenburg.data);
-	addData('Moers', dataMoers.data);
+	addData('Berlin', dataBerlin.data);
+	addData('Brandenburg', dataBrandenburg.data);
+//	addData('Moers', dataMoers.data);
 //	addData('Wesel', dataWesel.data);
 
 	return {
