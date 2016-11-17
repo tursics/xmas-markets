@@ -47,7 +47,7 @@ define( ['app/config','app/view','app/sort'], function( config, view, sort) {
 			txt = view.composeList( txt);
 			txt = view.composeSectionList( txt);
 
-			txt = '<div style="margin:-1.5rem -1.5rem 1rem -1.5rem;"><img src="art/teaser.jpg" style="width:100%;"></div>' + txt;
+			txt = '<div style="margin:-1.5rem -1.5rem 1rem -1.5rem;"><img src="' + config.teaserPath + '" style="width:100%;"></div>' + txt;
 
 			view.finishMarketList( txt);
 		}
