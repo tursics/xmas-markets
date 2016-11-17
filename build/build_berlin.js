@@ -145,6 +145,18 @@ function parseOpeningHours(str) {
 				weekdays[weekdaysName.indexOf(date[1].substr(0, 2))] = date[3].replace(',', '');
 				weekdays[weekdaysName.indexOf(date[2])] = date[3].replace(',', '');
 				days.push(date[4] + ' ' + date[5]);
+			} else if ((date.length === 18) && ('täglich' === date[0]) && ('geöffnet' === date[1]) && ('ab' === date[2]) && ('Uhr;' === date[4])
+					   && ('donnerstags,' === date[5]) && ('freitags' === date[6]) && ('und' === date[7]) && ('samstags' === date[8]) && ('bis' === date[9]) && ('Uhr;' === date[11])
+					   && ('sonntags' === date[12]) && ('bis' === date[13]) && ('mittwochs' === date[14]) && ('bis' === date[15]) && ('Uhr' === date[17])) {
+				// täglich geöffnet ab 12 Uhr; donnerstags, freitags und samstags bis 22 Uhr; sonntags bis mittwochs bis 20 Uhr
+				weekdays[weekdaysName.indexOf('Do')] = date[3] + ':00-' + date[10] + ':00';
+				weekdays[weekdaysName.indexOf('Fr')] = date[3] + ':00-' + date[10] + ':00';
+				weekdays[weekdaysName.indexOf('Sa')] = date[3] + ':00-' + date[10] + ':00';
+
+				weekdays[weekdaysName.indexOf('So')] = date[3] + ':00-' + date[16] + ':00';
+				weekdays[weekdaysName.indexOf('Mo')] = date[3] + ':00-' + date[16] + ':00';
+				weekdays[weekdaysName.indexOf('Di')] = date[3] + ':00-' + date[16] + ':00';
+				weekdays[weekdaysName.indexOf('Mi')] = date[3] + ':00-' + date[16] + ':00';
 			} else {
 				console.log('- could not parse date [3]: ' + arr[i]);
 			}
@@ -213,7 +225,7 @@ function testOpeningHours(obj, data) {
 					if ((splitted.length !== 2) || (parseInt(splitted[0], 10) > 24) || (parseInt(splitted[1], 10) > 60)) {
 						console.log('- ' + obj.name + ' has wrong opening time: ' + checkTime);
 					} else {
-						console.log('- Warning: ' + obj.name + ' has only beginning time: ' + checkTime);
+						console.log('[warning: ' + obj.name + ' has only beginning time: ' + checkTime + ']');
 					}
 				}
 			} else {
@@ -392,10 +404,11 @@ function getRefData(obj) {
 	}
 
 	function guid() {
-		function s4() {
-			return Math.floor((1 + Math.random()) * 0x10000).toString(16).substring(1);
-		}
-		return s4() + s4() + '-' + s4() + '-' + s4() + '-' + s4() + '-' + s4() + s4() + s4();
+//		function s4() {
+//			return Math.floor((1 + Math.random()) * 0x10000).toString(16).substring(1);
+//		}
+//		return s4() + s4() + '-' + s4() + '-' + s4() + '-' + s4() + '-' + s4() + s4() + s4();
+		return Math.floor((1 + Math.random()) * 0x10000).toString(10);
 	}
 
 	var i = 0,
@@ -745,18 +758,20 @@ function downloadFile(filepath, uri, callback) {
 		file = fs.createWriteStream(filepath);
 
 	if (uri.indexOf('https://') === 0) {
+		file.on('finish', function () {
+			file.close(callback);
+		});
+
 		https.get(uri, function (response) {
 			response.pipe(file);
-			file.on('finish', function () {
-				file.close(callback);
-			});
 		});
 	} else {
+		file.on('finish', function () {
+			file.close(callback);
+		});
+
 		http.get(uri, function (response) {
 			response.pipe(file);
-			file.on('finish', function () {
-				file.close(callback);
-			});
 		});
 	}
 }
@@ -856,6 +871,16 @@ function buildWesel(callback) {
 
 //-----------------------------------------------------------------------
 
+function buildKrefeld(callback) {
+	'use strict';
+
+//	parseFolder('.', 'krefeld', 'https://www.krefeld.de/www/event.nsf/apijson.xsp/view-event-month?compact=false', 'json', callback);
+
+	callback();
+}
+
+//-----------------------------------------------------------------------
+
 try {
 	console.log();
 	buildBerlin(function () {
@@ -869,6 +894,9 @@ try {
 				buildKleve(function () {
 					console.log();
 					buildWesel(function () {
+						console.log();
+						buildKrefeld(function () {
+						});
 					});
 				});
 			});
