@@ -34,7 +34,9 @@ define(['data/berlin', 'data/brandenburg', 'data/moers'], function (dataBerlin, 
 			attribution = '<li><a href="#">MoersMarketing GmbH</a></li>';
 			teaserPath = 'art/moers/teaser.jpg';
 		} else if ('Wesel' === name) {
-			markets = '<li><a href="#">"Veranstaltungen in Wesel"<br>DL-DE-Zero-2.0<br>offenedaten.wesel.de</a></li>';
+			markets = '<li><a href="#">"Veranstaltungen in Wesel"<br>DL-DE-Zero-2.0<br>opendata.wesel.de</a></li>';
+		} else if ('Krefeld' === name) {
+			markets = '<li><a href="#">"Veranstaltungskalender der Stadt Krefeld"<br>DL-DE-Zero-2.0<br>offenesdatenportal.de/organization/krefeld</a></li>';
 		}
 
 		if (docTitle.length > 0) {
