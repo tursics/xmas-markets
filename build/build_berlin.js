@@ -333,7 +333,7 @@ function buildInternet(obj, www, mail) {
 	if (mail.indexOf('mailto:') === 0) {
 		mail = mail.substr(7);
 	}
-	if ((www.length > 0) && (www.indexOf('http://') < 0)) {
+	if ((www.length > 0) && (www.indexOf('http://') < 0) && (www.indexOf('https://') < 0)) {
 		www = 'http://' + www;
 	}
 
@@ -353,7 +353,7 @@ function push_back(obj) {
 		if ((item.id !== null) && (typeof obj.id !== 'undefined')) {
 			if (item.id === obj.id) {
 				console.log('- duplicate market ' + obj.name);
-			} else if ((parseInt(item.lat * 10000, 10) === parseInt(obj.lat * 10000, 10)) && (parseInt(item.lng * 10000, 10) === parseInt(obj.lng * 10000, 10))) {
+			} else if ((item.lat !== 0) && (item.lng !== 0) && (parseInt(item.lat * 10000, 10) === parseInt(obj.lat * 10000, 10)) && (parseInt(item.lng * 10000, 10) === parseInt(obj.lng * 10000, 10))) {
 				if (obj.name !== item.name) {
 					console.log('- duplicate market position ' + obj.name + ' and ' + item.name);
 				} else {
@@ -563,15 +563,15 @@ function analyseDataLineMoers(data) {
 function analyseDataLineWesel(data) {
 	'use strict';
 
-	var obj = {}, dates, hours, ref = {}, arr;
+	var obj = {}, dates, hours, ref = {}, arr, test;
 
 	obj.id = parseInt(data.datensatznummer, 10);
 	obj.name = data.bezeichnung;
 	obj.lat = 0;
 	obj.lng = 0;
 //	buildGeo(obj, data.lat, data.lng);
-//
-//	ref = getRefData(obj);
+
+	ref = getRefData(obj);
 
 	obj.uuid = ref.uuid || null;
 	obj.district = '';
@@ -594,6 +594,12 @@ function analyseDataLineWesel(data) {
 		obj.end = arr[2] + '-' + arr[1] + '-' + arr[0];
 	}
 
+	test = new Date(obj.begin);
+	if (!isNaN(test) && (1 <= test.getMonth()) && (test.getMonth() < 10)) {
+		// only accept november, december and january dates
+		return;
+	}
+
 	hours = parseOpeningHours('');
 	testOpeningHours(obj, hours);
 	buildOpeningHours(obj, hours);
@@ -604,10 +610,13 @@ function analyseDataLineWesel(data) {
 	obj.group = ref.group || '';
 	obj.facebook = ref.facebook || '';
 	obj.twitter = ref.twitter || '';
-	obj.fee = ref.fee;
+	obj.fee = ref.fee || '';
 	obj.remarks = ref.remarks || data.kurztext;
-	obj.todo = ref.todo;
+	obj.todo = ref.todo || 'new';
 
+	if (data.highlight === 'ja') {
+		console.log('>> ' + data.highlight_bez + ' << ' + data.veranstalter_website);
+	}
 /*
 {
   kategorie: 'Musik und Konzerte',
@@ -616,12 +625,100 @@ function analyseDataLineWesel(data) {
   buecherei_reihe: {},
   fb5_veranstaltung: {},
   gs_veranstaltung: {},
-  highlight: {},
-  highlight_bez: {},
   stadtfuehrung: {},
   vos: {},
   vos_datum: {},
   wes_775: 'nein' }
+*/
+
+	push_back(obj);
+}
+
+//-----------------------------------------------------------------------
+
+function analyseDataLineKrefeld(data) {
+	'use strict';
+
+	var obj = {}, dates, time, hours, ref = {}, test,
+		i, events = ['Weihnachten', 'Weihnachtsmarkt'];
+
+	obj.id = data['@unid'];
+	obj.name = data.DocName;
+	obj.lat = 0;
+	obj.lng = 0;
+//	buildGeo(obj, data.lat, data.lng);
+
+//	ref = getRefData(obj);
+
+	obj.uuid = ref.uuid || null;
+	obj.district = '';
+	obj.name = data.DocName;
+	obj.location = ref.location || '';
+	obj.street = ref.street || '';
+	obj.zip_city = ref.zip_city || '';
+	obj.begin = data.Start;
+	obj.end = data.End;
+
+	time = obj.begin.split('T')[1].split(':')[0] + ':' + obj.begin.split('T')[1].split(':')[1];
+	obj.begin = obj.begin.split('T')[0];
+	if (obj.end.length > 0) {
+		time += '-' + obj.end.split('T')[1].split(':')[0] + ':' + obj.end.split('T')[1].split(':')[1];
+		obj.end = obj.end.split('T')[0];
+	} else {
+		obj.end = obj.begin;
+	}
+
+//	test = new Date(obj.begin);
+//	if (!isNaN(test) && (1 <= test.getMonth()) && (test.getMonth() < 10)) {
+//		// only accept november, december and january dates
+//		return;
+//	}
+
+	if (typeof data.EventType === 'string') {
+		if (events.indexOf(data.EventType) === -1) {
+			return;
+		}
+	} else {
+		for (i = 0; i < data.EventType.length; ++i) {
+			if (events.indexOf(data.EventType[i]) > -1) {
+				break;
+			}
+		}
+		if (i === data.EventType.length) {
+			return;
+		}
+	}
+
+	hours = parseOpeningHours(time);
+	testOpeningHours(obj, hours);
+	buildOpeningHours(obj, hours);
+	buildInternet(obj, 'https://www.krefeld.de' + data.URL, '');
+
+	obj.organizer = ref.organizer || '';
+	obj.org_contact = ref.org_contact || '';
+	obj.group = ref.group || '';
+	obj.facebook = ref.facebook || '';
+	obj.twitter = ref.twitter || '';
+	obj.fee = ref.fee || '';
+	obj.remarks = ref.remarks || data.kurztext;
+	obj.todo = ref.todo || 'new';
+
+	if (data.EventHighlight === 'ja') {
+		console.log('>> ' + obj.name + ' << ' + obj.web);
+	}
+
+/*
+{ '@entryid': '1-AA548B8CADE383CEC1257FE60036C0AB',
+  '@position': '1',
+  '@siblings': 556,
+  EventSubTitle: '',
+  EventType: 'Kultur',
+  Kurztext: 'In den Ausstellungsräumen ist unter dem Titel "Das Abenteuer unserer Sammlung I" aus dem immensen Fundus der Kunstmuseen Krefeld eine ungewöhnliche Inszenierung der eigenen Sammlung zu sehen.',
+  Thumb: '' }
+
+      "EventType":
+      ["Kultur","Weihnachten","Weihnachtsmarkt"
+      ],
 */
 
 	push_back(obj);
@@ -678,10 +775,16 @@ function analyseJSON(savepath, json) {
 		for (i = 0; i < data.length; ++i) {
 			analyseDataLineMoers(data[i]);
 		}
-	} else {
+	} else if (typeof json.pressemeldungen !== 'undefined') {
 		data = json.pressemeldungen.datensatz;
+
 		for (i = 0; i < data.length; ++i) {
 			analyseDataLineWesel(data[i]);
+		}
+	} else {
+		data = json;
+		for (i = 0; i < data.length; ++i) {
+			analyseDataLineKrefeld(data[i]);
 		}
 	}
 
@@ -864,9 +967,9 @@ function buildKleve(callback) {
 function buildWesel(callback) {
 	'use strict';
 
-//	parseFolder('.', 'wesel', 'https://www.wesel.de/de/system/-preview-xml/&src1=xml-veranstaltungen', 'xml', callback);
+	parseFolder('.', 'wesel', 'https://www.wesel.de/de/system/-preview-xml/&src1=xml-veranstaltungen', 'xml', callback);
 
-	callback();
+//	callback();
 }
 
 //-----------------------------------------------------------------------
@@ -874,9 +977,9 @@ function buildWesel(callback) {
 function buildKrefeld(callback) {
 	'use strict';
 
-//	parseFolder('.', 'krefeld', 'https://www.krefeld.de/www/event.nsf/apijson.xsp/view-event-month?compact=false', 'json', callback);
+	parseFolder('.', 'krefeld', 'https://www.krefeld.de/www/event.nsf/apijson.xsp/view-event-month?compact=false', 'json', callback);
 
-	callback();
+//	callback();
 }
 
 //-----------------------------------------------------------------------
