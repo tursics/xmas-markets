@@ -367,6 +367,10 @@ function push_back(obj) {
 		console.log('- ' + obj.name.replace(/\r\n|\r|\n/g, ' ') + ' has no UUID');
 	}
 
+	if ((obj.lat === 0) && (obj.lng === 0)) {
+		console.log('- ' + obj.name.replace(/\r\n|\r|\n/g, ' ') + ' has no geo position');
+	}
+
 	dataVec.push(obj);
 }
 
@@ -416,7 +420,7 @@ function getRefData(obj) {
 
 	for (i = 0; i < lastTimeDataVec.length; ++i) {
 //		if (lastTimeDataVec[i].id === id) {
-		if ((parseInt(lastTimeDataVec[i].lat * 10000, 10) === parseInt(obj.lat * 10000, 10)) && (parseInt(lastTimeDataVec[i].lng * 10000, 10) === parseInt(obj.lng * 10000, 10))) {
+		if ((obj.lat !== 0) && (obj.lng !== 0) && (parseInt(lastTimeDataVec[i].lat * 10000, 10) === parseInt(obj.lat * 10000, 10)) && (parseInt(lastTimeDataVec[i].lng * 10000, 10) === parseInt(obj.lng * 10000, 10))) {
 			return lastTimeDataVec[i];
 		}
 	}
@@ -648,7 +652,7 @@ function analyseDataLineKrefeld(data) {
 	obj.lng = 0;
 //	buildGeo(obj, data.lat, data.lng);
 
-//	ref = getRefData(obj);
+	ref = getRefData(obj);
 
 	obj.uuid = ref.uuid || null;
 	obj.district = '';
@@ -689,6 +693,11 @@ function analyseDataLineKrefeld(data) {
 		}
 	}
 
+	// to save time...
+	if (data.EventHighlight !== 'ja') {
+		return;
+	}
+
 	hours = parseOpeningHours(time);
 	testOpeningHours(obj, hours);
 	buildOpeningHours(obj, hours);
@@ -700,26 +709,12 @@ function analyseDataLineKrefeld(data) {
 	obj.facebook = ref.facebook || '';
 	obj.twitter = ref.twitter || '';
 	obj.fee = ref.fee || '';
-	obj.remarks = ref.remarks || data.kurztext;
+	obj.remarks = ref.remarks || data.Kurztext;
 	obj.todo = ref.todo || 'new';
 
-	if (data.EventHighlight === 'ja') {
-		console.log('>> ' + obj.name + ' << ' + obj.web);
-	}
-
-/*
-{ '@entryid': '1-AA548B8CADE383CEC1257FE60036C0AB',
-  '@position': '1',
-  '@siblings': 556,
-  EventSubTitle: '',
-  EventType: 'Kultur',
-  Kurztext: 'In den Ausstellungsräumen ist unter dem Titel "Das Abenteuer unserer Sammlung I" aus dem immensen Fundus der Kunstmuseen Krefeld eine ungewöhnliche Inszenierung der eigenen Sammlung zu sehen.',
-  Thumb: '' }
-
-      "EventType":
-      ["Kultur","Weihnachten","Weihnachtsmarkt"
-      ],
-*/
+//	if (data.EventHighlight === 'ja') {
+//		console.log('>> ' + obj.name + ' << ' + obj.web);
+//	}
 
 	push_back(obj);
 }
