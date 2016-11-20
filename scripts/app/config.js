@@ -87,7 +87,7 @@ define(['data/berlin', 'data/brandenburg', 'data/moers', 'data/krefeld'], functi
 				i;
 
 			for (i = 0; i < this.markets.length; ++i) {
-				if ((this.markets[i].path === path) && (this.markets[i].uuid === uuid)) {
+				if ((this.markets[i].path === path) && (this.markets[i].uuid == uuid)) {
 					return this.markets[i];
 				}
 			}
