@@ -53,11 +53,13 @@ define(['data/berlin', 'data/brandenburg', 'data/moers', 'data/krefeld'], functi
 
 		for (market = 0; market < data.length; ++market) {
 			data[market].path = name.toLowerCase();
-			if (!isNaN(Date.parse(data[market].begin))) {
-				firstDay = Math.min(firstDay, Date.parse(data[market].begin));
-			}
-			if (!isNaN(Date.parse(data[market].end))) {
-				lastDay = Math.max(lastDay, Date.parse(data[market].end));
+			if (data[market].todo !== 'hide') {
+				if (!isNaN(Date.parse(data[market].begin))) {
+					firstDay = Math.min(firstDay, Date.parse(data[market].begin));
+				}
+				if (!isNaN(Date.parse(data[market].end))) {
+					lastDay = Math.max(lastDay, Date.parse(data[market].end));
+				}
 			}
 		}
 
