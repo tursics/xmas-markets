@@ -926,57 +926,75 @@ function parseFolder(path, dataSource, dataURI, fileType, callback) {
 
 //-----------------------------------------------------------------------
 
-function buildBerlin(callback) {
+function buildBerlin(callback, parse) {
 	'use strict';
 
-	parseFolder('.', 'berlin', 'http://www.berlin.de/sen/wirtschaft/service/maerkte-feste/weihnachtsmaerkte/index.php/index/all.json?ipp=500', 'json', callback);
+	if (parse) {
+		parseFolder('.', 'berlin', 'http://www.berlin.de/sen/wirtschaft/service/maerkte-feste/weihnachtsmaerkte/index.php/index/all.json?ipp=500', 'json', callback);
+	} else {
+		callback();
+	}
 }
 
 //-----------------------------------------------------------------------
 
-function buildBrandenburg(callback) {
+function buildBrandenburg(callback, parse) {
 	'use strict';
 
-	parseFolder('.', 'brandenburg', 'http://www.berlin.de/sen/wirtschaft/service/maerkte-feste/weihnachtsmaerkte/brandenburger-weihnachtsmaerkte/index.php/index.json?ipp=500', 'json', callback);
+	if (parse) {
+		parseFolder('.', 'brandenburg', 'http://www.berlin.de/sen/wirtschaft/service/maerkte-feste/weihnachtsmaerkte/brandenburger-weihnachtsmaerkte/index.php/index.json?ipp=500', 'json', callback);
+	} else {
+		callback();
+	}
 }
 
 //-----------------------------------------------------------------------
 
-function buildMoers(callback) {
+function buildMoers(callback, parse) {
 	'use strict';
 
-	parseFolder('.', 'moers', 'https://www.moers.de/de/opendataxml/christmas-xml/', 'xml', callback);
+	if (parse) {
+		parseFolder('.', 'moers', 'https://www.moers.de/de/opendataxml/christmas-xml/', 'xml', callback);
+	} else {
+		callback();
+	}
 }
 
 //-----------------------------------------------------------------------
 
-function buildKleve(callback) {
+function buildKleve(callback, parse) {
 	'use strict';
 
-//	parseFolder('.', 'kleve', 'https://www.offenesdatenportal.de/dataset/fc1b9c2c-cbd3-42e7-98ce-de8abd9aec11/resource/e3682fd9-4952-4356-b349-3b611e79c8f5/download/160427-marktverzeichnis-2016.csv', 'csv', callback);
-//	parseFolder('.', 'kleve', 'https://www.kleve.de/www/event.nsf/apijson.xsp/view-event-month?compact=false', 'json', callback);
-
-	callback();
+	if (parse) {
+//		parseFolder('.', 'kleve', 'https://www.offenesdatenportal.de/dataset/fc1b9c2c-cbd3-42e7-98ce-de8abd9aec11/resource/e3682fd9-4952-4356-b349-3b611e79c8f5/download/160427-marktverzeichnis-2016.csv', 'csv', callback);
+		parseFolder('.', 'kleve', 'https://www.kleve.de/www/event.nsf/apijson.xsp/view-event-month?compact=false', 'json', callback);
+	} else {
+		callback();
+	}
 }
 
 //-----------------------------------------------------------------------
 
-function buildWesel(callback) {
+function buildWesel(callback, parse) {
 	'use strict';
 
-	parseFolder('.', 'wesel', 'https://www.wesel.de/de/system/-preview-xml/&src1=xml-veranstaltungen', 'xml', callback);
-
-//	callback();
+	if (parse) {
+		parseFolder('.', 'wesel', 'https://www.wesel.de/de/system/-preview-xml/&src1=xml-veranstaltungen', 'xml', callback);
+	} else {
+		callback();
+	}
 }
 
 //-----------------------------------------------------------------------
 
-function buildKrefeld(callback) {
+function buildKrefeld(callback, parse) {
 	'use strict';
 
-	parseFolder('.', 'krefeld', 'https://www.krefeld.de/www/event.nsf/apijson.xsp/view-event-month?compact=false', 'json', callback);
-
-//	callback();
+	if (parse) {
+		parseFolder('.', 'krefeld', 'https://www.krefeld.de/www/event.nsf/apijson.xsp/view-event-month?compact=false', 'json', callback);
+	} else {
+		callback();
+	}
 }
 
 //-----------------------------------------------------------------------
@@ -996,12 +1014,12 @@ try {
 					buildWesel(function () {
 						console.log();
 						buildKrefeld(function () {
-						});
-					});
-				});
-			});
-		});
-	});
+						}, false);
+					}, false);
+				}, false);
+			}, true);
+		}, false);
+	}, false);
 } catch (e) {
 	console.error(e);
 }
