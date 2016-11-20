@@ -390,7 +390,11 @@ function addOwnData() {
 		}
 
 		if (j >= dataVec.length) {
-			console.log('- missing old market ' + item.name);
+			if (item.todo === 'hide') {
+				console.log('- hide missing old market ' + item.name);
+			} else {
+				console.log('- missing old market ' + item.name);
+			}
 			push_back(item);
 		}
 	}
@@ -499,7 +503,7 @@ function analyseDataLineBerlin(data) {
 //	obj.kind = ref.kind;
 	obj.fee = ref.fee;
 	obj.remarks = ref.remarks;
-	obj.todo = ref.todo;
+	obj.todo = ref.todo || 'new';
 //	obj.transit = ref.;
 
 //  obj.bemerkungen = data.bemerkungen;
@@ -557,7 +561,7 @@ function analyseDataLineMoers(data) {
 	obj.twitter = ref.twitter || '';
 	obj.fee = ref.fee;
 	obj.remarks = ref.remarks;
-	obj.todo = ref.todo;
+	obj.todo = ref.todo || 'new';
 
 	push_back(obj);
 }
@@ -1017,9 +1021,9 @@ try {
 						}, false);
 					}, false);
 				}, false);
-			}, true);
+			}, false);
 		}, false);
-	}, false);
+	}, true);
 } catch (e) {
 	console.error(e);
 }

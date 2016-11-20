@@ -64,11 +64,11 @@ define(['data/berlin', 'data/brandenburg', 'data/moers', 'data/krefeld'], functi
 		markets = markets.concat(data);
 	}
 
-//	addData('Berlin', dataBerlin.data);
+	addData('Berlin', dataBerlin.data);
 //	addData('Brandenburg', dataBrandenburg.data);
 //	addData('Moers', dataMoers.data);
 //	addData('Wesel', dataWesel.data);
-	addData('Krefeld', dataKrefeld.data);
+//	addData('Krefeld', dataKrefeld.data);
 
 	return {
 		timeout: 400,
