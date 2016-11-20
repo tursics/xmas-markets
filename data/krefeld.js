@@ -79,8 +79,8 @@ define({ data:
 		"20170115": "",
 		"id": "44D68143B41FA890C1257FE200468FC3",
 		"name": "Crefelder Weihnachtsmarkt - Hüttenzauber für Leib und Seele",
-		"lat": 0,
-		"lng": 0,
+		"lat": 51.332509,
+		"lng": 6.560791,
 		"uuid": "126017",
 		"district": "",
 		"location": "",
@@ -98,7 +98,7 @@ define({ data:
 		"twitter": "",
 		"fee": "",
 		"remarks": "Weihnachten, die schönste Zeit des Jahres, ist da. Und wir können uns erfreuen am Lichterglanz, dem gemütlichen Beisammensein mit köstlichem Winzerglühwein, wunderbarem Flammlachs.",
-		"todo": "new"
+		"todo": "mail"
 	},
 	{
 		"20161101": "",
@@ -179,8 +179,8 @@ define({ data:
 		"20170115": "",
 		"id": "5BE559AC5CA0CBB1C1257FF000213A74",
 		"name": "Einkaufen bei Kerzenschein",
-		"lat": 0,
-		"lng": 0,
+		"lat": 51.331661,
+		"lng": 6.56222,
 		"uuid": "77364",
 		"district": "",
 		"location": "",
@@ -198,7 +198,7 @@ define({ data:
 		"twitter": "",
 		"fee": "",
 		"remarks": "Die Einkaufsstraße und die Plätze sind stimmungsvoll illuminiert, Feuerkünstler und viele weitere weihnachtliche Attraktionen erwarten das Publikum. Der Weihnachtsmarkt rundet das festliche Late-Night-Shopping ab.",
-		"todo": "new"
+		"todo": "hide"
 	},
 	{
 		"20161101": "",
@@ -279,8 +279,8 @@ define({ data:
 		"20170115": "",
 		"id": "5A3C5BF6077BCA5DC1257FA90038514B",
 		"name": "Nikolausmarkt in Uerdingen",
-		"lat": 0,
-		"lng": 0,
+		"lat": 51.354081,
+		"lng": 6.650131,
 		"uuid": "95913",
 		"district": "",
 		"location": "",
@@ -298,7 +298,7 @@ define({ data:
 		"twitter": "",
 		"fee": "",
 		"remarks": "Am 1. Adventssonntag findet wie in jedem Jahr der traditionelle Nikolausmarkt in Uerdingen statt. Dazu werden auf dem Marktplatz zahlreiche Verkaufsstände aufgebaut. Höhepunkt ist wie in jedem Jahr der Besuch des niederländischen Sinter Klaas.",
-		"todo": "new"
+		"todo": "mail"
 	},
 	{
 		"20161101": "",
@@ -379,8 +379,8 @@ define({ data:
 		"20170115": "",
 		"id": "BBFADC5B44B9175CC1257F0F003B8F07",
 		"name": "Besonderer Weihnachtsmarkt",
-		"lat": 0,
-		"lng": 0,
+		"lat": 51.331103,
+		"lng": 6.562249,
 		"uuid": "124742",
 		"district": "",
 		"location": "",
@@ -398,7 +398,7 @@ define({ data:
 		"twitter": "",
 		"fee": "",
 		"remarks": "Seit fast 20 Jahren findet der „Besondere Weihnachtsmarkt\" auf dem Platz an der Alten Kirche, Wiedenhofstraße, Evangelischer Kirchplatz und Schwanenmarkt. ",
-		"todo": "new"
+		"todo": "mail"
 	},
 	{
 		"20161101": "",
@@ -433,8 +433,8 @@ define({ data:
 		"20161130": "",
 		"20161201": "",
 		"20161202": "",
-		"20161203": "08:50-08:50",
-		"20161204": "08:50-08:50",
+		"20161203": "13:00-21:00",
+		"20161204": "11:00-20:00",
 		"20161205": "",
 		"20161206": "",
 		"20161207": "",
@@ -479,8 +479,8 @@ define({ data:
 		"20170115": "",
 		"id": "F334E84736EF7AB2C1257F03003B0143",
 		"name": "Weihnachtsmarkt vor historischer Kulisse rund um Burg Linn",
-		"lat": 0,
-		"lng": 0,
+		"lat": 51.333974,
+		"lng": 6.636283,
 		"uuid": "112157",
 		"district": "",
 		"location": "",
@@ -488,7 +488,7 @@ define({ data:
 		"zip_city": "",
 		"begin": "2016-12-03",
 		"end": "2016-12-04",
-		"hours": "08:50-08:50",
+		"hours": "Sa 13:00-21:00,So 11:00-20:00",
 		"email": "",
 		"web": "https://www.krefeld.de/www/event.nsf/apijson.xsp/doc/F334E84736EF7AB2C1257F03003B0143",
 		"organizer": "",
@@ -498,7 +498,7 @@ define({ data:
 		"twitter": "",
 		"fee": "",
 		"remarks": "Der Linner Schützenverein veranstaltet seit nun mehr als 30 Jahre den Linner Weihnachtsmarkt. ",
-		"todo": "new"
+		"todo": "mail"
 	},
 	{
 		"20161101": "",
@@ -541,7 +541,7 @@ define({ data:
 		"20161208": "",
 		"20161209": "",
 		"20161210": "",
-		"20161211": "08:50-08:50",
+		"20161211": "13:00-18:00",
 		"20161212": "",
 		"20161213": "",
 		"20161214": "",
@@ -579,8 +579,8 @@ define({ data:
 		"20170115": "",
 		"id": "D2F835ACD13573DEC1257FF00022167E",
 		"name": "Weihnachtliches Hüls im Kerzenschein",
-		"lat": 0,
-		"lng": 0,
+		"lat": 51.372925,
+		"lng": 6.508608,
 		"uuid": "94300",
 		"district": "",
 		"location": "",
@@ -588,7 +588,7 @@ define({ data:
 		"zip_city": "",
 		"begin": "2016-12-11",
 		"end": "2016-12-11",
-		"hours": "08:50-08:50",
+		"hours": "13:00-18:00",
 		"email": "",
 		"web": "https://www.krefeld.de/www/event.nsf/apijson.xsp/doc/D2F835ACD13573DEC1257FF00022167E",
 		"organizer": "",
@@ -598,7 +598,7 @@ define({ data:
 		"twitter": "",
 		"fee": "",
 		"remarks": "Der Sonntag im Lichterglanz ist am Ende des Jahres ein ganz besonderes Ereignis. Jedes Jahr aufs Neue werden Besucher festlich auf die beginnende Adventszeit eingestimmt. ",
-		"todo": "new"
+		"todo": "mail"
 	}
 ]
 });

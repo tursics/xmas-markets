@@ -655,6 +655,8 @@ function analyseDataLineKrefeld(data) {
 	ref = getRefData(obj);
 
 	obj.uuid = ref.uuid || null;
+	obj.lat = ref.lat || 0;
+	obj.lng = ref.lng || 0;
 	obj.district = '';
 	obj.name = data.DocName;
 	obj.location = ref.location || '';
