@@ -527,6 +527,8 @@ function analyseDataLineMoers(data) {
 	ref = getRefData(obj);
 
 	obj.uuid = ref.uuid || null;
+	obj.lat = ref.lat || 0;
+	obj.lng = ref.lng || 0;
 	obj.district = '';
 	obj.name = data.title;
 	obj.location = data.locationname;
@@ -1021,9 +1023,9 @@ try {
 						}, false);
 					}, false);
 				}, false);
-			}, false);
+			}, true);
 		}, false);
-	}, true);
+	}, false);
 } catch (e) {
 	console.error(e);
 }
