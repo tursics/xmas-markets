@@ -282,6 +282,70 @@ section#onemarket article.content div:first-child img {
 	background: url(../art/default/1200.jpg) center center / cover;
 }
 
+div#sidebarTop {
+	font-size: 1.8rem;
+	text-align: center;
+}
+
+div#sidebarTop .title {
+	padding: 1em 0 .5em 0;
+	font-style: italic;
+	font-weight: 300;
+	font-size: 3.3rem;
+	color: #fff;
+}
+div#sidebarTop .title em {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 2.2rem;
+}
+
+div#sidebarTop .logo {
+	display: inline-block;
+	width: 5em;
+	height: 5em;
+	border-radius: 50%;
+	border:2px solid #444;
+	background: white;
+	padding: .75em;
+}
+div#sidebarTop .logo img {
+	height: 5em;
+	width: 5em;
+	border-radius: 50%;
+}
+
+div#sidebarMiddle {
+	background: #fff;
+	border-top: 1px solid #444;
+	border-bottom: 1px solid #444;
+	font-size: 1.8rem;
+	font-weight: 300;
+	margin: -3.25em 0 0 0;
+	padding: 3.25em 0 1em 0;
+}
+
+div#sidebarMiddle h2 {
+	margin: 0;
+	padding: 1em .5em .5em .5em;
+	font-weight: 400;
+}
+div#sidebarMiddle div {
+	margin: 0;
+	padding: 0 1em .5em 1em;
+	font-size: 1.6rem;
+}
+div#sidebarMiddle div.intro {
+	margin: 0 2em;
+	padding: 1em 0;
+	border-bottom: 2px solid #444;
+	text-align: center;
+}
+div#sidebarMiddle a {
+	color: #000;
+	text-decoration: none;
+}
+
 .leaflet-bar {
 	background:#fde4d0;
 	border-right:1px solid #f97c17;
