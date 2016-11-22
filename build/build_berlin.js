@@ -1056,7 +1056,7 @@ try {
 					buildWesel(function () {
 						console.log();
 						buildKrefeld(function () {
-						}, false);
+						}, true);
 					}, false);
 				}, false);
 			}, true);
