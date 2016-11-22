@@ -294,7 +294,14 @@ function buildOpeningHours(obj, hours) {
 	}
 
 	var currentDate = new Date(new Date(obj.begin).getFullYear() + "-11-01"),
-		endDate = new Date(obj.begin);
+		endDate = new Date(obj.begin),
+		fullYear = currentDate.getFullYear();
+
+	if ((new Date(obj.begin).getMonth()) === 0) {
+		// this date begins in January
+		--fullYear;
+		currentDate.setFullYear(fullYear);
+	}
 
 	for (currentDate; currentDate < endDate; currentDate.setDate(currentDate.getDate() + 1)) {
 		obj[prefix(currentDate)] = '';
@@ -309,7 +316,7 @@ function buildOpeningHours(obj, hours) {
 	}
 
 	currentDate = endDate;
-	endDate = new Date((new Date(obj.begin).getFullYear() + 1) + "-01-16");
+	endDate = new Date((fullYear + 1) + "-01-16");
 	for (currentDate; currentDate < endDate; currentDate.setDate(currentDate.getDate() + 1)) {
 		obj[prefix(currentDate)] = '';
 	}
