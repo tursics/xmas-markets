@@ -32,7 +32,7 @@ define(['app/config', 'app/viewMarketsOne'], function (config, viewMarketsOne) {
 	// ·····························································
 	function getToday() {
 		var today = new Date();
-//		today.setDate(today.getDate() + 0);
+//		today.setDate(today.getDate() + 3);
 		return today;
 	}
 
@@ -75,6 +75,11 @@ define(['app/config', 'app/viewMarketsOne'], function (config, viewMarketsOne) {
 		showProgress: function () {
 //			window.scrollTo(0, 0);
 			document.querySelector('#marketlist').innerHTML = '<div class="center"><progress></progress></div>';
+		},
+
+		// ·························································
+		getToday: function () {
+			return getToday();
 		},
 
 		// ·························································
