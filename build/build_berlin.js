@@ -70,6 +70,9 @@ function parseOpeningHours(str) {
 						}
 
 						daily = date[0];
+					} else if ('ab' === date[0]) {
+						// ab 10:00
+						daily = date[1];
 					} else if ('Winterwelt:' === left[0]) {
 						// ignore me
 						left = date[0].split('-');
@@ -188,7 +191,7 @@ function parseOpeningHours(str) {
 
 //-----------------------------------------------------------------------
 
-function testOpeningHours(obj, data) {
+function testOpeningHours(obj, data, showWarnings) {
 	'use strict';
 
 	var i, item, checkDate, checkTime, splitted,
@@ -232,7 +235,7 @@ function testOpeningHours(obj, data) {
 					splitted = checkTime.split(':');
 					if ((splitted.length !== 2) || (parseInt(splitted[0], 10) > 24) || (parseInt(splitted[1], 10) > 60)) {
 						console.log('- ' + obj.name + ' has wrong opening time: ' + checkTime);
-					} else {
+					} else if (showWarnings) {
 						console.log('[warning: ' + obj.name + ' has only beginning time: ' + checkTime + ']');
 					}
 				}
@@ -503,7 +506,7 @@ function analyseDataLineBerlin(data) {
 	obj.end = data.bis;
 
 	hours = parseOpeningHours(data.oeffnungszeiten);
-	testOpeningHours(obj, hours);
+	testOpeningHours(obj, hours, true);
 	buildOpeningHours(obj, hours);
 	buildInternet(obj, data.w3, data.email);
 
@@ -567,7 +570,7 @@ function analyseDataLineMoers(data) {
 	obj.end = arr[2] + '-' + arr[1] + '-' + arr[0];
 
 	hours = parseOpeningHours(data.time);
-	testOpeningHours(obj, hours);
+	testOpeningHours(obj, hours, false);
 	buildOpeningHours(obj, hours);
 	buildInternet(obj, data.documenturl, '');
 
@@ -626,7 +629,7 @@ function analyseDataLineWesel(data) {
 	}
 
 	hours = parseOpeningHours('');
-	testOpeningHours(obj, hours);
+	testOpeningHours(obj, hours, true);
 	buildOpeningHours(obj, hours);
 	buildInternet(obj, data.link_href, '');
 
@@ -722,7 +725,7 @@ function analyseDataLineKrefeld(data) {
 	}
 
 	hours = parseOpeningHours(time);
-	testOpeningHours(obj, hours);
+	testOpeningHours(obj, hours, true);
 	buildOpeningHours(obj, hours);
 	buildInternet(obj, 'https://www.krefeld.de' + data.URL, '');
 
@@ -1060,8 +1063,8 @@ try {
 					}, false);
 				}, false);
 			}, true);
-		}, false);
-	}, false);
+		}, true);
+	}, true);
 } catch (e) {
 	console.error(e);
 }
