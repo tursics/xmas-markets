@@ -95,14 +95,22 @@
     #headers section[role="region"] header h2 {
       margin: 0 0 1.5rem 0;
     }
+	section[role="region"] > header {
+    	z-index: 1001;
+	}
 
-    /* Lists */
+	/* Lists */
     /* to avoid double background effect on press */
     [data-type=list] li>a:active {
       background-color: transparent;
     }
 
-    /* Drawer */
+	/* to avoid double scrolling bar on long pages */
+	[data-type="list"] ul {
+		overflow: hidden;
+	}
+
+	/* Drawer */
     section[role="region"]:not(#drawer) {
       transition: none;
       left: 0;
@@ -151,7 +159,7 @@
 	position:absolute;
 	top:5rem;
 	width:100%;
-	z-index:10;
+	z-index:1001;
 }
 
 [role="tablist"][data-type="filter"] {
@@ -257,6 +265,7 @@ section[data-type="sidebar"] > nav > ul > li > a {
 
 .ios section[role="region"] > header:first-child {
 	padding-top:2rem;
+   	z-index: 1001;
 }
 
 .ios section[data-type="sidebar"] > header {

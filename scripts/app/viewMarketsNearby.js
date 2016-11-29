@@ -15,7 +15,12 @@ define( ['app/config','app/view','app/sort'], function( config, view, sort) {
 		fillList: function()
 		{
 			view.setActive( idView);
-			window.scrollTo( 0, 0);
+			try {
+				window.scrollTo(0, 0);
+				document.body.scrollTop = 0;
+				document.querySelector(idView + ' > article').scrollTop = 0;
+			} catch (err) {
+			}
 
 			var txt = '<header>Suche die GPS-Position</header>';
 			txt = view.composeList( txt);

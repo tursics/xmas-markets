@@ -134,10 +134,25 @@ define(['app/config', 'app/viewMarketsOne'], function (config, viewMarketsOne) {
 		finishMarketList: function (txt) {
 			var objs, i;
 
+			document.querySelector('#marketlist').innerHTML = '';
+			try {
+				window.scrollTo(0, 0);
+				document.body.scrollTop = 0;
+				document.querySelector('#marketlist').scrollTop = 0;
+			} catch (err) {
+			}
 			document.querySelector('#marketlist').innerHTML = txt;
+
 			objs = document.querySelector('#marketlist').getElementsByTagName('li');
 			for (i = 0; i < objs.length; ++i) {
 				objs[i].addEventListener('click', onMarket);
+			}
+
+			try {
+				window.scrollTo(0, 0);
+				document.body.scrollTop = 0;
+				document.querySelector('#marketlist').scrollTop = 0;
+			} catch (err2) {
 			}
 		},
 

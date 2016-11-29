@@ -129,7 +129,12 @@ define(['ajax', 'leaflet', 'app/config', 'app/view'], function (ajax, L, config,
 			txt += '</div>';
 
 			document.querySelector('#onemarket > article').innerHTML = txt;
-			document.querySelector('#onemarket > article').scrollTo(0, 0);
+			try {
+				window.scrollTo(0, 0);
+				document.body.scrollTop = 0;
+				document.querySelector('#onemarket > article').scrollTop = 0;
+			} catch (err) {
+			}
 
 			try {
 				ajax.get('art/' + obj.path + '/' + obj.uuid + '/LICENSE.md', {}, function (text) {
