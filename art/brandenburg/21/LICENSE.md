@@ -1,1 +1,1 @@
-© Torsten Stapel
+Torsten Stapel
