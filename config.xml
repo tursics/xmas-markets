@@ -2,10 +2,10 @@
 <widget xmlns="http://www.w3.org/ns/widgets"
         xmlns:gap="http://phonegap.com/ns/1.0"
         id="de.tursics.xmasmarkets"
-        version="16.11.1"
-        versionCode="13">
+        version="16.11.2"
+        versionCode="14">
 
-	<name>Weihnachtsmärkte in Berlin</name>
+	<name>Weihnachtsmärkte in Berlin und Brandenburg</name>
 	<description>Finde alle Weihnachtsmärkte in Berlin: die großen, die kleinen, die bunten, die lebhaften, die besinnlichen und die Geheimtipps. Alle in einer App.</description>
 	<author href="http://www.tursics.de" email="thomas@tursics.de">Thomas Tursics</author>
 	<icon src="icon.png" />
