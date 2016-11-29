@@ -1,9 +1,9 @@
 /*jslint browser: true*/
-/*global require,define,L*/
+/*global require,define*/
 
 //-----------------------------------------------------------------------
 
-define(['app/config', 'app/view', 'app/sort'], function (config, view, sort) {
+define(['leaflet', 'app/config', 'app/view', 'app/sort'], function (L, config, view, sort) {
 	'use strict';
 
 	var idView = '#tab-advent-calendar',
@@ -43,8 +43,8 @@ define(['app/config', 'app/view', 'app/sort'], function (config, view, sort) {
 	function addEvent(obj, id) {
 		var txt = '';
 
-		txt += '<div style="margin:0 -1.5rem 1rem -1.5rem;padding:1.5rem 1.5rem 1.5rem 1.5rem;border-top:1px solid #f97c17;border-bottom:1px solid #f97c17;">';
-		txt += '<header>' + obj.name + '</header>';
+		txt += '<div style="margin:0 -1.5rem 1rem -1.5rem;padding:1.5rem 1.5rem 1rem 1.5rem;border-top:1px solid #f97c17;border-bottom:1px solid #f97c17;">';
+		txt += '<header style="white-space:normal;overflow:visible;height:auto;line-height:2rem;">' + obj.name + '</header>';
 		txt += '</div>';
 		txt += '<p>' + obj.remarks + '</p>';
 		txt += '<p>' + obj.opening;
@@ -98,16 +98,18 @@ define(['app/config', 'app/view', 'app/sort'], function (config, view, sort) {
 		var i,
 			obj,
 			mapboxToken = 'pk.eyJ1IjoidHVyc2ljcyIsImEiOiJjaWh3Z3ZlNGYwMm01dWtrbzEyc3o5Z2l2In0.y9Lzc24BygGS_lmbpfRpxg',
-			mapboxTiles = L.tileLayer('https://{s}.tiles.mapbox.com/v4/tursics.l7ad5ee8/{z}/{x}/{y}.png?access_token=' + mapboxToken, {
-				attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>'
-			}),
+			mapboxTiles,
 			map,
 			mapPin;
 
 		for (i = 0; i < mapIDs.length; ++i) {
-			obj = mapIDs[i];
+			obj = events[mapIDs[i]];
 
 			if ((obj.lat !== null) && (obj.lng !== null)) {
+				mapboxTiles = L.tileLayer('https://{s}.tiles.mapbox.com/v4/tursics.l7ad5ee8/{z}/{x}/{y}.png?access_token=' + mapboxToken, {
+					attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>'
+				});
+
 				map = L.map('map' + i, {zoomControl: true, scrollWheelZoom: false})
 					.addLayer(mapboxTiles)
 					.setView([obj.lat, obj.lng], 16);
@@ -118,8 +120,6 @@ define(['app/config', 'app/view', 'app/sort'], function (config, view, sort) {
 					fillOpacity: 0.5,
 					weight: 1
 				}).addTo(map);
-
-				break;
 			}
 		}
 	}
@@ -139,7 +139,7 @@ define(['app/config', 'app/view', 'app/sort'], function (config, view, sort) {
 			var txt = '', obj = {
 				path: 'berlin',
 				uuid: 'advent-stz',
-				name: 'Lebendiger Adventskalender',
+				name: 'Lebendiger Adventskalender<br><em style="font-size:.8em;">- jeden Tag ein neues Türchen -</em>',
 				fee: '',
 				remarks: '<p>Viele Einrichtungen der drei Stadtteile Fennpfuhl, Alt-Lichtenberg und Frankfurter Allee Süd öffnen auch in diesem Jahr ihre Türchen zum gemütlichen Beisammensein, Adventsbasteln und Plätzchenbacken oder zu Lesungen und Theateraufführungen.</p><p>Ab dem 1. Dezember sind alle Bürgerinnen und Bürger herzlich eingeladen die Angebote in Ihrem Kiez zu nutzen. Der „Lebendige Adventskalender“ ist eine gemeinsame Aktion von freien, öffentlichen und kirchlichen Trägern aus den drei Stadtteilen in Zusammenarbeit mit dem Stadtteilzentrum Lichtenberg Nord.</p>'
 			},
@@ -160,7 +160,7 @@ define(['app/config', 'app/view', 'app/sort'], function (config, view, sort) {
 
 			txt += '<p>' + obj.remarks + '</p>';
 			txt += addEvents();
-			txt += '<div style="margin:1rem -1.5rem -1.5rem -1.5rem;padding:0 1.5rem 0 1.5rem;text-align:center;border-top:1px solid #f97c17;border-bottom:1px solid #f97c17;background:#fde4d0;">';
+			txt += '<div style="margin:0 -1.5rem;padding:0 1.5rem 0 1.5rem;text-align:center;border-top:1px solid #f97c17;border-bottom:1px solid #f97c17;background:#fde4d0;">';
 			txt += '<p id="copyright">Bildnachweis: Stadtteilzentrum Lichtenberg Nord</p>';
 			txt += '</div>';
 
