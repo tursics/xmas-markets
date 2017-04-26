@@ -720,12 +720,12 @@ function analyseDataLineKrefeld(data) {
 	}
 
 	// to save time...
-	if (data.EventHighlight !== 'ja') {
-		return;
-	}
+//	if (data.EventHighlight !== 'ja') {
+//		return;
+//	}
 
 	hours = parseOpeningHours(time);
-	testOpeningHours(obj, hours, true);
+	testOpeningHours(obj, hours, false);
 	buildOpeningHours(obj, hours);
 	buildInternet(obj, 'https://www.krefeld.de' + data.URL, '');
 
@@ -1062,9 +1062,9 @@ try {
 						}, true);
 					}, false);
 				}, false);
-			}, true);
-		}, true);
-	}, true);
+			}, false);
+		}, false);
+	}, false);
 } catch (e) {
 	console.error(e);
 }
