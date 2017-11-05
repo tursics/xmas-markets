@@ -89,6 +89,11 @@ function parseOpeningHours(str) {
 							// 24.12/25.12. 10:00-20:00
 							days.push(left[0] + '.' + left[1] + '. ' + date[1]);
 							days.push(left[2].substr(1) + '.' + left[3] + '. ' + date[1]);
+						} else if ((left.length === 7) && (left[2][0] === '/') && (left[4][0] === '/')) {
+							// 24.12./25.12./26.12. 10:00-20:00
+							days.push(left[0] + '.' + left[1] + '. ' + date[1]);
+							days.push(left[2].substr(1) + '.' + left[3] + '. ' + date[1]);
+							days.push(left[4].substr(1) + '.' + left[5] + '. ' + date[1]);
 						} else {
 							console.log('- could not parse date [1a]: ' + arr[i]);
 						}
@@ -157,8 +162,8 @@ function parseOpeningHours(str) {
 				}
 				daily = date[1];
 			} else if ((date.length === 18) && ('täglich' === date[0]) && ('geöffnet' === date[1]) && ('ab' === date[2]) && ('Uhr;' === date[4])
-					   && ('donnerstags,' === date[5]) && ('freitags' === date[6]) && ('und' === date[7]) && ('samstags' === date[8]) && ('bis' === date[9]) && ('Uhr;' === date[11])
-					   && ('sonntags' === date[12]) && ('bis' === date[13]) && ('mittwochs' === date[14]) && ('bis' === date[15]) && ('Uhr' === date[17])) {
+					&& ('donnerstags,' === date[5]) && ('freitags' === date[6]) && ('und' === date[7]) && ('samstags' === date[8]) && ('bis' === date[9]) && ('Uhr;' === date[11])
+					&& ('sonntags' === date[12]) && ('bis' === date[13]) && ('mittwochs' === date[14]) && ('bis' === date[15]) && ('Uhr' === date[17])) {
 				// täglich geöffnet ab 12 Uhr; donnerstags, freitags und samstags bis 22 Uhr; sonntags bis mittwochs bis 20 Uhr
 				weekdays[weekdaysName.indexOf('Do')] = date[3] + ':00-' + date[10] + ':00';
 				weekdays[weekdaysName.indexOf('Fr')] = date[3] + ':00-' + date[10] + ':00';
@@ -197,10 +202,10 @@ function testOpeningHours(obj, data, showWarnings) {
 	var i, item, checkDate, checkTime, splitted,
 		weekdaysName = ['Mo', 'Di', 'Mi', 'Do', 'Fr', 'Sa', 'So'];
 
-	if (isNaN(Date.parse(obj.begin)) || (Date.parse(obj.begin) < Date.parse((new Date().getFullYear()) + "-01-01"))) {
+	if (isNaN(Date.parse(obj.begin)) || (Date.parse(obj.begin) < Date.parse((new Date().getFullYear()) + "-01-01"))) {
 		console.log('- ' + obj.name.replace(/\r\n|\r|\n/g, ' ') + ' has invalid begin date: ' + obj.begin);
 	}
-	if (isNaN(Date.parse(obj.end)) || (Date.parse(obj.end) < Date.parse((new Date().getFullYear()) + "-01-01"))) {
+	if (isNaN(Date.parse(obj.end)) || (Date.parse(obj.end) < Date.parse((new Date().getFullYear()) + "-01-01"))) {
 		console.log('- ' + obj.name.replace(/\r\n|\r|\n/g, ' ') + ' has invalid end date: ' + obj.end);
 	}
 	if (0 === data.length) {
@@ -223,17 +228,17 @@ function testOpeningHours(obj, data, showWarnings) {
 		if ('' !== checkDate) {
 			if (-1 === weekdaysName.indexOf(checkDate)) {
 				splitted = checkDate.split('.');
-				if ((checkDate.length !== 6) || (splitted.length !== 3) || (parseInt(splitted[0], 10) > 31) || (parseInt(splitted[1], 10) > 12) || ('' !== splitted[2])) {
+				if ((checkDate.length !== 6) || (splitted.length !== 3) || (parseInt(splitted[0], 10) > 31) || (parseInt(splitted[1], 10) > 12) || ('' !== splitted[2])) {
 					console.log('- ' + obj.name + ' has wrong opening date: ' + checkDate);
 				}
 			}
 		}
 		if ('' !== checkTime) {
 			splitted = checkTime.split('-');
-			if ((checkTime.length !== 11) || (splitted.length !== 2) || (splitted[0].length !== 5) || (splitted[1].length !== 5)) {
+			if ((checkTime.length !== 11) || (splitted.length !== 2) || (splitted[0].length !== 5) || (splitted[1].length !== 5)) {
 				if ('geschlossen' !== checkTime) {
 					splitted = checkTime.split(':');
-					if ((splitted.length !== 2) || (parseInt(splitted[0], 10) > 24) || (parseInt(splitted[1], 10) > 60)) {
+					if ((splitted.length !== 2) || (parseInt(splitted[0], 10) > 24) || (parseInt(splitted[1], 10) > 60)) {
 						console.log('- ' + obj.name + ' has wrong opening time: ' + checkTime);
 					} else if (showWarnings) {
 						console.log('[warning: ' + obj.name + ' has only beginning time: ' + checkTime + ']');
@@ -241,11 +246,11 @@ function testOpeningHours(obj, data, showWarnings) {
 				}
 			} else {
 				splitted = checkTime.split('-')[0].split(':');
-				if ((splitted.length !== 2) || (parseInt(splitted[0], 10) > 24) || (parseInt(splitted[1], 10) > 60)) {
+				if ((splitted.length !== 2) || (parseInt(splitted[0], 10) > 24) || (parseInt(splitted[1], 10) > 60)) {
 					console.log('- ' + obj.name + ' has wrong opening time: ' + checkTime);
 				}
 				splitted = checkTime.split('-')[1].split(':');
-				if ((splitted.length !== 2) || (parseInt(splitted[0], 10) > 24) || (parseInt(splitted[1], 10) > 60)) {
+				if ((splitted.length !== 2) || (parseInt(splitted[0], 10) > 24) || (parseInt(splitted[1], 10) > 60)) {
 					console.log('- ' + obj.name + ' has wrong opening time: ' + checkTime);
 				}
 			}
@@ -277,7 +282,7 @@ function buildOpeningHours(obj, hours) {
 					if (itemWeekday === date.getDay()) {
 						ret = item[1];
 					}
-				} else {
+				} else {
 					itemDate = itemDate.split('.');
 					d = parseInt(itemDate[0], 10);
 					m = parseInt(itemDate[1], 10);
@@ -335,7 +340,7 @@ function buildGeo(obj, latitude, longitude) {
 	var lat = parseFloat(latitude.replace(',', '.')),
 		lng = parseFloat(longitude.replace(',', '.'));
 
-	if (isNaN(lat) || isNaN(lng) || (lat < 51.0) || (lat > 53.9) || (lng < 11.0) || (lng > 14.9)) {
+	if (isNaN(lat) || isNaN(lng) || (lat < 51.0) || (lat > 53.9) || (lng < 11.0) || (lng > 14.9)) {
 		console.log('- ' + obj.name + ' is not geo-coded correctly: ' + latitude + ' - ' + longitude);
 	}
 
@@ -351,7 +356,7 @@ function buildInternet(obj, www, mail) {
 	if (mail.indexOf('mailto:') === 0) {
 		mail = mail.substr(7);
 	}
-	if ((www.length > 0) && (www.indexOf('http://') < 0) && (www.indexOf('https://') < 0)) {
+	if ((www.length > 0) && (www.indexOf('http://') < 0) && (www.indexOf('https://') < 0)) {
 		www = 'http://' + www;
 	}
 
@@ -424,7 +429,7 @@ function getRefData(obj) {
 	'use strict';
 
 	function normalizeName(name) {
-		var str = name || '';
+		var str = name || '';
 
 		return str;
 	}
@@ -516,12 +521,12 @@ function analyseDataLineBerlin(data) {
 //	obj.phone = ref.;
 //	obj.phone2 = ref.;
 //	obj.fax = ref.;
-	obj.facebook = ref.facebook || '';
-	obj.twitter = ref.twitter || '';
+	obj.facebook = ref.facebook || '';
+	obj.twitter = ref.twitter || '';
 //	obj.kind = ref.kind;
 	obj.fee = ref.fee;
 	obj.remarks = ref.remarks;
-	obj.todo = ref.todo || 'new';
+	obj.todo = ref.todo || 'new';
 //	obj.transit = ref.;
 
 //  obj.bemerkungen = data.bemerkungen;
@@ -544,9 +549,9 @@ function analyseDataLineMoers(data) {
 
 	ref = getRefData(obj);
 
-	obj.uuid = ref.uuid || null;
-	obj.lat = ref.lat || 0;
-	obj.lng = ref.lng || 0;
+	obj.uuid = ref.uuid || null;
+	obj.lat = ref.lat || 0;
+	obj.lng = ref.lng || 0;
 	obj.district = '';
 	obj.name = data.title;
 	obj.location = data.locationname;
@@ -576,12 +581,12 @@ function analyseDataLineMoers(data) {
 
 	obj.organizer = data.organizername;
 	obj.org_contact = ref.org_contact || data.organizerurl;
-	obj.group = ref.group || '';
-	obj.facebook = ref.facebook || '';
-	obj.twitter = ref.twitter || '';
+	obj.group = ref.group || '';
+	obj.facebook = ref.facebook || '';
+	obj.twitter = ref.twitter || '';
 	obj.fee = ref.fee;
 	obj.remarks = ref.remarks;
-	obj.todo = ref.todo || 'new';
+	obj.todo = ref.todo || 'new';
 
 	push_back(obj);
 }
@@ -601,7 +606,7 @@ function analyseDataLineWesel(data) {
 
 	ref = getRefData(obj);
 
-	obj.uuid = ref.uuid || null;
+	obj.uuid = ref.uuid || null;
 	obj.district = '';
 	obj.name = data.bezeichnung;
 	obj.location = data.veranstaltungsort;
@@ -623,7 +628,7 @@ function analyseDataLineWesel(data) {
 	}
 
 	test = new Date(obj.begin);
-	if (!isNaN(test) && (1 <= test.getMonth()) && (test.getMonth() < 10)) {
+	if (!isNaN(test) && (1 <= test.getMonth()) && (test.getMonth() < 10)) {
 		// only accept november, december and january dates
 		return;
 	}
@@ -635,12 +640,12 @@ function analyseDataLineWesel(data) {
 
 	obj.organizer = data.veranstalter_name;
 	obj.org_contact = ref.org_contact || data.veranstalter_website;
-	obj.group = ref.group || '';
-	obj.facebook = ref.facebook || '';
-	obj.twitter = ref.twitter || '';
-	obj.fee = ref.fee || '';
+	obj.group = ref.group || '';
+	obj.facebook = ref.facebook || '';
+	obj.twitter = ref.twitter || '';
+	obj.fee = ref.fee || '';
 	obj.remarks = ref.remarks || data.kurztext;
-	obj.todo = ref.todo || 'new';
+	obj.todo = ref.todo || 'new';
 
 	if (data.highlight === 'ja') {
 		console.log('>> ' + data.highlight_bez + ' << ' + data.veranstalter_website);
@@ -678,14 +683,14 @@ function analyseDataLineKrefeld(data) {
 
 	ref = getRefData(obj);
 
-	obj.uuid = ref.uuid || null;
-	obj.lat = ref.lat || 0;
-	obj.lng = ref.lng || 0;
+	obj.uuid = ref.uuid || null;
+	obj.lat = ref.lat || 0;
+	obj.lng = ref.lng || 0;
 	obj.district = '';
 	obj.name = data.DocName;
-	obj.location = ref.location || '';
-	obj.street = ref.street || '';
-	obj.zip_city = ref.zip_city || '';
+	obj.location = ref.location || '';
+	obj.street = ref.street || '';
+	obj.zip_city = ref.zip_city || '';
 	obj.begin = data.Start;
 	obj.end = data.End;
 
@@ -699,7 +704,7 @@ function analyseDataLineKrefeld(data) {
 	}
 
 //	test = new Date(obj.begin);
-//	if (!isNaN(test) && (1 <= test.getMonth()) && (test.getMonth() < 10)) {
+//	if (!isNaN(test) && (1 <= test.getMonth()) && (test.getMonth() < 10)) {
 //		// only accept november, december and january dates
 //		return;
 //	}
@@ -729,14 +734,14 @@ function analyseDataLineKrefeld(data) {
 	buildOpeningHours(obj, hours);
 	buildInternet(obj, 'https://www.krefeld.de' + data.URL, '');
 
-	obj.organizer = ref.organizer || '';
-	obj.org_contact = ref.org_contact || '';
-	obj.group = ref.group || '';
-	obj.facebook = ref.facebook || '';
-	obj.twitter = ref.twitter || '';
-	obj.fee = ref.fee || '';
+	obj.organizer = ref.organizer || '';
+	obj.org_contact = ref.org_contact || '';
+	obj.group = ref.group || '';
+	obj.facebook = ref.facebook || '';
+	obj.twitter = ref.twitter || '';
+	obj.fee = ref.fee || '';
 	obj.remarks = ref.remarks || data.Kurztext;
-	obj.todo = ref.todo || 'new';
+	obj.todo = ref.todo || 'new';
 
 //	if (data.EventHighlight === 'ja') {
 //		console.log('>> ' + obj.name + ' << ' + obj.web);
