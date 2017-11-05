@@ -975,7 +975,7 @@ function buildBerlin(callback, parse) {
 	'use strict';
 
 	if (parse) {
-		parseFolder('.', 'berlin', 'http://www.berlin.de/sen/wirtschaft/service/maerkte-feste/weihnachtsmaerkte/index.php/index/all.json?ipp=500', 'json', callback);
+		parseFolder('.', 'berlin', 'http://www.berlin.de/sen/web/service/maerkte-feste/weihnachtsmaerkte/index.php/index/all.json?ipp=500', 'json', callback);
 	} else {
 		callback();
 	}
@@ -987,7 +987,7 @@ function buildBrandenburg(callback, parse) {
 	'use strict';
 
 	if (parse) {
-		parseFolder('.', 'brandenburg', 'http://www.berlin.de/sen/wirtschaft/service/maerkte-feste/weihnachtsmaerkte/brandenburger-weihnachtsmaerkte/index.php/index.json?ipp=500', 'json', callback);
+		parseFolder('.', 'brandenburg', 'http://www.berlin.de/sen/web/service/maerkte-feste/weihnachtsmaerkte/brandenburger-weihnachtsmaerkte/index.php/index.json?ipp=500', 'json', callback);
 	} else {
 		callback();
 	}
@@ -1059,12 +1059,12 @@ try {
 					buildWesel(function () {
 						console.log();
 						buildKrefeld(function () {
-						}, true);
+						}, false);
 					}, false);
 				}, false);
 			}, false);
 		}, false);
-	}, false);
+	}, true);
 } catch (e) {
 	console.error(e);
 }
