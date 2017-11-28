@@ -12,7 +12,7 @@ function( config, viewAdventCalendar, viewMarketsToday, viewMarketsTomorrow, vie
 	viewMarketsAll.init();
 	viewMarketsNearby.init();
 //	viewMarketsFavorite.init();
-	viewAdventCalendar.init();
+//	viewAdventCalendar.init();
 
 	document.querySelector('#btn-onemarket-back').addEventListener('click', function() {
 		try {
