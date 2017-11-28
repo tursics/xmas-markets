@@ -1,5 +1,5 @@
 /*jslint browser: true*/
-/*global define*/
+/*global define,document*/
 
 //-----------------------------------------------------------------------
 
@@ -21,7 +21,7 @@ define(['data/berlin', 'data/brandenburg', 'data/moers', 'data/krefeld'], functi
 		if ('Berlin' === name) {
 			docTitle = 'Weihnachtsmärkte in Berlin und Brandenburg';
 			header = 'Weihnachtsmärkte <em>in Berlin und Brandenburg</em>';
-			markets = 'Berliner Weihnachtsmärkte<br>&nbsp;&nbsp;&nbsp;CC-BY 3.0 DE<br>&nbsp;&nbsp;&nbsp;daten.berlin.de';
+			markets = 'Berliner Advents- und Weihnachtsmärkte<br>&nbsp;&nbsp;&nbsp;CC-BY 3.0 DE<br>&nbsp;&nbsp;&nbsp;daten.berlin.de';
 			attribution = '<a href="#">Charles Blume Vergnügungsbetrieb GmbH</a>';
 			teaserPath = 'art/berlin/teaser.jpg';
 		} else if ('Brandenburg' === name) {
@@ -57,6 +57,7 @@ define(['data/berlin', 'data/brandenburg', 'data/moers', 'data/krefeld'], functi
 			if (data[market].todo !== 'hide') {
 				if (!isNaN(Date.parse(data[market].begin))) {
 					firstDay = Math.min(firstDay, Date.parse(data[market].begin));
+//					console.log(data[market].begin + ' ' + data[market].name);
 				}
 				if (!isNaN(Date.parse(data[market].end))) {
 					lastDay = Math.max(lastDay, Date.parse(data[market].end));
